@@ -6,6 +6,7 @@ const TILE_OVERLAP := 16.0
 const CAMERA_ZOOM := Vector2(1.25, 1.25)
 const MAP_SIZE := Vector2i(18, 11)
 const HERO_START_CELL := Vector2i(8, 5)
+const HERO_MOVE_DURATION := 0.16
 
 enum TileType {
 	FLOOR,
@@ -31,6 +32,10 @@ var _built := false
 var _hero: Sprite2D
 var _camera: Camera2D
 var _hero_cell := HERO_START_CELL
+var _enemies: Array[Sprite2D] = []
+var _actor_base_flip: Dictionary = {}
+var _is_moving := false
+var _queued_direction := Vector2i.ZERO
 var _terrain_cells: Dictionary = {}
 var _blocked_cells: Dictionary = {}
 var _tile_textures: Dictionary = {}
@@ -69,6 +74,10 @@ func _build_scene() -> void:
 	_blocked_cells.clear()
 	_terrain_cells.clear()
 	_tile_materials.clear()
+	_enemies.clear()
+	_actor_base_flip.clear()
+	_is_moving = false
+	_queued_direction = Vector2i.ZERO
 	_hero = null
 	_camera = null
 
@@ -106,10 +115,11 @@ func _build_scene() -> void:
 	_add_blocking_actor(goblin_texture, Vector2i(13, 4), 0.45, 20)
 	_add_blocking_actor(goblin_texture, Vector2i(8, 1), 0.46, 20)
 	_add_blocking_actor(minotaur_texture, Vector2i(2, 6), 0.52, 20)
-	_add_blocking_actor(spider_texture, Vector2i(12, 2), 0.50, 20)
-	_add_blocking_actor(spider_texture, Vector2i(15, 9), 0.44, 20)
+	_add_blocking_actor(spider_texture, Vector2i(12, 2), 0.50, 20, true)
+	_add_blocking_actor(spider_texture, Vector2i(15, 9), 0.44, 20, true)
 	_add_blocking_actor(skeleton_texture, Vector2i(16, 5), 0.49, 20)
 	_add_blocking_actor(skeleton_texture, Vector2i(3, 9), 0.43, 20)
+	_update_enemy_facing()
 
 	_camera = Camera2D.new()
 	_camera.name = "Camera2D"
@@ -259,21 +269,66 @@ func _add_actor(texture: Texture2D, cell: Vector2i, scale_value: float, z_index:
 	return sprite
 
 
-func _add_blocking_actor(texture: Texture2D, cell: Vector2i, scale_value: float, z_index: int) -> void:
-	_add_actor(texture, cell, scale_value, z_index)
+func _add_blocking_actor(
+	texture: Texture2D,
+	cell: Vector2i,
+	scale_value: float,
+	z_index: int,
+	base_flip_h := false
+) -> Sprite2D:
+	var actor := _add_actor(texture, cell, scale_value, z_index)
+	actor.flip_h = base_flip_h
+	_actor_base_flip[actor] = base_flip_h
+	_enemies.append(actor)
 	_blocked_cells[cell] = true
+	return actor
 
 
 func _try_move_hero(direction: Vector2i) -> void:
+	if _is_moving:
+		_queued_direction = direction
+		return
+
 	var next_cell := _hero_cell + direction
 	if not _is_walkable(next_cell):
 		return
 
 	_hero_cell = next_cell
 	var target_position := _cell_center(_hero_cell)
-	_hero.position = target_position
+	if direction.x != 0:
+		_hero.flip_h = direction.x < 0
+	_is_moving = true
+	var tween := create_tween()
+	tween.set_parallel(true)
+	tween.tween_property(_hero, "position", target_position, HERO_MOVE_DURATION)
 	if _camera != null:
-		_camera.position = target_position
+		tween.tween_property(_camera, "position", target_position, HERO_MOVE_DURATION)
+	tween.finished.connect(_finish_hero_move)
+	_update_enemy_facing(target_position)
+
+
+func _finish_hero_move() -> void:
+	_is_moving = false
+	if _queued_direction == Vector2i.ZERO:
+		return
+
+	var direction := _queued_direction
+	_queued_direction = Vector2i.ZERO
+	_try_move_hero(direction)
+
+
+func _update_enemy_facing(target_position: Variant = null) -> void:
+	if _hero == null:
+		return
+
+	var hero_position: Vector2 = _hero.position if target_position == null else target_position
+	for enemy in _enemies:
+		if enemy == null:
+			continue
+		if is_equal_approx(enemy.position.x, hero_position.x):
+			continue
+		var face_left := hero_position.x < enemy.position.x
+		enemy.flip_h = face_left != _actor_base_flip.get(enemy, false)
 
 
 func _is_walkable(cell: Vector2i) -> bool:
