@@ -1,0 +1,77 @@
+[gd_scene format=3 uid="uid://cjy6lycvwns85"]
+
+[sub_resource type="GDScript" id="GDScript_t4edt"]
+script/source = "extends CharacterBody2D
+
+@export var cell_size: int = 64
+@export var move_speed: float = 10.0
+
+var target_position: Vector2
+var queued_dir: Vector2 = Vector2.ZERO
+
+func _ready():
+	target_position = position
+
+func _process(delta: float) -> void:
+	# Плавное движение
+	position = position.lerp(target_position, move_speed * delta)
+
+	if position.distance_to(target_position) < 1.0:
+		# Дошли до клетки
+		position = target_position
+
+		# Если в буфере есть направление — выполняем его
+		if queued_dir != Vector2.ZERO:
+			_start_move(queued_dir)
+			queued_dir = Vector2.ZERO
+		else:
+			var dir = _read_direction_just_pressed()
+			if dir != Vector2.ZERO:
+				_start_move(dir)
+	else:
+		# Идём — ловим только первое нажатие в буфер
+		_collect_input_buffer()
+
+func _collect_input_buffer() -> void:
+	if queued_dir == Vector2.ZERO:
+		var dir = _read_direction_just_pressed()
+		if dir != Vector2.ZERO:
+			queued_dir = dir
+
+func _read_direction_just_pressed() -> Vector2:
+	if Input.is_action_just_pressed(\"ui_up\"):
+		return Vector2.UP
+	elif Input.is_action_just_pressed(\"ui_down\"):
+		return Vector2.DOWN
+	elif Input.is_action_just_pressed(\"ui_left\"):
+		return Vector2.LEFT
+	elif Input.is_action_just_pressed(\"ui_right\"):
+		return Vector2.RIGHT
+	return Vector2.ZERO
+
+func _start_move(dir: Vector2) -> void:
+	target_position += dir * cell_size
+"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_780bu"]
+load_path = "res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xpv8o"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iyggp"]
+size = Vector2(127, 127)
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=694408484]
+script = SubResource("GDScript_t4edt")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=498574118]
+texture = SubResource("CompressedTexture2D_780bu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1828893705]
+shape = SubResource("RectangleShape2D_xpv8o")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1061818567]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=545579155]
+position = Vector2(2.5, -0.5)
+shape = SubResource("RectangleShape2D_iyggp")

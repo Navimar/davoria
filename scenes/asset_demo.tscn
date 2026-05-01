@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://davoria_asset_demo"]
+
+[ext_resource type="Script" path="res://scripts/asset_demo_scene.gd" id="1_asset_demo"]
+
+[node name="AssetDemo" type="Node2D"]
+script = ExtResource("1_asset_demo")

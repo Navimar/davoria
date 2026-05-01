@@ -1,0 +1,146 @@
+{
+  "name": "card_swatches",
+  "source": "Curated from existing hand-drawn card assets that do not read as placeholders.",
+  "source_assets": [
+    "img/card/card_addpower.png",
+    "img/card/card_fist.png",
+    "img/card/card_grow.png",
+    "img/card/card_heal.png",
+    "img/card/card_rock.png",
+    "img/card/card_makewild.png",
+    "img/card/card_weaken_suit.png",
+    "img/card/card_clock.png"
+  ],
+  "backgrounds": {
+    "white": "#ffffff",
+    "soft_white": "#f8f8f8",
+    "warm_paper": "#f8f0d8",
+    "pale_cream": "#fff0d8"
+  },
+  "outline": {
+    "black": "#000000",
+    "charcoal": "#303030",
+    "soft_black": "#181818",
+    "border_gray": "#b0b0b0"
+  },
+  "fills": {
+    "card_blue": "#50b0f0",
+    "card_coral": "#ff6070",
+    "paperclip_mint": "#80c0a8",
+    "accent_yellow": "#ffd000",
+    "old_gold": "#f0c000",
+    "apple_red": "#e82030",
+    "dark_red": "#480810",
+    "skin_peach": "#ffe0c8",
+    "skin_tan": "#e8a870",
+    "hide_gold": "#c87830",
+    "hide_brown": "#884820",
+    "hide_dark": "#482818",
+    "leather_brown": "#705038",
+    "horn_bone": "#ffe0a0",
+    "warm_shadow": "#f0d8c0",
+    "flower_yellow": "#fff0a8",
+    "leaf_mint": "#78c0a0",
+    "stone_light": "#d8e0e0",
+    "stone_highlight": "#e0e8f0",
+    "soft_gray": "#b0b0b0",
+    "mid_gray": "#c0c0c0",
+    "light_gray": "#d8d8d8",
+    "clock_cream": "#ffe0b0",
+    "clock_paper": "#ffe0b8"
+  },
+  "recommended_sets": {
+    "default_card": {
+      "background": "white",
+      "outline": "charcoal",
+      "fills": [
+        "card_blue",
+        "card_coral",
+        "paperclip_mint",
+        "accent_yellow",
+        "soft_gray"
+      ]
+    },
+    "paper_or_office_card": {
+      "background": "white",
+      "outline": "charcoal",
+      "fills": [
+        "warm_paper",
+        "pale_cream",
+        "clock_cream",
+        "clock_paper",
+        "soft_gray",
+        "mid_gray"
+      ]
+    },
+    "plant_or_heal_card": {
+      "background": "white",
+      "outline": "charcoal",
+      "fills": [
+        "leaf_mint",
+        "paperclip_mint",
+        "flower_yellow",
+        "apple_red",
+        "accent_yellow"
+      ]
+    },
+    "damage_or_danger_card": {
+      "background": "white",
+      "outline": "black",
+      "fills": [
+        "apple_red",
+        "dark_red",
+        "old_gold",
+        "accent_yellow",
+        "soft_gray"
+      ]
+    },
+    "neutral_or_stone_card": {
+      "background": "white",
+      "outline": "charcoal",
+      "fills": [
+        "stone_light",
+        "stone_highlight",
+        "soft_gray",
+        "mid_gray",
+        "light_gray"
+      ]
+    },
+    "body_or_hand_card": {
+      "background": "white",
+      "outline": "charcoal",
+      "fills": [
+        "skin_peach",
+        "skin_tan",
+        "warm_shadow",
+        "soft_gray",
+        "light_gray"
+      ]
+    },
+    "beast_or_hide_card": {
+      "background": "white",
+      "outline": "charcoal",
+      "fills": [
+        "hide_gold",
+        "hide_brown",
+        "hide_dark",
+        "leather_brown",
+        "horn_bone",
+        "old_gold",
+        "soft_gray",
+        "light_gray"
+      ]
+    },
+    "gold_or_reward_card": {
+      "background": "white",
+      "outline": "charcoal",
+      "fills": [
+        "old_gold",
+        "accent_yellow",
+        "clock_cream",
+        "dark_red",
+        "soft_gray"
+      ]
+    }
+  }
+}
