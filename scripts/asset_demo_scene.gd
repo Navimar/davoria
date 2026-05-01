@@ -2,31 +2,39 @@
 extends Node2D
 
 const CELL_SIZE := 128
+const TILE_OVERLAP := 16.0
 const CAMERA_ZOOM := Vector2(1.25, 1.25)
 const MAP_SIZE := Vector2i(18, 11)
 const HERO_START_CELL := Vector2i(8, 5)
 
-const TILE_SOURCE_DUNGEON := 0
-const TILE_FLOOR := Vector2i(0, 0)
-const TILE_WALL := Vector2i(1, 0)
-const TILE_WATER := Vector2i(2, 0)
-const TILE_DOOR := Vector2i(3, 0)
+enum TileType {
+	FLOOR,
+	WALL,
+	WATER,
+	DOOR,
+}
 
-const TILE_SET_PATH := "res://assets/tileset/dungeon_tileset.tres"
+const TILE_DIFFUSION_SHADER_PATH := "res://assets/shaders/tile_diffusion.gdshader"
+const TILE_FLOOR_PATH := "res://assets/tiles/dungeon/floor.png"
+const TILE_WALL_PATH := "res://assets/tiles/dungeon/wall.png"
+const TILE_WATER_PATH := "res://assets/tiles/dungeon/water.png"
+const TILE_DOOR_PATH := "res://assets/tiles/dungeon/door.png"
 
-const HERO_PATH := "res://assets/generation/processed/creatures/hero_mage_rogue_generated_shadow_palette.png"
-const GOBLIN_PATH := "res://assets/generation/processed/creatures/goblin_02_generated_shadow_palette_refit.png"
-const GOBLIN_OLD_PATH := "res://assets/generation/processed/creatures/goblin_01.png"
-const MINOTAUR_PATH := "res://assets/generation/processed/creatures/minotaur_02_prompt_palette.png"
-const SPIDER_PATH := "res://assets/generation/processed/creatures/spider_02_prompt_palette.png"
-const SKELETON_PATH := "res://assets/generation/processed/creatures/skeleton_02_prompt_palette.png"
-const SWORD_PATH := "res://assets/generation/processed/items/iron_sword_01.png"
+const HERO_PATH := "res://assets/actors/hero_mage_rogue.png"
+const GOBLIN_PATH := "res://assets/actors/goblin.png"
+const MINOTAUR_PATH := "res://assets/actors/minotaur.png"
+const SPIDER_PATH := "res://assets/actors/spider.png"
+const SKELETON_PATH := "res://assets/actors/skeleton.png"
+const SWORD_PATH := "res://assets/items/iron_sword.png"
 
 var _built := false
 var _hero: Sprite2D
 var _camera: Camera2D
 var _hero_cell := HERO_START_CELL
+var _terrain_cells: Dictionary = {}
 var _blocked_cells: Dictionary = {}
+var _tile_textures: Dictionary = {}
+var _tile_materials: Dictionary = {}
 
 
 func _ready() -> void:
@@ -59,25 +67,22 @@ func _build_scene() -> void:
 	for child in get_children():
 		child.queue_free()
 	_blocked_cells.clear()
+	_terrain_cells.clear()
+	_tile_materials.clear()
 	_hero = null
 	_camera = null
 
-	var tile_set := _load_tile_set(TILE_SET_PATH)
+	_load_tile_textures()
 	var hero_texture := _load_texture(HERO_PATH)
 	var goblin_texture := _load_texture(GOBLIN_PATH)
-	var old_goblin_texture := _load_texture(GOBLIN_OLD_PATH)
 	var minotaur_texture := _load_texture(MINOTAUR_PATH)
 	var spider_texture := _load_texture(SPIDER_PATH)
 	var skeleton_texture := _load_texture(SKELETON_PATH)
 	var sword_texture := _load_texture(SWORD_PATH)
 
-	var ground_layer := _add_tile_map_layer("GroundTileMap", tile_set, 0)
-	var terrain_layer := _add_tile_map_layer("TerrainTileMap", tile_set, 1)
-	_paint_ground(ground_layer)
-	_paint_terrain(terrain_layer)
-
-	_set_map_cell(terrain_layer, Vector2i(8, 0), TILE_DOOR, false)
-	_set_map_cell(terrain_layer, Vector2i(MAP_SIZE.x - 1, 5), TILE_DOOR, false)
+	_build_terrain_data()
+	_set_terrain_cell(Vector2i(8, 0), TileType.DOOR)
+	_set_terrain_cell(Vector2i(MAP_SIZE.x - 1, 5), TileType.DOOR)
 
 	for cell in [
 		Vector2i(2, 2), Vector2i(3, 2), Vector2i(4, 2),
@@ -85,7 +90,9 @@ func _build_scene() -> void:
 		Vector2i(9, 5), Vector2i(10, 5), Vector2i(11, 5),
 		Vector2i(13, 7), Vector2i(14, 7), Vector2i(15, 7),
 	]:
-		_set_map_cell(terrain_layer, cell, TILE_WATER, true)
+		_set_terrain_cell(cell, TileType.WATER)
+
+	_build_tile_sprites()
 
 	for cell in [
 		Vector2i(1, 1), Vector2i(5, 1), Vector2i(11, 2),
@@ -97,7 +104,7 @@ func _build_scene() -> void:
 	_hero = _add_actor(hero_texture, _hero_cell, 0.50, 20)
 	_add_blocking_actor(goblin_texture, Vector2i(4, 3), 0.48, 20)
 	_add_blocking_actor(goblin_texture, Vector2i(13, 4), 0.45, 20)
-	_add_blocking_actor(old_goblin_texture, Vector2i(8, 1), 0.46, 20)
+	_add_blocking_actor(goblin_texture, Vector2i(8, 1), 0.46, 20)
 	_add_blocking_actor(minotaur_texture, Vector2i(2, 6), 0.52, 20)
 	_add_blocking_actor(spider_texture, Vector2i(12, 2), 0.50, 20)
 	_add_blocking_actor(spider_texture, Vector2i(15, 9), 0.44, 20)
@@ -112,37 +119,132 @@ func _build_scene() -> void:
 	add_child(_camera)
 
 
-func _add_tile_map_layer(layer_name: String, tile_set: TileSet, z_index: int) -> TileMapLayer:
-	var layer := TileMapLayer.new()
-	layer.name = layer_name
-	layer.tile_set = tile_set
-	layer.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
-	layer.z_index = z_index
-	add_child(layer)
-	return layer
+func _load_tile_textures() -> void:
+	_tile_textures = {
+		TileType.FLOOR: _load_texture(TILE_FLOOR_PATH),
+		TileType.WALL: _load_texture(TILE_WALL_PATH),
+		TileType.WATER: _load_texture(TILE_WATER_PATH),
+		TileType.DOOR: _load_texture(TILE_DOOR_PATH),
+	}
 
 
-func _paint_ground(layer: TileMapLayer) -> void:
+func _build_terrain_data() -> void:
 	for y in range(MAP_SIZE.y):
 		for x in range(MAP_SIZE.x):
-			layer.set_cell(Vector2i(x, y), TILE_SOURCE_DUNGEON, TILE_FLOOR)
-
-
-func _paint_terrain(layer: TileMapLayer) -> void:
+			_set_terrain_cell(Vector2i(x, y), TileType.FLOOR)
 	for x in range(MAP_SIZE.x):
-		_set_map_cell(layer, Vector2i(x, 0), TILE_WALL, true)
-		_set_map_cell(layer, Vector2i(x, MAP_SIZE.y - 1), TILE_WALL, true)
+		_set_terrain_cell(Vector2i(x, 0), TileType.WALL)
+		_set_terrain_cell(Vector2i(x, MAP_SIZE.y - 1), TileType.WALL)
 	for y in range(MAP_SIZE.y):
-		_set_map_cell(layer, Vector2i(0, y), TILE_WALL, true)
-		_set_map_cell(layer, Vector2i(MAP_SIZE.x - 1, y), TILE_WALL, true)
+		_set_terrain_cell(Vector2i(0, y), TileType.WALL)
+		_set_terrain_cell(Vector2i(MAP_SIZE.x - 1, y), TileType.WALL)
 
 
-func _set_map_cell(layer: TileMapLayer, cell: Vector2i, atlas_coords: Vector2i, blocks_movement: bool) -> void:
-	layer.set_cell(cell, TILE_SOURCE_DUNGEON, atlas_coords)
-	if blocks_movement:
+func _set_terrain_cell(cell: Vector2i, tile_type: TileType) -> void:
+	_terrain_cells[cell] = tile_type
+	if tile_type == TileType.WALL or tile_type == TileType.DOOR:
 		_blocked_cells[cell] = true
 	else:
 		_blocked_cells.erase(cell)
+
+
+func _build_tile_sprites() -> void:
+	var diffusion_root := Node2D.new()
+	diffusion_root.name = "Tiles"
+	diffusion_root.z_index = 0
+	add_child(diffusion_root)
+
+	for y in range(MAP_SIZE.y):
+		for x in range(MAP_SIZE.x):
+			var cell := Vector2i(x, y)
+			diffusion_root.add_child(_create_tile_sprite(cell))
+
+
+func _create_tile_sprite(cell: Vector2i) -> Sprite2D:
+	var tile_type: TileType = _terrain_type(cell)
+	var texture := _tile_texture(tile_type)
+	var sprite := Sprite2D.new()
+	sprite.name = "Tile_%d_%d" % [cell.x, cell.y]
+	sprite.texture = texture
+	sprite.centered = false
+	sprite.position = Vector2(cell) * CELL_SIZE - Vector2(TILE_OVERLAP, TILE_OVERLAP)
+	sprite.scale = _scale_to_size(texture, Vector2.ONE * (CELL_SIZE + TILE_OVERLAP * 2.0))
+	sprite.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR
+	sprite.material = _create_tile_diffusion_material(cell)
+	return sprite
+
+
+func _create_tile_diffusion_material(cell: Vector2i) -> ShaderMaterial:
+	var diffuse_left := _can_diffuse_to(cell, Vector2i.LEFT)
+	var diffuse_right := _can_diffuse_to(cell, Vector2i.RIGHT)
+	var diffuse_top := _can_diffuse_to(cell, Vector2i.UP)
+	var diffuse_bottom := _can_diffuse_to(cell, Vector2i.DOWN)
+	var outline_left := _needs_walkability_outline(cell, Vector2i.LEFT)
+	var outline_right := _needs_walkability_outline(cell, Vector2i.RIGHT)
+	var outline_top := _needs_walkability_outline(cell, Vector2i.UP)
+	var outline_bottom := _needs_walkability_outline(cell, Vector2i.DOWN)
+	var cache_key := "%d%d%d%d:%d%d%d%d" % [
+		int(diffuse_left),
+		int(diffuse_right),
+		int(diffuse_top),
+		int(diffuse_bottom),
+		int(outline_left),
+		int(outline_right),
+		int(outline_top),
+		int(outline_bottom),
+	]
+	if _tile_materials.has(cache_key):
+		return _tile_materials[cache_key]
+
+	var texture_size := CELL_SIZE + TILE_OVERLAP * 2.0
+	var material := ShaderMaterial.new()
+	material.shader = load(TILE_DIFFUSION_SHADER_PATH) as Shader
+	material.set_shader_parameter("overlap_width", TILE_OVERLAP / texture_size)
+	material.set_shader_parameter("blend_width", (TILE_OVERLAP * 2.0) / texture_size)
+	material.set_shader_parameter("diffusion_width", 14.0 / texture_size)
+	material.set_shader_parameter("diffusion_start", 9.0 / texture_size)
+	material.set_shader_parameter("grain_strength", 0.28)
+	material.set_shader_parameter("tone_steps", 6.0)
+	material.set_shader_parameter("diffuse_left", diffuse_left)
+	material.set_shader_parameter("diffuse_right", diffuse_right)
+	material.set_shader_parameter("diffuse_top", diffuse_top)
+	material.set_shader_parameter("diffuse_bottom", diffuse_bottom)
+	material.set_shader_parameter("outline_width", 7.0 / texture_size)
+	material.set_shader_parameter("outline_jitter", 2.4 / texture_size)
+	material.set_shader_parameter("outline_color", Color(0.015, 0.012, 0.01, 0.52))
+	material.set_shader_parameter("outline_left", outline_left)
+	material.set_shader_parameter("outline_right", outline_right)
+	material.set_shader_parameter("outline_top", outline_top)
+	material.set_shader_parameter("outline_bottom", outline_bottom)
+	_tile_materials[cache_key] = material
+	return material
+
+
+func _can_diffuse_to(cell: Vector2i, direction: Vector2i) -> bool:
+	var neighbor := cell + direction
+	if not _is_inside_map(neighbor):
+		return false
+	return _is_terrain_walkable(cell) == _is_terrain_walkable(neighbor)
+
+
+func _needs_walkability_outline(cell: Vector2i, direction: Vector2i) -> bool:
+	var neighbor := cell + direction
+	if not _is_inside_map(neighbor):
+		return false
+	return not _is_terrain_walkable(cell) and _is_terrain_walkable(neighbor)
+
+
+func _is_terrain_walkable(cell: Vector2i) -> bool:
+	var tile_type := _terrain_type(cell)
+	return tile_type != TileType.WALL and tile_type != TileType.DOOR
+
+
+func _terrain_type(cell: Vector2i) -> TileType:
+	return _terrain_cells.get(cell, TileType.FLOOR)
+
+
+func _tile_texture(tile_type: TileType) -> Texture2D:
+	return _tile_textures[tile_type]
 
 
 func _add_actor(texture: Texture2D, cell: Vector2i, scale_value: float, z_index: int) -> Sprite2D:
@@ -175,13 +277,28 @@ func _try_move_hero(direction: Vector2i) -> void:
 
 
 func _is_walkable(cell: Vector2i) -> bool:
-	if cell.x < 0 or cell.y < 0 or cell.x >= MAP_SIZE.x or cell.y >= MAP_SIZE.y:
+	if not _is_inside_map(cell):
 		return false
 	return not _blocked_cells.has(cell)
 
 
+func _is_inside_map(cell: Vector2i) -> bool:
+	return cell.x >= 0 and cell.y >= 0 and cell.x < MAP_SIZE.x and cell.y < MAP_SIZE.y
+
+
 func _cell_center(cell: Vector2i) -> Vector2:
 	return (Vector2(cell) + Vector2(0.5, 0.5)) * CELL_SIZE
+
+
+func _scale_to_cell(texture: Texture2D) -> Vector2:
+	return _scale_to_size(texture, Vector2.ONE * CELL_SIZE)
+
+
+func _scale_to_size(texture: Texture2D, target_size: Vector2) -> Vector2:
+	var size := texture.get_size()
+	if size.x <= 0.0 or size.y <= 0.0:
+		return Vector2.ONE
+	return Vector2(target_size.x / size.x, target_size.y / size.y)
 
 
 func _load_texture(path: String) -> Texture2D:
@@ -190,11 +307,3 @@ func _load_texture(path: String) -> Texture2D:
 		push_error("Could not load demo texture: %s" % path)
 		return PlaceholderTexture2D.new()
 	return texture
-
-
-func _load_tile_set(path: String) -> TileSet:
-	var tile_set := load(path) as TileSet
-	if tile_set == null:
-		push_error("Could not load tile set: %s" % path)
-		return TileSet.new()
-	return tile_set

@@ -1,10 +1,10 @@
 extends SceneTree
 
 const TILE_PATHS := [
-	"res://assets/tileset/floor.png",
-	"res://assets/tileset/wall.png",
-	"res://assets/tileset/water.png",
-	"res://assets/tileset/door.png",
+	"res://assets/tiles/dungeon/floor.png",
+	"res://assets/tiles/dungeon/wall.png",
+	"res://assets/tiles/dungeon/water.png",
+	"res://assets/tiles/dungeon/door.png",
 ]
 
 
