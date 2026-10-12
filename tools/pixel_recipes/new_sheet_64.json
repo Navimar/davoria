@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "kind": "sheet",
+  "source": "../../assets/generation/raw/new_sheet.png",
+  "layout": {
+    "rows": 4,
+    "columns": 4,
+    "empty_fraction": 0.01,
+    "minimum_gap": 5
+  },
+  "chroma": {
+    "auto_key": "border",
+    "tolerance": 64
+  },
+  "reconstruction": {
+    "grid": [
+      64,
+      64
+    ],
+    "inset": 0.0,
+    "alpha_coverage": 0.0
+  },
+  "palette": "aap64",
+  "outline": {
+    "color": "242234",
+    "neighbors": 8
+  },
+  "canvas": {
+    "size": [
+      64,
+      64
+    ],
+    "baseline": 64
+  },
+  "preview_columns": 4,
+  "fit_visible_before_pixelization": true
+}

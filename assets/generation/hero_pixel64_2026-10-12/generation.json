@@ -1,0 +1,14 @@
+{
+  "tool": "built-in ImageGen",
+  "mode": "style-transfer edit",
+  "identity_reference": "/private/tmp/davoria_grid64_backup_9tp1sjf0/assets/actors/hero_mage_rogue.png",
+  "style_reference": "/Users/igor/Godot/davoria/assets/generation/creatures_sheet_64_2026-10-12/source.png",
+  "backup": "/private/tmp/davoria_hero64_backup_2prmthks",
+  "runtime_path": "assets/actors/hero_mage_rogue.png",
+  "original_generated_image": "/Users/igor/.codex/generated_images/01a12dca-5bea-71d1-b610-328d751b5099/exec-dda95578-b59a-4974-8224-95555afbf063.png",
+  "source_sha256": "c7e784679d7313201c6d893a83aeb94850533b2b159aa0d7a281ec902039c32e",
+  "corrected_generated_image": "/Users/igor/.codex/generated_images/01a12dca-5bea-71d1-b610-328d751b5099/exec-62e722d2-80fd-4b2a-a86e-a364bd2b819e.png",
+  "correction_prompt": "generation_prompt_face_fix.txt",
+  "status": "superseded by hero sheet",
+  "replacement": "../heroes_sheet_64_2026-10-12"
+}

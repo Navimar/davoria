@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-12",
+  "tool": "built-in image_gen",
+  "source_generated_path": "/Users/igor/.codex/generated_images/01a12dca-5bea-71d1-b610-328d751b5099/exec-c63da6b0-bb51-41fc-9775-d2592f71c36d.png",
+  "source_size": [
+    1254,
+    1254
+  ],
+  "source_sha256": "dd01f037957a60101e097631b546f7af1b588a1e964016c44252452171deb842",
+  "status": "four base tiles installed in game",
+  "count": 16,
+  "target_size": [
+    64,
+    64
+  ],
+  "full_opaque_tiles": true,
+  "no_silhouette_crop": true,
+  "no_added_outline": true,
+  "no_autotile_corners_or_endcaps": true,
+  "runtime_assets_replaced": true,
+  "prompt": "generation_prompt.txt",
+  "installation": "installation.json",
+  "installed_tiles": {
+    "floor.png": "04_floor_paving.png",
+    "wall.png": "01_wall_slabs_gray.png",
+    "water.png": "10_water_blue.png",
+    "door.png": "14_door_reinforced.png"
+  },
+  "floor_wall_swap": "floor_wall_swap.json",
+  "runtime_sources": {
+    "floor.png": "terrain_25_blur05/final/04_floor_paving.png",
+    "wall.png": "walls_gray/final/01_wall_slabs_gray.png",
+    "water.png": "terrain_25_blur05/final/10_water_blue.png",
+    "door.png": "terrain_25_blur05/final/14_door_reinforced.png"
+  },
+  "water_recut": "water_recut/preparation.json",
+  "terrain_standard": "../../../tools/pixel_recipes/terrain_style.json",
+  "rgb_gain": 0.75,
+  "darkening": "terrain_25_blur05/preparation.json",
+  "blur_radius_px": 0.5,
+  "terrain_processing": "terrain_25_blur05/preparation.json",
+  "gray_walls": "walls_gray/recolor_recipe.json",
+  "light_water_selection": "light_water_selection.json"
+}

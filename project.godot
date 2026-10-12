@@ -17,13 +17,15 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 config/name="Davoria"
 run/main_scene="res://scenes/asset_demo.tscn"
 config/features=PackedStringArray("4.6", "Forward Plus")
+run/max_fps=60
 
 [display]
 
+window/size/viewport_width=1920
+window/size/viewport_height=1080
 window/size/mode=3
+window/stretch/mode="canvas_items"
 
 [rendering]
 
-2d/snap/snap_2d_transforms_to_pixel=false
-2d/snap/snap_2d_vertices_to_pixel=false
 textures/canvas_textures/default_texture_filter=0

@@ -1,0 +1,114 @@
+{
+  "version": 1,
+  "kind": "sheet",
+  "source": "source.png",
+  "source_sha256": "dd01f037957a60101e097631b546f7af1b588a1e964016c44252452171deb842",
+  "layout": {
+    "row_boundaries": [
+      0,
+      314,
+      627,
+      940,
+      1254
+    ],
+    "column_boundaries": [
+      [
+        0,
+        314,
+        627,
+        940,
+        1254
+      ],
+      [
+        0,
+        314,
+        627,
+        940,
+        1254
+      ],
+      [
+        0,
+        314,
+        627,
+        940,
+        1254
+      ],
+      [
+        0,
+        314,
+        627,
+        940,
+        1254
+      ]
+    ]
+  },
+  "chroma": null,
+  "reconstruction": {
+    "grid": [
+      64,
+      64
+    ],
+    "inset": 0.0,
+    "alpha_coverage": 0.0
+  },
+  "palette": "aap64",
+  "outline": null,
+  "canvas": {
+    "size": [
+      64,
+      64
+    ],
+    "baseline": 64
+  },
+  "preview_columns": 4,
+  "sprites": [
+    {
+      "name": "01_floor_slabs"
+    },
+    {
+      "name": "02_floor_cracked"
+    },
+    {
+      "name": "03_floor_moss"
+    },
+    {
+      "name": "04_floor_paving"
+    },
+    {
+      "name": "05_wall_rough"
+    },
+    {
+      "name": "06_wall_blocks"
+    },
+    {
+      "name": "07_wall_moss"
+    },
+    {
+      "name": "08_wall_bricks"
+    },
+    {
+      "name": "09_water_teal"
+    },
+    {
+      "name": "10_water_blue"
+    },
+    {
+      "name": "11_water_green"
+    },
+    {
+      "name": "12_water_waves"
+    },
+    {
+      "name": "13_door_plain"
+    },
+    {
+      "name": "14_door_reinforced"
+    },
+    {
+      "name": "15_door_locked"
+    },
+    {
+      "name": "16_door_lattice"
+    }
+  ]
+}

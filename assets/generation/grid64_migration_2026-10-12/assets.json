@@ -1,0 +1,600 @@
+{
+  "tile_size": 64,
+  "pixel_baseline": 61,
+  "pixel_sprites": [
+    {
+      "path": "assets/actors/pixel_monsters/series_03/01_giant_beetle.png",
+      "visible_pixels_preserved": true,
+      "size": [
+        64,
+        64
+      ],
+      "bbox": [
+        3,
+        23,
+        60,
+        61
+      ]
+    },
+    {
+      "path": "assets/actors/pixel_monsters/series_03/02_kobold_spearman.png",
+      "visible_pixels_preserved": true,
+      "size": [
+        64,
+        64
+      ],
+      "bbox": [
+        8,
+        11,
+        55,
+        61
+      ]
+    },
+    {
+      "path": "assets/actors/pixel_monsters/series_03/03_mushroom_monster.png",
+      "visible_pixels_preserved": true,
+      "size": [
+        64,
+        64
+      ],
+      "bbox": [
+        7,
+        10,
+        57,
+        61
+      ]
+    },
+    {
+      "path": "assets/actors/pixel_monsters/series_03/04_bandit_rogue.png",
+      "visible_pixels_preserved": true,
+      "size": [
+        64,
+        64
+      ],
+      "bbox": [
+        8,
+        19,
+        56,
+        61
+      ]
+    },
+    {
+      "path": "assets/actors/pixel_monsters/series_03/05_ice_elemental.png",
+      "visible_pixels_preserved": true,
+      "size": [
+        64,
+        64
+      ],
+      "bbox": [
+        6,
+        15,
+        58,
+        61
+      ]
+    },
+    {
+      "path": "assets/actors/pixel_monsters/series_03/06_dark_elf_assassin.png",
+      "visible_pixels_preserved": true,
+      "size": [
+        64,
+        64
+      ],
+      "bbox": [
+        5,
+        3,
+        58,
+        61
+      ]
+    },
+    {
+      "path": "assets/actors/pixel_monsters/series_03/07_minotaur.png",
+      "visible_pixels_preserved": true,
+      "size": [
+        64,
+        64
+      ],
+      "bbox": [
+        0,
+        6,
+        63,
+        61
+      ]
+    },
+    {
+      "path": "assets/actors/pixel_monsters/series_03/08_ogre_shaman.png",
+      "visible_pixels_preserved": true,
+      "size": [
+        64,
+        64
+      ],
+      "bbox": [
+        7,
+        16,
+        56,
+        61
+      ]
+    },
+    {
+      "path": "assets/actors/pixel_monsters/series_03/09_giant_scorpion.png",
+      "visible_pixels_preserved": true,
+      "size": [
+        64,
+        64
+      ],
+      "bbox": [
+        2,
+        6,
+        61,
+        61
+      ]
+    },
+    {
+      "path": "assets/actors/pixel_monsters/series_03/10_lizardman_warrior.png",
+      "visible_pixels_preserved": true,
+      "size": [
+        64,
+        64
+      ],
+      "bbox": [
+        6,
+        15,
+        57,
+        61
+      ]
+    },
+    {
+      "path": "assets/actors/pixel_monsters/series_03/11_harpy.png",
+      "visible_pixels_preserved": true,
+      "size": [
+        64,
+        64
+      ],
+      "bbox": [
+        4,
+        13,
+        59,
+        61
+      ]
+    },
+    {
+      "path": "assets/actors/pixel_monsters/series_03/12_necromancer.png",
+      "visible_pixels_preserved": true,
+      "size": [
+        64,
+        64
+      ],
+      "bbox": [
+        4,
+        2,
+        60,
+        61
+      ]
+    },
+    {
+      "path": "assets/actors/pixel_monsters/series_03/13_stone_gargoyle.png",
+      "visible_pixels_preserved": true,
+      "size": [
+        64,
+        64
+      ],
+      "bbox": [
+        5,
+        9,
+        58,
+        61
+      ]
+    },
+    {
+      "path": "assets/actors/pixel_monsters/series_03/14_black_knight.png",
+      "visible_pixels_preserved": true,
+      "size": [
+        64,
+        64
+      ],
+      "bbox": [
+        5,
+        7,
+        59,
+        61
+      ]
+    },
+    {
+      "path": "assets/actors/pixel_monsters/series_03/15_floating_eye.png",
+      "visible_pixels_preserved": true,
+      "size": [
+        64,
+        64
+      ],
+      "bbox": [
+        3,
+        9,
+        60,
+        61
+      ]
+    },
+    {
+      "path": "assets/actors/pixel_monsters/series_03/16_hydra.png",
+      "visible_pixels_preserved": true,
+      "size": [
+        64,
+        64
+      ],
+      "bbox": [
+        0,
+        6,
+        63,
+        61
+      ]
+    },
+    {
+      "path": "assets/actors/pixel_monsters/series_04/01_giant_snail.png",
+      "visible_pixels_preserved": true,
+      "size": [
+        64,
+        64
+      ],
+      "bbox": [
+        6,
+        20,
+        57,
+        61
+      ]
+    },
+    {
+      "path": "assets/actors/pixel_monsters/series_04/02_gnoll_archer.png",
+      "visible_pixels_preserved": true,
+      "size": [
+        64,
+        64
+      ],
+      "bbox": [
+        6,
+        18,
+        58,
+        61
+      ]
+    },
+    {
+      "path": "assets/actors/pixel_monsters/series_04/03_animated_scarecrow.png",
+      "visible_pixels_preserved": true,
+      "size": [
+        64,
+        64
+      ],
+      "bbox": [
+        8,
+        12,
+        56,
+        61
+      ]
+    },
+    {
+      "path": "assets/actors/pixel_monsters/series_04/04_halfling_brigand.png",
+      "visible_pixels_preserved": true,
+      "size": [
+        64,
+        64
+      ],
+      "bbox": [
+        11,
+        24,
+        53,
+        61
+      ]
+    },
+    {
+      "path": "assets/actors/pixel_monsters/series_04/05_fire_elemental.png",
+      "visible_pixels_preserved": true,
+      "size": [
+        64,
+        64
+      ],
+      "bbox": [
+        6,
+        6,
+        57,
+        61
+      ]
+    },
+    {
+      "path": "assets/actors/pixel_monsters/series_04/06_swamp_witch.png",
+      "visible_pixels_preserved": true,
+      "size": [
+        64,
+        64
+      ],
+      "bbox": [
+        6,
+        12,
+        58,
+        61
+      ]
+    },
+    {
+      "path": "assets/actors/pixel_monsters/series_04/07_cyclops.png",
+      "visible_pixels_preserved": true,
+      "size": [
+        64,
+        64
+      ],
+      "bbox": [
+        4,
+        0,
+        60,
+        61
+      ]
+    },
+    {
+      "path": "assets/actors/pixel_monsters/series_04/08_armored_war_boar.png",
+      "visible_pixels_preserved": true,
+      "size": [
+        64,
+        64
+      ],
+      "bbox": [
+        1,
+        18,
+        62,
+        61
+      ]
+    },
+    {
+      "path": "assets/actors/pixel_monsters/series_04/09_giant_crab.png",
+      "visible_pixels_preserved": true,
+      "size": [
+        64,
+        64
+      ],
+      "bbox": [
+        6,
+        25,
+        57,
+        61
+      ]
+    },
+    {
+      "path": "assets/actors/pixel_monsters/series_04/10_salamander_warrior.png",
+      "visible_pixels_preserved": true,
+      "size": [
+        64,
+        64
+      ],
+      "bbox": [
+        6,
+        13,
+        57,
+        61
+      ]
+    },
+    {
+      "path": "assets/actors/pixel_monsters/series_04/11_griffin.png",
+      "visible_pixels_preserved": true,
+      "size": [
+        64,
+        64
+      ],
+      "bbox": [
+        6,
+        17,
+        57,
+        61
+      ]
+    },
+    {
+      "path": "assets/actors/pixel_monsters/series_04/12_plague_doctor_mage.png",
+      "visible_pixels_preserved": true,
+      "size": [
+        64,
+        64
+      ],
+      "bbox": [
+        8,
+        17,
+        55,
+        61
+      ]
+    },
+    {
+      "path": "assets/actors/pixel_monsters/series_04/13_stone_golem.png",
+      "visible_pixels_preserved": true,
+      "size": [
+        64,
+        64
+      ],
+      "bbox": [
+        7,
+        10,
+        57,
+        61
+      ]
+    },
+    {
+      "path": "assets/actors/pixel_monsters/series_04/14_headless_knight.png",
+      "visible_pixels_preserved": true,
+      "size": [
+        64,
+        64
+      ],
+      "bbox": [
+        2,
+        5,
+        61,
+        61
+      ]
+    },
+    {
+      "path": "assets/actors/pixel_monsters/series_04/15_lantern_spirit.png",
+      "visible_pixels_preserved": true,
+      "size": [
+        64,
+        64
+      ],
+      "bbox": [
+        12,
+        8,
+        52,
+        61
+      ]
+    },
+    {
+      "path": "assets/actors/pixel_monsters/series_04/16_wyvern.png",
+      "visible_pixels_preserved": true,
+      "size": [
+        64,
+        64
+      ],
+      "bbox": [
+        1,
+        10,
+        62,
+        61
+      ]
+    }
+  ],
+  "resized_assets": [
+    {
+      "path": "assets/actors/goblin.png",
+      "original_size": [
+        256,
+        256
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "filter": "nearest"
+    },
+    {
+      "path": "assets/actors/hero_ghost_form.png",
+      "original_size": [
+        256,
+        256
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "filter": "nearest"
+    },
+    {
+      "path": "assets/actors/hero_mage_rogue.png",
+      "original_size": [
+        256,
+        256
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "filter": "nearest"
+    },
+    {
+      "path": "assets/actors/minotaur.png",
+      "original_size": [
+        256,
+        256
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "filter": "nearest"
+    },
+    {
+      "path": "assets/actors/skeleton.png",
+      "original_size": [
+        256,
+        256
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "filter": "nearest"
+    },
+    {
+      "path": "assets/actors/spider.png",
+      "original_size": [
+        256,
+        256
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "filter": "nearest"
+    },
+    {
+      "path": "assets/items/ghost_ring.png",
+      "original_size": [
+        256,
+        256
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "filter": "nearest"
+    },
+    {
+      "path": "assets/items/iron_sword.png",
+      "original_size": [
+        256,
+        256
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "filter": "nearest"
+    },
+    {
+      "path": "assets/tiles/dungeon/door.png",
+      "original_size": [
+        256,
+        256
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "filter": "nearest"
+    },
+    {
+      "path": "assets/tiles/dungeon/floor.png",
+      "original_size": [
+        256,
+        256
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "filter": "nearest"
+    },
+    {
+      "path": "assets/tiles/dungeon/wall.png",
+      "original_size": [
+        256,
+        256
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "filter": "nearest"
+    },
+    {
+      "path": "assets/tiles/dungeon/water.png",
+      "original_size": [
+        256,
+        256
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "filter": "nearest"
+    }
+  ]
+}

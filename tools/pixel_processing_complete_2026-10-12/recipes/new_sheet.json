@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "kind": "sheet",
+  "fit_canvas_candidates": true,
+  "source": "../assets/new_sheet.png",
+  "layout": {
+    "rows": 4,
+    "columns": 4,
+    "empty_fraction": 0.01,
+    "minimum_gap": 5
+  },
+  "chroma": {
+    "auto_key": "border",
+    "tolerance": 64
+  },
+  "reconstruction": {
+    "min_cell": 4.5,
+    "max_cell": 5.5,
+    "inset": 0.18,
+    "alpha_coverage": 0.5
+  },
+  "palette": "aap64",
+  "outline": {
+    "color": "242234",
+    "neighbors": 8
+  },
+  "canvas": {
+    "size": [
+      66,
+      66
+    ],
+    "baseline": 63
+  },
+  "preview_columns": 4
+}

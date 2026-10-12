@@ -5,4 +5,4 @@
 [node name="Main" type="Node2D" unique_id=1884284465]
 
 [node name="CharacterBody2D" parent="." unique_id=732172944 instance=ExtResource("1_ig7tw")]
-position = Vector2(1174, 850)
+position = Vector2(544, 352)

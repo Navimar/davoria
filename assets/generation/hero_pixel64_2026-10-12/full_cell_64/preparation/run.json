@@ -1,0 +1,42 @@
+{
+  "source": "/Users/igor/Godot/davoria/assets/generation/hero_pixel64_2026-10-12/source.png",
+  "source_sha256": "b500170b56e275761a55e135abe81f8dfa2b8305cf48b20cccc21e73ee2a7346",
+  "order": [
+    "split_highres",
+    "chroma_key",
+    "crop_alpha_bbox",
+    "fit_highres",
+    "pixelize"
+  ],
+  "padding": 0,
+  "target_size": [
+    64,
+    64
+  ],
+  "sprites": [
+    {
+      "name": "hero_mage_rogue",
+      "source_box": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "source_bbox": [
+        115,
+        73,
+        1137,
+        1208
+      ],
+      "cropped_size": [
+        1022,
+        1135
+      ],
+      "fitted_body_size": [
+        461,
+        512
+      ],
+      "scale": 0.4511013215859031
+    }
+  ]
+}

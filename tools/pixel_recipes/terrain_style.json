@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "palette": "aap64",
+  "size": [64, 64],
+  "rgb_gain": 0.75,
+  "blur_radius_px": 0.5
+}

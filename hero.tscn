@@ -1,71 +1,28 @@
-[gd_scene format=3 uid="uid://cjy6lycvwns85"]
+[gd_scene load_steps=6 format=3 uid="uid://cjy6lycvwns85"]
+
+[ext_resource type="Texture2D" path="res://assets/actors/hero_mage_rogue.png" id="1_hero"]
+[ext_resource type="Script" path="res://scripts/contact_shadow.gd" id="2_shadow"]
 
 [sub_resource type="GDScript" id="GDScript_t4edt"]
-script/source = "extends CharacterBody2D
-
-@export var cell_size: int = 64
-@export var move_speed: float = 10.0
-
-var target_position: Vector2
-var queued_dir: Vector2 = Vector2.ZERO
-
-func _ready():
-	target_position = position
-
-func _process(delta: float) -> void:
-	# Плавное движение
-	position = position.lerp(target_position, move_speed * delta)
-
-	if position.distance_to(target_position) < 1.0:
-		# Дошли до клетки
-		position = target_position
-
-		# Если в буфере есть направление — выполняем его
-		if queued_dir != Vector2.ZERO:
-			_start_move(queued_dir)
-			queued_dir = Vector2.ZERO
-		else:
-			var dir = _read_direction_just_pressed()
-			if dir != Vector2.ZERO:
-				_start_move(dir)
-	else:
-		# Идём — ловим только первое нажатие в буфер
-		_collect_input_buffer()
-
-func _collect_input_buffer() -> void:
-	if queued_dir == Vector2.ZERO:
-		var dir = _read_direction_just_pressed()
-		if dir != Vector2.ZERO:
-			queued_dir = dir
-
-func _read_direction_just_pressed() -> Vector2:
-	if Input.is_action_just_pressed(\"ui_up\"):
-		return Vector2.UP
-	elif Input.is_action_just_pressed(\"ui_down\"):
-		return Vector2.DOWN
-	elif Input.is_action_just_pressed(\"ui_left\"):
-		return Vector2.LEFT
-	elif Input.is_action_just_pressed(\"ui_right\"):
-		return Vector2.RIGHT
-	return Vector2.ZERO
-
-func _start_move(dir: Vector2) -> void:
-	target_position += dir * cell_size
-"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_780bu"]
-load_path = "res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex"
+script/source = "extends CharacterBody2D\n\nconst GRID = preload(\"res://scripts/grid_config.gd\")\nconst MOVE_ACTIONS = [&\"ui_up\", &\"ui_down\", &\"ui_left\", &\"ui_right\"]\nconst MOVE_DIRECTIONS = [Vector2.UP, Vector2.DOWN, Vector2.LEFT, Vector2.RIGHT]\n\n@export var cell_size: int = GRID.TILE_SIZE\n@export var move_speed: float = 10.0\n\nvar target_position: Vector2\nvar held_actions: Array[StringName] = []\n\nfunc _ready():\n\ttarget_position = position\n\tif is_inside_tree():\n\t\tget_window().focus_exited.connect(_clear_held_movement)\n\nfunc _process(delta: float) -> void:\n\tvar dir = _read_direction_just_pressed()\n\tif dir != Vector2.ZERO:\n\t\t_start_move(dir)\n\tposition = position.lerp(target_position, move_speed * delta)\n\tif position.distance_to(target_position) < 1.0:\n\t\tposition = target_position\n\t\tvar held_dir = _read_held_direction()\n\t\tif held_dir != Vector2.ZERO:\n\t\t\t_start_move(held_dir)\n\nfunc _read_direction_just_pressed() -> Vector2:\n\tvar dir = Vector2.ZERO\n\tfor index in range(MOVE_ACTIONS.size()):\n\t\tvar action = MOVE_ACTIONS[index]\n\t\tif Input.is_action_just_pressed(action):\n\t\t\theld_actions.erase(action)\n\t\t\theld_actions.append(action)\n\t\t\tdir = MOVE_DIRECTIONS[index]\n\treturn dir\n\nfunc _read_held_direction() -> Vector2:\n\tfor index in range(held_actions.size() - 1, -1, -1):\n\t\tvar action = held_actions[index]\n\t\tif not Input.is_action_pressed(action):\n\t\t\theld_actions.remove_at(index)\n\t\t\tcontinue\n\t\treturn MOVE_DIRECTIONS[MOVE_ACTIONS.find(action)]\n\treturn Vector2.ZERO\n\nfunc _clear_held_movement() -> void:\n\theld_actions.clear()\n\nfunc _start_move(dir: Vector2) -> void:\n\tposition = target_position\n\ttarget_position += dir * cell_size\n"
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xpv8o"]
+size = Vector2(64, 64)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iyggp"]
-size = Vector2(127, 127)
+size = Vector2(64, 64)
 
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=694408484]
 script = SubResource("GDScript_t4edt")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=498574118]
-texture = SubResource("CompressedTexture2D_780bu")
+z_index = 40
+texture_filter = 1
+texture = ExtResource("1_hero")
+offset = Vector2(0, -6.4)
+
+[node name="ContactShadow" type="Sprite2D" parent="Sprite2D"]
+script = ExtResource("2_shadow")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1828893705]
 shape = SubResource("RectangleShape2D_xpv8o")
@@ -73,5 +30,4 @@ shape = SubResource("RectangleShape2D_xpv8o")
 [node name="Area2D" type="Area2D" parent="." unique_id=1061818567]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=545579155]
-position = Vector2(2.5, -0.5)
 shape = SubResource("RectangleShape2D_iyggp")

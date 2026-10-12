@@ -1,0 +1,70 @@
+{
+  "ok": true,
+  "errors": [],
+  "count": 1,
+  "images": [
+    {
+      "size": [
+        64,
+        64
+      ],
+      "bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "alpha": [
+        255
+      ],
+      "colors": 5,
+      "errors": []
+    }
+  ],
+  "palette_used": [
+    [
+      20,
+      52,
+      100
+    ],
+    [
+      36,
+      34,
+      52
+    ],
+    [
+      51,
+      57,
+      65
+    ],
+    [
+      71,
+      125,
+      133
+    ],
+    [
+      74,
+      84,
+      98
+    ]
+  ],
+  "metrics": {
+    "bbox_width": {
+      "mean": 64,
+      "sd": 0.0
+    },
+    "bbox_height": {
+      "mean": 64,
+      "sd": 0.0
+    },
+    "opaque_pixels": {
+      "mean": 4096,
+      "sd": 0.0
+    },
+    "luma_mean": 0.16522425628063725,
+    "dark_fraction": 0.930419921875
+  },
+  "names": [
+    "09_water_teal"
+  ]
+}

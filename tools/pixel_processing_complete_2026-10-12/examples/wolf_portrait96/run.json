@@ -1,0 +1,71 @@
+{
+  "status": "complete",
+  "recipe": {
+    "version": 1,
+    "kind": "single",
+    "source": "../wolf_pseudo_pixel.png",
+    "reference_dir": "..",
+    "reconstruction": {
+      "grid": [
+        162,
+        162
+      ],
+      "inset": 0.18,
+      "alpha_coverage": 0.5
+    },
+    "palette": "aap64",
+    "sprites": [
+      {
+        "name": "wolf_portrait96",
+        "reference": "wolf_portrait_aap64_96_v2.png"
+      }
+    ],
+    "crop": {
+      "size": [
+        96,
+        96
+      ],
+      "x": 58,
+      "y": 42
+    }
+  },
+  "source": "/Users/igor/Developer/PRIVATE/assetgen/wolf_pseudo_pixel.png",
+  "source_sha256": "05e08347fb1f9ec23ee4c052233f19f3d44c9076051500a86a4e76020c8ddaaf",
+  "runtime": {
+    "python": "3.14.4",
+    "pillow": "12.2.0"
+  },
+  "layout": null,
+  "sprites": [
+    {
+      "name": "wolf_portrait96",
+      "source_box": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 162,
+        "height": 162,
+        "inset": 0.18,
+        "alpha_coverage": 0.5
+      },
+      "flip_horizontal": false,
+      "crop_box": [
+        58,
+        42,
+        154,
+        138
+      ],
+      "reference": {
+        "exact": true,
+        "size_match": true,
+        "different_visible_or_alpha_pixels": 0,
+        "different_alpha_pixels": 0
+      }
+    }
+  ]
+}

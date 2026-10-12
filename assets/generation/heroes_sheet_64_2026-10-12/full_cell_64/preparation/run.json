@@ -1,0 +1,402 @@
+{
+  "source": "/Users/igor/Godot/davoria/assets/generation/heroes_sheet_64_2026-10-12/source.png",
+  "source_sha256": "9169f2bb09d83d7c45ee833160bda855b35298fad208c6183314c4746c80da7d",
+  "order": [
+    "split_highres",
+    "chroma_key",
+    "crop_alpha_bbox",
+    "fit_highres",
+    "pixelize"
+  ],
+  "padding": 0,
+  "target_size": [
+    64,
+    64
+  ],
+  "sprites": [
+    {
+      "name": "01_mage_rogue",
+      "source_box": [
+        19,
+        30,
+        281,
+        311
+      ],
+      "source_bbox": [
+        0,
+        0,
+        262,
+        281
+      ],
+      "cropped_size": [
+        262,
+        281
+      ],
+      "fitted_body_size": [
+        477,
+        512
+      ],
+      "scale": 1.8220640569395017
+    },
+    {
+      "name": "02_knight",
+      "source_box": [
+        349,
+        16,
+        606,
+        311
+      ],
+      "source_bbox": [
+        0,
+        0,
+        257,
+        295
+      ],
+      "cropped_size": [
+        257,
+        295
+      ],
+      "fitted_body_size": [
+        446,
+        512
+      ],
+      "scale": 1.735593220338983
+    },
+    {
+      "name": "03_ranger",
+      "source_box": [
+        645,
+        34,
+        894,
+        311
+      ],
+      "source_bbox": [
+        0,
+        0,
+        249,
+        277
+      ],
+      "cropped_size": [
+        249,
+        277
+      ],
+      "fitted_body_size": [
+        460,
+        512
+      ],
+      "scale": 1.848375451263538
+    },
+    {
+      "name": "04_barbarian",
+      "source_box": [
+        965,
+        33,
+        1238,
+        311
+      ],
+      "source_bbox": [
+        0,
+        0,
+        273,
+        278
+      ],
+      "cropped_size": [
+        273,
+        278
+      ],
+      "fitted_body_size": [
+        503,
+        512
+      ],
+      "scale": 1.841726618705036
+    },
+    {
+      "name": "05_fire_mage",
+      "source_box": [
+        43,
+        315,
+        295,
+        622
+      ],
+      "source_bbox": [
+        0,
+        0,
+        252,
+        307
+      ],
+      "cropped_size": [
+        252,
+        307
+      ],
+      "fitted_body_size": [
+        420,
+        512
+      ],
+      "scale": 1.6677524429967427
+    },
+    {
+      "name": "06_frost_mage",
+      "source_box": [
+        324,
+        332,
+        597,
+        621
+      ],
+      "source_bbox": [
+        0,
+        0,
+        273,
+        289
+      ],
+      "cropped_size": [
+        273,
+        289
+      ],
+      "fitted_body_size": [
+        484,
+        512
+      ],
+      "scale": 1.7716262975778547
+    },
+    {
+      "name": "07_paladin",
+      "source_box": [
+        603,
+        326,
+        930,
+        622
+      ],
+      "source_bbox": [
+        0,
+        0,
+        327,
+        296
+      ],
+      "cropped_size": [
+        327,
+        296
+      ],
+      "fitted_body_size": [
+        512,
+        463
+      ],
+      "scale": 1.5657492354740061
+    },
+    {
+      "name": "08_dwarf_warrior",
+      "source_box": [
+        974,
+        368,
+        1238,
+        621
+      ],
+      "source_bbox": [
+        0,
+        0,
+        264,
+        253
+      ],
+      "cropped_size": [
+        264,
+        253
+      ],
+      "fitted_body_size": [
+        512,
+        491
+      ],
+      "scale": 1.9393939393939394
+    },
+    {
+      "name": "09_elf_huntress",
+      "source_box": [
+        25,
+        643,
+        286,
+        925
+      ],
+      "source_bbox": [
+        0,
+        0,
+        261,
+        282
+      ],
+      "cropped_size": [
+        261,
+        282
+      ],
+      "fitted_body_size": [
+        474,
+        512
+      ],
+      "scale": 1.8156028368794326
+    },
+    {
+      "name": "10_duelist",
+      "source_box": [
+        319,
+        637,
+        646,
+        929
+      ],
+      "source_bbox": [
+        0,
+        0,
+        327,
+        292
+      ],
+      "cropped_size": [
+        327,
+        292
+      ],
+      "fitted_body_size": [
+        512,
+        457
+      ],
+      "scale": 1.5657492354740061
+    },
+    {
+      "name": "11_druid",
+      "source_box": [
+        622,
+        639,
+        918,
+        928
+      ],
+      "source_bbox": [
+        0,
+        0,
+        296,
+        289
+      ],
+      "cropped_size": [
+        296,
+        289
+      ],
+      "fitted_body_size": [
+        512,
+        500
+      ],
+      "scale": 1.7297297297297298
+    },
+    {
+      "name": "12_rogue",
+      "source_box": [
+        958,
+        654,
+        1229,
+        929
+      ],
+      "source_bbox": [
+        0,
+        0,
+        271,
+        275
+      ],
+      "cropped_size": [
+        271,
+        275
+      ],
+      "fitted_body_size": [
+        505,
+        512
+      ],
+      "scale": 1.8618181818181818
+    },
+    {
+      "name": "13_cleric",
+      "source_box": [
+        37,
+        944,
+        287,
+        1234
+      ],
+      "source_bbox": [
+        0,
+        0,
+        250,
+        290
+      ],
+      "cropped_size": [
+        250,
+        290
+      ],
+      "fitted_body_size": [
+        441,
+        512
+      ],
+      "scale": 1.7655172413793103
+    },
+    {
+      "name": "14_monk",
+      "source_box": [
+        337,
+        952,
+        619,
+        1234
+      ],
+      "source_bbox": [
+        0,
+        0,
+        282,
+        282
+      ],
+      "cropped_size": [
+        282,
+        282
+      ],
+      "fitted_body_size": [
+        512,
+        512
+      ],
+      "scale": 1.8156028368794326
+    },
+    {
+      "name": "15_alchemist",
+      "source_box": [
+        662,
+        938,
+        894,
+        1234
+      ],
+      "source_bbox": [
+        0,
+        0,
+        232,
+        296
+      ],
+      "cropped_size": [
+        232,
+        296
+      ],
+      "fitted_body_size": [
+        401,
+        512
+      ],
+      "scale": 1.7297297297297298
+    },
+    {
+      "name": "16_halfling",
+      "source_box": [
+        984,
+        968,
+        1217,
+        1230
+      ],
+      "source_bbox": [
+        0,
+        0,
+        233,
+        262
+      ],
+      "cropped_size": [
+        233,
+        262
+      ],
+      "fitted_body_size": [
+        455,
+        512
+      ],
+      "scale": 1.9541984732824427
+    }
+  ]
+}

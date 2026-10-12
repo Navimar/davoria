@@ -1,0 +1,12 @@
+{
+  "backup": "/private/tmp/davoria_floor_wall_swap_wb2uug9t",
+  "floor_source": "05_wall_rough.png",
+  "wall_source": "01_floor_slabs.png",
+  "verification": "passed",
+  "atlas_pixels_exact": true,
+  "extrusion_verified": true,
+  "protected_files_unchanged": true,
+  "godot_import": "completed",
+  "grid_check": "passed",
+  "diff_check": "passed"
+}

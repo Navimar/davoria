@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "kind": "single",
+  "source": "../assets/kraken_pseudo_pixel.png",
+  "reference_dir": "../assets",
+  "reconstruction": {
+    "grid": [
+      120,
+      120
+    ],
+    "inset": 0.18,
+    "alpha_coverage": 0.5
+  },
+  "palette": "aap64",
+  "sprites": [
+    {
+      "name": "kraken96",
+      "reference": "kraken_true_pixel_aap64_96.png"
+    }
+  ],
+  "crop": {
+    "size": [
+      96,
+      96
+    ],
+    "x": 12,
+    "y": 12
+  }
+}

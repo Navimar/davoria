@@ -1,0 +1,61 @@
+{
+  "status": "complete",
+  "recipe": {
+    "version": 1,
+    "kind": "single",
+    "source": "water_highres.png",
+    "source_sha256": "61d3580097777b5bfb291c428af9da97317c38c0b714b174de006686d8df62f5",
+    "chroma": null,
+    "reconstruction": {
+      "grid": [
+        64,
+        64
+      ],
+      "inset": 0.0,
+      "alpha_coverage": 0.0
+    },
+    "palette": "aap64",
+    "outline": null,
+    "canvas": {
+      "size": [
+        64,
+        64
+      ],
+      "baseline": 64
+    },
+    "preview_columns": 1,
+    "sprites": [
+      {
+        "name": "09_water_teal"
+      }
+    ]
+  },
+  "source": "/Users/igor/Godot/davoria/assets/generation/dungeon_tiles_sheet_64_2026-10-12/water_recut/water_highres.png",
+  "source_sha256": "61d3580097777b5bfb291c428af9da97317c38c0b714b174de006686d8df62f5",
+  "runtime": {
+    "python": "3.14.4",
+    "pillow": "12.2.0"
+  },
+  "layout": null,
+  "sprites": [
+    {
+      "name": "09_water_teal",
+      "source_box": [
+        0,
+        0,
+        313,
+        302
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    }
+  ]
+}

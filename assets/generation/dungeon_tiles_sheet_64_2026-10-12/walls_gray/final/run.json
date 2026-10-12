@@ -1,0 +1,35 @@
+{
+  "standard": {
+    "version": 1,
+    "palette": "aap64",
+    "size": [
+      64,
+      64
+    ],
+    "rgb_gain": 0.75,
+    "blur_radius_px": 0.5
+  },
+  "source": "/Users/igor/Godot/davoria/assets/generation/dungeon_tiles_sheet_64_2026-10-12/walls_gray/base_aap64",
+  "output": "/Users/igor/Godot/davoria/assets/generation/dungeon_tiles_sheet_64_2026-10-12/walls_gray/final",
+  "order": [
+    "pixelize",
+    "aap64",
+    "darken_rgb",
+    "gaussian_blur_rgb"
+  ],
+  "rounding": "nearest_ties_even",
+  "palette_remap_after_darkening": false,
+  "geometry_changed": false,
+  "alpha_changed": false,
+  "tiles": [
+    {
+      "name": "01_wall_slabs_gray.png",
+      "size": [
+        64,
+        64
+      ],
+      "source_sha256": "d6075cd20b6be61a9d7cc02596245741e98308c29f40241275eaf2e857a37d57",
+      "output_sha256": "8c7d3f4b7bb7262ec591e8e8fe3f480e7234e9c239646d46e136c7be390850a1"
+    }
+  ]
+}

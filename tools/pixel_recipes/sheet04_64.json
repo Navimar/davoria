@@ -1,0 +1,139 @@
+{
+  "version": 1,
+  "kind": "sheet",
+  "source": "../pixel_processing_complete_2026-10-12/assets/monsters_tileset_04_light_naive_magenta_pseudo.png",
+  "source_sha256": "d090847afc50dacecb84a4490d8fa7d5e6ee37f23907b4c2a58e17cb027dcf06",
+  "reference_dir": "../../assets/actors/pixel_monsters/series_04",
+  "layout": {
+    "row_boundaries": [
+      0,
+      303,
+      604,
+      884,
+      1254
+    ],
+    "column_boundaries": [
+      [
+        0,
+        304,
+        623,
+        926,
+        1254
+      ],
+      [
+        0,
+        297,
+        605,
+        887,
+        1254
+      ],
+      [
+        0,
+        324,
+        614,
+        929,
+        1254
+      ],
+      [
+        0,
+        292,
+        606,
+        868,
+        1254
+      ]
+    ]
+  },
+  "chroma": {
+    "auto_key": "border",
+    "tolerance": 64
+  },
+  "reconstruction": {
+    "min_cell": 4.5,
+    "max_cell": 5.5,
+    "inset": 0.18,
+    "alpha_coverage": 0.5
+  },
+  "palette": "aap64",
+  "outline": {
+    "color": "242234",
+    "neighbors": 8
+  },
+  "canvas": {
+    "size": [
+      64,
+      64
+    ],
+    "baseline": 61
+  },
+  "preview_columns": 4,
+  "sprites": [
+    {
+      "name": "01_giant_snail",
+      "flip_horizontal": true
+    },
+    {
+      "name": "02_gnoll_archer",
+      "flip_horizontal": true
+    },
+    {
+      "name": "03_animated_scarecrow",
+      "flip_horizontal": false
+    },
+    {
+      "name": "04_halfling_brigand",
+      "flip_horizontal": false
+    },
+    {
+      "name": "05_fire_elemental",
+      "flip_horizontal": false
+    },
+    {
+      "name": "06_swamp_witch",
+      "flip_horizontal": false
+    },
+    {
+      "name": "07_cyclops",
+      "flip_horizontal": false
+    },
+    {
+      "name": "08_armored_war_boar",
+      "flip_horizontal": true,
+      "reconstruction": {
+        "min_cell": 4.8,
+        "max_cell": 5.5
+      }
+    },
+    {
+      "name": "09_giant_crab",
+      "flip_horizontal": false
+    },
+    {
+      "name": "10_salamander_warrior",
+      "flip_horizontal": true
+    },
+    {
+      "name": "11_griffin",
+      "flip_horizontal": true
+    },
+    {
+      "name": "12_plague_doctor_mage",
+      "flip_horizontal": false
+    },
+    {
+      "name": "13_stone_golem",
+      "flip_horizontal": false
+    },
+    {
+      "name": "14_headless_knight",
+      "flip_horizontal": false
+    },
+    {
+      "name": "15_lantern_spirit",
+      "flip_horizontal": false
+    },
+    {
+      "name": "16_wyvern",
+      "flip_horizontal": true
+    }
+  ]
+}

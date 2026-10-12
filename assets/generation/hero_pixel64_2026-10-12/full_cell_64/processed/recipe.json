@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "kind": "sheet",
+  "source": "sheet.png",
+  "layout": {
+    "row_boundaries": [
+      0,
+      512
+    ],
+    "column_boundaries": [
+      [
+        0,
+        512
+      ]
+    ]
+  },
+  "chroma": null,
+  "reconstruction": {
+    "grid": [
+      64,
+      64
+    ],
+    "inset": 0.0,
+    "alpha_coverage": 0.0
+  },
+  "palette": "aap64",
+  "outline": {
+    "color": "242234",
+    "neighbors": 8
+  },
+  "canvas": {
+    "size": [
+      64,
+      64
+    ],
+    "baseline": 64
+  },
+  "preview_columns": 1,
+  "sprites": [
+    {
+      "name": "hero_mage_rogue",
+      "flip_horizontal": false
+    }
+  ],
+  "source_sha256": "a6182f79baab72892cc7cd78499983d094c519295476e81b21cb2e07da4a913c",
+  "fit_canvas_candidates": false
+}

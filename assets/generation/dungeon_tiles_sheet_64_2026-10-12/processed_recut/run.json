@@ -1,0 +1,468 @@
+{
+  "status": "complete",
+  "recipe": {
+    "version": 1,
+    "kind": "sheet",
+    "source": "source.png",
+    "source_sha256": "dd01f037957a60101e097631b546f7af1b588a1e964016c44252452171deb842",
+    "layout": {
+      "row_boundaries": [
+        0,
+        314,
+        624,
+        926,
+        1254
+      ],
+      "column_boundaries": [
+        [
+          0,
+          314,
+          627,
+          940,
+          1254
+        ],
+        [
+          0,
+          314,
+          627,
+          940,
+          1254
+        ],
+        [
+          0,
+          313,
+          627,
+          940,
+          1254
+        ],
+        [
+          0,
+          314,
+          627,
+          940,
+          1254
+        ]
+      ]
+    },
+    "chroma": null,
+    "reconstruction": {
+      "grid": [
+        64,
+        64
+      ],
+      "inset": 0.0,
+      "alpha_coverage": 0.0
+    },
+    "palette": "aap64",
+    "outline": null,
+    "canvas": {
+      "size": [
+        64,
+        64
+      ],
+      "baseline": 64
+    },
+    "preview_columns": 4,
+    "sprites": [
+      {
+        "name": "01_floor_slabs"
+      },
+      {
+        "name": "02_floor_cracked"
+      },
+      {
+        "name": "03_floor_moss"
+      },
+      {
+        "name": "04_floor_paving"
+      },
+      {
+        "name": "05_wall_rough"
+      },
+      {
+        "name": "06_wall_blocks"
+      },
+      {
+        "name": "07_wall_moss"
+      },
+      {
+        "name": "08_wall_bricks"
+      },
+      {
+        "name": "09_water_teal"
+      },
+      {
+        "name": "10_water_blue"
+      },
+      {
+        "name": "11_water_green"
+      },
+      {
+        "name": "12_water_waves"
+      },
+      {
+        "name": "13_door_plain"
+      },
+      {
+        "name": "14_door_reinforced"
+      },
+      {
+        "name": "15_door_locked"
+      },
+      {
+        "name": "16_door_lattice"
+      }
+    ]
+  },
+  "source": "/Users/igor/Godot/davoria/assets/generation/dungeon_tiles_sheet_64_2026-10-12/source.png",
+  "source_sha256": "dd01f037957a60101e097631b546f7af1b588a1e964016c44252452171deb842",
+  "runtime": {
+    "python": "3.14.4",
+    "pillow": "12.2.0"
+  },
+  "layout": {
+    "row_boundaries": [
+      0,
+      314,
+      624,
+      926,
+      1254
+    ],
+    "column_boundaries": [
+      [
+        0,
+        314,
+        627,
+        940,
+        1254
+      ],
+      [
+        0,
+        314,
+        627,
+        940,
+        1254
+      ],
+      [
+        0,
+        313,
+        627,
+        940,
+        1254
+      ],
+      [
+        0,
+        314,
+        627,
+        940,
+        1254
+      ]
+    ]
+  },
+  "sprites": [
+    {
+      "name": "01_floor_slabs",
+      "source_box": [
+        0,
+        0,
+        314,
+        314
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "02_floor_cracked",
+      "source_box": [
+        314,
+        0,
+        627,
+        314
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "03_floor_moss",
+      "source_box": [
+        627,
+        0,
+        940,
+        314
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "04_floor_paving",
+      "source_box": [
+        940,
+        0,
+        1254,
+        314
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "05_wall_rough",
+      "source_box": [
+        0,
+        314,
+        314,
+        624
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "06_wall_blocks",
+      "source_box": [
+        314,
+        314,
+        627,
+        624
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "07_wall_moss",
+      "source_box": [
+        627,
+        314,
+        940,
+        624
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "08_wall_bricks",
+      "source_box": [
+        940,
+        314,
+        1254,
+        624
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "09_water_teal",
+      "source_box": [
+        0,
+        624,
+        313,
+        926
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "10_water_blue",
+      "source_box": [
+        313,
+        624,
+        627,
+        926
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "11_water_green",
+      "source_box": [
+        627,
+        624,
+        940,
+        926
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "12_water_waves",
+      "source_box": [
+        940,
+        624,
+        1254,
+        926
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "13_door_plain",
+      "source_box": [
+        0,
+        926,
+        314,
+        1254
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "14_door_reinforced",
+      "source_box": [
+        314,
+        926,
+        627,
+        1254
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "15_door_locked",
+      "source_box": [
+        627,
+        926,
+        940,
+        1254
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "16_door_lattice",
+      "source_box": [
+        940,
+        926,
+        1254,
+        1254
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "world_creatures": 17,
+  "includes_hero": true,
+  "native_shadow_size": [
+    44,
+    10
+  ],
+  "color": "060608",
+  "opacity": 0.35,
+  "absolute_z_index": 5,
+  "parented_to_actor": true,
+  "legacy_hero_supported": true,
+  "sprites_tiles_shaders_maps_unchanged": true,
+  "grid_check": "passed",
+  "preview": "raster composition of assets and equivalent oval geometry, without fog or shader outlines",
+  "backup": "/private/tmp/davoria_contact_shadows__d7lxb8r",
+  "godot_import": "completed",
+  "diff_check": "passed",
+  "protected_files_unchanged": 93
+}

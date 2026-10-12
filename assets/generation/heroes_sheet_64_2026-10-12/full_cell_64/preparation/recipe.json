@@ -1,0 +1,134 @@
+{
+  "version": 1,
+  "kind": "sheet",
+  "source": "sheet.png",
+  "layout": {
+    "row_boundaries": [
+      0,
+      512,
+      1024,
+      1536,
+      2048
+    ],
+    "column_boundaries": [
+      [
+        0,
+        512,
+        1024,
+        1536,
+        2048
+      ],
+      [
+        0,
+        512,
+        1024,
+        1536,
+        2048
+      ],
+      [
+        0,
+        512,
+        1024,
+        1536,
+        2048
+      ],
+      [
+        0,
+        512,
+        1024,
+        1536,
+        2048
+      ]
+    ]
+  },
+  "chroma": null,
+  "reconstruction": {
+    "grid": [
+      64,
+      64
+    ],
+    "inset": 0.0,
+    "alpha_coverage": 0.0
+  },
+  "palette": "aap64",
+  "outline": {
+    "color": "242234",
+    "neighbors": 8
+  },
+  "canvas": {
+    "size": [
+      64,
+      64
+    ],
+    "baseline": 64
+  },
+  "preview_columns": 4,
+  "sprites": [
+    {
+      "name": "01_mage_rogue",
+      "flip_horizontal": false
+    },
+    {
+      "name": "02_knight",
+      "flip_horizontal": false
+    },
+    {
+      "name": "03_ranger",
+      "flip_horizontal": false
+    },
+    {
+      "name": "04_barbarian",
+      "flip_horizontal": false
+    },
+    {
+      "name": "05_fire_mage",
+      "flip_horizontal": false
+    },
+    {
+      "name": "06_frost_mage",
+      "flip_horizontal": false
+    },
+    {
+      "name": "07_paladin",
+      "flip_horizontal": false
+    },
+    {
+      "name": "08_dwarf_warrior",
+      "flip_horizontal": false
+    },
+    {
+      "name": "09_elf_huntress",
+      "flip_horizontal": false
+    },
+    {
+      "name": "10_duelist",
+      "flip_horizontal": false
+    },
+    {
+      "name": "11_druid",
+      "flip_horizontal": false
+    },
+    {
+      "name": "12_rogue",
+      "flip_horizontal": false
+    },
+    {
+      "name": "13_cleric",
+      "flip_horizontal": false
+    },
+    {
+      "name": "14_monk",
+      "flip_horizontal": false
+    },
+    {
+      "name": "15_alchemist",
+      "flip_horizontal": false
+    },
+    {
+      "name": "16_halfling",
+      "flip_horizontal": false
+    }
+  ],
+  "source_sha256": "a5c39601e713e8dfc09a7e09fc623f9c4626c788228a449ec7f80c6854bc401b",
+  "fit_canvas_candidates": false
+}

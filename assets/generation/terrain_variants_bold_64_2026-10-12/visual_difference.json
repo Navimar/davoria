@@ -1,0 +1,82 @@
+[
+  {
+    "name": "floor_01.png",
+    "fraction_changed_by_at_least_12": 0.16,
+    "mean_max_channel_difference": 4.97
+  },
+  {
+    "name": "floor_02.png",
+    "fraction_changed_by_at_least_12": 0.131,
+    "mean_max_channel_difference": 4.14
+  },
+  {
+    "name": "floor_03.png",
+    "fraction_changed_by_at_least_12": 0.296,
+    "mean_max_channel_difference": 11.82
+  },
+  {
+    "name": "floor_04.png",
+    "fraction_changed_by_at_least_12": 0.222,
+    "mean_max_channel_difference": 8.0
+  },
+  {
+    "name": "floor_05.png",
+    "fraction_changed_by_at_least_12": 0.201,
+    "mean_max_channel_difference": 6.71
+  },
+  {
+    "name": "floor_06.png",
+    "fraction_changed_by_at_least_12": 0.192,
+    "mean_max_channel_difference": 5.88
+  },
+  {
+    "name": "floor_07.png",
+    "fraction_changed_by_at_least_12": 0.307,
+    "mean_max_channel_difference": 7.41
+  },
+  {
+    "name": "floor_08.png",
+    "fraction_changed_by_at_least_12": 0.297,
+    "mean_max_channel_difference": 11.53
+  },
+  {
+    "name": "wall_01.png",
+    "fraction_changed_by_at_least_12": 0.156,
+    "mean_max_channel_difference": 5.47
+  },
+  {
+    "name": "wall_02.png",
+    "fraction_changed_by_at_least_12": 0.175,
+    "mean_max_channel_difference": 5.89
+  },
+  {
+    "name": "wall_03.png",
+    "fraction_changed_by_at_least_12": 0.185,
+    "mean_max_channel_difference": 5.63
+  },
+  {
+    "name": "wall_04.png",
+    "fraction_changed_by_at_least_12": 0.276,
+    "mean_max_channel_difference": 10.1
+  },
+  {
+    "name": "wall_05.png",
+    "fraction_changed_by_at_least_12": 0.178,
+    "mean_max_channel_difference": 5.05
+  },
+  {
+    "name": "wall_06.png",
+    "fraction_changed_by_at_least_12": 0.271,
+    "mean_max_channel_difference": 7.19
+  },
+  {
+    "name": "wall_07.png",
+    "fraction_changed_by_at_least_12": 0.411,
+    "mean_max_channel_difference": 12.46
+  },
+  {
+    "name": "wall_08.png",
+    "fraction_changed_by_at_least_12": 0.278,
+    "mean_max_channel_difference": 9.93
+  }
+]

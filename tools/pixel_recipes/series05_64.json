@@ -1,0 +1,104 @@
+{
+  "version": 1,
+  "kind": "sheet",
+  "source": "../../assets/generation/creatures_sheet_64_2026-10-12/source.png",
+  "layout": {
+    "rows": 4,
+    "columns": 4,
+    "empty_fraction": 0.01,
+    "minimum_gap": 5
+  },
+  "chroma": {
+    "auto_key": "border",
+    "tolerance": 64
+  },
+  "reconstruction": {
+    "grid": [
+      64,
+      64
+    ],
+    "inset": 0.0,
+    "alpha_coverage": 0.0
+  },
+  "palette": "aap64",
+  "outline": {
+    "color": "242234",
+    "neighbors": 8
+  },
+  "canvas": {
+    "size": [
+      64,
+      64
+    ],
+    "baseline": 64
+  },
+  "preview_columns": 4,
+  "sprites": [
+    {
+      "name": "01_giant_centipede",
+      "flip_horizontal": false
+    },
+    {
+      "name": "02_ratman_scout",
+      "flip_horizontal": false
+    },
+    {
+      "name": "03_young_treant",
+      "flip_horizontal": false
+    },
+    {
+      "name": "04_goblin_drummer",
+      "flip_horizontal": false
+    },
+    {
+      "name": "05_water_elemental",
+      "flip_horizontal": false
+    },
+    {
+      "name": "06_hobgoblin_captain",
+      "flip_horizontal": false
+    },
+    {
+      "name": "07_frost_troll",
+      "flip_horizontal": false
+    },
+    {
+      "name": "08_dire_wolf",
+      "flip_horizontal": false
+    },
+    {
+      "name": "09_serpent_cultist",
+      "flip_horizontal": false
+    },
+    {
+      "name": "10_mantis_warrior",
+      "flip_horizontal": false
+    },
+    {
+      "name": "11_cockatrice",
+      "flip_horizontal": false
+    },
+    {
+      "name": "12_necromancer",
+      "flip_horizontal": false
+    },
+    {
+      "name": "13_obsidian_golem",
+      "flip_horizontal": false
+    },
+    {
+      "name": "14_skeletal_horse",
+      "flip_horizontal": false
+    },
+    {
+      "name": "15_lantern_wisp",
+      "flip_horizontal": false
+    },
+    {
+      "name": "16_baby_dragon",
+      "flip_horizontal": false
+    }
+  ],
+  "source_sha256": "56c13d984f44c4ee617856a97d6afafb01eeaa6aa7687074833a9693fa7b53d6",
+  "fit_visible_before_pixelization": true
+}

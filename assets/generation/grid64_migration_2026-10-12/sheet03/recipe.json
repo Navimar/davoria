@@ -1,0 +1,135 @@
+{
+  "version": 1,
+  "kind": "sheet",
+  "source": "../pixel_processing_complete_2026-10-12/assets/monsters_tileset_03_light_naive_magenta_pseudo.png",
+  "source_sha256": "ed80b2110313133b8b19c63d1dd02e39152dc586d1b0bea2a1857c81dce88714",
+  "reference_dir": "../../assets/actors/pixel_monsters/series_03",
+  "layout": {
+    "row_boundaries": [
+      0,
+      313,
+      612,
+      902,
+      1254
+    ],
+    "column_boundaries": [
+      [
+        0,
+        337,
+        641,
+        925,
+        1254
+      ],
+      [
+        0,
+        318,
+        590,
+        922,
+        1254
+      ],
+      [
+        0,
+        313,
+        609,
+        936,
+        1254
+      ],
+      [
+        0,
+        297,
+        601,
+        900,
+        1254
+      ]
+    ]
+  },
+  "chroma": {
+    "auto_key": "border",
+    "tolerance": 64
+  },
+  "reconstruction": {
+    "min_cell": 4.5,
+    "max_cell": 5.5,
+    "inset": 0.18,
+    "alpha_coverage": 0.5
+  },
+  "palette": "aap64",
+  "outline": {
+    "color": "242234",
+    "neighbors": 8
+  },
+  "canvas": {
+    "size": [
+      64,
+      64
+    ],
+    "baseline": 61
+  },
+  "preview_columns": 4,
+  "sprites": [
+    {
+      "name": "01_giant_beetle",
+      "flip_horizontal": true
+    },
+    {
+      "name": "02_kobold_spearman",
+      "flip_horizontal": true
+    },
+    {
+      "name": "03_mushroom_monster",
+      "flip_horizontal": false
+    },
+    {
+      "name": "04_bandit_rogue",
+      "flip_horizontal": false
+    },
+    {
+      "name": "05_ice_elemental",
+      "flip_horizontal": false
+    },
+    {
+      "name": "06_dark_elf_assassin",
+      "flip_horizontal": false
+    },
+    {
+      "name": "07_minotaur",
+      "flip_horizontal": false
+    },
+    {
+      "name": "08_ogre_shaman",
+      "flip_horizontal": false
+    },
+    {
+      "name": "09_giant_scorpion",
+      "flip_horizontal": true
+    },
+    {
+      "name": "10_lizardman_warrior",
+      "flip_horizontal": true
+    },
+    {
+      "name": "11_harpy",
+      "flip_horizontal": false
+    },
+    {
+      "name": "12_necromancer",
+      "flip_horizontal": false
+    },
+    {
+      "name": "13_stone_gargoyle",
+      "flip_horizontal": true
+    },
+    {
+      "name": "14_black_knight",
+      "flip_horizontal": false
+    },
+    {
+      "name": "15_floating_eye",
+      "flip_horizontal": false
+    },
+    {
+      "name": "16_hydra",
+      "flip_horizontal": true
+    }
+  ]
+}

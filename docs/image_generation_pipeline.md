@@ -1,385 +1,245 @@
-# Image Generation Pipeline
+# Пайплайн генерации и пиксельной обработки графики
 
-This project uses AI image generation only to create source art. Final game
-assets are normalized locally into a deterministic 2D lineart format.
+Текущая версия: `pixel_processing_complete_2026-10-12`.
+Она заменяет комплект `pixel_processing_bundle_2026-07-30` и содержит
+полный локальный конвейер от high-res PNG до готовых пиксельных спрайтов.
 
-The stable contract is:
+Игровой стандарт проекта — **64×64 пикселя на тайл и спрайт**.
+Размер сетки задан в `scripts/grid_config.gd`; игровая сцена и сборщик
+TileSet используют эту настройку. Игровые PNG хранятся в размере 64×64,
+пиксельные монстры используют масштаб 1:1 относительно игровой сетки.
 
-- generate a simple readable source image;
-- remove or preserve transparency deterministically;
-- fit the visible sprite into a fixed square canvas;
-- normalize colors through named project swatches;
-- normalize outlines after quantization;
-- store shadows separately from the clean sprite body;
-- validate the final PNG instead of trusting the generated image.
+Для сравнения тайлы сейчас рисуются без сшивания: точно в клетку 64×64,
+без наложения и диффузии краёв, с nearest-фильтрацией. Обводка непроходимых
+клеток сохранена, включая её толщину в игровых пикселях. Переключатель
+`TILE_STITCHING_ENABLED` в `scripts/asset_demo_scene.gd` возвращает прежнее
+сшивание при значении `true`; сам шейдер сохранён.
 
-Prompts are not the source of truth. The manifest, swatch library, processing
-rules, and validators define the final asset.
+Камера отдельно масштабирует всё игровое поле под окно: квадрат из 11×11
+клеток заполняет меньшую сторону вьюпорта. При изменении размера окна
+масштаб и маска обновляются; размер тайла в игровом мире остаётся 64×64.
 
-## Target Style
+Рабочие рецепты проекта находятся в `tools/pixel_recipes/`: `series05_64.json`,
+`heroes_64.json` и `new_sheet_64.json` задают холст 64×64 и нижнюю границу bbox 64.
+Обработчик `tools/process_creature_sheet.py` обрезает alpha bbox и
+подгоняет high-res силуэт под клетку **до пикселизации**, без заданного
+запаса. Пропорции сохраняются; большая сторона силуэта занимает все 64 пикселя.
+Эталонные рецепты и примеры архива
+сохранены в исходном виде, включая их исторические холсты 66×66.
 
-Sprites are clean lineart with flat color fills, readable silhouettes, and a
-limited paper/card palette. They should read at small gameplay scale.
+## Стандарт палитры и яркости окружения
 
-Generated source images should use:
+Герои, существа и окружение сначала обрабатываются в общей палитре **AAP64**.
+После пикселизации и сведения к AAP64 все тайлы окружения — пол, стены,
+вода и двери — затемняются на **25%**: каждый канал RGB умножается на **0.75**
+и округляется до ближайшего целого. Герои, существа и предметы сохраняют
+исходную яркость AAP64.
 
-- simple flat vector-like line art;
-- thick clean outline;
-- a few large color regions;
-- centered subject;
-- generous but not excessive padding;
-- no text, letters, numbers, logos, or watermarks;
-- no gradients, realistic shadows, material rendering, painterly texture, or
-  tiny decorative details.
+После затемнения к RGB тайлов применяется **Gaussian blur радиусом 0.5 пикселя**
+в исходном размере 64×64. Размер и alpha сохраняются; персонажи остаются
+резкими. Обводку непроходимых клеток рисует игровой шейдер поверх обработанной
+текстуры, поэтому этот блюр её не затрагивает. Контраст и насыщенность отдельно
+не меняются. Цвета после затемнения и блюра не возвращаются в исходную AAP64.
+Исходные AAP64 PNG хранятся отдельно, и этап всегда запускается от них, чтобы
+затемнение и блюр не накапливались при пересборке.
 
-If the generated source looks like concept art when viewed alone, it is too
-detailed. Regenerate it with fewer details instead of trying to repair it
-locally.
+Параметры стандарта: [`tools/pixel_recipes/terrain_style.json`](../tools/pixel_recipes/terrain_style.json).
+Применение из корня проекта:
 
-## Asset Manifest
-
-Every generated asset should have a small manifest entry before generation.
-
-```yaml
-id: goblin
-type: enemy
-size: 500
-palette: card_swatches
-palette_set: damage_or_danger_card
-background: transparent
-shadow: separate_oval
-output: img/enemy/enemy_goblin.png
-prompt_subject: small goblin monster creature
+```bash
+python3 tools/grade_terrain.py /absolute/path/undarkened_aap64_tiles -o /absolute/path/darkened_tiles
 ```
 
-Required fields:
+PNG из результата используются и в сцене, и при пересборке TileSet.
+Дополнительное затемнение через Godot для этих PNG не добавляется.
 
-- `id`: stable file-safe asset id.
-- `type`: asset family, for example `enemy`, `creature`, `item`, or `tile`.
-- `size`: final square PNG size.
-- `palette`: swatch library name.
-- `palette_set`: named recipe inside the swatch library.
-- `background`: `transparent` for sprites, `full_cell` for tiles.
-- `shadow`: `none`, `separate_oval`, or `generated_extract`.
-- `output`: final project-relative PNG path.
-- `prompt_subject`: short subject description used by generation prompts.
+Рабочий комплект находится в
+[`tools/pixel_processing_complete_2026-10-12/`](../tools/pixel_processing_complete_2026-10-12/README.md).
+Исходный ZIP сохранён рядом. Код, рецепты, исходники, эталоны и контрольные
+суммы перенесены из архива без изменений.
 
-Optional fields:
+## Установка и запуск
 
-- `outline`: named outline swatch override. If omitted, use the outline from
-  `recommended_sets[palette_set].outline`.
+Требуются Python 3.10+ и Pillow 12.2.0. Из корня Godot-проекта:
 
-## Semantic Swatch Libraries
-
-Project palettes should be stored as semantic swatch libraries, not only as
-flat lists of hex values.
-
-Example:
-
-```json
-{
-  "name": "card_swatches",
-  "backgrounds": {
-    "white": "#ffffff"
-  },
-  "outline": {
-    "black": "#000000",
-    "charcoal": "#303030"
-  },
-  "fills": {
-    "leaf_mint": "#78c0a0",
-    "apple_red": "#e82030"
-  },
-  "recommended_sets": {
-    "damage_or_danger_card": {
-      "background": "white",
-      "outline": "charcoal",
-      "fills": ["apple_red"]
-    }
-  }
-}
+```bash
+cd tools/pixel_processing_complete_2026-10-12
+python3 -m venv .venv
+.venv/bin/python -m pip install -r requirements.txt
 ```
 
-A processor must resolve a semantic set into a machine palette before
-quantization:
+Полная обработка текущего пятого листа:
 
-1. Load the swatch library.
-2. Select `recommended_sets[palette_set]`.
-3. Resolve `background`, `outline`, and `fills` names into hex colors.
-4. Build a fixed Pillow palette from the resolved colors.
-5. Quantize with no dithering.
-6. Validate that all non-shadow body pixels are in the resolved palette.
-
-This keeps art direction centralized. A manifest references
-`palette_set: damage_or_danger_card` instead of duplicating hex lists per asset.
-
-## Generation
-
-Use built-in image generation for source art unless a task explicitly requires
-another path. Do not ask the model for pixel art.
-
-Include the relevant palette schema directly in the prompt. Current image
-models can follow named roles and hex colors well enough that source art may not
-need forced quantization for preview-quality assets.
-
-Prompt palette schema example:
-
-```text
-Use this exact palette schema as strongly as possible. Use these color families
-only, with flat fills and very few intermediate colors:
-- outline black: #303030
-- eye yellow: #ffd94a
-- fur brown dark/base/light: #6b3f1d, #9a6128, #bd7c35
-- leather brown dark/base/light: #4c2d14, #76461c, #a46224
-- bone cream/base/light: #d7ca9b, #f4ebbe
-- chitin dark/base/light: #151923, #252b36, #3a414d
-- metal gray dark/base/light: #46494e, #91989e, #dce2e4
-Avoid all other hue families. Avoid dirty gradients, speckles, painterly color
-variation, and extra unlisted colors.
+```bash
+.venv/bin/python ../process_creature_sheet.py ../pixel_recipes/series05_64.json -o output/series05_64
 ```
 
-### Sprite Prompt Template
+Новый лист из собственного исходного PNG:
 
-```text
-Game prototype sprite, simple flat vector-like line art.
-Subject: <prompt_subject>.
-Equipment: simple readable fantasy clothing or armor that belongs to the
-creature silhouette; small gear details are allowed, but no large loose props
-unless the manifest explicitly requires them.
-Style: very simple mono-color fills, clean thick black outline, flat paper
-cutout look, no shadows, no gradients, no texture, no tiny details.
-Composition: centered living subject in a classic tile-based roguelike view,
-three-quarter top-down camera, full body visible, generous padding, readable at
-small size. Plain removable background. No text, no letters, no numbers, no
-watermark.
+```bash
+.venv/bin/python ../process_creature_sheet.py ../pixel_recipes/new_sheet_64.json \
+  --source /absolute/path/new_sheet.png -o output/new_sheet
 ```
 
-For transparent sprites, prefer a perfectly flat chroma-key background when
-native transparency is unavailable:
+Каталог результата должен быть новым или пустым. Направление взгляда
+задаётся флагом `flip_horizontal` в копии рецепта.
 
-```text
-Create the sprite on a perfectly flat solid #00ff00 chroma-key background for
-background removal. The background must be one uniform color with no shadows,
-gradients, texture, reflections, floor plane, or lighting variation. Do not use
-#00ff00 anywhere in the subject.
+## Порядок обработки
+
+1. Нарезать исходный high-res лист по промежуткам или координатам рецепта.
+2. Удалить chroma-key фон отдельно у каждого high-res фрагмента.
+3. Обрезать прозрачные поля каждого high-res фрагмента по alpha bbox.
+4. Подогнать high-res силуэт под квадрат с сохранением пропорций,
+   выровнять по низу и центру без дополнительного отступа.
+5. Выполнить пикселизацию на сетке 64×64 с учётом всей видимой alpha.
+6. Свести цвета к AAP64 без дизеринга.
+7. Нанести внутреннюю обводку `#242234`, сохранив alpha.
+8. Отразить выбранных персонажей и выровнять их на холсте.
+9. Проверить размеры, палитру, alpha и заполнение клетки по большей стороне.
+10. Собрать лист и превью.
+
+Рецепты проекта дают 16 спрайтов `64×64`, бинарную alpha и
+нижнюю границу bbox 64. Прозрачные поля удаляются до пикселизации,
+подгонка размера также выполняется на high-res этапе. После пикселизации
+PNG не масштабируется. Поля по меньшей стороне следуют пропорциям существа.
+Для одиночных изображений размер и портретное
+кадрирование определяются соответствующим рецептом. Масштабирование
+готовых спрайтов в игре использует nearest-фильтрацию.
+
+## Результаты и использование в Godot
+
+В `output/<run>/processed/final/` находятся готовые PNG. Рядом сохраняются
+промежуточные этапы, `preview.png`, `preview_checker.png`, `recipe.json`,
+`run.json` и `qa.json`. В `output/<run>/preparation/` сохраняются обрезанные
+и подогнанные high-res фрагменты, подготовленный лист и протокол порядка этапов.
+
+Готовые игровые спрайты хранятся в `assets/actors/`, предметы —
+в `assets/items/`, тайлы подземелья — в `assets/tiles/dungeon/`.
+В игровой сцене используются 16 существ из нового листа 64×64:
+`assets/actors/pixel_monsters/series_05/`. Они размещены в сетке 4×4.
+Предыдущие серии `series_03/` и `series_04/` сохранены для истории
+и проверки соответствующих рецептов; игровая сцена их не создаёт.
+Для добавления новой серии переносите прошедшие QA PNG из `final/`
+в соответствующую папку игровых ассетов.
+
+Лист тайлов хранится в `assets/generation/dungeon_tiles_sheet_64_2026-10-12/`.
+Его `recipe.json` использует уточнённые границы исходного изображения,
+а не равные четверти: вода обрезается до пикселизации без захвата камня
+из следующего ряда. Для первого варианта воды используется прямоугольник
+`[0, 624, 313, 926]`.
+Повторная обработка записана в `processed_recut/`; исходная нарезка сохранена
+в `processed/` и `recipe_equal_quarters_legacy.json`. Активная вода — светло-голубой
+вариант `10_water_blue.png` из третьей строки и второй колонки исходного листа.
+Он обрезан до пикселизации по прямоугольнику `[313, 624, 627, 926]`;
+`processed_recut/final/10_water_blue.png` служит исходником AAP64 размером 64×64.
+Затемнение 25% и блюр 0.5px применены в `terrain_25_blur05/final/`: пол, вода
+и двери используют PNG из этой папки. Основной пол — `04_floor_paving.png`, вариант
+с неровными камнями из первой строки и четвёртой колонки исходного листа.
+Исходники AAP64 сохранены в `terrain_25/base_aap64/`.
+Стены перекрашены в холодную серую часть AAP64 до затемнения и блюра.
+Исходник, точное соответствие цветов и обработанный тайл находятся в
+`walls_gray/`; активный вариант — `walls_gray/final/01_wall_slabs_gray.png`.
+Фактические источники всех установленных тайлов указаны в `installation.json`.
+
+Активные заметные вариации пола и серых стен сохранены в
+`assets/generation/terrain_variants_bold_64_2026-10-12/`: лист 4×4 содержит
+восемь вариантов пола и восемь стен с широкими трещинами, крупными сколами,
+пятнами мха, потёртостями и следами сырости. Отличия должны читаться в 64×64
+без увеличения; смена нескольких точек или слабого оттенка недостаточна.
+Мох занимает заметные участки поверхности, трещины проходят через несколько
+камней. Структура кладки и размер камней сохраняются.
+`generation_prompt.txt` фиксирует запрос к imagegen, `recipe.json` — границы
+нарезки high-res листа до пикселизации. После AAP64 стены используют прежнее
+соответствие холодным серым цветам из `wall_recolor.json`; зелёные цвета мха
+сохраняются. Затем применяется стандарт затемнения 25% и блюра 0.5px один раз.
+Игровые PNG установлены в `assets/tiles/dungeon/variants/`, проверка размеров,
+полной непрозрачности и различий записана в `installation.json` и
+`visual_difference.json`. `comparison_native.png` сравнивает старые и новые
+тайлы при масштабе 1:1. Предыдущий малозаметный набор сохранён в
+`assets/generation/terrain_variants_64_2026-10-12/` для истории.
+Основной тайл занимает 80% клеток пола и стен. Оставшиеся 20% поровну делятся
+между восемью альтернативами каждого типа: по 2.5% на вариант. Выбор зависит
+от координат клетки и типа поверхности, поэтому сохраняется при загрузке
+чанка, перезапуске и повторном рисовании клетки. Геометрия, проходимость,
+обводка и отключённое сшивание используют прежние настройки; вода и двери
+сохраняют свои выбранные текстуры. Иконки редактора и базовый TileSet используют
+исходные тайлы.
+
+Герои генерируются общим листом 4×4 с той же плотностью деталей, что
+существа. Все 16 вариантов находятся в `assets/actors/heroes/series_01/`.
+Стартовый герой — маг-разбойник из первой ячейки. Кнопка «Герой [H]»
+или клавиша H открывает выбор персонажа; Escape закрывает окно.
+Смена героя сохраняет клетку, направление и инвентарь. При выборе в режиме
+призрака выбранный герой появляется после возврата в обычную форму.
+
+У героя и всех существ есть отдельная овальная тень под ногами: 48×10 игровых
+пикселей, цвет `#060608` с alpha 0.5. Маска тени — PNG
+`assets/effects/contact_shadow.png` размером 48×10 с бинарной alpha,
+ступенчатым краем и без сглаживания. `scripts/contact_shadow.gd` создаёт
+дочерний Sprite2D с nearest-фильтрацией и масштабом 1:1: пиксель тени
+соответствует пикселю персонажа до общего увеличения камерой. Привязка
+к ногам сохраняется при движении и смене героя. Тени рисуются над тайлами,
+под персонажами и под туманом. PNG спрайтов
+и заполнение клетки остаются прежними; предметам на земле тени не добавляются.
+
+Герой и существа визуально подняты на 10% высоты клетки: на 6.4 игровых
+пикселя при размере 64×64. Смещение задаёт `GRID.ACTOR_DRAW_OFFSET` и применяется
+к отрисовке спрайта и его тени. PNG сохраняют полный размер; головы могут
+выступать над клеткой. Координаты узлов, движение, камера и столкновения
+остаются на сетке; предметы на земле не сдвигаются.
+
+Для листов с пересекающимися прямоугольными границами силуэтов рецепт
+может задать `layout.split_silhouettes: true`. Нарезка по связным силуэтам
+сохраняет длинное оружие и присоединяет отдельные детали к ближайшему герою.
+Этот этап выполняется на high-res изображении до подгонки и пикселизации.
+
+Повторная обработка листа героев из папки комплекта:
+
+```bash
+.venv/bin/python ../process_creature_sheet.py ../pixel_recipes/heroes_64.json -o output/heroes_64
 ```
 
-Use a different chroma-key color if the subject itself is green.
+В рабочий комплект добавлен `.gdignore`: Godot не импортирует его
+исходники, промежуточные PNG и эталонные примеры как игровые ресурсы.
+Локальные `.venv/`, `output/`, `work/` и `__pycache__/` исключены из Git.
 
-### Source Acceptance
+## Проверка комплекта
 
-Reject and regenerate source images when:
+Команды выполняются из папки комплекта:
 
-- the subject is not the requested asset;
-- the subject is too small in the source square;
-- the creature lacks simple clothing, armor, or readable worn equipment;
-- the camera angle does not read as a classic tile-based roguelike
-  three-quarter top-down creature view;
-- text, letters, numbers, logos, or watermarks are present;
-- an unintended object or loose prop dominates the silhouette;
-- realistic shadows or gradients are baked into the body;
-- the silhouette is not readable at small size;
-- the background is not removable.
-
-## Local Processing
-
-Use Pillow or an equivalent deterministic image library. The processor should
-not derive a new palette from the source image.
-
-If the prompt-level palette is visually consistent, preview assets may skip
-quantization and only run background/shadow extraction, crop, fit, and color
-drift validation. Use fixed Pillow quantization when strict palette membership
-is required for final export.
-
-Do not use blur, median blur, or generic smoothing as a normal cleanup step.
-These filters make the lineart feel soft and damage the crisp sprite style. If
-generated fills have visible ripple/speckle artifacts, prefer regenerating with
-a stricter flat-fill prompt or use a true region/shape repaint pass that
-preserves hard lineart edges.
-
-### Sprite Body Steps
-
-1. Open the generated PNG.
-2. Convert to `RGBA`.
-3. Remove chroma-key background if present.
-4. Crop to visible non-background content.
-5. Resize and center into the target square canvas.
-6. Preserve transparent background.
-7. For paper-cutout sprites, make the body alpha binary after chroma-key
-   removal and fitting. Do not keep semi-transparent body edge pixels; they
-   create white or key-color fringes after quantization. Semi-transparent alpha
-   is allowed for the separate shadow layer only.
-8. Before quantization, force almost-black body pixels to the configured
-   outline swatch from the resolved semantic palette.
-9. Quantize opaque body pixels with a fixed palette:
-
-   ```python
-   q = rgb.quantize(palette=pal, dither=Image.Dither.NONE).convert("RGBA")
-   ```
-
-10. Restore the binary body alpha.
-11. After quantization, force dark body pixels to the outline swatch again.
-12. Force the outside silhouette edge to the outline swatch to remove any
-    white/key-color fringe.
-13. Save the clean sprite PNG to the manifest `output` path.
-
-The final sprite body should have transparent corners and no baked background.
-It should not contain semi-transparent body pixels.
-
-### Outline Normalization
-
-Outline normalization happens twice:
-
-- before quantization, so dirty generated near-black pixels map consistently;
-- after quantization, so dark palette accidents are forced back to the outline
-  swatch.
-
-Default sprite outline comes from `recommended_sets[palette_set].outline`.
-Use a manifest `outline` value only as an explicit override, not as a hidden
-processor default.
-
-### Shadow Processing
-
-Do not bake shadows into the clean sprite body PNG. Produce the clean body first,
-then compose any deliverable shadow as a separate alpha layer under that body.
-
-Default shadow mode is `separate_oval`:
-
-- draw a hard-edged transparent oval below the sprite;
-- use black with alpha, not a colored shadow;
-- use only a tiny edge blur if needed to avoid jagged pixels;
-- width: `45-65%` of the sprite cell;
-- height: `10-18%` of the sprite cell;
-- opacity: `34-46%`;
-- place it under the feet or contact area;
-- draw it below the sprite in previews, runtime scenes, or the shadowed
-  deliverable PNG.
-
-When writing a shadowed PNG, keep the body pixels unchanged after palette
-quantization. Start with the black alpha shadow layer, then copy non-transparent
-body pixels over it without RGB blending. This preserves the body swatch palette
-and keeps the shadow limited to black pixels with varying alpha.
-
-`generated_extract` is allowed only when the source image uses a flat chroma-key
-background and explicitly asks for a simple flat contact shadow. Extract the
-shadow separately and never run the shadow pixels through body palette
-quantization.
-
-## Output Contracts
-
-### Enemy Icons
-
-Enemy clean body sprites are stored under:
-
-```text
-img/enemy/enemy_<id>.png
+```bash
+env PYTHONPATH=src .venv/bin/python -m unittest discover -s tests -v
+.venv/bin/python src/verify_examples.py --report output/reproduction.json
+shasum -a 256 -c SHA256SUMS
 ```
 
-Enemy sprites with the default composed oval shadow are stored under:
+Проверка игровой сетки и ресурсов из корня Godot-проекта:
 
-```text
-img/enemy/enemy_<id>_shadow.png
+```bash
+/Applications/Godot.app/Contents/MacOS/Godot --headless --path . --script tools/check_grid.gd
 ```
 
-Contract:
+Пересборка атласа и TileSet 64×64 после изменения тайлов:
 
-- final PNG is exactly `500x500`;
-- mode is `RGBA`;
-- background is transparent in both clean and shadowed outputs;
-- colors come from a semantic swatch set, usually `card_swatches`;
-- outline is normalized to the configured outline swatch;
-- no baked shadow in the clean PNG;
-- shadowed PNGs may add only black alpha shadow pixels under the unchanged
-  clean body.
-
-### Tiles
-
-Tiles are different from sprites:
-
-- final PNG is square;
-- background is `full_cell`;
-- no transparent corners;
-- no object-icon composition;
-- no hard accidental border unless the tile type requires one.
-
-## Validation
-
-Every processed asset should pass automatic checks:
-
-- output size equals manifest `size x size`;
-- sprite outputs have alpha;
-- sprite corners are transparent;
-- tile outputs are fully opaque;
-- all non-shadow body pixels are in the resolved fixed palette;
-- outline pixels are normalized to the configured outline swatch;
-- chroma-key colors and background fringes are absent;
-- no text, letters, numbers, logos, or watermarks are visible;
-- the visible subject fits inside safe cell bounds;
-- preview rendering shows the separate shadow below the sprite when requested.
-
-## Preview Sheets
-
-For every batch, generate a preview sheet with:
-
-- clean sprite on a dark checker/background;
-- clean sprite on a light background;
-- sprite inside a game cell;
-- sprite with its separate shadow layer;
-- `1x`, `2x`, and `4x` previews;
-- filename and manifest id.
-
-Review assets at the size used in-game. If the silhouette is weak at gameplay
-scale, regenerate the source image instead of over-fixing it locally.
-
-## Suggested Project Layout
-
-```text
-assets/
-  generation/
-    manifests/
-    prompts/
-    raw/
-    processed/
-      creatures/
-      items/
-      tiles/
-    previews/
-img/
-  enemy/
-tools/
-  assetgen/
-    palettes/
-      card_swatches.json
-    process_sprite.py
-    process_enemy_icon.py
-    validate_asset.py
-    build_preview_sheet.py
+```bash
+/Applications/Godot.app/Contents/MacOS/Godot --headless --path . --script tools/create_dungeon_tileset.gd
+/Applications/Godot.app/Contents/MacOS/Godot --headless --editor --path . --import
 ```
 
-## Implementation Notes
+Воспроизведение проверяет девять рецептов и 69 сравнений с эталонами,
+а также отдельные CLI-этапы для 16 спрайтов четвёртого листа,
+его превью и портрета волка.
 
-`tools/assetgen/process_sprite.py` currently expects a flat palette schema:
+## Подробная документация
 
-```json
-{
-  "name": "creature_main",
-  "outline": "#303030",
-  "shadow": "#000000",
-  "colors": ["#303030"]
-}
-```
+- [README комплекта](../tools/pixel_processing_complete_2026-10-12/README.md)
+- [Порядок операций](../tools/pixel_processing_complete_2026-10-12/docs/01_PIPELINES.md)
+- [Команды отдельных этапов](../tools/pixel_processing_complete_2026-10-12/docs/02_COMMANDS.md)
+- [Формат JSON-рецептов](../tools/pixel_processing_complete_2026-10-12/docs/03_RECIPE_FORMAT.md)
+- [Алгоритм](../tools/pixel_processing_complete_2026-10-12/docs/04_ALGORITHM.md)
+- [Генерация исходников и история](../tools/pixel_processing_complete_2026-10-12/docs/05_GENERATION_AND_HISTORY.md)
+- [QA и воспроизводимость](../tools/pixel_processing_complete_2026-10-12/docs/06_VERIFICATION.md)
 
-To support semantic swatch libraries, add a resolver layer or a separate enemy
-processor that accepts:
-
-```text
---palette tools/assetgen/palettes/card_swatches.json
---palette-set damage_or_danger_card
---size 500
---background transparent
---shadow separate_oval
-```
-
-The resolver should convert semantic swatches into the flat fixed palette used
-by Pillow quantization, then run the same deterministic quantization and
-validation steps.
+Прежнее описание обработки lineart сохранено в
+[отдельном документе](image_generation_pipeline_lineart.md) для существующих
+ассетов этого стиля. Для пиксельных спрайтов используется комплект выше.

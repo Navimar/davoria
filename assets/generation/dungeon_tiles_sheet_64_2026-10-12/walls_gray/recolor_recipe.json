@@ -1,0 +1,49 @@
+{
+  "backup": "/private/tmp/davoria_gray_walls_zninqulv",
+  "source": "../terrain_25/base_aap64/01_floor_slabs.png",
+  "source_sha256": "9d3bfd983eaf6eca50b04f193dcf230a1d1657f808d6cdb19a2b20fc6309248c",
+  "base_palette": "aap64",
+  "wall_ramp": [
+    "242234",
+    "333941",
+    "4a5462",
+    "6d758d",
+    "8b93af",
+    "b3b9d1",
+    "dae0ea"
+  ],
+  "mapping": {
+    "221c1a": "242234",
+    "242234": "242234",
+    "322b28": "242234",
+    "333941": "333941",
+    "423934": "333941",
+    "4a5462": "4a5462",
+    "5a4e44": "4a5462",
+    "6d758d": "6d758d",
+    "796755": "6d758d",
+    "8b93af": "8b93af",
+    "a08662": "8b93af",
+    "c7b08b": "b3b9d1"
+  },
+  "mapping_rule": "nearest weighted RGB brightness within the cool gray AAP64 ramp",
+  "order": [
+    "aap64",
+    "recolor_to_gray_aap64",
+    "darken_rgb_0.75",
+    "gaussian_blur_0.5px"
+  ],
+  "runtime_wall_source": "final/01_wall_slabs_gray.png",
+  "standard": "../../../../tools/pixel_recipes/terrain_style.json",
+  "verification": "passed",
+  "recolor_reproduction_exact": true,
+  "grade_reproduction_exact": true,
+  "atlas_pixels_exact": true,
+  "extrusion_verified": true,
+  "protected_files_unchanged": true,
+  "protected_file_count": 93,
+  "other_runtime_tiles_unchanged": true,
+  "godot_import": "completed",
+  "grid_check": "passed",
+  "diff_check": "passed"
+}

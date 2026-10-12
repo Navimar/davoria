@@ -1,0 +1,67 @@
+{
+  "ok": true,
+  "recipes": [
+    {
+      "name": "sheet03",
+      "ok": true,
+      "count": 16,
+      "reference_exact_count": 16
+    },
+    {
+      "name": "sheet04",
+      "ok": true,
+      "count": 16,
+      "reference_exact_count": 16
+    },
+    {
+      "name": "sheet03_replay",
+      "ok": true,
+      "count": 16,
+      "reference_exact_count": 16
+    },
+    {
+      "name": "sheet04_replay",
+      "ok": true,
+      "count": 16,
+      "reference_exact_count": 16
+    },
+    {
+      "name": "goblin96",
+      "ok": true,
+      "count": 1,
+      "reference_exact_count": 1
+    },
+    {
+      "name": "kraken120",
+      "ok": true,
+      "count": 1,
+      "reference_exact_count": 1
+    },
+    {
+      "name": "kraken96",
+      "ok": true,
+      "count": 1,
+      "reference_exact_count": 1
+    },
+    {
+      "name": "wolf162",
+      "ok": true,
+      "count": 1,
+      "reference_exact_count": 1
+    },
+    {
+      "name": "wolf_portrait96",
+      "ok": true,
+      "count": 1,
+      "reference_exact_count": 1
+    }
+  ],
+  "exact_images": 69,
+  "standalone_stages": {
+    "ok": true,
+    "exact_images": 16,
+    "scripts": 11,
+    "portrait_exact": true,
+    "preview_reference_exact": true
+  }
+}

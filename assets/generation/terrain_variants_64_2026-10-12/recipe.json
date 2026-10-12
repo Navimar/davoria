@@ -1,0 +1,114 @@
+{
+  "version": 1,
+  "kind": "sheet",
+  "source": "source.png",
+  "source_sha256": "4c6f41e7b01b237cba64dabbd8271aae1fc7090f485d3cad119eb0e951cf2a14",
+  "layout": {
+    "row_boundaries": [
+      0,
+      315,
+      629,
+      942,
+      1254
+    ],
+    "column_boundaries": [
+      [
+        0,
+        315,
+        629,
+        943,
+        1254
+      ],
+      [
+        0,
+        315,
+        629,
+        943,
+        1254
+      ],
+      [
+        0,
+        315,
+        629,
+        943,
+        1254
+      ],
+      [
+        0,
+        315,
+        629,
+        943,
+        1254
+      ]
+    ]
+  },
+  "chroma": null,
+  "reconstruction": {
+    "grid": [
+      64,
+      64
+    ],
+    "inset": 0.0,
+    "alpha_coverage": 0.0
+  },
+  "palette": "aap64",
+  "outline": null,
+  "canvas": {
+    "size": [
+      64,
+      64
+    ],
+    "baseline": 64
+  },
+  "preview_columns": 4,
+  "sprites": [
+    {
+      "name": "floor_01"
+    },
+    {
+      "name": "floor_02"
+    },
+    {
+      "name": "floor_03"
+    },
+    {
+      "name": "floor_04"
+    },
+    {
+      "name": "floor_05"
+    },
+    {
+      "name": "floor_06"
+    },
+    {
+      "name": "floor_07"
+    },
+    {
+      "name": "floor_08"
+    },
+    {
+      "name": "wall_01"
+    },
+    {
+      "name": "wall_02"
+    },
+    {
+      "name": "wall_03"
+    },
+    {
+      "name": "wall_04"
+    },
+    {
+      "name": "wall_05"
+    },
+    {
+      "name": "wall_06"
+    },
+    {
+      "name": "wall_07"
+    },
+    {
+      "name": "wall_08"
+    }
+  ]
+}

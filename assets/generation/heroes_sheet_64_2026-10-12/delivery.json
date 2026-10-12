@@ -1,0 +1,15 @@
+{
+  "heroes": 16,
+  "sprite_size": [
+    64,
+    64
+  ],
+  "padding": 0,
+  "max_visible_dimension": 64,
+  "qa_ok": true,
+  "runtime_directory": "assets/actors/heroes/series_01",
+  "default": "01_mage_rogue.png",
+  "generator": "built-in ImageGen",
+  "processing_recipe": "tools/pixel_recipes/heroes_64.json",
+  "source_segmentation": "connected silhouettes before crop and pixelization"
+}

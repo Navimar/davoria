@@ -1,0 +1,14 @@
+{
+  "tool": "built-in image_gen",
+  "prompt_file": "generation_prompt.txt",
+  "original_image": "/Users/igor/.codex/generated_images/01a12dca-5bea-71d1-b610-328d751b5099/exec-5f53c2d1-2cb6-40e3-bfd5-20c81a4fba99.png",
+  "source_sha256": "56c13d984f44c4ee617856a97d6afafb01eeaa6aa7687074833a9693fa7b53d6",
+  "sprite_size": [
+    64,
+    64
+  ],
+  "sheet_layout": [
+    4,
+    4
+  ]
+}

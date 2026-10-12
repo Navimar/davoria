@@ -1,0 +1,402 @@
+{
+  "source": "/Users/igor/Godot/davoria/assets/generation/creatures_sheet_64_2026-10-12/source.png",
+  "source_sha256": "56c13d984f44c4ee617856a97d6afafb01eeaa6aa7687074833a9693fa7b53d6",
+  "order": [
+    "split_highres",
+    "chroma_key",
+    "crop_alpha_bbox",
+    "fit_highres",
+    "pixelize"
+  ],
+  "padding": 0,
+  "target_size": [
+    64,
+    64
+  ],
+  "sprites": [
+    {
+      "name": "01_giant_centipede",
+      "source_box": [
+        0,
+        0,
+        326,
+        311
+      ],
+      "source_bbox": [
+        35,
+        53,
+        295,
+        288
+      ],
+      "cropped_size": [
+        260,
+        235
+      ],
+      "fitted_body_size": [
+        512,
+        463
+      ],
+      "scale": 1.9692307692307693
+    },
+    {
+      "name": "02_ratman_scout",
+      "source_box": [
+        326,
+        0,
+        644,
+        311
+      ],
+      "source_bbox": [
+        33,
+        54,
+        285,
+        288
+      ],
+      "cropped_size": [
+        252,
+        234
+      ],
+      "fitted_body_size": [
+        512,
+        475
+      ],
+      "scale": 2.0317460317460316
+    },
+    {
+      "name": "03_young_treant",
+      "source_box": [
+        644,
+        0,
+        942,
+        311
+      ],
+      "source_bbox": [
+        34,
+        22,
+        241,
+        293
+      ],
+      "cropped_size": [
+        207,
+        271
+      ],
+      "fitted_body_size": [
+        391,
+        512
+      ],
+      "scale": 1.8892988929889298
+    },
+    {
+      "name": "04_goblin_drummer",
+      "source_box": [
+        942,
+        0,
+        1254,
+        311
+      ],
+      "source_bbox": [
+        58,
+        71,
+        264,
+        292
+      ],
+      "cropped_size": [
+        206,
+        221
+      ],
+      "fitted_body_size": [
+        477,
+        512
+      ],
+      "scale": 2.316742081447964
+    },
+    {
+      "name": "05_water_elemental",
+      "source_box": [
+        0,
+        311,
+        316,
+        619
+      ],
+      "source_bbox": [
+        42,
+        20,
+        280,
+        295
+      ],
+      "cropped_size": [
+        238,
+        275
+      ],
+      "fitted_body_size": [
+        443,
+        512
+      ],
+      "scale": 1.8618181818181818
+    },
+    {
+      "name": "06_hobgoblin_captain",
+      "source_box": [
+        316,
+        311,
+        628,
+        619
+      ],
+      "source_bbox": [
+        38,
+        35,
+        279,
+        285
+      ],
+      "cropped_size": [
+        241,
+        250
+      ],
+      "fitted_body_size": [
+        494,
+        512
+      ],
+      "scale": 2.048
+    },
+    {
+      "name": "07_frost_troll",
+      "source_box": [
+        628,
+        311,
+        930,
+        619
+      ],
+      "source_bbox": [
+        34,
+        30,
+        277,
+        288
+      ],
+      "cropped_size": [
+        243,
+        258
+      ],
+      "fitted_body_size": [
+        482,
+        512
+      ],
+      "scale": 1.9844961240310077
+    },
+    {
+      "name": "08_dire_wolf",
+      "source_box": [
+        930,
+        311,
+        1254,
+        619
+      ],
+      "source_bbox": [
+        26,
+        69,
+        290,
+        283
+      ],
+      "cropped_size": [
+        264,
+        214
+      ],
+      "fitted_body_size": [
+        512,
+        415
+      ],
+      "scale": 1.9393939393939394
+    },
+    {
+      "name": "09_serpent_cultist",
+      "source_box": [
+        0,
+        619,
+        318,
+        926
+      ],
+      "source_bbox": [
+        40,
+        45,
+        290,
+        288
+      ],
+      "cropped_size": [
+        250,
+        243
+      ],
+      "fitted_body_size": [
+        512,
+        498
+      ],
+      "scale": 2.048
+    },
+    {
+      "name": "10_mantis_warrior",
+      "source_box": [
+        318,
+        619,
+        616,
+        926
+      ],
+      "source_bbox": [
+        29,
+        10,
+        266,
+        292
+      ],
+      "cropped_size": [
+        237,
+        282
+      ],
+      "fitted_body_size": [
+        430,
+        512
+      ],
+      "scale": 1.8156028368794326
+    },
+    {
+      "name": "11_cockatrice",
+      "source_box": [
+        616,
+        619,
+        937,
+        926
+      ],
+      "source_bbox": [
+        34,
+        27,
+        289,
+        295
+      ],
+      "cropped_size": [
+        255,
+        268
+      ],
+      "fitted_body_size": [
+        487,
+        512
+      ],
+      "scale": 1.9104477611940298
+    },
+    {
+      "name": "12_necromancer",
+      "source_box": [
+        937,
+        619,
+        1254,
+        926
+      ],
+      "source_bbox": [
+        33,
+        32,
+        283,
+        291
+      ],
+      "cropped_size": [
+        250,
+        259
+      ],
+      "fitted_body_size": [
+        494,
+        512
+      ],
+      "scale": 1.9768339768339769
+    },
+    {
+      "name": "13_obsidian_golem",
+      "source_box": [
+        0,
+        926,
+        315,
+        1254
+      ],
+      "source_bbox": [
+        29,
+        25,
+        295,
+        288
+      ],
+      "cropped_size": [
+        266,
+        263
+      ],
+      "fitted_body_size": [
+        512,
+        506
+      ],
+      "scale": 1.9248120300751879
+    },
+    {
+      "name": "14_skeletal_horse",
+      "source_box": [
+        315,
+        926,
+        631,
+        1254
+      ],
+      "source_bbox": [
+        21,
+        16,
+        276,
+        288
+      ],
+      "cropped_size": [
+        255,
+        272
+      ],
+      "fitted_body_size": [
+        480,
+        512
+      ],
+      "scale": 1.8823529411764706
+    },
+    {
+      "name": "15_lantern_wisp",
+      "source_box": [
+        631,
+        926,
+        923,
+        1254
+      ],
+      "source_bbox": [
+        42,
+        24,
+        260,
+        281
+      ],
+      "cropped_size": [
+        218,
+        257
+      ],
+      "fitted_body_size": [
+        434,
+        512
+      ],
+      "scale": 1.9922178988326849
+    },
+    {
+      "name": "16_baby_dragon",
+      "source_box": [
+        923,
+        926,
+        1254,
+        1254
+      ],
+      "source_bbox": [
+        33,
+        30,
+        297,
+        284
+      ],
+      "cropped_size": [
+        264,
+        254
+      ],
+      "fitted_body_size": [
+        512,
+        493
+      ],
+      "scale": 1.9393939393939394
+    }
+  ]
+}

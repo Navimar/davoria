@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-12",
+  "backup": "/private/tmp/davoria_dungeon_tiles_install_xade6k53",
+  "runtime_tiles": {
+    "floor.png": "04_floor_paving.png",
+    "wall.png": "01_wall_slabs_gray.png",
+    "water.png": "10_water_blue.png",
+    "door.png": "14_door_reinforced.png"
+  },
+  "target_size": [
+    64,
+    64
+  ],
+  "stitching_code_changed": false,
+  "outline_shader_changed": false,
+  "protected_files": 20,
+  "verification": "passed",
+  "asset_verification": {
+    "runtime_tiles_exact": true,
+    "atlas_pixels_exact": true,
+    "atlas_size": [
+      272,
+      68
+    ],
+    "extrusion_pixels": 2,
+    "extrusion_verified": true,
+    "protected_files_unchanged": true,
+    "protected_file_count": 20
+  },
+  "godot_import": "completed",
+  "grid_check": "passed: 64px resources, 16 hero choices, movement, camera, collision, ghost mode and view",
+  "diff_check": "passed",
+  "floor_wall_swap": "floor_wall_swap.json",
+  "runtime_sources": {
+    "floor.png": "terrain_25_blur05/final/04_floor_paving.png",
+    "wall.png": "walls_gray/final/01_wall_slabs_gray.png",
+    "water.png": "terrain_25_blur05/final/10_water_blue.png",
+    "door.png": "terrain_25_blur05/final/14_door_reinforced.png"
+  },
+  "water_recut": "water_recut/preparation.json",
+  "terrain_standard": "../../../tools/pixel_recipes/terrain_style.json",
+  "rgb_gain": 0.75,
+  "darkening": "terrain_25_blur05/preparation.json",
+  "blur_radius_px": 0.5,
+  "terrain_processing": "terrain_25_blur05/preparation.json",
+  "gray_walls": "walls_gray/recolor_recipe.json",
+  "light_water_selection": "light_water_selection.json"
+}

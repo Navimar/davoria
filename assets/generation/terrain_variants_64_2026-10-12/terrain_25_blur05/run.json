@@ -1,0 +1,170 @@
+{
+  "standard": {
+    "version": 1,
+    "palette": "aap64",
+    "size": [
+      64,
+      64
+    ],
+    "rgb_gain": 0.75,
+    "blur_radius_px": 0.5
+  },
+  "source": "/Users/igor/Godot/davoria/assets/generation/terrain_variants_64_2026-10-12/base_aap64",
+  "output": "/Users/igor/Godot/davoria/assets/generation/terrain_variants_64_2026-10-12/terrain_25_blur05",
+  "order": [
+    "pixelize",
+    "aap64",
+    "darken_rgb",
+    "gaussian_blur_rgb"
+  ],
+  "rounding": "nearest_ties_even",
+  "palette_remap_after_darkening": false,
+  "geometry_changed": false,
+  "alpha_changed": false,
+  "tiles": [
+    {
+      "name": "floor_01.png",
+      "size": [
+        64,
+        64
+      ],
+      "source_sha256": "b67e26529d60a462178b0d47c0e642e706e287a303fd8278f3953dac98882787",
+      "output_sha256": "5fcee26aaf0affeea615ae0daf59f7a0aac3238ca59334af191185daa3a8ebc9"
+    },
+    {
+      "name": "floor_02.png",
+      "size": [
+        64,
+        64
+      ],
+      "source_sha256": "4f256c6f05d3568e8213de0e71f33ce08bf14f6f515d1469d8d9413ed150095a",
+      "output_sha256": "6028998df85dc70b26bdc85402f5992b0e0322e1b7d3317d91421537b9dafb81"
+    },
+    {
+      "name": "floor_03.png",
+      "size": [
+        64,
+        64
+      ],
+      "source_sha256": "354e70b3102bba673c6400fb3ffc1d8edb0b129eaea0b2ea04431438b57a3dfa",
+      "output_sha256": "f1c3eaae579785ef3655e2fc6aa8399aff8afef6fc7dc686181c0a5b118f050a"
+    },
+    {
+      "name": "floor_04.png",
+      "size": [
+        64,
+        64
+      ],
+      "source_sha256": "a49763919551ff3eb41bc76e28a04996d8afe4b6783dd6cf5a260f77ff4bbe09",
+      "output_sha256": "3ba286767e50a33d540113d4fc23818212c6193ccee2d9c16c8b2ae5453735ce"
+    },
+    {
+      "name": "floor_05.png",
+      "size": [
+        64,
+        64
+      ],
+      "source_sha256": "4d81b4076e96b76a88859aa3fcd60c750571f322624080382cc036a7765588b9",
+      "output_sha256": "4a39c0d406aacb6b6d465913d4f45e78c3f9c0f41ee643d4531dd7383f24e89a"
+    },
+    {
+      "name": "floor_06.png",
+      "size": [
+        64,
+        64
+      ],
+      "source_sha256": "e6f4a2978b51ebd583c8fe3a3743e7d7fe9e3e3518c9d89e0673d6b438e3b9ee",
+      "output_sha256": "e34d7c19e77e87914e0c080829bbe346aea97f06a077103468450c704d21c2a2"
+    },
+    {
+      "name": "floor_07.png",
+      "size": [
+        64,
+        64
+      ],
+      "source_sha256": "d37f6e95c2527ca94c820fba8fe914a98fe6f7abec6b37caa654920fb15cca37",
+      "output_sha256": "cc21960b1092ff1d814f4a721b1376659817c15a291fbcf31bdc08a7570430ea"
+    },
+    {
+      "name": "floor_08.png",
+      "size": [
+        64,
+        64
+      ],
+      "source_sha256": "7423748b7b300996395aeb9447143c82b8470a84424745e98312e32116da8d81",
+      "output_sha256": "72a05bd027583bdb409e872b910d59ca87e09a441d29747c8355d6ba209f2f85"
+    },
+    {
+      "name": "wall_01.png",
+      "size": [
+        64,
+        64
+      ],
+      "source_sha256": "8b110641fdebd3613cebb2967352004f0ba7927371d64ea660fe35096e408f5d",
+      "output_sha256": "6236ec9d40f102bd67fb0d889e96981b14a52eb4d0487fedfd74342ff4795751"
+    },
+    {
+      "name": "wall_02.png",
+      "size": [
+        64,
+        64
+      ],
+      "source_sha256": "0ff53a4f30af6510f13d4a87f857c054f1298e8a093e3571e576325839f06213",
+      "output_sha256": "3c6d505806ff75b4a74ccc0281d78e3213258f88bfb37737a4439e51e73e26f3"
+    },
+    {
+      "name": "wall_03.png",
+      "size": [
+        64,
+        64
+      ],
+      "source_sha256": "ceee5e08fa22d698f56b94ad34f12fc04384ad3735f1a693d0ba41628231b017",
+      "output_sha256": "f8a366d90a577a6f814765db954b852db068396f57b2e7c6ae5a464327b9988a"
+    },
+    {
+      "name": "wall_04.png",
+      "size": [
+        64,
+        64
+      ],
+      "source_sha256": "d73e63cf325d409567ed0e02b1a1aa3563437368cbb66ea2b30c4df8206a9485",
+      "output_sha256": "e53de46c0b008d12d19913228a7e1d31f9bb354374a0186a866cb1093b1f926d"
+    },
+    {
+      "name": "wall_05.png",
+      "size": [
+        64,
+        64
+      ],
+      "source_sha256": "f31c5e61430d8cb91833d00be5cf2b959007719ffc9a56a8548e5826dee82062",
+      "output_sha256": "8eb1a73ff03007463cd117ac48f1c7b59396912c4b08e2e4813ee5a4b7958b15"
+    },
+    {
+      "name": "wall_06.png",
+      "size": [
+        64,
+        64
+      ],
+      "source_sha256": "9157fc64d5d05444bfcb8607bbce55355b810faf542f117d0a40f3b4fa1f0e56",
+      "output_sha256": "788a1470e104df0aac3cc5cc90ffbdc31b7c50478b62e21ee77697a5b70a7bcc"
+    },
+    {
+      "name": "wall_07.png",
+      "size": [
+        64,
+        64
+      ],
+      "source_sha256": "a737631bc76968c23077db183995a71ecf70db8e6a90e17c339cd2ad75d59148",
+      "output_sha256": "9cd6d673c101b3faa6c1a6e1daccba520f99789cd542428a79c42dd7143f5698"
+    },
+    {
+      "name": "wall_08.png",
+      "size": [
+        64,
+        64
+      ],
+      "source_sha256": "f4f8a0e04d765fa5878a8600eb0ea582e5b821b00b9e0cf11368236244c3b8fa",
+      "output_sha256": "77db84371c5448b39ee3e68353efa168e33cb21ac5063ad6bf7f93b8db9a6e78"
+    }
+  ]
+}

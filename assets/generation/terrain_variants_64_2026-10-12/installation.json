@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-12",
+  "backup": "/private/tmp/davoria_terrain_variants_1c7td47o",
+  "runtime_directory": "../../tiles/dungeon/variants",
+  "runtime_sources": {
+    "floor_01.png": "terrain_25_blur05/floor_01.png",
+    "floor_02.png": "terrain_25_blur05/floor_02.png",
+    "floor_03.png": "terrain_25_blur05/floor_03.png",
+    "floor_04.png": "terrain_25_blur05/floor_04.png",
+    "floor_05.png": "terrain_25_blur05/floor_05.png",
+    "floor_06.png": "terrain_25_blur05/floor_06.png",
+    "floor_07.png": "terrain_25_blur05/floor_07.png",
+    "floor_08.png": "terrain_25_blur05/floor_08.png",
+    "wall_01.png": "terrain_25_blur05/wall_01.png",
+    "wall_02.png": "terrain_25_blur05/wall_02.png",
+    "wall_03.png": "terrain_25_blur05/wall_03.png",
+    "wall_04.png": "terrain_25_blur05/wall_04.png",
+    "wall_05.png": "terrain_25_blur05/wall_05.png",
+    "wall_06.png": "terrain_25_blur05/wall_06.png",
+    "wall_07.png": "terrain_25_blur05/wall_07.png",
+    "wall_08.png": "terrain_25_blur05/wall_08.png"
+  },
+  "original_tiles_preserved": true,
+  "variants_per_type": 8,
+  "choices_per_type_including_original": 9,
+  "selection": "coordinate and terrain type hash; stable across reloads and painting",
+  "terrain_standard": "../../../tools/pixel_recipes/terrain_style.json",
+  "tile_size": [
+    64,
+    64
+  ],
+  "rgb_gain": 0.75,
+  "blur_radius_px": 0.5,
+  "verification": "passed",
+  "asset_verification": {
+    "processed_qa_passed": true,
+    "runtime_exact": true,
+    "grading_reproduced_exactly": true,
+    "opaque_64px": true,
+    "unique_variants": 16,
+    "protected_file_count": 176,
+    "protected_files_unchanged": true
+  },
+  "godot_import": "completed",
+  "variant_check": "passed: stable distribution, negative coordinates, painting, chunk sprites, collision and outline material",
+  "grid_check": "passed: 64px resources, 16 hero choices, movement, camera, collision, ghost mode and view",
+  "diff_check": "passed",
+  "preview": "preview_3x.png"
+}

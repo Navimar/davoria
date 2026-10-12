@@ -1,0 +1,17 @@
+{
+  "heroes": 16,
+  "installed_images_exact": true,
+  "default_hero_exact": true,
+  "highres_visible_pixels_before_split": 680837,
+  "highres_visible_pixels_after_split": 680837,
+  "no_highres_clipping_or_duplication": true,
+  "qa_ok": true,
+  "missing_document_links": [],
+  "zip_valid": true,
+  "godot_hero_choices_and_grid": "passed",
+  "python_processing_tests": 3,
+  "hero_picker_shortcuts": [
+    "H",
+    "Escape"
+  ]
+}

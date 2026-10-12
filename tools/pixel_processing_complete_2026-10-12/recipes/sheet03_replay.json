@@ -1,0 +1,263 @@
+{
+  "version": 1,
+  "kind": "sheet",
+  "source": "../assets/monsters_tileset_03_light_naive_magenta_pseudo.png",
+  "source_sha256": "ed80b2110313133b8b19c63d1dd02e39152dc586d1b0bea2a1857c81dce88714",
+  "reference_dir": "../assets/monster_tiles_03_light_naive_individual_aap64_alpha_first_outline",
+  "layout": {
+    "row_boundaries": [
+      0,
+      313,
+      612,
+      902,
+      1254
+    ],
+    "column_boundaries": [
+      [
+        0,
+        337,
+        641,
+        925,
+        1254
+      ],
+      [
+        0,
+        318,
+        590,
+        922,
+        1254
+      ],
+      [
+        0,
+        313,
+        609,
+        936,
+        1254
+      ],
+      [
+        0,
+        297,
+        601,
+        900,
+        1254
+      ]
+    ]
+  },
+  "chroma": {
+    "auto_key": "border",
+    "tolerance": 64
+  },
+  "reconstruction": {
+    "min_cell": 4.5,
+    "max_cell": 5.5,
+    "inset": 0.18,
+    "alpha_coverage": 0.5
+  },
+  "palette": "aap64",
+  "outline": {
+    "color": "242234",
+    "neighbors": 8
+  },
+  "canvas": {
+    "size": [
+      66,
+      66
+    ],
+    "baseline": 63
+  },
+  "preview_columns": 4,
+  "sprites": [
+    {
+      "name": "01_giant_beetle",
+      "flip_horizontal": true,
+      "reconstruction": {
+        "grid": {
+          "cell_size_x": 5.1,
+          "cell_size_y": 5.1,
+          "offset_x": 0.48571428571428565,
+          "offset_y": 4.857142857142857
+        }
+      }
+    },
+    {
+      "name": "02_kobold_spearman",
+      "flip_horizontal": true,
+      "reconstruction": {
+        "grid": {
+          "cell_size_x": 5.35,
+          "cell_size_y": 5.25,
+          "offset_x": 4.377272727272727,
+          "offset_y": 4.5
+        }
+      }
+    },
+    {
+      "name": "03_mushroom_monster",
+      "flip_horizontal": false,
+      "reconstruction": {
+        "grid": {
+          "cell_size_x": 4.5,
+          "cell_size_y": 4.5,
+          "offset_x": 2.75,
+          "offset_y": 0.25
+        }
+      }
+    },
+    {
+      "name": "04_bandit_rogue",
+      "flip_horizontal": false,
+      "reconstruction": {
+        "grid": {
+          "cell_size_x": 5.15,
+          "cell_size_y": 5.15,
+          "offset_x": 4.904761904761905,
+          "offset_y": 4.414285714285715
+        }
+      }
+    },
+    {
+      "name": "05_ice_elemental",
+      "flip_horizontal": false,
+      "reconstruction": {
+        "grid": {
+          "cell_size_x": 5.3,
+          "cell_size_y": 5.35,
+          "offset_x": 0,
+          "offset_y": 0
+        }
+      }
+    },
+    {
+      "name": "06_dark_elf_assassin",
+      "flip_horizontal": false,
+      "reconstruction": {
+        "grid": {
+          "cell_size_x": 4.55,
+          "cell_size_y": 4.6,
+          "offset_x": 3.5921052631578947,
+          "offset_y": 0
+        }
+      }
+    },
+    {
+      "name": "07_minotaur",
+      "flip_horizontal": false,
+      "reconstruction": {
+        "grid": {
+          "cell_size_x": 4.6,
+          "cell_size_y": 4.6,
+          "offset_x": 0.4842105263157894,
+          "offset_y": 0
+        }
+      }
+    },
+    {
+      "name": "08_ogre_shaman",
+      "flip_horizontal": false,
+      "reconstruction": {
+        "grid": {
+          "cell_size_x": 5.35,
+          "cell_size_y": 5.35,
+          "offset_x": 4.863636363636363,
+          "offset_y": 4.377272727272727
+        }
+      }
+    },
+    {
+      "name": "09_giant_scorpion",
+      "flip_horizontal": true,
+      "reconstruction": {
+        "grid": {
+          "cell_size_x": 4.55,
+          "cell_size_y": 4.55,
+          "offset_x": 3.831578947368421,
+          "offset_y": 3.5921052631578947
+        }
+      }
+    },
+    {
+      "name": "10_lizardman_warrior",
+      "flip_horizontal": true,
+      "reconstruction": {
+        "grid": {
+          "cell_size_x": 5.2,
+          "cell_size_y": 5.2,
+          "offset_x": 4.9523809523809526,
+          "offset_y": 4.9523809523809526
+        }
+      }
+    },
+    {
+      "name": "11_harpy",
+      "flip_horizontal": false,
+      "reconstruction": {
+        "grid": {
+          "cell_size_x": 5.2,
+          "cell_size_y": 5.2,
+          "offset_x": 4.704761904761905,
+          "offset_y": 4.9523809523809526
+        }
+      }
+    },
+    {
+      "name": "12_necromancer",
+      "flip_horizontal": false,
+      "reconstruction": {
+        "grid": {
+          "cell_size_x": 4.55,
+          "cell_size_y": 4.55,
+          "offset_x": 0,
+          "offset_y": 0
+        }
+      }
+    },
+    {
+      "name": "13_stone_gargoyle",
+      "flip_horizontal": true,
+      "reconstruction": {
+        "grid": {
+          "cell_size_x": 4.85,
+          "cell_size_y": 4.75,
+          "offset_x": 4.6075,
+          "offset_y": 1
+        }
+      }
+    },
+    {
+      "name": "14_black_knight",
+      "flip_horizontal": false,
+      "reconstruction": {
+        "grid": {
+          "cell_size_x": 5.25,
+          "cell_size_y": 5.25,
+          "offset_x": 0.25,
+          "offset_y": 1.25
+        }
+      }
+    },
+    {
+      "name": "15_floating_eye",
+      "flip_horizontal": false,
+      "reconstruction": {
+        "grid": {
+          "cell_size_x": 4.9,
+          "cell_size_y": 4.9,
+          "offset_x": 0.49000000000000005,
+          "offset_y": 4.655
+        }
+      }
+    },
+    {
+      "name": "16_hydra",
+      "flip_horizontal": true,
+      "reconstruction": {
+        "grid": {
+          "cell_size_x": 5.2,
+          "cell_size_y": 5.25,
+          "offset_x": 0.49523809523809526,
+          "offset_y": 1
+        }
+      }
+    }
+  ]
+}

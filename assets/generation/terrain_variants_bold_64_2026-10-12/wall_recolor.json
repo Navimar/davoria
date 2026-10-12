@@ -1,0 +1,27 @@
+{
+  "source": "processed/final/wall_*.png",
+  "output": "base_aap64/wall_*.png",
+  "palette": "aap64",
+  "mapping": {
+    "221c1a": "242234",
+    "242234": "242234",
+    "322b28": "242234",
+    "333941": "333941",
+    "423934": "333941",
+    "4a5462": "4a5462",
+    "5a4e44": "4a5462",
+    "6d758d": "6d758d",
+    "796755": "6d758d",
+    "8b93af": "8b93af",
+    "a08662": "8b93af",
+    "c7b08b": "b3b9d1"
+  },
+  "reference_recipe": "../dungeon_tiles_sheet_64_2026-10-12/walls_gray/recolor_recipe.json",
+  "order": [
+    "pixelize_64",
+    "aap64",
+    "recolor_wall_to_cool_gray_aap64",
+    "rgb_gain_0.75",
+    "gaussian_blur_0.5"
+  ]
+}

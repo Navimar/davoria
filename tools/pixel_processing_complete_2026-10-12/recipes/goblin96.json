@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "kind": "single",
+  "source": "../assets/goblin_pseudo_pixel.png",
+  "reference_dir": "../assets",
+  "reconstruction": {
+    "grid": [
+      96,
+      96
+    ],
+    "inset": 0.18,
+    "alpha_coverage": 0.5
+  },
+  "palette": "aap64",
+  "sprites": [
+    {
+      "name": "goblin96",
+      "reference": "goblin_true_pixel_aap64.png"
+    }
+  ]
+}

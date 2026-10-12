@@ -1,0 +1,170 @@
+{
+  "standard": {
+    "version": 1,
+    "palette": "aap64",
+    "size": [
+      64,
+      64
+    ],
+    "rgb_gain": 0.75,
+    "blur_radius_px": 0.5
+  },
+  "source": "/Users/igor/Godot/davoria/assets/generation/dungeon_tiles_sheet_64_2026-10-12/terrain_25/base_aap64",
+  "output": "/Users/igor/Godot/davoria/assets/generation/dungeon_tiles_sheet_64_2026-10-12/terrain_25_blur05/final",
+  "order": [
+    "pixelize",
+    "aap64",
+    "darken_rgb",
+    "gaussian_blur_rgb"
+  ],
+  "rounding": "nearest_ties_even",
+  "palette_remap_after_darkening": false,
+  "geometry_changed": false,
+  "alpha_changed": false,
+  "tiles": [
+    {
+      "name": "01_floor_slabs.png",
+      "size": [
+        64,
+        64
+      ],
+      "source_sha256": "9d3bfd983eaf6eca50b04f193dcf230a1d1657f808d6cdb19a2b20fc6309248c",
+      "output_sha256": "7122e4112fc556cc42f0ebcd233c762a5edfc62da4c4a7be26443e9a8d3cd061"
+    },
+    {
+      "name": "02_floor_cracked.png",
+      "size": [
+        64,
+        64
+      ],
+      "source_sha256": "5285773d0b5c24893371fe6f31521f3ce4022ab09198f84fff4a786db7b306d3",
+      "output_sha256": "5066b7f7738919f1687b84cd397da63441ad84b0f52c3ee31bdff6cb60891595"
+    },
+    {
+      "name": "03_floor_moss.png",
+      "size": [
+        64,
+        64
+      ],
+      "source_sha256": "2725bb5a1270e5630674c55543d3272d0d1bf9082ebdede28b58c8b6c8fab20a",
+      "output_sha256": "95ed302f3ecdb8abc5061f4e888ab48f6bd5805dd82f3ecbb12e9cd46bab187f"
+    },
+    {
+      "name": "04_floor_paving.png",
+      "size": [
+        64,
+        64
+      ],
+      "source_sha256": "8b7165b1f944141c935aa105ac6f983b761ce55fd1affe9eafbf80fd1b55dfbe",
+      "output_sha256": "82eaabef7006daf6cb1069b31142873ad9ca0d894db4de089d4c06858d3f1d16"
+    },
+    {
+      "name": "05_wall_rough.png",
+      "size": [
+        64,
+        64
+      ],
+      "source_sha256": "e189ad36a832f66e29c3e594903aa630924c082840b15601cd5d1f7874551217",
+      "output_sha256": "45289d12f641f5bad5f503a079b436ac16322c7ba7d05fc55a8a1706effa670b"
+    },
+    {
+      "name": "06_wall_blocks.png",
+      "size": [
+        64,
+        64
+      ],
+      "source_sha256": "19b22ca8d1b40c2c2dc1bc0c2e175ea652bbaaf6b4c5381ca862a5e53f35df97",
+      "output_sha256": "99e6e014028b7f4af8897d7269404cc31b1b8348858c4b94262362867d34a1fa"
+    },
+    {
+      "name": "07_wall_moss.png",
+      "size": [
+        64,
+        64
+      ],
+      "source_sha256": "98381cd6a46b7258e1f6677f24cf0e4cdb39e14168e47b6132eaf1f050dea478",
+      "output_sha256": "518ca2fff850cb99f90583a9bb242ab9df237dbe76748b332533f3b4891c0cb5"
+    },
+    {
+      "name": "08_wall_bricks.png",
+      "size": [
+        64,
+        64
+      ],
+      "source_sha256": "8dd885ae9780f89903ad5eb167ab8c13e6464f296254dbd42212c70ccb7c7148",
+      "output_sha256": "721f5ff81cabf9038e384c3bb32831ed1ebecfe7d128a81820d977db718bca9c"
+    },
+    {
+      "name": "09_water_teal.png",
+      "size": [
+        64,
+        64
+      ],
+      "source_sha256": "bc3a0a7bde5ba74cde9cc0c50b40e96cb291269b70856b985681c81f0c749321",
+      "output_sha256": "6e17a02a9383c04636f50be399d7e4c8146634c450d89bfad10988e219bd8957"
+    },
+    {
+      "name": "10_water_blue.png",
+      "size": [
+        64,
+        64
+      ],
+      "source_sha256": "66304e3e5c3b9d9b59a76e542984872355990d83647efb027b4bd2bfbc0031a0",
+      "output_sha256": "b4d62e922510722f2e790efd8561e437583d29b6e647494e8ba1d81d8e1afefa"
+    },
+    {
+      "name": "11_water_green.png",
+      "size": [
+        64,
+        64
+      ],
+      "source_sha256": "7435067311e52c1153ac83be8685c3b5ad563fcf757223700f268539b3a0e66a",
+      "output_sha256": "b56fedeafec35dcc984c39a43ec8118db4d714694cab5fa56f0193e9e8e045a1"
+    },
+    {
+      "name": "12_water_waves.png",
+      "size": [
+        64,
+        64
+      ],
+      "source_sha256": "a36883676cef184205cb344db9b8cce7b24fd48694f71deb49b501c095e9293b",
+      "output_sha256": "3767e7f0c0185f4b409037ddfc81ee68660bb7552e7872f37c743f49b16dd7f2"
+    },
+    {
+      "name": "13_door_plain.png",
+      "size": [
+        64,
+        64
+      ],
+      "source_sha256": "3925a994f793e37e48da2a4ceb73eb67cb1db9cb78962d2bcd325279f5da8d4b",
+      "output_sha256": "7672df3b5e78d271ed6e42c4eb62aa178f642362300e1a8bacb8db4e5655cd36"
+    },
+    {
+      "name": "14_door_reinforced.png",
+      "size": [
+        64,
+        64
+      ],
+      "source_sha256": "1a2e93a083ee6286d11b760b0f643b41d134608b4bd8d8436a89a046932500af",
+      "output_sha256": "ebb1aadc35aca8852725d047a0e61477524de79abb76f5aacbdaf9da85789985"
+    },
+    {
+      "name": "15_door_locked.png",
+      "size": [
+        64,
+        64
+      ],
+      "source_sha256": "2fc7180bde3e33eadad52059f13dce7fd02be75209307a831202f680d1077bf1",
+      "output_sha256": "ec7d807cfb52ac283dcfe62dc2c59def6ba718c1f8186df5e1c1a2a34b002985"
+    },
+    {
+      "name": "16_door_lattice.png",
+      "size": [
+        64,
+        64
+      ],
+      "source_sha256": "53b0b8e62be927cbf43ffbb20c46608e72de9d069014f46cf16aaf23d2818fb5",
+      "output_sha256": "e033e378975cd108e789f57065e42c86686cd3e8de339861d41c72f75914d7e1"
+    }
+  ]
+}

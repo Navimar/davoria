@@ -1,6 +1,7 @@
 extends SceneTree
 
-const CELL_SIZE := 128
+const GRID := preload("res://scripts/grid_config.gd")
+const CELL_SIZE := GRID.TILE_SIZE
 const TILE_EXTRUSION := 2
 const TILE_SOURCE_DUNGEON := 0
 const TILE_FLOOR := Vector2i(0, 0)
@@ -58,7 +59,7 @@ func _blit_tile(atlas: Image, texture_path: String, atlas_coords: Vector2i) -> v
 		return
 
 	if image.get_size() != Vector2i(CELL_SIZE, CELL_SIZE):
-		image.resize(CELL_SIZE, CELL_SIZE, Image.INTERPOLATE_LANCZOS)
+		image.resize(CELL_SIZE, CELL_SIZE, Image.INTERPOLATE_NEAREST)
 	var target_position := Vector2i(TILE_EXTRUSION, TILE_EXTRUSION)
 	target_position += atlas_coords * (CELL_SIZE + TILE_EXTRUSION * 2)
 	_blit_extruded_tile(atlas, image, target_position)

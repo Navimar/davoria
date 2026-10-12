@@ -1,0 +1,35 @@
+{
+  "backup": "/private/tmp/davoria_blur05_paving_floor_ddez65pl",
+  "base_palette": "aap64",
+  "source": "../terrain_25/base_aap64",
+  "standard": "../../../../tools/pixel_recipes/terrain_style.json",
+  "rgb_gain": 0.75,
+  "blur_radius_px": 0.5,
+  "selected_floor": "04_floor_paving.png",
+  "installed_tiles": {
+    "floor.png": "04_floor_paving.png",
+    "wall.png": "01_floor_slabs.png",
+    "water.png": "09_water_teal.png",
+    "door.png": "14_door_reinforced.png"
+  },
+  "verification": "passed",
+  "non_floor_tiles_match_selected_blur_preview": true,
+  "reproduction_exact_count": 16,
+  "legacy_without_blur_exact_count": 16,
+  "size_and_alpha_preserved": true,
+  "runtime_tiles_exact": true,
+  "atlas_pixels_exact": true,
+  "extrusion_verified": true,
+  "protected_files_unchanged": true,
+  "protected_file_count": 88,
+  "floor_source_box": [
+    940,
+    0,
+    1254,
+    314
+  ],
+  "floor_reference": "/var/folders/k3/q4x_t9_x6l560wj8ck0ryl740000gn/T/TemporaryItems/NSIRD_screencaptureui_NjYQLI/Screenshot 2026-10-12 at 08.22.04.png",
+  "godot_import": "completed",
+  "grid_check": "passed",
+  "diff_check": "passed"
+}

@@ -1,0 +1,468 @@
+{
+  "status": "complete",
+  "recipe": {
+    "version": 1,
+    "kind": "sheet",
+    "source": "source.png",
+    "source_sha256": "4c6f41e7b01b237cba64dabbd8271aae1fc7090f485d3cad119eb0e951cf2a14",
+    "layout": {
+      "row_boundaries": [
+        0,
+        315,
+        629,
+        942,
+        1254
+      ],
+      "column_boundaries": [
+        [
+          0,
+          315,
+          629,
+          943,
+          1254
+        ],
+        [
+          0,
+          315,
+          629,
+          943,
+          1254
+        ],
+        [
+          0,
+          315,
+          629,
+          943,
+          1254
+        ],
+        [
+          0,
+          315,
+          629,
+          943,
+          1254
+        ]
+      ]
+    },
+    "chroma": null,
+    "reconstruction": {
+      "grid": [
+        64,
+        64
+      ],
+      "inset": 0.0,
+      "alpha_coverage": 0.0
+    },
+    "palette": "aap64",
+    "outline": null,
+    "canvas": {
+      "size": [
+        64,
+        64
+      ],
+      "baseline": 64
+    },
+    "preview_columns": 4,
+    "sprites": [
+      {
+        "name": "floor_01"
+      },
+      {
+        "name": "floor_02"
+      },
+      {
+        "name": "floor_03"
+      },
+      {
+        "name": "floor_04"
+      },
+      {
+        "name": "floor_05"
+      },
+      {
+        "name": "floor_06"
+      },
+      {
+        "name": "floor_07"
+      },
+      {
+        "name": "floor_08"
+      },
+      {
+        "name": "wall_01"
+      },
+      {
+        "name": "wall_02"
+      },
+      {
+        "name": "wall_03"
+      },
+      {
+        "name": "wall_04"
+      },
+      {
+        "name": "wall_05"
+      },
+      {
+        "name": "wall_06"
+      },
+      {
+        "name": "wall_07"
+      },
+      {
+        "name": "wall_08"
+      }
+    ]
+  },
+  "source": "/Users/igor/Godot/davoria/assets/generation/terrain_variants_64_2026-10-12/source.png",
+  "source_sha256": "4c6f41e7b01b237cba64dabbd8271aae1fc7090f485d3cad119eb0e951cf2a14",
+  "runtime": {
+    "python": "3.14.4",
+    "pillow": "12.2.0"
+  },
+  "layout": {
+    "row_boundaries": [
+      0,
+      315,
+      629,
+      942,
+      1254
+    ],
+    "column_boundaries": [
+      [
+        0,
+        315,
+        629,
+        943,
+        1254
+      ],
+      [
+        0,
+        315,
+        629,
+        943,
+        1254
+      ],
+      [
+        0,
+        315,
+        629,
+        943,
+        1254
+      ],
+      [
+        0,
+        315,
+        629,
+        943,
+        1254
+      ]
+    ]
+  },
+  "sprites": [
+    {
+      "name": "floor_01",
+      "source_box": [
+        0,
+        0,
+        315,
+        315
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "floor_02",
+      "source_box": [
+        315,
+        0,
+        629,
+        315
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "floor_03",
+      "source_box": [
+        629,
+        0,
+        943,
+        315
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "floor_04",
+      "source_box": [
+        943,
+        0,
+        1254,
+        315
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "floor_05",
+      "source_box": [
+        0,
+        315,
+        315,
+        629
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "floor_06",
+      "source_box": [
+        315,
+        315,
+        629,
+        629
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "floor_07",
+      "source_box": [
+        629,
+        315,
+        943,
+        629
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "floor_08",
+      "source_box": [
+        943,
+        315,
+        1254,
+        629
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "wall_01",
+      "source_box": [
+        0,
+        629,
+        315,
+        942
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "wall_02",
+      "source_box": [
+        315,
+        629,
+        629,
+        942
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "wall_03",
+      "source_box": [
+        629,
+        629,
+        943,
+        942
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "wall_04",
+      "source_box": [
+        943,
+        629,
+        1254,
+        942
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "wall_05",
+      "source_box": [
+        0,
+        942,
+        315,
+        1254
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "wall_06",
+      "source_box": [
+        315,
+        942,
+        629,
+        1254
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "wall_07",
+      "source_box": [
+        629,
+        942,
+        943,
+        1254
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "wall_08",
+      "source_box": [
+        943,
+        942,
+        1254,
+        1254
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    }
+  ]
+}

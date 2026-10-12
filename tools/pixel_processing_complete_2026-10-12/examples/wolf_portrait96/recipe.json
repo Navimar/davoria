@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "kind": "single",
+  "source": "../wolf_pseudo_pixel.png",
+  "reference_dir": "..",
+  "reconstruction": {
+    "grid": [
+      162,
+      162
+    ],
+    "inset": 0.18,
+    "alpha_coverage": 0.5
+  },
+  "palette": "aap64",
+  "sprites": [
+    {
+      "name": "wolf_portrait96",
+      "reference": "wolf_portrait_aap64_96_v2.png"
+    }
+  ],
+  "crop": {
+    "size": [
+      96,
+      96
+    ],
+    "x": 58,
+    "y": 42
+  }
+}

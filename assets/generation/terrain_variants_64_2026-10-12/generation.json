@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-12",
+  "tool": "built-in image_gen",
+  "source": "source.png",
+  "source_sha256": "4c6f41e7b01b237cba64dabbd8271aae1fc7090f485d3cad119eb0e951cf2a14",
+  "prompt": "generation_prompt.txt",
+  "recipe": "recipe.json",
+  "floor_reference": "../dungeon_tiles_sheet_64_2026-10-12/terrain_25/base_aap64/04_floor_paving.png",
+  "wall_reference": "../dungeon_tiles_sheet_64_2026-10-12/walls_gray/base_aap64/01_wall_slabs_gray.png",
+  "variants_per_type": 8,
+  "wall_recolor": "wall_recolor.json",
+  "terrain_standard": "../../../tools/pixel_recipes/terrain_style.json",
+  "backup": "/private/tmp/davoria_terrain_variants_1c7td47o",
+  "verification": "passed",
+  "installation": "installation.json"
+}

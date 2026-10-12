@@ -1,0 +1,66 @@
+[
+  {
+    "name": "Маг-разбойник",
+    "file": "01_mage_rogue.png"
+  },
+  {
+    "name": "Рыцарь",
+    "file": "02_knight.png"
+  },
+  {
+    "name": "Следопыт",
+    "file": "03_ranger.png"
+  },
+  {
+    "name": "Варвар",
+    "file": "04_barbarian.png"
+  },
+  {
+    "name": "Маг огня",
+    "file": "05_fire_mage.png"
+  },
+  {
+    "name": "Маг льда",
+    "file": "06_frost_mage.png"
+  },
+  {
+    "name": "Паладин",
+    "file": "07_paladin.png"
+  },
+  {
+    "name": "Воин-гном",
+    "file": "08_dwarf_warrior.png"
+  },
+  {
+    "name": "Эльфийка",
+    "file": "09_elf_huntress.png"
+  },
+  {
+    "name": "Дуэлянт",
+    "file": "10_duelist.png"
+  },
+  {
+    "name": "Друид",
+    "file": "11_druid.png"
+  },
+  {
+    "name": "Разбойница",
+    "file": "12_rogue.png"
+  },
+  {
+    "name": "Жрец",
+    "file": "13_cleric.png"
+  },
+  {
+    "name": "Монах",
+    "file": "14_monk.png"
+  },
+  {
+    "name": "Алхимик",
+    "file": "15_alchemist.png"
+  },
+  {
+    "name": "Полурослик",
+    "file": "16_halfling.png"
+  }
+]

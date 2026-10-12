@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-12",
+  "backup": "/private/tmp/davoria_light_water_x3q2sq06",
+  "previous_tile": "09_water_teal.png",
+  "selected_tile": "10_water_blue.png",
+  "source_sheet_cell": {
+    "row": 3,
+    "column": 2
+  },
+  "high_resolution_crop": [
+    313,
+    624,
+    627,
+    926
+  ],
+  "runtime_source": "terrain_25_blur05/final/10_water_blue.png",
+  "source_sha256": "b4d62e922510722f2e790efd8561e437583d29b6e647494e8ba1d81d8e1afefa",
+  "rgb_gain": 0.75,
+  "blur_radius_px": 0.5,
+  "verification": "passed",
+  "asset_verification": {
+    "runtime_water_exact": true,
+    "opaque_64px": true,
+    "atlas_pixels_exact": true,
+    "extrusion_verified": true,
+    "protected_file_count": 174,
+    "protected_files_unchanged": true
+  },
+  "godot_import": "completed",
+  "grid_check": "passed: 64px resources, 16 hero choices, movement, camera, collision, ghost mode and view",
+  "diff_check": "passed"
+}

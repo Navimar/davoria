@@ -5,6 +5,7 @@ uniform float blend_width : hint_range(0.0, 0.5) = 0.2;
 uniform float diffusion_width : hint_range(0.0, 0.5) = 0.0875;
 uniform float diffusion_start : hint_range(0.0, 0.5) = 0.05625;
 uniform float grain_strength : hint_range(0.0, 1.0) = 0.28;
+uniform float grain_scale = 160.0;
 uniform float tone_steps = 6.0;
 uniform float outline_width : hint_range(0.0, 0.1) = 0.01875;
 uniform float outline_jitter : hint_range(0.0, 0.1) = 0.0125;
@@ -31,7 +32,7 @@ float edge_alpha(float edge_distance, vec2 grain_uv) {
 	}
 
 	float smooth_coverage = smoothstep(0.0, 1.0, coverage);
-	float grain = (hash(floor(grain_uv * 160.0)) - 0.5) * grain_strength;
+	float grain = (hash(floor(grain_uv * grain_scale)) - 0.5) * grain_strength;
 	float edge_weight = 1.0 - abs(smooth_coverage * 2.0 - 1.0);
 	float grain_coverage = clamp(smooth_coverage + grain * edge_weight, 0.0, 1.0);
 	return round(grain_coverage * tone_steps) / tone_steps;

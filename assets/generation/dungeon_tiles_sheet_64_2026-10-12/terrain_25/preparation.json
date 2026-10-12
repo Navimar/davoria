@@ -1,0 +1,26 @@
+{
+  "backup": "/private/tmp/davoria_terrain_darkening25_c95bxu1u",
+  "base_palette": "aap64",
+  "base_tile_count": 16,
+  "water_source": "processed_recut/final",
+  "other_sources": "processed/final",
+  "standard": "../../../../tools/pixel_recipes/terrain_style.json",
+  "rgb_gain": 0.75,
+  "verification": "passed",
+  "installed_tiles": {
+    "floor.png": "05_wall_rough.png",
+    "wall.png": "01_floor_slabs.png",
+    "water.png": "09_water_teal.png",
+    "door.png": "14_door_reinforced.png"
+  },
+  "preview_rgb_operation_exact": true,
+  "reproduction_exact_count": 16,
+  "atlas_pixels_exact": true,
+  "extrusion_verified": true,
+  "selected_preview_exact": true,
+  "protected_files_unchanged": true,
+  "protected_file_count": 87,
+  "godot_import": "completed",
+  "grid_check": "passed",
+  "diff_check": "passed"
+}

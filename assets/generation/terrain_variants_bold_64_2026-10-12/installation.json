@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-12",
+  "mode": "built-in imagegen edit",
+  "backup": "/var/folders/k3/q4x_t9_x6l560wj8ck0ryl740000gn/T/davoria_bold_terrain__1tlw7e0",
+  "runtime_directory": "assets/tiles/dungeon/variants",
+  "tiles": {
+    "floor_01.png": "f8664c9c6b8af74176a6739cfc25c626a7527ba30ae20b324e434a1c9321f221",
+    "floor_02.png": "fe10c9a164d35ec8c8a6d6ee4049ab8382a075155e9323f7e82065668d760ac9",
+    "floor_03.png": "3864a8f84cb012225d68c539d17a6e266e5a0c4486c43a14191749b4884eb927",
+    "floor_04.png": "97066d92b638064ada275162e034696dcfc324e5728054718df59b91b36987fd",
+    "floor_05.png": "fefcf0ef8b7da7eaf6f6ab943c2a843451c09713ad1f22f41550448bf1de9af3",
+    "floor_06.png": "d3191115eea50c7775c805e36a5837b4bd19caadc58b0d665f5177f6d8b44b5d",
+    "floor_07.png": "07f30825ddd21de9164bbc310d62fa1448aa9305ec0b20c102965d6b9e8e686a",
+    "floor_08.png": "537f982eecd1702a17fd21dc088a53f3f3b01a4f6f2ff2a85c9d9bdf339dd739",
+    "wall_01.png": "791bc293e6134b685da558915a06b79029b5fa0a83d9a2c7c713fd08b1d175a4",
+    "wall_02.png": "487d4dc93ed460928f604ad4b3e2897d46976fad34331bd78b4adca3b63dbb36",
+    "wall_03.png": "38d3107fb44e550b9459286ec4827d9d833aacd5fb0f12f2704f821ee956ad10",
+    "wall_04.png": "f2f85da1f5403b938a7d3e2b28f5063275fc5bb8ed3ab921a14fc410f1f83316",
+    "wall_05.png": "fce6964ae1105945c9aeebe3162e98f66d89fc9b9a0de044d9cc8c40ce33539a",
+    "wall_06.png": "befab80a6c8bc8e3318c103243e753aa2fb08d6dfb6271626be657e6f8cf2a72",
+    "wall_07.png": "64fa8d9c93e6325dcb7a78dea0a9b7e4ced9461435aa814769dc337ff5491350",
+    "wall_08.png": "740b56aa0d11bc96b15fa3ac1aa77994895509a6783d18db2f821d3d2fa77e0b"
+  },
+  "palette": "AAP64",
+  "tile_size": [
+    64,
+    64
+  ],
+  "rgb_gain": 0.75,
+  "blur_radius_px": 0.5,
+  "protected_files_unchanged": true,
+  "selection": "existing stable coordinate hash retained",
+  "preview": "comparison_native.png",
+  "prompt": "generation_prompt.txt",
+  "godot_import": "completed",
+  "grid_check": "passed",
+  "game_preview": "game_preview.png",
+  "visual_review": "approved at native 64px and in the rendered game",
+  "runtime_exact": true
+}

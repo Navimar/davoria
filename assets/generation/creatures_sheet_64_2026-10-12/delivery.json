@@ -1,0 +1,270 @@
+{
+  "sprites": 16,
+  "sprite_size": [
+    64,
+    64
+  ],
+  "sheet_size": [
+    256,
+    256
+  ],
+  "padding": 0,
+  "baseline": 64,
+  "max_visible_dimension": 64,
+  "qa_ok": true,
+  "order": [
+    "highres_chroma_key",
+    "highres_alpha_bbox_crop",
+    "highres_fit",
+    "pixelization64",
+    "palette",
+    "outline"
+  ],
+  "post_pixelization_resize": false,
+  "individual_sprites": "full_cell_64/processed/final",
+  "download": "creatures_sheet_64.zip",
+  "generator": "built-in ImageGen, original high-res source",
+  "processing": "tools/process_creature_sheet.py",
+  "changes": [
+    {
+      "name": "01_giant_centipede.png",
+      "before_bbox": [
+        8,
+        20,
+        56,
+        61
+      ],
+      "after_bbox": [
+        0,
+        6,
+        64,
+        64
+      ]
+    },
+    {
+      "name": "02_ratman_scout.png",
+      "before_bbox": [
+        9,
+        20,
+        54,
+        61
+      ],
+      "after_bbox": [
+        0,
+        4,
+        64,
+        64
+      ]
+    },
+    {
+      "name": "03_young_treant.png",
+      "before_bbox": [
+        13,
+        11,
+        51,
+        61
+      ],
+      "after_bbox": [
+        7,
+        0,
+        57,
+        64
+      ]
+    },
+    {
+      "name": "04_goblin_drummer.png",
+      "before_bbox": [
+        14,
+        22,
+        50,
+        61
+      ],
+      "after_bbox": [
+        2,
+        0,
+        62,
+        64
+      ]
+    },
+    {
+      "name": "05_water_elemental.png",
+      "before_bbox": [
+        10,
+        11,
+        54,
+        61
+      ],
+      "after_bbox": [
+        4,
+        0,
+        60,
+        64
+      ]
+    },
+    {
+      "name": "06_hobgoblin_captain.png",
+      "before_bbox": [
+        8,
+        12,
+        56,
+        61
+      ],
+      "after_bbox": [
+        1,
+        0,
+        63,
+        64
+      ]
+    },
+    {
+      "name": "07_frost_troll.png",
+      "before_bbox": [
+        10,
+        16,
+        53,
+        61
+      ],
+      "after_bbox": [
+        1,
+        0,
+        63,
+        64
+      ]
+    },
+    {
+      "name": "08_dire_wolf.png",
+      "before_bbox": [
+        8,
+        23,
+        55,
+        61
+      ],
+      "after_bbox": [
+        0,
+        12,
+        64,
+        64
+      ]
+    },
+    {
+      "name": "09_serpent_cultist.png",
+      "before_bbox": [
+        9,
+        16,
+        55,
+        61
+      ],
+      "after_bbox": [
+        0,
+        1,
+        64,
+        64
+      ]
+    },
+    {
+      "name": "10_mantis_warrior.png",
+      "before_bbox": [
+        9,
+        6,
+        55,
+        61
+      ],
+      "after_bbox": [
+        5,
+        0,
+        59,
+        64
+      ]
+    },
+    {
+      "name": "11_cockatrice.png",
+      "before_bbox": [
+        8,
+        11,
+        56,
+        61
+      ],
+      "after_bbox": [
+        1,
+        0,
+        63,
+        64
+      ]
+    },
+    {
+      "name": "12_necromancer.png",
+      "before_bbox": [
+        10,
+        15,
+        54,
+        61
+      ],
+      "after_bbox": [
+        1,
+        0,
+        63,
+        64
+      ]
+    },
+    {
+      "name": "13_obsidian_golem.png",
+      "before_bbox": [
+        7,
+        12,
+        56,
+        61
+      ],
+      "after_bbox": [
+        0,
+        0,
+        64,
+        64
+      ]
+    },
+    {
+      "name": "14_skeletal_horse.png",
+      "before_bbox": [
+        9,
+        12,
+        55,
+        61
+      ],
+      "after_bbox": [
+        2,
+        0,
+        62,
+        64
+      ]
+    },
+    {
+      "name": "15_lantern_wisp.png",
+      "before_bbox": [
+        13,
+        16,
+        51,
+        61
+      ],
+      "after_bbox": [
+        4,
+        0,
+        60,
+        64
+      ]
+    },
+    {
+      "name": "16_baby_dragon.png",
+      "before_bbox": [
+        6,
+        11,
+        58,
+        61
+      ],
+      "after_bbox": [
+        0,
+        2,
+        64,
+        64
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "source": "../source.png",
+  "source_sha256": "dd01f037957a60101e097631b546f7af1b588a1e964016c44252452171deb842",
+  "source_box": [
+    0,
+    624,
+    313,
+    926
+  ],
+  "source_crop_size": [
+    313,
+    302
+  ],
+  "previous_box": [
+    0,
+    627,
+    314,
+    940
+  ],
+  "order": [
+    "crop_highres_to_water_region",
+    "pixelize_64x64",
+    "aap64"
+  ],
+  "post_pixel_crop": false,
+  "post_pixel_resize": false,
+  "water_only_source_pixels": true,
+  "backup": "/private/tmp/davoria_water_recut_tukvla9w",
+  "verification": "passed",
+  "active_water_sha256": "bc3a0a7bde5ba74cde9cc0c50b40e96cb291269b70856b985681c81f0c749321",
+  "recipe_reproduction_exact": true,
+  "atlas_pixels_exact": true,
+  "extrusion_verified": true,
+  "protected_files_unchanged": true,
+  "other_runtime_tiles_unchanged": true,
+  "godot_import": "completed",
+  "grid_check": "passed"
+}
