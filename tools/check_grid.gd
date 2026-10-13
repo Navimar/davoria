@@ -27,7 +27,12 @@ func _run() -> void:
 	_check(scene.call("_chunk_coord_for_cell", Vector2i(-1, -1)) == Vector2i(-1, -1), "Negative chunk boundary")
 
 	var enemies: Array = scene.get("_enemies")
-	_check(enemies.size() == DEMO_SCRIPT.STARTER_LEVEL.GOBLINS.size() and scene.get("_actor_blocked_cells").size() == enemies.size(), "Only live level goblins are instantiated and block cells")
+	var expected_enemies := 0
+	var authored: Dictionary = scene.call("_authored_map_objects")
+	for cell: Vector2i in authored:
+		if DEMO_SCRIPT.OBJECT_CATALOG.definition(authored[cell]).category == "enemy" and scene.get("_loaded_chunks").has(scene.call("_chunk_coord_for_cell", cell)) and DEMO_SCRIPT.OBJECT_CATALOG.can_place_on(authored[cell], scene.call("_terrain_type", cell)):
+			expected_enemies += 1
+	_check(enemies.size() == expected_enemies and scene.get("_actor_blocked_cells").size() == enemies.size(), "Only live level goblins are instantiated and block cells")
 	for enemy: Sprite2D in enemies:
 		_check(enemy.scale == Vector2.ONE and enemy.offset == GRID.ACTOR_DRAW_OFFSET, "Native monster scale and raised drawing: %s" % enemy.name)
 		_check(enemy.texture.get_size() == Vector2.ONE * GRID.TILE_SIZE, "Monster texture: %s" % enemy.name)
@@ -45,6 +50,9 @@ func _run() -> void:
 	await process_frame
 
 	_check_hero_choices(scene, hero)
+	# Movement fixtures test controls and pickups independently of live encounters.
+	for actor_id: int in scene.get("_goblins").keys():
+		scene.call("_remove_goblin", actor_id)
 	await _check_movement(scene, hero)
 	await _check_responsive_movement(scene, hero)
 	await _check_held_movement(scene, hero)
@@ -65,7 +73,9 @@ func _run() -> void:
 
 func _check_resources() -> void:
 	var paths: Array[String] = []
-	paths.append(DEMO_SCRIPT.GOBLIN_PATH)
+	for goblin_type in DEMO_SCRIPT.GOBLIN_TYPES.TYPES:
+		paths.append(goblin_type.path)
+	paths.append(DEMO_SCRIPT.BOSS_PATH)
 	for variant in DEMO_SCRIPT.HERO_VARIANTS:
 		paths.append(str(variant["path"]))
 	for folder in ["res://assets/actors", "res://assets/items", "res://assets/tiles/dungeon"]:
@@ -77,7 +87,7 @@ func _check_resources() -> void:
 		_check(image != null and image.get_size() == Vector2i.ONE * GRID.TILE_SIZE, "64px PNG: %s" % path)
 		var texture := load(path) as Texture2D
 		_check(texture != null and texture.get_size() == Vector2.ONE * GRID.TILE_SIZE, "64px imported texture: %s" % path)
-		if image != null and (path.contains("/pixel_monsters/") or path.contains("/heroes/") or path == DEMO_SCRIPT.HERO_PATH):
+		if image != null and (path.contains("/pixel_monsters/") or path.contains("/goblins/") or path.contains("/heroes/") or path == DEMO_SCRIPT.HERO_PATH):
 			var silhouette := image.get_used_rect()
 			_check(silhouette.end.y == GRID.PIXEL_BASELINE, "Sprite baseline: %s" % path)
 			_check(maxi(silhouette.size.x, silhouette.size.y) == GRID.TILE_SIZE, "Silhouette fills the cell: %s" % path)
@@ -269,6 +279,7 @@ func _check_responsive_movement(scene: Node2D, hero: Sprite2D) -> void:
 	camera.position = hero.position
 	camera.force_update_scroll()
 	scene.call("_update_enemy_facing")
+	scene.call("_update_visible_chunks")
 	scene.call("_update_fog")
 
 
@@ -350,6 +361,7 @@ func _check_held_movement(scene: Node2D, hero: Sprite2D) -> void:
 	camera.position = hero.position
 	camera.force_update_scroll()
 	scene.call("_update_enemy_facing")
+	scene.call("_update_visible_chunks")
 	scene.call("_update_fog")
 
 
@@ -360,7 +372,8 @@ func _check_ghost_mode(scene: Node2D, hero: Sprite2D) -> void:
 		return
 	var wall: Vector2i = blocked.keys()[0]
 	_check(not scene.call("_is_walkable", wall), "Walls block the normal hero")
-	var goblin_id: int = scene.call("_spawn_goblin", Vector2i(20, 5), 100)
+	scene.call("_set_terrain_cell", Vector2i(20, 5), DEMO_SCRIPT.TileType.FLOOR)
+	var goblin_id: int = scene.call("_spawn_goblin", Vector2i(20, 5), DEMO_SCRIPT.GOBLIN_TYPES.DEFAULT_TYPE)
 	_check(not scene.call("_is_walkable", Vector2i(20, 5)), "Monsters block movement")
 	scene.call("_set_ghost_mode", true)
 	_check(scene.call("_is_walkable", wall), "Ghost passes through walls")

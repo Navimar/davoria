@@ -1,0 +1,407 @@
+{
+  "source": "/Users/igor/Godot/davoria/assets/generation/flora_sheet_64_2026-10-12/source_hard_alpha.png",
+  "source_sha256": "19538a1cd786224fb165e8ecba1325c656b8d40ea7eaf53a74e15e6f223cdc02",
+  "order": [
+    "split_highres",
+    "chroma_key",
+    "crop_alpha_bbox",
+    "fit_highres",
+    "pixelize"
+  ],
+  "padding": 0,
+  "target_size": [
+    64,
+    64
+  ],
+  "visible_size": [
+    64,
+    64
+  ],
+  "baseline": 64,
+  "sprites": [
+    {
+      "name": "flora_01",
+      "source_box": [
+        35,
+        15,
+        288,
+        298
+      ],
+      "source_bbox": [
+        0,
+        0,
+        253,
+        283
+      ],
+      "cropped_size": [
+        253,
+        283
+      ],
+      "fitted_body_size": [
+        458,
+        512
+      ],
+      "scale": 1.8091872791519434
+    },
+    {
+      "name": "flora_02",
+      "source_box": [
+        342,
+        37,
+        619,
+        291
+      ],
+      "source_bbox": [
+        0,
+        0,
+        277,
+        254
+      ],
+      "cropped_size": [
+        277,
+        254
+      ],
+      "fitted_body_size": [
+        512,
+        469
+      ],
+      "scale": 1.848375451263538
+    },
+    {
+      "name": "flora_03",
+      "source_box": [
+        672,
+        18,
+        888,
+        295
+      ],
+      "source_bbox": [
+        0,
+        0,
+        216,
+        277
+      ],
+      "cropped_size": [
+        216,
+        277
+      ],
+      "fitted_body_size": [
+        399,
+        512
+      ],
+      "scale": 1.848375451263538
+    },
+    {
+      "name": "flora_04",
+      "source_box": [
+        1005,
+        56,
+        1232,
+        295
+      ],
+      "source_bbox": [
+        0,
+        0,
+        227,
+        239
+      ],
+      "cropped_size": [
+        227,
+        239
+      ],
+      "fitted_body_size": [
+        486,
+        512
+      ],
+      "scale": 2.1422594142259412
+    },
+    {
+      "name": "flora_05",
+      "source_box": [
+        32,
+        343,
+        266,
+        603
+      ],
+      "source_bbox": [
+        0,
+        0,
+        234,
+        260
+      ],
+      "cropped_size": [
+        234,
+        260
+      ],
+      "fitted_body_size": [
+        461,
+        512
+      ],
+      "scale": 1.9692307692307693
+    },
+    {
+      "name": "flora_06",
+      "source_box": [
+        362,
+        310,
+        586,
+        603
+      ],
+      "source_bbox": [
+        0,
+        0,
+        224,
+        293
+      ],
+      "cropped_size": [
+        224,
+        293
+      ],
+      "fitted_body_size": [
+        391,
+        512
+      ],
+      "scale": 1.7474402730375427
+    },
+    {
+      "name": "flora_07",
+      "source_box": [
+        683,
+        325,
+        905,
+        603
+      ],
+      "source_bbox": [
+        0,
+        0,
+        222,
+        278
+      ],
+      "cropped_size": [
+        222,
+        278
+      ],
+      "fitted_body_size": [
+        409,
+        512
+      ],
+      "scale": 1.841726618705036
+    },
+    {
+      "name": "flora_08",
+      "source_box": [
+        1012,
+        389,
+        1236,
+        602
+      ],
+      "source_bbox": [
+        0,
+        0,
+        224,
+        213
+      ],
+      "cropped_size": [
+        224,
+        213
+      ],
+      "fitted_body_size": [
+        512,
+        487
+      ],
+      "scale": 2.2857142857142856
+    },
+    {
+      "name": "flora_09",
+      "source_box": [
+        19,
+        646,
+        306,
+        898
+      ],
+      "source_bbox": [
+        0,
+        0,
+        287,
+        252
+      ],
+      "cropped_size": [
+        287,
+        252
+      ],
+      "fitted_body_size": [
+        512,
+        450
+      ],
+      "scale": 1.78397212543554
+    },
+    {
+      "name": "flora_10",
+      "source_box": [
+        338,
+        626,
+        627,
+        911
+      ],
+      "source_bbox": [
+        0,
+        0,
+        289,
+        285
+      ],
+      "cropped_size": [
+        289,
+        285
+      ],
+      "fitted_body_size": [
+        512,
+        505
+      ],
+      "scale": 1.7716262975778547
+    },
+    {
+      "name": "flora_11",
+      "source_box": [
+        658,
+        642,
+        967,
+        905
+      ],
+      "source_bbox": [
+        0,
+        0,
+        309,
+        263
+      ],
+      "cropped_size": [
+        309,
+        263
+      ],
+      "fitted_body_size": [
+        512,
+        436
+      ],
+      "scale": 1.656957928802589
+    },
+    {
+      "name": "flora_12",
+      "source_box": [
+        996,
+        629,
+        1247,
+        904
+      ],
+      "source_bbox": [
+        0,
+        0,
+        251,
+        275
+      ],
+      "cropped_size": [
+        251,
+        275
+      ],
+      "fitted_body_size": [
+        467,
+        512
+      ],
+      "scale": 1.8618181818181818
+    },
+    {
+      "name": "flora_13",
+      "source_box": [
+        43,
+        909,
+        291,
+        1201
+      ],
+      "source_bbox": [
+        0,
+        0,
+        248,
+        292
+      ],
+      "cropped_size": [
+        248,
+        292
+      ],
+      "fitted_body_size": [
+        435,
+        512
+      ],
+      "scale": 1.7534246575342465
+    },
+    {
+      "name": "flora_14",
+      "source_box": [
+        356,
+        938,
+        620,
+        1202
+      ],
+      "source_bbox": [
+        0,
+        0,
+        264,
+        264
+      ],
+      "cropped_size": [
+        264,
+        264
+      ],
+      "fitted_body_size": [
+        512,
+        512
+      ],
+      "scale": 1.9393939393939394
+    },
+    {
+      "name": "flora_15",
+      "source_box": [
+        663,
+        952,
+        940,
+        1202
+      ],
+      "source_bbox": [
+        0,
+        0,
+        277,
+        250
+      ],
+      "cropped_size": [
+        277,
+        250
+      ],
+      "fitted_body_size": [
+        512,
+        462
+      ],
+      "scale": 1.848375451263538
+    },
+    {
+      "name": "flora_16",
+      "source_box": [
+        983,
+        920,
+        1259,
+        1203
+      ],
+      "source_bbox": [
+        0,
+        0,
+        276,
+        283
+      ],
+      "cropped_size": [
+        276,
+        283
+      ],
+      "fitted_body_size": [
+        499,
+        512
+      ],
+      "scale": 1.8091872791519434
+    }
+  ]
+}

@@ -1,0 +1,407 @@
+{
+  "source": "/Users/igor/Godot/davoria/assets/generation/key_sheet_64_2026-10-12/source_hard_alpha.png",
+  "source_sha256": "1783447a26fbfeb8baf707f903e60017728df7253a27c5c06ff17d3b73b1372b",
+  "order": [
+    "split_highres",
+    "chroma_key",
+    "crop_alpha_bbox",
+    "fit_highres",
+    "pixelize"
+  ],
+  "padding": 0,
+  "target_size": [
+    64,
+    64
+  ],
+  "visible_size": [
+    38,
+    38
+  ],
+  "baseline": 52,
+  "sprites": [
+    {
+      "name": "key_01",
+      "source_box": [
+        52,
+        32,
+        283,
+        289
+      ],
+      "source_bbox": [
+        0,
+        0,
+        231,
+        257
+      ],
+      "cropped_size": [
+        231,
+        257
+      ],
+      "fitted_body_size": [
+        273,
+        304
+      ],
+      "scale": 1.1828793774319066
+    },
+    {
+      "name": "key_02",
+      "source_box": [
+        369,
+        41,
+        591,
+        290
+      ],
+      "source_bbox": [
+        0,
+        0,
+        222,
+        249
+      ],
+      "cropped_size": [
+        222,
+        249
+      ],
+      "fitted_body_size": [
+        271,
+        304
+      ],
+      "scale": 1.2208835341365463
+    },
+    {
+      "name": "key_03",
+      "source_box": [
+        687,
+        27,
+        925,
+        290
+      ],
+      "source_bbox": [
+        0,
+        0,
+        238,
+        263
+      ],
+      "cropped_size": [
+        238,
+        263
+      ],
+      "fitted_body_size": [
+        275,
+        304
+      ],
+      "scale": 1.155893536121673
+    },
+    {
+      "name": "key_04",
+      "source_box": [
+        998,
+        28,
+        1240,
+        290
+      ],
+      "source_bbox": [
+        0,
+        0,
+        242,
+        262
+      ],
+      "cropped_size": [
+        242,
+        262
+      ],
+      "fitted_body_size": [
+        281,
+        304
+      ],
+      "scale": 1.1603053435114503
+    },
+    {
+      "name": "key_05",
+      "source_box": [
+        52,
+        333,
+        283,
+        596
+      ],
+      "source_bbox": [
+        0,
+        0,
+        231,
+        263
+      ],
+      "cropped_size": [
+        231,
+        263
+      ],
+      "fitted_body_size": [
+        267,
+        304
+      ],
+      "scale": 1.155893536121673
+    },
+    {
+      "name": "key_06",
+      "source_box": [
+        370,
+        326,
+        620,
+        598
+      ],
+      "source_bbox": [
+        0,
+        0,
+        250,
+        272
+      ],
+      "cropped_size": [
+        250,
+        272
+      ],
+      "fitted_body_size": [
+        279,
+        304
+      ],
+      "scale": 1.1176470588235294
+    },
+    {
+      "name": "key_07",
+      "source_box": [
+        685,
+        340,
+        924,
+        599
+      ],
+      "source_bbox": [
+        0,
+        0,
+        239,
+        259
+      ],
+      "cropped_size": [
+        239,
+        259
+      ],
+      "fitted_body_size": [
+        281,
+        304
+      ],
+      "scale": 1.1737451737451738
+    },
+    {
+      "name": "key_08",
+      "source_box": [
+        999,
+        331,
+        1234,
+        599
+      ],
+      "source_bbox": [
+        0,
+        0,
+        235,
+        268
+      ],
+      "cropped_size": [
+        235,
+        268
+      ],
+      "fitted_body_size": [
+        267,
+        304
+      ],
+      "scale": 1.1343283582089552
+    },
+    {
+      "name": "key_09",
+      "source_box": [
+        52,
+        647,
+        292,
+        906
+      ],
+      "source_bbox": [
+        0,
+        0,
+        240,
+        259
+      ],
+      "cropped_size": [
+        240,
+        259
+      ],
+      "fitted_body_size": [
+        282,
+        304
+      ],
+      "scale": 1.1737451737451738
+    },
+    {
+      "name": "key_10",
+      "source_box": [
+        371,
+        629,
+        631,
+        906
+      ],
+      "source_bbox": [
+        0,
+        0,
+        260,
+        277
+      ],
+      "cropped_size": [
+        260,
+        277
+      ],
+      "fitted_body_size": [
+        285,
+        304
+      ],
+      "scale": 1.0974729241877257
+    },
+    {
+      "name": "key_11",
+      "source_box": [
+        679,
+        633,
+        925,
+        906
+      ],
+      "source_bbox": [
+        0,
+        0,
+        246,
+        273
+      ],
+      "cropped_size": [
+        246,
+        273
+      ],
+      "fitted_body_size": [
+        274,
+        304
+      ],
+      "scale": 1.1135531135531136
+    },
+    {
+      "name": "key_12",
+      "source_box": [
+        1003,
+        635,
+        1240,
+        906
+      ],
+      "source_bbox": [
+        0,
+        0,
+        237,
+        271
+      ],
+      "cropped_size": [
+        237,
+        271
+      ],
+      "fitted_body_size": [
+        266,
+        304
+      ],
+      "scale": 1.121771217712177
+    },
+    {
+      "name": "key_13",
+      "source_box": [
+        52,
+        940,
+        292,
+        1208
+      ],
+      "source_bbox": [
+        0,
+        0,
+        240,
+        268
+      ],
+      "cropped_size": [
+        240,
+        268
+      ],
+      "fitted_body_size": [
+        272,
+        304
+      ],
+      "scale": 1.1343283582089552
+    },
+    {
+      "name": "key_14",
+      "source_box": [
+        366,
+        934,
+        593,
+        1208
+      ],
+      "source_bbox": [
+        0,
+        0,
+        227,
+        274
+      ],
+      "cropped_size": [
+        227,
+        274
+      ],
+      "fitted_body_size": [
+        252,
+        304
+      ],
+      "scale": 1.1094890510948905
+    },
+    {
+      "name": "key_15",
+      "source_box": [
+        688,
+        944,
+        925,
+        1209
+      ],
+      "source_bbox": [
+        0,
+        0,
+        237,
+        265
+      ],
+      "cropped_size": [
+        237,
+        265
+      ],
+      "fitted_body_size": [
+        272,
+        304
+      ],
+      "scale": 1.1471698113207547
+    },
+    {
+      "name": "key_16",
+      "source_box": [
+        1003,
+        929,
+        1231,
+        1208
+      ],
+      "source_bbox": [
+        0,
+        0,
+        228,
+        279
+      ],
+      "cropped_size": [
+        228,
+        279
+      ],
+      "fitted_body_size": [
+        248,
+        304
+      ],
+      "scale": 1.0896057347670252
+    }
+  ]
+}

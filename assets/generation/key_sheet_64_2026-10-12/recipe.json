@@ -1,0 +1,87 @@
+{
+  "version": 1,
+  "kind": "sheet",
+  "source": "source_hard_alpha.png",
+  "layout": {
+    "rows": 4,
+    "columns": 4,
+    "split_silhouettes": true
+  },
+  "chroma": null,
+  "reconstruction": {
+    "grid": [
+      64,
+      64
+    ],
+    "inset": 0.0,
+    "alpha_coverage": 0.0
+  },
+  "palette": "aap64",
+  "outline": {
+    "color": "242234",
+    "neighbors": 8
+  },
+  "preview_columns": 4,
+  "sprites": [
+    {
+      "name": "key_01"
+    },
+    {
+      "name": "key_02"
+    },
+    {
+      "name": "key_03"
+    },
+    {
+      "name": "key_04"
+    },
+    {
+      "name": "key_05"
+    },
+    {
+      "name": "key_06"
+    },
+    {
+      "name": "key_07"
+    },
+    {
+      "name": "key_08"
+    },
+    {
+      "name": "key_09"
+    },
+    {
+      "name": "key_10"
+    },
+    {
+      "name": "key_11"
+    },
+    {
+      "name": "key_12"
+    },
+    {
+      "name": "key_13"
+    },
+    {
+      "name": "key_14"
+    },
+    {
+      "name": "key_15"
+    },
+    {
+      "name": "key_16"
+    }
+  ],
+  "fit_visible_before_pixelization": true,
+  "canvas": {
+    "size": [
+      64,
+      64
+    ],
+    "baseline": 52
+  },
+  "visible_size": [
+    38,
+    38
+  ]
+}

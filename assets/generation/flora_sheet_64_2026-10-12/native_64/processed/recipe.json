@@ -1,0 +1,122 @@
+{
+  "version": 1,
+  "kind": "sheet",
+  "source": "sheet.png",
+  "layout": {
+    "row_boundaries": [
+      0,
+      512,
+      1024,
+      1536,
+      2048
+    ],
+    "column_boundaries": [
+      [
+        0,
+        512,
+        1024,
+        1536,
+        2048
+      ],
+      [
+        0,
+        512,
+        1024,
+        1536,
+        2048
+      ],
+      [
+        0,
+        512,
+        1024,
+        1536,
+        2048
+      ],
+      [
+        0,
+        512,
+        1024,
+        1536,
+        2048
+      ]
+    ]
+  },
+  "chroma": null,
+  "reconstruction": {
+    "grid": [
+      64,
+      64
+    ],
+    "inset": 0.0,
+    "alpha_coverage": 0.0
+  },
+  "palette": "aap64",
+  "outline": {
+    "color": "242234",
+    "neighbors": 8
+  },
+  "preview_columns": 4,
+  "sprites": [
+    {
+      "name": "flora_01"
+    },
+    {
+      "name": "flora_02"
+    },
+    {
+      "name": "flora_03"
+    },
+    {
+      "name": "flora_04"
+    },
+    {
+      "name": "flora_05"
+    },
+    {
+      "name": "flora_06"
+    },
+    {
+      "name": "flora_07"
+    },
+    {
+      "name": "flora_08"
+    },
+    {
+      "name": "flora_09"
+    },
+    {
+      "name": "flora_10"
+    },
+    {
+      "name": "flora_11"
+    },
+    {
+      "name": "flora_12"
+    },
+    {
+      "name": "flora_13"
+    },
+    {
+      "name": "flora_14"
+    },
+    {
+      "name": "flora_15"
+    },
+    {
+      "name": "flora_16"
+    }
+  ],
+  "canvas": {
+    "size": [
+      64,
+      64
+    ],
+    "baseline": 64
+  },
+  "visible_size": [
+    64,
+    64
+  ],
+  "source_sha256": "e89519c2beff5eedb37f1da8a81dd3f2b624d0308fd26127d75e0a5ed689e35f",
+  "fit_canvas_candidates": false
+}

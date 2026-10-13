@@ -1,0 +1,78 @@
+{
+  "candidate_count": 16,
+  "selected_count": 3,
+  "selection_rule": "Manual visual selection of coherent faces, limbs and weapons; technical pixel QA alone is insufficient.",
+  "selected": [
+    {
+      "id": "weak_club",
+      "file": "01_weak_club.png",
+      "tier": "weak",
+      "strength": [
+        5,
+        30
+      ],
+      "sha256": "9a56604f9f12d69b46985494b6b68c1416d520a3e033ab85b3eca1747e0cf9bd"
+    },
+    {
+      "id": "medium_swordsman",
+      "file": "09_medium_swordsman.png",
+      "tier": "medium",
+      "strength": [
+        31,
+        65
+      ],
+      "sha256": "90c5b8fffd761090a02a7c8bd31397b5a3fa2ae608a0775b704e7fdf2b7ad6fe"
+    },
+    {
+      "id": "strong_guard",
+      "file": "12_strong_guard.png",
+      "tier": "strong",
+      "strength": [
+        66,
+        99
+      ],
+      "sha256": "da564d9622612b6f342ecd59adcab8b61659831ffd597814fce3cbc0a28bc1bc"
+    }
+  ],
+  "rejected_runtime_files": [
+    "02_weak_dagger.png",
+    "03_weak_hatchet.png",
+    "04_weak_spear.png",
+    "06_weak_shield.png",
+    "07_medium_mace.png",
+    "08_medium_spearman.png",
+    "10_medium_axeman.png",
+    "11_medium_duelist.png",
+    "13_strong_battleaxe.png",
+    "14_strong_halberd.png",
+    "15_strong_champion.png",
+    "16_strong_warlord.png",
+    "05_weak_sword.png"
+  ],
+  "replacement_types": {
+    "weak_dagger": "weak_club",
+    "weak_hatchet": "weak_club",
+    "weak_spear": "weak_club",
+    "weak_shield": "weak_club",
+    "medium_mace": "medium_swordsman",
+    "medium_spearman": "medium_swordsman",
+    "medium_axeman": "medium_swordsman",
+    "medium_duelist": "medium_swordsman",
+    "strong_battleaxe": "strong_guard",
+    "strong_halberd": "strong_guard",
+    "strong_champion": "strong_guard",
+    "strong_warlord": "strong_guard",
+    "weak_sword": "weak_club"
+  },
+  "runtime_directory": "assets/actors/goblins/series_01",
+  "active_export": "selected/final",
+  "candidate_processing": "native_64/processed (generation history only; do not install all candidates)",
+  "placement_types": {
+    "weak_club": 16,
+    "medium_swordsman": 12,
+    "strong_guard": 8
+  },
+  "historical_preview": "selected/preview.png",
+  "historical_preview_note": "Previous four-type preview includes removed short-sword goblin; active export and selected list contain only three types.",
+  "removed_type_reason": "Red short-sword goblin confused recognition of the medium red swordsman; user requested removal."
+}

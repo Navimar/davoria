@@ -1,0 +1,35 @@
+{
+  "standard": {
+    "version": 1,
+    "palette": "aap64",
+    "size": [
+      64,
+      64
+    ],
+    "rgb_gain": 0.75,
+    "blur_radius_px": 0.5
+  },
+  "source": "/Users/igor/Godot/davoria/assets/generation/door_gray_64_2026-10-12/processed/final",
+  "output": "/Users/igor/Godot/davoria/assets/generation/door_gray_64_2026-10-12/graded",
+  "order": [
+    "pixelize",
+    "aap64",
+    "darken_rgb",
+    "gaussian_blur_rgb"
+  ],
+  "rounding": "nearest_ties_even",
+  "palette_remap_after_darkening": false,
+  "geometry_changed": false,
+  "alpha_changed": false,
+  "tiles": [
+    {
+      "name": "door_gray.png",
+      "size": [
+        64,
+        64
+      ],
+      "source_sha256": "6412dc8734f135d55cf6e4ca03c59b77e7eaa4cc669e0ff4fbd3b23b607b1459",
+      "output_sha256": "58d5ecb295fcc224cb961a2f495f021bf7ad40fb32d579ebb1d74522c67aa93e"
+    }
+  ]
+}

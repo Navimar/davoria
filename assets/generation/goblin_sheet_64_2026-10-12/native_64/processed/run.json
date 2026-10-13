@@ -1,0 +1,472 @@
+{
+  "status": "complete",
+  "recipe": {
+    "version": 1,
+    "kind": "sheet",
+    "source": "sheet.png",
+    "source_sha256": "048e8790b5535401a8a8c06571b01596797cbcde0e6f8ea189ee9ca9839c566b",
+    "layout": {
+      "row_boundaries": [
+        0,
+        512,
+        1024,
+        1536,
+        2048
+      ],
+      "column_boundaries": [
+        [
+          0,
+          512,
+          1024,
+          1536,
+          2048
+        ],
+        [
+          0,
+          512,
+          1024,
+          1536,
+          2048
+        ],
+        [
+          0,
+          512,
+          1024,
+          1536,
+          2048
+        ],
+        [
+          0,
+          512,
+          1024,
+          1536,
+          2048
+        ]
+      ]
+    },
+    "chroma": null,
+    "reconstruction": {
+      "grid": [
+        64,
+        64
+      ],
+      "inset": 0.0,
+      "alpha_coverage": 0.0
+    },
+    "palette": "aap64",
+    "outline": {
+      "color": "242234",
+      "neighbors": 8
+    },
+    "canvas": {
+      "size": [
+        64,
+        64
+      ],
+      "baseline": 64
+    },
+    "preview_columns": 4,
+    "sprites": [
+      {
+        "name": "01_weak_club"
+      },
+      {
+        "name": "02_weak_dagger"
+      },
+      {
+        "name": "03_weak_hatchet"
+      },
+      {
+        "name": "04_weak_spear"
+      },
+      {
+        "name": "05_weak_sword"
+      },
+      {
+        "name": "06_weak_shield"
+      },
+      {
+        "name": "07_medium_mace"
+      },
+      {
+        "name": "08_medium_spearman"
+      },
+      {
+        "name": "09_medium_swordsman"
+      },
+      {
+        "name": "10_medium_axeman"
+      },
+      {
+        "name": "11_medium_duelist"
+      },
+      {
+        "name": "12_strong_guard"
+      },
+      {
+        "name": "13_strong_battleaxe"
+      },
+      {
+        "name": "14_strong_halberd"
+      },
+      {
+        "name": "15_strong_champion"
+      },
+      {
+        "name": "16_strong_warlord"
+      }
+    ],
+    "fit_canvas_candidates": false
+  },
+  "source": "/Users/igor/Godot/davoria/assets/generation/goblin_sheet_64_2026-10-12/native_64/preparation/sheet.png",
+  "source_sha256": "048e8790b5535401a8a8c06571b01596797cbcde0e6f8ea189ee9ca9839c566b",
+  "runtime": {
+    "python": "3.14.4",
+    "pillow": "12.2.0"
+  },
+  "layout": {
+    "row_boundaries": [
+      0,
+      512,
+      1024,
+      1536,
+      2048
+    ],
+    "column_boundaries": [
+      [
+        0,
+        512,
+        1024,
+        1536,
+        2048
+      ],
+      [
+        0,
+        512,
+        1024,
+        1536,
+        2048
+      ],
+      [
+        0,
+        512,
+        1024,
+        1536,
+        2048
+      ],
+      [
+        0,
+        512,
+        1024,
+        1536,
+        2048
+      ]
+    ]
+  },
+  "sprites": [
+    {
+      "name": "01_weak_club",
+      "source_box": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "02_weak_dagger",
+      "source_box": [
+        512,
+        0,
+        1024,
+        512
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "03_weak_hatchet",
+      "source_box": [
+        1024,
+        0,
+        1536,
+        512
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "04_weak_spear",
+      "source_box": [
+        1536,
+        0,
+        2048,
+        512
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "05_weak_sword",
+      "source_box": [
+        0,
+        512,
+        512,
+        1024
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "06_weak_shield",
+      "source_box": [
+        512,
+        512,
+        1024,
+        1024
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "07_medium_mace",
+      "source_box": [
+        1024,
+        512,
+        1536,
+        1024
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "08_medium_spearman",
+      "source_box": [
+        1536,
+        512,
+        2048,
+        1024
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "09_medium_swordsman",
+      "source_box": [
+        0,
+        1024,
+        512,
+        1536
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "10_medium_axeman",
+      "source_box": [
+        512,
+        1024,
+        1024,
+        1536
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "11_medium_duelist",
+      "source_box": [
+        1024,
+        1024,
+        1536,
+        1536
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "12_strong_guard",
+      "source_box": [
+        1536,
+        1024,
+        2048,
+        1536
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "13_strong_battleaxe",
+      "source_box": [
+        0,
+        1536,
+        512,
+        2048
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "14_strong_halberd",
+      "source_box": [
+        512,
+        1536,
+        1024,
+        2048
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "15_strong_champion",
+      "source_box": [
+        1024,
+        1536,
+        1536,
+        2048
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "16_strong_warlord",
+      "source_box": [
+        1536,
+        1536,
+        2048,
+        2048
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    }
+  ]
+}

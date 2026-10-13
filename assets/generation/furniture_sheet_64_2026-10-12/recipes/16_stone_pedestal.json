@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "kind": "sheet",
+  "source": "../inputs/16_stone_pedestal.png",
+  "source_sha256": "e7e7c7da109d18fe85b9efeff1b3d20f7a71877a0647b4761e597ed9c1ff294d",
+  "layout": {
+    "rows": 1,
+    "columns": 1,
+    "split_silhouettes": true
+  },
+  "chroma": null,
+  "reconstruction": {
+    "grid": [
+      64,
+      64
+    ],
+    "inset": 0.0,
+    "alpha_coverage": 0.0
+  },
+  "palette": "aap64",
+  "outline": {
+    "color": "242234",
+    "neighbors": 8
+  },
+  "preview_columns": 1,
+  "sprites": [
+    {
+      "name": "16_stone_pedestal"
+    }
+  ],
+  "fit_visible_before_pixelization": true,
+  "canvas": {
+    "size": [
+      64,
+      64
+    ],
+    "baseline": 64
+  },
+  "visible_size": [
+    48,
+    48
+  ]
+}

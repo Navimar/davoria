@@ -1,0 +1,47 @@
+{
+  "source": "/Users/igor/Godot/davoria/assets/generation/furniture_sheet_64_2026-10-12/inputs/08_dining_table.png",
+  "source_sha256": "5faa517459dbdabca725a02f38c39f5361c711424cc71bc6ef2898f98a2479ca",
+  "order": [
+    "split_highres",
+    "chroma_key",
+    "crop_alpha_bbox",
+    "fit_highres",
+    "pixelize"
+  ],
+  "padding": 0,
+  "target_size": [
+    64,
+    64
+  ],
+  "visible_size": [
+    60,
+    42
+  ],
+  "baseline": 64,
+  "sprites": [
+    {
+      "name": "08_dining_table",
+      "source_box": [
+        0,
+        0,
+        276,
+        168
+      ],
+      "source_bbox": [
+        0,
+        0,
+        276,
+        168
+      ],
+      "cropped_size": [
+        276,
+        168
+      ],
+      "fitted_body_size": [
+        480,
+        292
+      ],
+      "scale": 1.7391304347826086
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "source": "/Users/igor/Godot/davoria/assets/generation/furniture_sheet_64_2026-10-12/inputs/01_bookcase_books.png",
+  "source_sha256": "fb7beee8f16499571ee0bad42069ecc003e12c7872b96c82d4be49a2ca5bd7b1",
+  "order": [
+    "split_highres",
+    "chroma_key",
+    "crop_alpha_bbox",
+    "fit_highres",
+    "pixelize"
+  ],
+  "padding": 0,
+  "target_size": [
+    64,
+    64
+  ],
+  "visible_size": [
+    52,
+    64
+  ],
+  "baseline": 64,
+  "sprites": [
+    {
+      "name": "01_bookcase_books",
+      "source_box": [
+        0,
+        0,
+        226,
+        291
+      ],
+      "source_bbox": [
+        0,
+        0,
+        226,
+        291
+      ],
+      "cropped_size": [
+        226,
+        291
+      ],
+      "fitted_body_size": [
+        398,
+        512
+      ],
+      "scale": 1.7594501718213058
+    }
+  ]
+}

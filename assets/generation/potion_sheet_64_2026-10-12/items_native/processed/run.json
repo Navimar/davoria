@@ -1,0 +1,476 @@
+{
+  "status": "complete",
+  "recipe": {
+    "version": 1,
+    "kind": "sheet",
+    "source": "sheet.png",
+    "source_sha256": "6123b871c6be11dfd66b1b7cc4c8d81d94a1ab0e1f92ed8f9d7a33e9eb5a2b77",
+    "layout": {
+      "row_boundaries": [
+        0,
+        512,
+        1024,
+        1536,
+        2048
+      ],
+      "column_boundaries": [
+        [
+          0,
+          512,
+          1024,
+          1536,
+          2048
+        ],
+        [
+          0,
+          512,
+          1024,
+          1536,
+          2048
+        ],
+        [
+          0,
+          512,
+          1024,
+          1536,
+          2048
+        ],
+        [
+          0,
+          512,
+          1024,
+          1536,
+          2048
+        ]
+      ]
+    },
+    "chroma": null,
+    "reconstruction": {
+      "grid": [
+        64,
+        64
+      ],
+      "inset": 0.0,
+      "alpha_coverage": 0.0
+    },
+    "palette": "aap64",
+    "outline": {
+      "color": "242234",
+      "neighbors": 8
+    },
+    "preview_columns": 4,
+    "sprites": [
+      {
+        "name": "01_healing_round_ruby"
+      },
+      {
+        "name": "02_red_pear"
+      },
+      {
+        "name": "03_red_square"
+      },
+      {
+        "name": "04_red_tall"
+      },
+      {
+        "name": "05_green_round"
+      },
+      {
+        "name": "06_green_vial"
+      },
+      {
+        "name": "07_green_square"
+      },
+      {
+        "name": "08_turquoise_drop"
+      },
+      {
+        "name": "09_blue_round"
+      },
+      {
+        "name": "10_blue_squat"
+      },
+      {
+        "name": "11_blue_vial"
+      },
+      {
+        "name": "12_blue_faceted"
+      },
+      {
+        "name": "13_amber_round"
+      },
+      {
+        "name": "14_violet_pear"
+      },
+      {
+        "name": "15_purple_square"
+      },
+      {
+        "name": "16_orange_tall"
+      }
+    ],
+    "canvas": {
+      "size": [
+        64,
+        64
+      ],
+      "baseline": 52
+    },
+    "visible_size": [
+      38,
+      38
+    ],
+    "fit_canvas_candidates": false
+  },
+  "source": "/Users/igor/Godot/davoria/assets/generation/potion_sheet_64_2026-10-12/items_native/preparation/sheet.png",
+  "source_sha256": "6123b871c6be11dfd66b1b7cc4c8d81d94a1ab0e1f92ed8f9d7a33e9eb5a2b77",
+  "runtime": {
+    "python": "3.14.4",
+    "pillow": "12.2.0"
+  },
+  "layout": {
+    "row_boundaries": [
+      0,
+      512,
+      1024,
+      1536,
+      2048
+    ],
+    "column_boundaries": [
+      [
+        0,
+        512,
+        1024,
+        1536,
+        2048
+      ],
+      [
+        0,
+        512,
+        1024,
+        1536,
+        2048
+      ],
+      [
+        0,
+        512,
+        1024,
+        1536,
+        2048
+      ],
+      [
+        0,
+        512,
+        1024,
+        1536,
+        2048
+      ]
+    ]
+  },
+  "sprites": [
+    {
+      "name": "01_healing_round_ruby",
+      "source_box": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "02_red_pear",
+      "source_box": [
+        512,
+        0,
+        1024,
+        512
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "03_red_square",
+      "source_box": [
+        1024,
+        0,
+        1536,
+        512
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "04_red_tall",
+      "source_box": [
+        1536,
+        0,
+        2048,
+        512
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "05_green_round",
+      "source_box": [
+        0,
+        512,
+        512,
+        1024
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "06_green_vial",
+      "source_box": [
+        512,
+        512,
+        1024,
+        1024
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "07_green_square",
+      "source_box": [
+        1024,
+        512,
+        1536,
+        1024
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "08_turquoise_drop",
+      "source_box": [
+        1536,
+        512,
+        2048,
+        1024
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "09_blue_round",
+      "source_box": [
+        0,
+        1024,
+        512,
+        1536
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "10_blue_squat",
+      "source_box": [
+        512,
+        1024,
+        1024,
+        1536
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "11_blue_vial",
+      "source_box": [
+        1024,
+        1024,
+        1536,
+        1536
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "12_blue_faceted",
+      "source_box": [
+        1536,
+        1024,
+        2048,
+        1536
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "13_amber_round",
+      "source_box": [
+        0,
+        1536,
+        512,
+        2048
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "14_violet_pear",
+      "source_box": [
+        512,
+        1536,
+        1024,
+        2048
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "15_purple_square",
+      "source_box": [
+        1024,
+        1536,
+        1536,
+        2048
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "16_orange_tall",
+      "source_box": [
+        1536,
+        1536,
+        2048,
+        2048
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    }
+  ]
+}

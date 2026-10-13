@@ -1,0 +1,35 @@
+{
+  "generation_mode": "built-in imagegen",
+  "generation_prompt": "generation_prompt.txt",
+  "source": "source.png",
+  "alpha_threshold_before_pixelization": 128,
+  "recipe": "recipe.json",
+  "processed": "items_native/processed",
+  "selection": "key_05.png",
+  "runtime": "assets/items/magic_key.png",
+  "reserve": "assets/items/keys/series_01",
+  "canvas": [
+    64,
+    64
+  ],
+  "visible_bounds": [
+    15,
+    14,
+    49,
+    52
+  ],
+  "fit_visible_before_pixelization": [
+    38,
+    38
+  ],
+  "baseline": 52,
+  "palette": "aap64",
+  "binary_alpha": true,
+  "post_pixelization_resize": false,
+  "runtime_sha256": "5decfbd14419f653ce71d198e1bab100f2b95e5959c8f58b28d17deb43cb6ca7",
+  "consumable": true,
+  "door_cost": 1,
+  "loot_generator": "none; authored placement only",
+  "qa_ok": true,
+  "logic_check": "tools/check_magic_key.gd passed"
+}

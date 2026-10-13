@@ -1,0 +1,102 @@
+{
+  "type": "water_elemental",
+  "asset": "assets/actors/pixel_monsters/series_05/05_water_elemental.png",
+  "asset_sha256": "866474a50c981039e8c589868f7cd776feb313cc49a6961f9651cc149ced8a70",
+  "strength_range": [
+    15,
+    45
+  ],
+  "habitat": "water",
+  "spawn_count": 12,
+  "placements": [
+    {
+      "cell": [
+        12,
+        -5
+      ],
+      "type": "water_elemental"
+    },
+    {
+      "cell": [
+        16,
+        -3
+      ],
+      "type": "water_elemental"
+    },
+    {
+      "cell": [
+        14,
+        -2
+      ],
+      "type": "water_elemental"
+    },
+    {
+      "cell": [
+        60,
+        5
+      ],
+      "type": "water_elemental"
+    },
+    {
+      "cell": [
+        16,
+        6
+      ],
+      "type": "water_elemental"
+    },
+    {
+      "cell": [
+        21,
+        7
+      ],
+      "type": "water_elemental"
+    },
+    {
+      "cell": [
+        23,
+        9
+      ],
+      "type": "water_elemental"
+    },
+    {
+      "cell": [
+        15,
+        19
+      ],
+      "type": "water_elemental"
+    },
+    {
+      "cell": [
+        43,
+        19
+      ],
+      "type": "water_elemental"
+    },
+    {
+      "cell": [
+        12,
+        20
+      ],
+      "type": "water_elemental"
+    },
+    {
+      "cell": [
+        16,
+        22
+      ],
+      "type": "water_elemental"
+    },
+    {
+      "cell": [
+        44,
+        22
+      ],
+      "type": "water_elemental"
+    }
+  ],
+  "new_generation": false,
+  "terrain_changes": false,
+  "post_pixelization_resize": false,
+  "checks": "tools/check_water_elementals.gd passed",
+  "visual_check": "Existing native asset inspected; no new game-window preview taken."
+}

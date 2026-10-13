@@ -1,0 +1,47 @@
+{
+  "source": "/Users/igor/Godot/davoria/assets/generation/furniture_sheet_64_2026-10-12/inputs/15_wooden_bed.png",
+  "source_sha256": "7c5e91546e694080fd03a1fb534661afdb82d0c9c8e88e796ae682ad7f87f5d8",
+  "order": [
+    "split_highres",
+    "chroma_key",
+    "crop_alpha_bbox",
+    "fit_highres",
+    "pixelize"
+  ],
+  "padding": 0,
+  "target_size": [
+    64,
+    64
+  ],
+  "visible_size": [
+    64,
+    50
+  ],
+  "baseline": 64,
+  "sprites": [
+    {
+      "name": "15_wooden_bed",
+      "source_box": [
+        0,
+        0,
+        324,
+        225
+      ],
+      "source_bbox": [
+        0,
+        0,
+        324,
+        225
+      ],
+      "cropped_size": [
+        324,
+        225
+      ],
+      "fitted_body_size": [
+        512,
+        356
+      ],
+      "scale": 1.5802469135802468
+    }
+  ]
+}

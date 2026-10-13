@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "kind": "sheet",
+  "source": "../inputs/05_workbench.png",
+  "source_sha256": "1ac35e625879ff3db0d2a0f83d08d1ede2a92c546ebc01a6cf883dc174e06611",
+  "layout": {
+    "rows": 1,
+    "columns": 1,
+    "split_silhouettes": true
+  },
+  "chroma": null,
+  "reconstruction": {
+    "grid": [
+      64,
+      64
+    ],
+    "inset": 0.0,
+    "alpha_coverage": 0.0
+  },
+  "palette": "aap64",
+  "outline": {
+    "color": "242234",
+    "neighbors": 8
+  },
+  "preview_columns": 1,
+  "sprites": [
+    {
+      "name": "05_workbench"
+    }
+  ],
+  "fit_visible_before_pixelization": true,
+  "canvas": {
+    "size": [
+      64,
+      64
+    ],
+    "baseline": 64
+  },
+  "visible_size": [
+    60,
+    42
+  ]
+}

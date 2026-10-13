@@ -1,0 +1,11 @@
+{
+  "imagegen_reference": "graded runtime door and wall",
+  "restore_reference_exposure_before_palette": 1.3333333333333333,
+  "runtime_grading": "AAP64 -> RGB x0.75 -> blur 0.5px",
+  "wood_region_kept_from_original_native_png": [
+    15,
+    4,
+    35,
+    54
+  ]
+}

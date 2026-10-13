@@ -1,0 +1,47 @@
+{
+  "source": "/Users/igor/Godot/davoria/assets/generation/furniture_sheet_64_2026-10-12/inputs/05_workbench.png",
+  "source_sha256": "1ac35e625879ff3db0d2a0f83d08d1ede2a92c546ebc01a6cf883dc174e06611",
+  "order": [
+    "split_highres",
+    "chroma_key",
+    "crop_alpha_bbox",
+    "fit_highres",
+    "pixelize"
+  ],
+  "padding": 0,
+  "target_size": [
+    64,
+    64
+  ],
+  "visible_size": [
+    60,
+    42
+  ],
+  "baseline": 64,
+  "sprites": [
+    {
+      "name": "05_workbench",
+      "source_box": [
+        0,
+        0,
+        270,
+        169
+      ],
+      "source_bbox": [
+        0,
+        0,
+        270,
+        169
+      ],
+      "cropped_size": [
+        270,
+        169
+      ],
+      "fitted_body_size": [
+        480,
+        300
+      ],
+      "scale": 1.7777777777777777
+    }
+  ]
+}

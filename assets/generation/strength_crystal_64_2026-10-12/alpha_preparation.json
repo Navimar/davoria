@@ -1,0 +1,8 @@
+{
+  "source": "source.png",
+  "output": "source_hard_alpha.png",
+  "operation": "normalize_generated_alpha_before_pixelization",
+  "threshold": 128,
+  "rgb_changed": false,
+  "canvas_changed": false
+}

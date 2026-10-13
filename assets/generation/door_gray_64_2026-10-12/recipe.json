@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "kind": "single",
+  "source": "source_ungraded.png",
+  "chroma": null,
+  "reconstruction": {
+    "grid": [
+      64,
+      64
+    ],
+    "inset": 0.0,
+    "alpha_coverage": 0.0
+  },
+  "palette": "aap64",
+  "outline": null,
+  "sprites": [
+    {
+      "name": "door_gray"
+    }
+  ],
+  "preview_columns": 1
+}

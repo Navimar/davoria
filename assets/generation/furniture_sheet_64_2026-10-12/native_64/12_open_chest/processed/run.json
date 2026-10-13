@@ -1,0 +1,92 @@
+{
+  "status": "complete",
+  "recipe": {
+    "version": 1,
+    "kind": "sheet",
+    "source": "sheet.png",
+    "source_sha256": "304d6e5cfb0f4f3edec02bcad41478dfcd9301b3461f226f5e132808c364819f",
+    "layout": {
+      "row_boundaries": [
+        0,
+        512
+      ],
+      "column_boundaries": [
+        [
+          0,
+          512
+        ]
+      ]
+    },
+    "chroma": null,
+    "reconstruction": {
+      "grid": [
+        64,
+        64
+      ],
+      "inset": 0.0,
+      "alpha_coverage": 0.0
+    },
+    "palette": "aap64",
+    "outline": {
+      "color": "242234",
+      "neighbors": 8
+    },
+    "preview_columns": 1,
+    "sprites": [
+      {
+        "name": "12_open_chest"
+      }
+    ],
+    "canvas": {
+      "size": [
+        64,
+        64
+      ],
+      "baseline": 64
+    },
+    "visible_size": [
+      54,
+      54
+    ],
+    "fit_canvas_candidates": false
+  },
+  "source": "/Users/igor/Godot/davoria/assets/generation/furniture_sheet_64_2026-10-12/native_64/12_open_chest/preparation/sheet.png",
+  "source_sha256": "304d6e5cfb0f4f3edec02bcad41478dfcd9301b3461f226f5e132808c364819f",
+  "runtime": {
+    "python": "3.14.4",
+    "pillow": "12.2.0"
+  },
+  "layout": {
+    "row_boundaries": [
+      0,
+      512
+    ],
+    "column_boundaries": [
+      [
+        0,
+        512
+      ]
+    ]
+  },
+  "sprites": [
+    {
+      "name": "12_open_chest",
+      "source_box": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    }
+  ]
+}

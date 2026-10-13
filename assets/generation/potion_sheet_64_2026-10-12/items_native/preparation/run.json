@@ -1,0 +1,407 @@
+{
+  "source": "/Users/igor/Godot/davoria/assets/generation/potion_sheet_64_2026-10-12/source_hard_alpha.png",
+  "source_sha256": "5c4dc3c8ee28ba020f15c6eda2768aa7e576379b480bb28baf4160603dd0fbe4",
+  "order": [
+    "split_highres",
+    "chroma_key",
+    "crop_alpha_bbox",
+    "fit_highres",
+    "pixelize"
+  ],
+  "padding": 0,
+  "target_size": [
+    64,
+    64
+  ],
+  "visible_size": [
+    38,
+    38
+  ],
+  "baseline": 52,
+  "sprites": [
+    {
+      "name": "01_healing_round_ruby",
+      "source_box": [
+        84,
+        51,
+        274,
+        309
+      ],
+      "source_bbox": [
+        0,
+        0,
+        190,
+        258
+      ],
+      "cropped_size": [
+        190,
+        258
+      ],
+      "fitted_body_size": [
+        224,
+        304
+      ],
+      "scale": 1.178294573643411
+    },
+    {
+      "name": "02_red_pear",
+      "source_box": [
+        394,
+        42,
+        569,
+        318
+      ],
+      "source_bbox": [
+        0,
+        0,
+        175,
+        276
+      ],
+      "cropped_size": [
+        175,
+        276
+      ],
+      "fitted_body_size": [
+        193,
+        304
+      ],
+      "scale": 1.1014492753623188
+    },
+    {
+      "name": "03_red_square",
+      "source_box": [
+        691,
+        71,
+        878,
+        310
+      ],
+      "source_bbox": [
+        0,
+        0,
+        187,
+        239
+      ],
+      "cropped_size": [
+        187,
+        239
+      ],
+      "fitted_body_size": [
+        238,
+        304
+      ],
+      "scale": 1.2719665271966527
+    },
+    {
+      "name": "04_red_tall",
+      "source_box": [
+        987,
+        33,
+        1174,
+        317
+      ],
+      "source_bbox": [
+        0,
+        0,
+        187,
+        284
+      ],
+      "cropped_size": [
+        187,
+        284
+      ],
+      "fitted_body_size": [
+        200,
+        304
+      ],
+      "scale": 1.0704225352112675
+    },
+    {
+      "name": "05_green_round",
+      "source_box": [
+        84,
+        362,
+        275,
+        620
+      ],
+      "source_bbox": [
+        0,
+        0,
+        191,
+        258
+      ],
+      "cropped_size": [
+        191,
+        258
+      ],
+      "fitted_body_size": [
+        225,
+        304
+      ],
+      "scale": 1.178294573643411
+    },
+    {
+      "name": "06_green_vial",
+      "source_box": [
+        427,
+        346,
+        536,
+        616
+      ],
+      "source_bbox": [
+        0,
+        0,
+        109,
+        270
+      ],
+      "cropped_size": [
+        109,
+        270
+      ],
+      "fitted_body_size": [
+        123,
+        304
+      ],
+      "scale": 1.125925925925926
+    },
+    {
+      "name": "07_green_square",
+      "source_box": [
+        687,
+        363,
+        875,
+        610
+      ],
+      "source_bbox": [
+        0,
+        0,
+        188,
+        247
+      ],
+      "cropped_size": [
+        188,
+        247
+      ],
+      "fitted_body_size": [
+        231,
+        304
+      ],
+      "scale": 1.2307692307692308
+    },
+    {
+      "name": "08_turquoise_drop",
+      "source_box": [
+        997,
+        346,
+        1168,
+        626
+      ],
+      "source_bbox": [
+        0,
+        0,
+        171,
+        280
+      ],
+      "cropped_size": [
+        171,
+        280
+      ],
+      "fitted_body_size": [
+        186,
+        304
+      ],
+      "scale": 1.0857142857142856
+    },
+    {
+      "name": "09_blue_round",
+      "source_box": [
+        84,
+        660,
+        275,
+        916
+      ],
+      "source_bbox": [
+        0,
+        0,
+        191,
+        256
+      ],
+      "cropped_size": [
+        191,
+        256
+      ],
+      "fitted_body_size": [
+        227,
+        304
+      ],
+      "scale": 1.1875
+    },
+    {
+      "name": "10_blue_squat",
+      "source_box": [
+        380,
+        677,
+        587,
+        900
+      ],
+      "source_bbox": [
+        0,
+        0,
+        207,
+        223
+      ],
+      "cropped_size": [
+        207,
+        223
+      ],
+      "fitted_body_size": [
+        282,
+        304
+      ],
+      "scale": 1.3632286995515694
+    },
+    {
+      "name": "11_blue_vial",
+      "source_box": [
+        724,
+        635,
+        841,
+        916
+      ],
+      "source_bbox": [
+        0,
+        0,
+        117,
+        281
+      ],
+      "cropped_size": [
+        117,
+        281
+      ],
+      "fitted_body_size": [
+        127,
+        304
+      ],
+      "scale": 1.0818505338078293
+    },
+    {
+      "name": "12_blue_faceted",
+      "source_box": [
+        979,
+        656,
+        1176,
+        914
+      ],
+      "source_bbox": [
+        0,
+        0,
+        197,
+        258
+      ],
+      "cropped_size": [
+        197,
+        258
+      ],
+      "fitted_body_size": [
+        232,
+        304
+      ],
+      "scale": 1.178294573643411
+    },
+    {
+      "name": "13_amber_round",
+      "source_box": [
+        84,
+        949,
+        275,
+        1214
+      ],
+      "source_bbox": [
+        0,
+        0,
+        191,
+        265
+      ],
+      "cropped_size": [
+        191,
+        265
+      ],
+      "fitted_body_size": [
+        219,
+        304
+      ],
+      "scale": 1.1471698113207547
+    },
+    {
+      "name": "14_violet_pear",
+      "source_box": [
+        389,
+        933,
+        572,
+        1220
+      ],
+      "source_bbox": [
+        0,
+        0,
+        183,
+        287
+      ],
+      "cropped_size": [
+        183,
+        287
+      ],
+      "fitted_body_size": [
+        194,
+        304
+      ],
+      "scale": 1.0592334494773519
+    },
+    {
+      "name": "15_purple_square",
+      "source_box": [
+        688,
+        959,
+        877,
+        1204
+      ],
+      "source_bbox": [
+        0,
+        0,
+        189,
+        245
+      ],
+      "cropped_size": [
+        189,
+        245
+      ],
+      "fitted_body_size": [
+        235,
+        304
+      ],
+      "scale": 1.2408163265306122
+    },
+    {
+      "name": "16_orange_tall",
+      "source_box": [
+        1002,
+        933,
+        1155,
+        1212
+      ],
+      "source_bbox": [
+        0,
+        0,
+        153,
+        279
+      ],
+      "cropped_size": [
+        153,
+        279
+      ],
+      "fitted_body_size": [
+        167,
+        304
+      ],
+      "scale": 1.0896057347670252
+    }
+  ]
+}

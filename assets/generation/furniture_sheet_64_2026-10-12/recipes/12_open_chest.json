@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "kind": "sheet",
+  "source": "../inputs/12_open_chest.png",
+  "source_sha256": "b1d950d97f558502bed581c09467b576c6d717f328a1aa1c8d9d93831b8c68f0",
+  "layout": {
+    "rows": 1,
+    "columns": 1,
+    "split_silhouettes": true
+  },
+  "chroma": null,
+  "reconstruction": {
+    "grid": [
+      64,
+      64
+    ],
+    "inset": 0.0,
+    "alpha_coverage": 0.0
+  },
+  "palette": "aap64",
+  "outline": {
+    "color": "242234",
+    "neighbors": 8
+  },
+  "preview_columns": 1,
+  "sprites": [
+    {
+      "name": "12_open_chest"
+    }
+  ],
+  "fit_visible_before_pixelization": true,
+  "canvas": {
+    "size": [
+      64,
+      64
+    ],
+    "baseline": 64
+  },
+  "visible_size": [
+    54,
+    54
+  ]
+}

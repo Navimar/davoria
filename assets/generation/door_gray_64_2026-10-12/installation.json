@@ -1,0 +1,28 @@
+{
+  "generation_mode": "built-in imagegen edit",
+  "generation_prompt": "generation_prompt.txt",
+  "source": "source.png",
+  "references": [
+    "assets/tiles/dungeon/door.png before edit",
+    "assets/tiles/dungeon/wall.png"
+  ],
+  "recipe": "recipe.json",
+  "graded": "graded/door_gray.png",
+  "final": "final/door.png",
+  "runtime": "assets/tiles/dungeon/door.png",
+  "frame": "cool blue-gray matching wall AAP64 ramp",
+  "native_wood_lock_metal_region_preserved": [
+    15,
+    4,
+    35,
+    54
+  ],
+  "rgb_gain": 0.75,
+  "blur_radius_px": 0.5,
+  "reference_exposure_restored_before_grading": true,
+  "post_pixelization_resize": false,
+  "alpha_opaque": true,
+  "runtime_sha256": "0049d1a73d30869d9d51664485c10884106c484005ec07e3e1fdcbbd4100d8dd",
+  "atlas_verified": true,
+  "preparation_tool": "tools/prepare_door_gray.gd"
+}

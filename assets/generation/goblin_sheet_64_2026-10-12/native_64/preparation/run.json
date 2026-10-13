@@ -1,0 +1,407 @@
+{
+  "source": "/Users/igor/Godot/davoria/assets/generation/goblin_sheet_64_2026-10-12/source_hard_alpha.png",
+  "source_sha256": "15f1561863c20033aa08d2a3e5f880e9d8a033aa9e75c2836b70e0c2357d4263",
+  "order": [
+    "split_highres",
+    "chroma_key",
+    "crop_alpha_bbox",
+    "fit_highres",
+    "pixelize"
+  ],
+  "padding": 0,
+  "target_size": [
+    64,
+    64
+  ],
+  "visible_size": [
+    64,
+    64
+  ],
+  "baseline": 64,
+  "sprites": [
+    {
+      "name": "01_weak_club",
+      "source_box": [
+        61,
+        58,
+        322,
+        310
+      ],
+      "source_bbox": [
+        0,
+        0,
+        261,
+        252
+      ],
+      "cropped_size": [
+        261,
+        252
+      ],
+      "fitted_body_size": [
+        512,
+        494
+      ],
+      "scale": 1.9616858237547892
+    },
+    {
+      "name": "02_weak_dagger",
+      "source_box": [
+        365,
+        58,
+        582,
+        310
+      ],
+      "source_bbox": [
+        0,
+        0,
+        217,
+        252
+      ],
+      "cropped_size": [
+        217,
+        252
+      ],
+      "fitted_body_size": [
+        441,
+        512
+      ],
+      "scale": 2.0317460317460316
+    },
+    {
+      "name": "03_weak_hatchet",
+      "source_box": [
+        662,
+        58,
+        911,
+        310
+      ],
+      "source_bbox": [
+        0,
+        0,
+        249,
+        252
+      ],
+      "cropped_size": [
+        249,
+        252
+      ],
+      "fitted_body_size": [
+        506,
+        512
+      ],
+      "scale": 2.0317460317460316
+    },
+    {
+      "name": "04_weak_spear",
+      "source_box": [
+        959,
+        45,
+        1194,
+        310
+      ],
+      "source_bbox": [
+        0,
+        0,
+        235,
+        265
+      ],
+      "cropped_size": [
+        235,
+        265
+      ],
+      "fitted_body_size": [
+        454,
+        512
+      ],
+      "scale": 1.9320754716981132
+    },
+    {
+      "name": "05_weak_sword",
+      "source_box": [
+        62,
+        348,
+        294,
+        606
+      ],
+      "source_bbox": [
+        0,
+        0,
+        232,
+        258
+      ],
+      "cropped_size": [
+        232,
+        258
+      ],
+      "fitted_body_size": [
+        460,
+        512
+      ],
+      "scale": 1.9844961240310077
+    },
+    {
+      "name": "06_weak_shield",
+      "source_box": [
+        359,
+        348,
+        594,
+        607
+      ],
+      "source_bbox": [
+        0,
+        0,
+        235,
+        259
+      ],
+      "cropped_size": [
+        235,
+        259
+      ],
+      "fitted_body_size": [
+        465,
+        512
+      ],
+      "scale": 1.9768339768339769
+    },
+    {
+      "name": "07_medium_mace",
+      "source_box": [
+        672,
+        341,
+        937,
+        605
+      ],
+      "source_bbox": [
+        0,
+        0,
+        265,
+        264
+      ],
+      "cropped_size": [
+        265,
+        264
+      ],
+      "fitted_body_size": [
+        512,
+        510
+      ],
+      "scale": 1.9320754716981132
+    },
+    {
+      "name": "08_medium_spearman",
+      "source_box": [
+        962,
+        330,
+        1211,
+        607
+      ],
+      "source_bbox": [
+        0,
+        0,
+        249,
+        277
+      ],
+      "cropped_size": [
+        249,
+        277
+      ],
+      "fitted_body_size": [
+        460,
+        512
+      ],
+      "scale": 1.848375451263538
+    },
+    {
+      "name": "09_medium_swordsman",
+      "source_box": [
+        46,
+        639,
+        303,
+        902
+      ],
+      "source_bbox": [
+        0,
+        0,
+        257,
+        263
+      ],
+      "cropped_size": [
+        257,
+        263
+      ],
+      "fitted_body_size": [
+        500,
+        512
+      ],
+      "scale": 1.946768060836502
+    },
+    {
+      "name": "10_medium_axeman",
+      "source_box": [
+        346,
+        639,
+        620,
+        902
+      ],
+      "source_bbox": [
+        0,
+        0,
+        274,
+        263
+      ],
+      "cropped_size": [
+        274,
+        263
+      ],
+      "fitted_body_size": [
+        512,
+        491
+      ],
+      "scale": 1.8686131386861313
+    },
+    {
+      "name": "11_medium_duelist",
+      "source_box": [
+        655,
+        652,
+        906,
+        902
+      ],
+      "source_bbox": [
+        0,
+        0,
+        251,
+        250
+      ],
+      "cropped_size": [
+        251,
+        250
+      ],
+      "fitted_body_size": [
+        512,
+        510
+      ],
+      "scale": 2.039840637450199
+    },
+    {
+      "name": "12_strong_guard",
+      "source_box": [
+        972,
+        637,
+        1201,
+        902
+      ],
+      "source_bbox": [
+        0,
+        0,
+        229,
+        265
+      ],
+      "cropped_size": [
+        229,
+        265
+      ],
+      "fitted_body_size": [
+        442,
+        512
+      ],
+      "scale": 1.9320754716981132
+    },
+    {
+      "name": "13_strong_battleaxe",
+      "source_box": [
+        34,
+        923,
+        328,
+        1225
+      ],
+      "source_bbox": [
+        0,
+        0,
+        294,
+        302
+      ],
+      "cropped_size": [
+        294,
+        302
+      ],
+      "fitted_body_size": [
+        498,
+        512
+      ],
+      "scale": 1.695364238410596
+    },
+    {
+      "name": "14_strong_halberd",
+      "source_box": [
+        334,
+        912,
+        612,
+        1225
+      ],
+      "source_bbox": [
+        0,
+        0,
+        278,
+        313
+      ],
+      "cropped_size": [
+        278,
+        313
+      ],
+      "fitted_body_size": [
+        455,
+        512
+      ],
+      "scale": 1.6357827476038338
+    },
+    {
+      "name": "15_strong_champion",
+      "source_box": [
+        634,
+        952,
+        911,
+        1228
+      ],
+      "source_bbox": [
+        0,
+        0,
+        277,
+        276
+      ],
+      "cropped_size": [
+        277,
+        276
+      ],
+      "fitted_body_size": [
+        512,
+        510
+      ],
+      "scale": 1.848375451263538
+    },
+    {
+      "name": "16_strong_warlord",
+      "source_box": [
+        936,
+        938,
+        1237,
+        1228
+      ],
+      "source_bbox": [
+        0,
+        0,
+        301,
+        290
+      ],
+      "cropped_size": [
+        301,
+        290
+      ],
+      "fitted_body_size": [
+        512,
+        493
+      ],
+      "scale": 1.7009966777408638
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "generation_mode": "built-in imagegen",
+  "generation_prompt": "generation_prompt.txt",
+  "source": "source.png",
+  "source_sha256": "f7f388e4b758484f314760ec7d529e3282b89ab97961479cf83214646ca09bc1",
+  "alpha_threshold_before_pixelization": 128,
+  "recipe": "recipe.json",
+  "processed": "native_64/processed",
+  "selection": "selection.json",
+  "runtime": [
+    {
+      "type": "red_mushroom",
+      "variant": "flora_01",
+      "path": "assets/actors/flora/series_01/red_mushroom.png",
+      "sha256": "42b09c00da4d274691a1e471afc090010308c59cffc38d87752452624e980a16",
+      "tier": "medium",
+      "strength_range": [
+        31,
+        65
+      ]
+    },
+    {
+      "type": "violet_mushroom",
+      "variant": "flora_03",
+      "path": "assets/actors/flora/series_01/violet_mushroom.png",
+      "sha256": "b4d9c5e0157ef5f39052c7042ec3b4915204568879ad0f0fd4b34ae8545fe7b8",
+      "tier": "strong",
+      "strength_range": [
+        66,
+        99
+      ]
+    },
+    {
+      "type": "brown_mushroom",
+      "variant": "flora_05",
+      "path": "assets/actors/flora/series_01/brown_mushroom.png",
+      "sha256": "c7a3cddf4fdf12291c7532c86a48c19b32f0b05d76f38fc5f0fb9241af52df69",
+      "tier": "weak",
+      "strength_range": [
+        5,
+        30
+      ]
+    },
+    {
+      "type": "thorn_bush",
+      "variant": "flora_09",
+      "path": "assets/actors/flora/series_01/thorn_bush.png",
+      "sha256": "9567061ebac1f5873a5b90d0151107edd905c5745360662821ecca95ba0722a1",
+      "strength": 10
+    }
+  ],
+  "reserve": "assets/props/flora/series_01",
+  "canvas": [
+    64,
+    64
+  ],
+  "fit_visible_before_pixelization": [
+    64,
+    64
+  ],
+  "baseline": 64,
+  "palette": "aap64",
+  "binary_alpha": true,
+  "post_pixelization_resize": false,
+  "tile_darkening_or_blur": false,
+  "retaliates_only": true,
+  "autonomous_turns": false,
+  "blocks_movement": true,
+  "blocks_sight": false,
+  "habitat": "floor",
+  "save_fields": [
+    "type",
+    "cell"
+  ],
+  "initial_placement_snapshot": [
+    {
+      "type": "red_mushroom",
+      "cell": [
+        2,
+        28
+      ]
+    },
+    {
+      "type": "violet_mushroom",
+      "cell": [
+        8,
+        32
+      ]
+    },
+    {
+      "type": "brown_mushroom",
+      "cell": [
+        10,
+        12
+      ]
+    },
+    {
+      "type": "thorn_bush",
+      "cell": [
+        27,
+        13
+      ]
+    },
+    {
+      "type": "red_mushroom",
+      "cell": [
+        42,
+        23
+      ]
+    },
+    {
+      "type": "violet_mushroom",
+      "cell": [
+        39,
+        7
+      ]
+    }
+  ],
+  "qa_ok": true,
+  "native_copy_check": "all 16 reserve and 4 runtime PNG are byte-identical to native results",
+  "logic_checks": [
+    "prior installation: tools/check_passive_flora.gd passed",
+    "prior installation: tools/check_editor_save.gd passed",
+    "prior installation: tools/check_speed_potion.gd passed",
+    "prior installation: tools/check_combat.gd passed",
+    "mushroom tiers: tools/check_passive_flora.gd passed (live random spawning, editor, stable runtime strength, source-only Save, restart and passive behavior)",
+    "mushroom tiers: tools/check_combat.gd passed on isolated map (ordinary enemies and passive flora coexist)"
+  ],
+  "strength_generation": "Mushrooms roll inclusive tier strength once per spawn/restart; thorn bush stays 10. Only type and origin cell are saved."
+}

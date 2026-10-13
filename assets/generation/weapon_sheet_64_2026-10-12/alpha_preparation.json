@@ -1,0 +1,12 @@
+{
+  "operation": "alpha threshold before fitting and pixelization",
+  "threshold": 128,
+  "rgb_preserved": true,
+  "canvas_preserved": true,
+  "source_size": [
+    1254,
+    1254
+  ],
+  "source_sha256": "21c4529f1a73a8d5ca3826779fa5d5688988e776015e8afd208fa07a9c265497",
+  "output_sha256": "0006fe4ba42120ad8477d675e5787555c11c3f15228248195b50a6ca3fb9d38a"
+}

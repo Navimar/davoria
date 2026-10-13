@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "kind": "sheet",
+  "source": "sheet.png",
+  "source_sha256": "5f54fcc58e64ea380a96ca0aee218192144a642dd4c5ba4321b814c4dfe9d2f8",
+  "layout": {
+    "row_boundaries": [
+      0,
+      512
+    ],
+    "column_boundaries": [
+      [
+        0,
+        512
+      ]
+    ]
+  },
+  "chroma": null,
+  "reconstruction": {
+    "grid": [
+      64,
+      64
+    ],
+    "inset": 0.0,
+    "alpha_coverage": 0.0
+  },
+  "palette": "aap64",
+  "outline": {
+    "color": "242234",
+    "neighbors": 8
+  },
+  "preview_columns": 1,
+  "sprites": [
+    {
+      "name": "11_closed_chest"
+    }
+  ],
+  "canvas": {
+    "size": [
+      64,
+      64
+    ],
+    "baseline": 64
+  },
+  "visible_size": [
+    54,
+    42
+  ],
+  "fit_canvas_candidates": false
+}

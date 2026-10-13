@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "kind": "sheet",
+  "source": "../inputs/09_wooden_chair.png",
+  "source_sha256": "4c040ff0756900b8e037059c4707f331270d9e26191f4c54a873bcdd55f82f8e",
+  "layout": {
+    "rows": 1,
+    "columns": 1,
+    "split_silhouettes": true
+  },
+  "chroma": null,
+  "reconstruction": {
+    "grid": [
+      64,
+      64
+    ],
+    "inset": 0.0,
+    "alpha_coverage": 0.0
+  },
+  "palette": "aap64",
+  "outline": {
+    "color": "242234",
+    "neighbors": 8
+  },
+  "preview_columns": 1,
+  "sprites": [
+    {
+      "name": "09_wooden_chair"
+    }
+  ],
+  "fit_visible_before_pixelization": true,
+  "canvas": {
+    "size": [
+      64,
+      64
+    ],
+    "baseline": 64
+  },
+  "visible_size": [
+    38,
+    54
+  ]
+}

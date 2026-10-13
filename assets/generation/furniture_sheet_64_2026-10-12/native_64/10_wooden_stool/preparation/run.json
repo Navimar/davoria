@@ -1,0 +1,47 @@
+{
+  "source": "/Users/igor/Godot/davoria/assets/generation/furniture_sheet_64_2026-10-12/inputs/10_wooden_stool.png",
+  "source_sha256": "68bfda6faf9c5707073e8e37e31cb701d3e25533b0443a561bf4d3dfd8441d3f",
+  "order": [
+    "split_highres",
+    "chroma_key",
+    "crop_alpha_bbox",
+    "fit_highres",
+    "pixelize"
+  ],
+  "padding": 0,
+  "target_size": [
+    64,
+    64
+  ],
+  "visible_size": [
+    32,
+    32
+  ],
+  "baseline": 64,
+  "sprites": [
+    {
+      "name": "10_wooden_stool",
+      "source_box": [
+        0,
+        0,
+        147,
+        141
+      ],
+      "source_bbox": [
+        0,
+        0,
+        147,
+        141
+      ],
+      "cropped_size": [
+        147,
+        141
+      ],
+      "fitted_body_size": [
+        256,
+        246
+      ],
+      "scale": 1.7414965986394557
+    }
+  ]
+}

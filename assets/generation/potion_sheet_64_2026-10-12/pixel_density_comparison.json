@@ -1,0 +1,29 @@
+{
+  "potion_source_grid": 9.05,
+  "potion_source_size": [
+    190,
+    258
+  ],
+  "goblin_source_grid": [
+    5.25,
+    5.4
+  ],
+  "goblin_source_size": [
+    241,
+    250
+  ],
+  "previous_potion_projected_block": 2.24,
+  "goblin_projected_block": [
+    1.34,
+    1.38
+  ],
+  "corrected_potion_projected_block": 1.33,
+  "prepixelization_visible_size": [
+    38,
+    38
+  ],
+  "canvas": [
+    64,
+    64
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "kind": "sheet",
+  "source": "sheet.png",
+  "source_sha256": "47bbe4f3af24719bda2474dfa1911e7a63fe1cfd2e64cb5072ab14e12b2c55fe",
+  "layout": {
+    "row_boundaries": [
+      0,
+      512
+    ],
+    "column_boundaries": [
+      [
+        0,
+        512
+      ]
+    ]
+  },
+  "chroma": null,
+  "reconstruction": {
+    "grid": [
+      64,
+      64
+    ],
+    "inset": 0.0,
+    "alpha_coverage": 0.0
+  },
+  "palette": "aap64",
+  "outline": {
+    "color": "242234",
+    "neighbors": 8
+  },
+  "preview_columns": 1,
+  "sprites": [
+    {
+      "name": "05_workbench"
+    }
+  ],
+  "canvas": {
+    "size": [
+      64,
+      64
+    ],
+    "baseline": 64
+  },
+  "visible_size": [
+    60,
+    42
+  ],
+  "fit_canvas_candidates": false
+}

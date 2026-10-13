@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "kind": "sheet",
+  "source": "sheet.png",
+  "source_sha256": "7ee98b3a2c6b5b8d4a221743ebb300e761ba23322d0832cbd27571328aeedb76",
+  "layout": {
+    "row_boundaries": [
+      0,
+      512
+    ],
+    "column_boundaries": [
+      [
+        0,
+        512
+      ]
+    ]
+  },
+  "chroma": null,
+  "reconstruction": {
+    "grid": [
+      64,
+      64
+    ],
+    "inset": 0.0,
+    "alpha_coverage": 0.0
+  },
+  "palette": "aap64",
+  "outline": {
+    "color": "242234",
+    "neighbors": 8
+  },
+  "preview_columns": 1,
+  "sprites": [
+    {
+      "name": "16_stone_pedestal"
+    }
+  ],
+  "canvas": {
+    "size": [
+      64,
+      64
+    ],
+    "baseline": 64
+  },
+  "visible_size": [
+    48,
+    48
+  ],
+  "fit_canvas_candidates": false
+}

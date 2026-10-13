@@ -1,0 +1,122 @@
+{
+  "version": 1,
+  "kind": "sheet",
+  "source": "sheet.png",
+  "source_sha256": "971291af8fc22717a9160277a9030b033ddfbae75895dd06b7a78984d799c819",
+  "layout": {
+    "row_boundaries": [
+      0,
+      512,
+      1024,
+      1536,
+      2048
+    ],
+    "column_boundaries": [
+      [
+        0,
+        512,
+        1024,
+        1536,
+        2048
+      ],
+      [
+        0,
+        512,
+        1024,
+        1536,
+        2048
+      ],
+      [
+        0,
+        512,
+        1024,
+        1536,
+        2048
+      ],
+      [
+        0,
+        512,
+        1024,
+        1536,
+        2048
+      ]
+    ]
+  },
+  "chroma": null,
+  "reconstruction": {
+    "grid": [
+      64,
+      64
+    ],
+    "inset": 0.0,
+    "alpha_coverage": 0.0
+  },
+  "palette": "aap64",
+  "outline": {
+    "color": "242234",
+    "neighbors": 8
+  },
+  "preview_columns": 4,
+  "sprites": [
+    {
+      "name": "01_iron_dagger"
+    },
+    {
+      "name": "02_iron_short_sword"
+    },
+    {
+      "name": "03_iron_arming_sword"
+    },
+    {
+      "name": "04_broad_sword"
+    },
+    {
+      "name": "05_curved_sabre"
+    },
+    {
+      "name": "06_bronze_sword"
+    },
+    {
+      "name": "07_steel_long_sword"
+    },
+    {
+      "name": "08_dark_greatsword"
+    },
+    {
+      "name": "09_hand_axe"
+    },
+    {
+      "name": "10_battle_axe"
+    },
+    {
+      "name": "11_flanged_mace"
+    },
+    {
+      "name": "12_war_hammer"
+    },
+    {
+      "name": "13_spear"
+    },
+    {
+      "name": "14_halberd"
+    },
+    {
+      "name": "15_wooden_club"
+    },
+    {
+      "name": "16_wizard_staff"
+    }
+  ],
+  "canvas": {
+    "size": [
+      64,
+      64
+    ],
+    "baseline": 54
+  },
+  "visible_size": [
+    44,
+    44
+  ],
+  "fit_canvas_candidates": false
+}

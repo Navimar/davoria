@@ -1,0 +1,38 @@
+{
+  "selected": "01_healing_round_ruby",
+  "active_asset": "assets/items/health_potion.png",
+  "reserve_directory": "assets/items/potions/series_01",
+  "sprite_count": 16,
+  "active_processing": "items_native/processed",
+  "qa_ok": true,
+  "preparation": "split connected silhouettes, crop alpha and fit at item size before pixelization",
+  "visible_size": [
+    38,
+    38
+  ],
+  "baseline": 52,
+  "canvas": [
+    64,
+    64
+  ],
+  "selected_strength": "05_green_round",
+  "active_strength_asset": "assets/items/strength_potion.png",
+  "runtime_magic_start": 10,
+  "healing": "3 * magic before use; +1 magic after successful use",
+  "strength": "own combat strength * 2 for magic subsequent world turns; +1 magic; refresh, never stack",
+  "selected_water_breathing": "09_blue_round",
+  "active_water_breathing_asset": "assets/items/water_breathing_potion.png",
+  "water_breathing": "preserve current breath and protect from drowning for 3 * magic subsequent world turns; +1 magic; refresh, never stack",
+  "water_check": "passed: tools/check_water.gd; logical behavior and shader parameters; GPU visual preview not performed",
+  "loot_weights": {
+    "health_potion": 3,
+    "strength_potion": 2,
+    "water_breathing_potion": 1,
+    "speed_potion": 1
+  },
+  "selected_speed": "13_amber_round",
+  "active_speed_asset": "assets/items/speed_potion.png",
+  "speed_asset_sha256": "e9a673d4ccfa4d353d8a882170710634e62e2f7b6825fccd92f610894f62c108",
+  "speed": "2 accepted hero actions per world turn for pre-use magic subsequent world turns; +1 magic; initial drinking costs one ordinary world turn; renewal preserves pair phase and does not stack",
+  "speed_check": "passed: tools/check_speed_potion.gd; actual hero/enemy cadence, exact expiry, renewal, concurrent effects, breath, cabinet actions, automatic editor, pickup and death reset"
+}

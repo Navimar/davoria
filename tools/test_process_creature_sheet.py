@@ -65,6 +65,33 @@ class FullCellProcessingTests(unittest.TestCase):
                 self.assertEqual(tall.getchannel("A").getbbox()[1], 0)
                 self.assertGreater(tall.getchannel("A").crop((0, 0, 64, 1)).getbbox()[2], 0)
 
+    def test_compact_item_fits_before_pixelization_on_native_canvas(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            image = Image.new("RGBA", (256, 256), (0, 0, 0, 0))
+            ImageDraw.Draw(image).rectangle((90, 40, 165, 239), fill=(200, 50, 50, 255))
+            image.save(root / "source.png")
+            recipe = {"version": 1, "kind": "sheet", "source": "source.png",
+                      "fit_visible_before_pixelization": True, "visible_size": [38, 38],
+                      "layout": {"row_boundaries": [0, 256], "column_boundaries": [[0, 256]]},
+                      "chroma": None, "canvas": {"size": [64, 64], "baseline": 52},
+                      "palette": "aap64", "outline": {"color": "242234", "neighbors": 8},
+                      "preview_columns": 1, "sprites": [{"name": "potion"}]}
+            path = root / "recipe.json"
+            path.write_text(json.dumps(recipe))
+            result = process.run(path, root / "output")
+            self.assertEqual(result["status"], "complete")
+            prep = json.loads((root / "output/preparation/run.json").read_text())
+            self.assertEqual(prep["sprites"][0]["fitted_body_size"][1], 38 * 8)
+            with Image.open(root / "output/preparation/fitted/potion.png") as fitted:
+                self.assertEqual(fitted.size, (512, 512))
+                self.assertEqual(fitted.getchannel("A").getbbox()[3], 52 * 8)
+            with Image.open(root / "output/processed/final/potion.png") as final:
+                self.assertEqual(final.size, (64, 64))
+                bbox = final.getchannel("A").getbbox()
+                self.assertEqual(bbox[3] - bbox[1], 38)
+                self.assertEqual(bbox[3], 52)
+
 
 if __name__ == "__main__":
     unittest.main()

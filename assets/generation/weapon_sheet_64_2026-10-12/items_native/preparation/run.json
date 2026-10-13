@@ -1,0 +1,407 @@
+{
+  "source": "/Users/igor/Godot/davoria/assets/generation/weapon_sheet_64_2026-10-12/source_hard_alpha.png",
+  "source_sha256": "0006fe4ba42120ad8477d675e5787555c11c3f15228248195b50a6ca3fb9d38a",
+  "order": [
+    "split_highres",
+    "chroma_key",
+    "crop_alpha_bbox",
+    "fit_highres",
+    "pixelize"
+  ],
+  "padding": 0,
+  "target_size": [
+    64,
+    64
+  ],
+  "visible_size": [
+    44,
+    44
+  ],
+  "baseline": 54,
+  "sprites": [
+    {
+      "name": "01_iron_dagger",
+      "source_box": [
+        77,
+        89,
+        251,
+        275
+      ],
+      "source_bbox": [
+        0,
+        0,
+        174,
+        186
+      ],
+      "cropped_size": [
+        174,
+        186
+      ],
+      "fitted_body_size": [
+        329,
+        352
+      ],
+      "scale": 1.89247311827957
+    },
+    {
+      "name": "02_iron_short_sword",
+      "source_box": [
+        363,
+        61,
+        569,
+        275
+      ],
+      "source_bbox": [
+        0,
+        0,
+        206,
+        214
+      ],
+      "cropped_size": [
+        206,
+        214
+      ],
+      "fitted_body_size": [
+        339,
+        352
+      ],
+      "scale": 1.644859813084112
+    },
+    {
+      "name": "03_iron_arming_sword",
+      "source_box": [
+        665,
+        37,
+        900,
+        277
+      ],
+      "source_bbox": [
+        0,
+        0,
+        235,
+        240
+      ],
+      "cropped_size": [
+        235,
+        240
+      ],
+      "fitted_body_size": [
+        345,
+        352
+      ],
+      "scale": 1.4666666666666666
+    },
+    {
+      "name": "04_broad_sword",
+      "source_box": [
+        979,
+        37,
+        1210,
+        280
+      ],
+      "source_bbox": [
+        0,
+        0,
+        231,
+        243
+      ],
+      "cropped_size": [
+        231,
+        243
+      ],
+      "fitted_body_size": [
+        335,
+        352
+      ],
+      "scale": 1.448559670781893
+    },
+    {
+      "name": "05_curved_sabre",
+      "source_box": [
+        58,
+        342,
+        269,
+        586
+      ],
+      "source_bbox": [
+        0,
+        0,
+        211,
+        244
+      ],
+      "cropped_size": [
+        211,
+        244
+      ],
+      "fitted_body_size": [
+        304,
+        352
+      ],
+      "scale": 1.4426229508196722
+    },
+    {
+      "name": "06_bronze_sword",
+      "source_box": [
+        360,
+        376,
+        559,
+        584
+      ],
+      "source_bbox": [
+        0,
+        0,
+        199,
+        208
+      ],
+      "cropped_size": [
+        199,
+        208
+      ],
+      "fitted_body_size": [
+        337,
+        352
+      ],
+      "scale": 1.6923076923076923
+    },
+    {
+      "name": "07_steel_long_sword",
+      "source_box": [
+        657,
+        336,
+        900,
+        587
+      ],
+      "source_bbox": [
+        0,
+        0,
+        243,
+        251
+      ],
+      "cropped_size": [
+        243,
+        251
+      ],
+      "fitted_body_size": [
+        341,
+        352
+      ],
+      "scale": 1.402390438247012
+    },
+    {
+      "name": "08_dark_greatsword",
+      "source_box": [
+        964,
+        323,
+        1217,
+        597
+      ],
+      "source_bbox": [
+        0,
+        0,
+        253,
+        274
+      ],
+      "cropped_size": [
+        253,
+        274
+      ],
+      "fitted_body_size": [
+        325,
+        352
+      ],
+      "scale": 1.2846715328467153
+    },
+    {
+      "name": "09_hand_axe",
+      "source_box": [
+        61,
+        674,
+        269,
+        872
+      ],
+      "source_bbox": [
+        0,
+        0,
+        208,
+        198
+      ],
+      "cropped_size": [
+        208,
+        198
+      ],
+      "fitted_body_size": [
+        352,
+        335
+      ],
+      "scale": 1.6923076923076923
+    },
+    {
+      "name": "10_battle_axe",
+      "source_box": [
+        337,
+        639,
+        601,
+        889
+      ],
+      "source_bbox": [
+        0,
+        0,
+        264,
+        250
+      ],
+      "cropped_size": [
+        264,
+        250
+      ],
+      "fitted_body_size": [
+        352,
+        333
+      ],
+      "scale": 1.3333333333333333
+    },
+    {
+      "name": "11_flanged_mace",
+      "source_box": [
+        675,
+        659,
+        894,
+        878
+      ],
+      "source_bbox": [
+        0,
+        0,
+        219,
+        219
+      ],
+      "cropped_size": [
+        219,
+        219
+      ],
+      "fitted_body_size": [
+        352,
+        352
+      ],
+      "scale": 1.6073059360730593
+    },
+    {
+      "name": "12_war_hammer",
+      "source_box": [
+        984,
+        647,
+        1216,
+        874
+      ],
+      "source_bbox": [
+        0,
+        0,
+        232,
+        227
+      ],
+      "cropped_size": [
+        232,
+        227
+      ],
+      "fitted_body_size": [
+        352,
+        344
+      ],
+      "scale": 1.5172413793103448
+    },
+    {
+      "name": "13_spear",
+      "source_box": [
+        32,
+        950,
+        280,
+        1205
+      ],
+      "source_bbox": [
+        0,
+        0,
+        248,
+        255
+      ],
+      "cropped_size": [
+        248,
+        255
+      ],
+      "fitted_body_size": [
+        342,
+        352
+      ],
+      "scale": 1.380392156862745
+    },
+    {
+      "name": "14_halberd",
+      "source_box": [
+        329,
+        938,
+        595,
+        1211
+      ],
+      "source_bbox": [
+        0,
+        0,
+        266,
+        273
+      ],
+      "cropped_size": [
+        266,
+        273
+      ],
+      "fitted_body_size": [
+        343,
+        352
+      ],
+      "scale": 1.2893772893772895
+    },
+    {
+      "name": "15_wooden_club",
+      "source_box": [
+        668,
+        974,
+        905,
+        1197
+      ],
+      "source_bbox": [
+        0,
+        0,
+        237,
+        223
+      ],
+      "cropped_size": [
+        237,
+        223
+      ],
+      "fitted_body_size": [
+        352,
+        331
+      ],
+      "scale": 1.4852320675105486
+    },
+    {
+      "name": "16_wizard_staff",
+      "source_box": [
+        980,
+        962,
+        1208,
+        1197
+      ],
+      "source_bbox": [
+        0,
+        0,
+        228,
+        235
+      ],
+      "cropped_size": [
+        228,
+        235
+      ],
+      "fitted_body_size": [
+        342,
+        352
+      ],
+      "scale": 1.4978723404255319
+    }
+  ]
+}

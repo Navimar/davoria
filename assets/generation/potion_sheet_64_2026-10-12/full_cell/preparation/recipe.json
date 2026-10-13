@@ -1,0 +1,118 @@
+{
+  "version": 1,
+  "kind": "sheet",
+  "source": "sheet.png",
+  "source_sha256": "7ea454c48c528da819738a3c4a4e4bc056ecb1d429094b4f6270b207571d777a",
+  "layout": {
+    "row_boundaries": [
+      0,
+      512,
+      1024,
+      1536,
+      2048
+    ],
+    "column_boundaries": [
+      [
+        0,
+        512,
+        1024,
+        1536,
+        2048
+      ],
+      [
+        0,
+        512,
+        1024,
+        1536,
+        2048
+      ],
+      [
+        0,
+        512,
+        1024,
+        1536,
+        2048
+      ],
+      [
+        0,
+        512,
+        1024,
+        1536,
+        2048
+      ]
+    ]
+  },
+  "chroma": null,
+  "reconstruction": {
+    "grid": [
+      64,
+      64
+    ],
+    "inset": 0.0,
+    "alpha_coverage": 0.0
+  },
+  "palette": "aap64",
+  "outline": {
+    "color": "242234",
+    "neighbors": 8
+  },
+  "preview_columns": 4,
+  "sprites": [
+    {
+      "name": "01_healing_round_ruby"
+    },
+    {
+      "name": "02_red_pear"
+    },
+    {
+      "name": "03_red_square"
+    },
+    {
+      "name": "04_red_tall"
+    },
+    {
+      "name": "05_green_round"
+    },
+    {
+      "name": "06_green_vial"
+    },
+    {
+      "name": "07_green_square"
+    },
+    {
+      "name": "08_turquoise_drop"
+    },
+    {
+      "name": "09_blue_round"
+    },
+    {
+      "name": "10_blue_squat"
+    },
+    {
+      "name": "11_blue_vial"
+    },
+    {
+      "name": "12_blue_faceted"
+    },
+    {
+      "name": "13_amber_round"
+    },
+    {
+      "name": "14_violet_pear"
+    },
+    {
+      "name": "15_purple_square"
+    },
+    {
+      "name": "16_orange_tall"
+    }
+  ],
+  "canvas": {
+    "size": [
+      64,
+      64
+    ],
+    "baseline": 64
+  },
+  "fit_canvas_candidates": false
+}

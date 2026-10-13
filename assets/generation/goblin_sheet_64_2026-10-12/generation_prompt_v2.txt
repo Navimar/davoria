@@ -1,0 +1,24 @@
+Edit Image 1, the draft goblin atlas. Image 2 is the existing game's red goblin used only as style and species reference.
+The draft accidentally has fifteen goblins in three rows of five. Fix the atlas to EXACTLY SIXTEEN goblins in EXACTLY FOUR ROWS AND FOUR COLUMNS. This exact 4x4 layout is the most important change. Keep a single coherent pixel-art style, the squat sturdy goblin species, existing skin-color variety, dark outlines, simple shading, and full-body three-quarter view facing right. Keep equal-sized cells, complete silhouettes and compact fully visible weapons. Fine consistent pixel density matching Image 2; simplify tiny painted texture and highlights rather than adding detail. Transparent background and broad transparent gutters. No numbers, text, grid lines, frames, shadows or scenery.
+Required explicit 4x4 arrangement (left to right):
+TOP ROW, FOUR goblins:
+1 rusty olive-green weak goblin with wooden club;
+2 light yellow-green weak goblin with short dagger;
+3 sandy yellow-green weak goblin with small hatchet;
+4 pale olive weak goblin with compact rough spear.
+SECOND ROW, FOUR goblins:
+5 orange-red weak goblin with chipped short sword;
+6 terracotta-red weak goblin with wooden round shield and knife;
+7 yellow-olive medium goblin with bronze helmet and mace;
+8 moss-green medium goblin with iron helmet, chain vest and compact spear.
+THIRD ROW, FOUR goblins:
+9 red-orange medium swordsman with bronze helmet similar to Image 2;
+10 jade-green medium axeman with bronze shield;
+11 brick-red medium duelist with chain vest and two short blades;
+12 crimson strong guard with iron plate, rectangular shield and sword.
+BOTTOM ROW, FOUR goblins:
+13 deep-green strong goblin with heavy armour and compact two-handed battleaxe;
+14 burnt-red strong goblin with iron armour and stout compact halberd;
+15 dark-olive strong champion with bronze-trimmed heavy plate, broad short blade and heavy shield;
+16 vivid-red strongest warlord with black iron armour, restrained gold trim and compact axe.
+The first six must look weak, the next five medium, and the last five strong. Comparable body scale throughout, strength conveyed by weapons, armour and stance. Ensure the champion and halberd goblin are two separate complete characters, not a merged character. There must be four distinct complete goblins in each of four rows.

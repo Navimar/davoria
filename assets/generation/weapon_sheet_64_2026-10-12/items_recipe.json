@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "kind": "sheet",
+  "source": "source_hard_alpha.png",
+  "source_sha256": "0006fe4ba42120ad8477d675e5787555c11c3f15228248195b50a6ca3fb9d38a",
+  "layout": {
+    "rows": 4,
+    "columns": 4,
+    "split_silhouettes": true
+  },
+  "chroma": null,
+  "reconstruction": {
+    "grid": [
+      64,
+      64
+    ],
+    "inset": 0.0,
+    "alpha_coverage": 0.0
+  },
+  "palette": "aap64",
+  "outline": {
+    "color": "242234",
+    "neighbors": 8
+  },
+  "preview_columns": 4,
+  "sprites": [
+    {
+      "name": "01_iron_dagger"
+    },
+    {
+      "name": "02_iron_short_sword"
+    },
+    {
+      "name": "03_iron_arming_sword"
+    },
+    {
+      "name": "04_broad_sword"
+    },
+    {
+      "name": "05_curved_sabre"
+    },
+    {
+      "name": "06_bronze_sword"
+    },
+    {
+      "name": "07_steel_long_sword"
+    },
+    {
+      "name": "08_dark_greatsword"
+    },
+    {
+      "name": "09_hand_axe"
+    },
+    {
+      "name": "10_battle_axe"
+    },
+    {
+      "name": "11_flanged_mace"
+    },
+    {
+      "name": "12_war_hammer"
+    },
+    {
+      "name": "13_spear"
+    },
+    {
+      "name": "14_halberd"
+    },
+    {
+      "name": "15_wooden_club"
+    },
+    {
+      "name": "16_wizard_staff"
+    }
+  ],
+  "fit_visible_before_pixelization": true,
+  "canvas": {
+    "size": [
+      64,
+      64
+    ],
+    "baseline": 54
+  },
+  "visible_size": [
+    44,
+    44
+  ]
+}

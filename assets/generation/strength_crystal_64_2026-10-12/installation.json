@@ -1,0 +1,42 @@
+{
+  "generation_mode": "built-in imagegen",
+  "runtime": "assets/items/strength_crystal.png",
+  "source": "processed_binary/final/strength_crystal.png",
+  "canvas": [
+    64,
+    64
+  ],
+  "visible_bounds": [
+    22,
+    16,
+    42,
+    49
+  ],
+  "palette": "aap64",
+  "binary_alpha": true,
+  "terrain_darkening_applied": false,
+  "runtime_sha256": "c4cb150d0c8b29d1fd3cfdb369c3c3e387673c2994368f7176bf786b915716b7",
+  "pickup_current_strength": 1,
+  "pickup_max_strength": 1,
+  "inventory_slot_required": false,
+  "kill_current_strength_reward": 1,
+  "kill_max_strength_reward": 1,
+  "crystal_check": "passed: distribution, floor/water, chunk load order, no respawn, map migration, editor Save and pickup",
+  "combat_check": "passed",
+  "level_check": "passed",
+  "grid_check": "passed",
+  "game_visual_check": "passed: readable crystals and immediate 10/10 to 11/11 pickup",
+  "game_preview": "game_preview.png",
+  "pickup_preview": "pickup_preview.png",
+  "scatter": {
+    "mode": "procedural per game",
+    "cell_probability": 0.05,
+    "frequency": 20,
+    "terrain": "all unoccupied passable cells including floor and water",
+    "same_density_in_all_chunks": true,
+    "stored_in_map": false,
+    "recreated_on_chunk_revisit": false,
+    "new_game_rerolls": true,
+    "implementation": "scripts/crystal_scatter.gd"
+  }
+}

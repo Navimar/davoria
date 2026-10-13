@@ -1,0 +1,61 @@
+{
+  "generation_mode": "built-in imagegen",
+  "reference": "assets/actors/pixel_monsters/series_05/06_hobgoblin_captain.png",
+  "active_prompt": "generation_prompt_v2.txt",
+  "active_recipe": "recipe.json",
+  "active_processing": "selected/final",
+  "runtime_directory": "assets/actors/goblins/series_01",
+  "count": 3,
+  "canvas": [
+    64,
+    64
+  ],
+  "qa_ok": true,
+  "weak": [
+    5,
+    30
+  ],
+  "medium": [
+    31,
+    65
+  ],
+  "strong": [
+    66,
+    99
+  ],
+  "spawn_model": "map stores a concrete type; strength rolled once per spawn from tier range",
+  "catalog": "scripts/goblin_types.gd",
+  "placed_goblins": 36,
+  "placement_tiers": {
+    "weak": 16,
+    "medium": 12,
+    "strong": 8
+  },
+  "combat_check": "passed with three goblin types and water elementals",
+  "grid_check": "passed",
+  "level_check": "passed",
+  "potion_check": "passed",
+  "crystal_check": "passed",
+  "visual_check": "Historical Godot previews predate removal; red short-sword type excluded from current selection.",
+  "restart_visual_check": "35 of 36 sampled goblin strengths changed; boss unchanged",
+  "game_previews": [
+    "weak_game_preview.png",
+    "medium_game_preview.png",
+    "strong_game_preview.png"
+  ],
+  "candidate_processing": "native_64/processed",
+  "selection": "selection.json",
+  "candidate_count": 16,
+  "selected_types": [
+    "weak_club",
+    "medium_swordsman",
+    "strong_guard"
+  ],
+  "placement_types": {
+    "weak_club": 16,
+    "medium_swordsman": 12,
+    "strong_guard": 8
+  },
+  "runtime_directory_check": "exactly three selected PNGs; red short-sword goblin removed from runtime and active export",
+  "historical_selection_preview": "selected/preview.png"
+}

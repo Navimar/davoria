@@ -47,7 +47,13 @@ static func _next_step(origin: Vector2i, target: Vector2i, hero: Vector2i,
 		index += 1
 		for direction in directions:
 			var next := cell + direction
-			if first_steps.has(next) or not _inside_search(next, hero) or not walkable.call(next):
+			if first_steps.has(next) or not _inside_search(next, hero):
+				continue
+			# The hero is a contact-attack destination, not a cell to enter. A hero
+			# in water can be reached from the shore; intermediate water stays blocked.
+			if next == target and next == hero:
+				return next if cell == origin else first_steps[cell]
+			if not walkable.call(next):
 				continue
 			first_steps[next] = next if cell == origin else first_steps[cell]
 			if next == target:

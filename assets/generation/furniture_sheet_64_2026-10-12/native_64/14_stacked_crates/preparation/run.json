@@ -1,0 +1,47 @@
+{
+  "source": "/Users/igor/Godot/davoria/assets/generation/furniture_sheet_64_2026-10-12/inputs/14_stacked_crates.png",
+  "source_sha256": "c2415459d71ebdf65cc4e5d6544409f8af50257946e03ec8f53fb3442852ed62",
+  "order": [
+    "split_highres",
+    "chroma_key",
+    "crop_alpha_bbox",
+    "fit_highres",
+    "pixelize"
+  ],
+  "padding": 0,
+  "target_size": [
+    64,
+    64
+  ],
+  "visible_size": [
+    56,
+    48
+  ],
+  "baseline": 64,
+  "sprites": [
+    {
+      "name": "14_stacked_crates",
+      "source_box": [
+        0,
+        0,
+        260,
+        213
+      ],
+      "source_bbox": [
+        0,
+        0,
+        260,
+        213
+      ],
+      "cropped_size": [
+        260,
+        213
+      ],
+      "fitted_body_size": [
+        448,
+        367
+      ],
+      "scale": 1.7230769230769232
+    }
+  ]
+}

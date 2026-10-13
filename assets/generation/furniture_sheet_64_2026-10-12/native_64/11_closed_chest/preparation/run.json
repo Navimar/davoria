@@ -1,0 +1,47 @@
+{
+  "source": "/Users/igor/Godot/davoria/assets/generation/furniture_sheet_64_2026-10-12/inputs/11_closed_chest.png",
+  "source_sha256": "8384fe78045552820a27f82985e3f1de94d23e1c01607368ca670f92c6a0ec98",
+  "order": [
+    "split_highres",
+    "chroma_key",
+    "crop_alpha_bbox",
+    "fit_highres",
+    "pixelize"
+  ],
+  "padding": 0,
+  "target_size": [
+    64,
+    64
+  ],
+  "visible_size": [
+    54,
+    42
+  ],
+  "baseline": 64,
+  "sprites": [
+    {
+      "name": "11_closed_chest",
+      "source_box": [
+        0,
+        0,
+        244,
+        180
+      ],
+      "source_bbox": [
+        0,
+        0,
+        244,
+        180
+      ],
+      "cropped_size": [
+        244,
+        180
+      ],
+      "fitted_body_size": [
+        432,
+        319
+      ],
+      "scale": 1.7704918032786885
+    }
+  ]
+}

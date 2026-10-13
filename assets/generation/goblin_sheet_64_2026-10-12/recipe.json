@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "kind": "sheet",
+  "source": "source_hard_alpha.png",
+  "source_sha256": "15f1561863c20033aa08d2a3e5f880e9d8a033aa9e75c2836b70e0c2357d4263",
+  "layout": {
+    "rows": 4,
+    "columns": 4,
+    "split_silhouettes": true
+  },
+  "chroma": null,
+  "fit_visible_before_pixelization": true,
+  "reconstruction": {
+    "grid": [
+      64,
+      64
+    ],
+    "inset": 0.0,
+    "alpha_coverage": 0.0
+  },
+  "palette": "aap64",
+  "outline": {
+    "color": "242234",
+    "neighbors": 8
+  },
+  "canvas": {
+    "size": [
+      64,
+      64
+    ],
+    "baseline": 64
+  },
+  "preview_columns": 4,
+  "sprites": [
+    {
+      "name": "01_weak_club"
+    },
+    {
+      "name": "02_weak_dagger"
+    },
+    {
+      "name": "03_weak_hatchet"
+    },
+    {
+      "name": "04_weak_spear"
+    },
+    {
+      "name": "05_weak_sword"
+    },
+    {
+      "name": "06_weak_shield"
+    },
+    {
+      "name": "07_medium_mace"
+    },
+    {
+      "name": "08_medium_spearman"
+    },
+    {
+      "name": "09_medium_swordsman"
+    },
+    {
+      "name": "10_medium_axeman"
+    },
+    {
+      "name": "11_medium_duelist"
+    },
+    {
+      "name": "12_strong_guard"
+    },
+    {
+      "name": "13_strong_battleaxe"
+    },
+    {
+      "name": "14_strong_halberd"
+    },
+    {
+      "name": "15_strong_champion"
+    },
+    {
+      "name": "16_strong_warlord"
+    }
+  ]
+}

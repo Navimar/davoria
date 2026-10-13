@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "kind": "single",
+  "source": "source.png",
+  "source_sha256": "f77fa670bb67e86cb090f04dcb2480dcfbe78149d280c96451048c860bf351d3",
+  "chroma": null,
+  "reconstruction": {
+    "grid": [
+      64,
+      64
+    ],
+    "inset": 0.0,
+    "alpha_coverage": 0.5
+  },
+  "palette": "aap64",
+  "outline": {
+    "color": "242234",
+    "neighbors": 8
+  },
+  "preview_columns": 1,
+  "sprites": [
+    {
+      "name": "strength_crystal"
+    }
+  ]
+}

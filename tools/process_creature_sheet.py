@@ -121,6 +121,11 @@ def run(recipe_path: Path, output: Path, source_override: Path | None = None) ->
     size = tuple(recipe["canvas"]["size"])
     if len(size) != 2 or min(size) < 1 or size[0] != size[1]:
         raise ValueError("a positive square canvas is required")
+    visible_size = tuple(recipe.get("visible_size", size))
+    baseline = recipe["canvas"].get("baseline", size[1])
+    if (len(visible_size) != 2 or min(visible_size) < 1
+            or visible_size[0] > size[0] or not visible_size[1] <= baseline <= size[1]):
+        raise ValueError("visible size must fit the canvas and its baseline")
     image = ops.read_png(source)
     layout = recipe.get("layout", {})
     chroma = recipe.get("chroma")
@@ -140,17 +145,21 @@ def run(recipe_path: Path, output: Path, source_override: Path | None = None) ->
     prep = output / "preparation"
     prep.mkdir(parents=True)
     source_cell = (size[0] * 8, size[1] * 8)
+    visible_cell = (visible_size[0] * 8, visible_size[1] * 8)
     fitted_images = []
     report = {"source": str(source), "source_sha256": source_hash,
               "order": ["split_highres", "chroma_key", "crop_alpha_bbox", "fit_highres", "pixelize"],
-              "padding": 0, "target_size": list(size), "sprites": []}
+              "padding": 0, "target_size": list(size), "visible_size": list(visible_size),
+              "baseline": baseline, "sprites": []}
     for index, (sprite, box) in enumerate(zip(sprites, boxes)):
         raw = image.crop(box)
         if isolated is not None:
             alpha = isolated[index]
         else:
             alpha, _ = ops.key_background(raw, **chroma) if chroma is not None else (raw.convert("RGBA"), None)
-        fitted, info = fit_highres(alpha, source_cell)
+        body, info = fit_highres(alpha, visible_cell)
+        fitted = Image.new("RGBA", source_cell, (0, 0, 0, 0))
+        fitted.alpha_composite(body, ((source_cell[0] - body.width) // 2, baseline * 8 - body.height))
         filename = sprite["name"] + ".png"
         ops.true_pixel.save_png_atomic(alpha.crop(tuple(info["source_bbox"])), prep / "cropped" / filename)
         ops.true_pixel.save_png_atomic(fitted, prep / "fitted" / filename)
@@ -163,7 +172,7 @@ def run(recipe_path: Path, output: Path, source_override: Path | None = None) ->
     runtime = {**recipe, "source": "sheet.png", "source_sha256": ops.file_sha256(prepared),
                "chroma": None, "fit_canvas_candidates": False,
                "reconstruction": {"grid": list(size), "inset": 0.0, "alpha_coverage": 0.0},
-               "canvas": {"size": list(size), "baseline": size[1]},
+               "canvas": {"size": list(size), "baseline": baseline},
                "layout": {"row_boundaries": [y * source_cell[1] for y in range(rows + 1)],
                           "column_boundaries": [[x * source_cell[0] for x in range(columns + 1)] for _ in range(rows)]},
                "sprites": [{k: v for k, v in sprite.items() if k != "reconstruction"} for sprite in sprites]}

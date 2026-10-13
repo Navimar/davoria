@@ -1,0 +1,47 @@
+{
+  "source": "/Users/igor/Godot/davoria/assets/generation/furniture_sheet_64_2026-10-12/inputs/16_stone_pedestal.png",
+  "source_sha256": "e7e7c7da109d18fe85b9efeff1b3d20f7a71877a0647b4761e597ed9c1ff294d",
+  "order": [
+    "split_highres",
+    "chroma_key",
+    "crop_alpha_bbox",
+    "fit_highres",
+    "pixelize"
+  ],
+  "padding": 0,
+  "target_size": [
+    64,
+    64
+  ],
+  "visible_size": [
+    48,
+    48
+  ],
+  "baseline": 64,
+  "sprites": [
+    {
+      "name": "16_stone_pedestal",
+      "source_box": [
+        0,
+        0,
+        208,
+        207
+      ],
+      "source_bbox": [
+        0,
+        0,
+        208,
+        207
+      ],
+      "cropped_size": [
+        208,
+        207
+      ],
+      "fitted_body_size": [
+        384,
+        382
+      ],
+      "scale": 1.8461538461538463
+    }
+  ]
+}

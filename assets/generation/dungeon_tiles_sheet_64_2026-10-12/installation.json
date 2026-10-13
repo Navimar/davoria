@@ -35,7 +35,7 @@
     "floor.png": "terrain_25_blur05/final/04_floor_paving.png",
     "wall.png": "walls_gray/final/01_wall_slabs_gray.png",
     "water.png": "terrain_25_blur05/final/10_water_blue.png",
-    "door.png": "terrain_25_blur05/final/14_door_reinforced.png"
+    "door.png": "../door_gray_64_2026-10-12/final/door.png"
   },
   "water_recut": "water_recut/preparation.json",
   "terrain_standard": "../../../tools/pixel_recipes/terrain_style.json",
@@ -44,5 +44,6 @@
   "blur_radius_px": 0.5,
   "terrain_processing": "terrain_25_blur05/preparation.json",
   "gray_walls": "walls_gray/recolor_recipe.json",
-  "light_water_selection": "light_water_selection.json"
+  "light_water_selection": "light_water_selection.json",
+  "gray_door_frame": "../door_gray_64_2026-10-12/installation.json"
 }

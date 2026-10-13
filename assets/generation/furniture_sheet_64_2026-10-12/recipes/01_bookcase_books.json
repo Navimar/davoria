@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "kind": "sheet",
+  "source": "../inputs/01_bookcase_books.png",
+  "source_sha256": "fb7beee8f16499571ee0bad42069ecc003e12c7872b96c82d4be49a2ca5bd7b1",
+  "layout": {
+    "rows": 1,
+    "columns": 1,
+    "split_silhouettes": true
+  },
+  "chroma": null,
+  "reconstruction": {
+    "grid": [
+      64,
+      64
+    ],
+    "inset": 0.0,
+    "alpha_coverage": 0.0
+  },
+  "palette": "aap64",
+  "outline": {
+    "color": "242234",
+    "neighbors": 8
+  },
+  "preview_columns": 1,
+  "sprites": [
+    {
+      "name": "01_bookcase_books"
+    }
+  ],
+  "fit_visible_before_pixelization": true,
+  "canvas": {
+    "size": [
+      64,
+      64
+    ],
+    "baseline": 64
+  },
+  "visible_size": [
+    52,
+    64
+  ]
+}

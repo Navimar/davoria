@@ -1,0 +1,47 @@
+{
+  "generation_mode": "built-in imagegen",
+  "prompt": "generation_prompt.txt",
+  "source": "source.png",
+  "active_recipe": "items_recipe.json",
+  "active_processing": "items_native/processed",
+  "qa": "items_native/processed/qa.json",
+  "qa_ok": true,
+  "count": 16,
+  "active_weapon_count": 1,
+  "selected": "03_iron_arming_sword.png",
+  "selection_reason": "Clear straight blade, connected crossguard and red-brown grip; visually checked at native scale and nearest enlargement.",
+  "runtime_sprite": "assets/items/iron_sword.png",
+  "reserve_directory": "assets/items/weapons/series_01",
+  "canvas": [
+    64,
+    64
+  ],
+  "visible_size": [
+    44,
+    44
+  ],
+  "selected_bbox": [
+    10,
+    10,
+    54,
+    54
+  ],
+  "baseline": 54,
+  "palette": "aap64",
+  "outline": "242234",
+  "alpha": "binary; threshold128 before fitting and pixelization",
+  "render_scale": 1.0,
+  "filter": "nearest",
+  "post_pixelization_resize": false,
+  "selected_sha256": "220ef022421df4a7eb9e81b8a25f24047fff6af63b17aaa2fe761267d30de39f",
+  "mechanic": "sword item ID and permanent +5 strength bonus remain unchanged; reserve images have no new game effects",
+  "grid_check": "passed",
+  "combat_check": "passed",
+  "visual_check": "passed in Godot: native sword on map, picked up into inventory; left panel 11/11+5 and overhead 16",
+  "preview": "preview_4x.png",
+  "selected_preview": "selected_sword_4x.png",
+  "game_previews": [
+    "game_start_preview.png",
+    "inventory_preview.png"
+  ]
+}

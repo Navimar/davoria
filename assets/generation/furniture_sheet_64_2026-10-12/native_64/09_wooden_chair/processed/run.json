@@ -1,0 +1,92 @@
+{
+  "status": "complete",
+  "recipe": {
+    "version": 1,
+    "kind": "sheet",
+    "source": "sheet.png",
+    "source_sha256": "10341d1a4cc3d27d46678d9e50646493fbd93fccc99213094d28a039c7391f04",
+    "layout": {
+      "row_boundaries": [
+        0,
+        512
+      ],
+      "column_boundaries": [
+        [
+          0,
+          512
+        ]
+      ]
+    },
+    "chroma": null,
+    "reconstruction": {
+      "grid": [
+        64,
+        64
+      ],
+      "inset": 0.0,
+      "alpha_coverage": 0.0
+    },
+    "palette": "aap64",
+    "outline": {
+      "color": "242234",
+      "neighbors": 8
+    },
+    "preview_columns": 1,
+    "sprites": [
+      {
+        "name": "09_wooden_chair"
+      }
+    ],
+    "canvas": {
+      "size": [
+        64,
+        64
+      ],
+      "baseline": 64
+    },
+    "visible_size": [
+      38,
+      54
+    ],
+    "fit_canvas_candidates": false
+  },
+  "source": "/Users/igor/Godot/davoria/assets/generation/furniture_sheet_64_2026-10-12/native_64/09_wooden_chair/preparation/sheet.png",
+  "source_sha256": "10341d1a4cc3d27d46678d9e50646493fbd93fccc99213094d28a039c7391f04",
+  "runtime": {
+    "python": "3.14.4",
+    "pillow": "12.2.0"
+  },
+  "layout": {
+    "row_boundaries": [
+      0,
+      512
+    ],
+    "column_boundaries": [
+      [
+        0,
+        512
+      ]
+    ]
+  },
+  "sprites": [
+    {
+      "name": "09_wooden_chair",
+      "source_box": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    }
+  ]
+}

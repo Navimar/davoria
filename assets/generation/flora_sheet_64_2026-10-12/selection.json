@@ -1,0 +1,11 @@
+{
+  "selected": {
+    "red_mushroom": "flora_01",
+    "violet_mushroom": "flora_03",
+    "brown_mushroom": "flora_05",
+    "thorn_bush": "flora_09"
+  },
+  "active_directory": "assets/actors/flora/series_01",
+  "reserve_directory": "assets/props/flora/series_01",
+  "selection_rule": "three distinct readable mushrooms and one thorn bush; remaining native variants reserved"
+}

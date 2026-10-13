@@ -1,0 +1,838 @@
+{
+	"objects": [
+		{
+			"cell": [
+				12,
+				-5
+			],
+			"type": "water_elemental"
+		},
+		{
+			"cell": [
+				14,
+				-5
+			],
+			"type": "water_elemental"
+		},
+		{
+			"cell": [
+				16,
+				-3
+			],
+			"type": "water_elemental"
+		},
+		{
+			"cell": [
+				14,
+				-2
+			],
+			"type": "water_elemental"
+		},
+		{
+			"cell": [
+				2,
+				2
+			],
+			"type": "potion_cabinet"
+		},
+		{
+			"cell": [
+				25,
+				2
+			],
+			"type": "potion_cabinet"
+		},
+		{
+			"cell": [
+				26,
+				2
+			],
+			"type": "potion_cabinet"
+		},
+		{
+			"cell": [
+				27,
+				2
+			],
+			"type": "potion_cabinet"
+		},
+		{
+			"cell": [
+				28,
+				2
+			],
+			"type": "potion_cabinet"
+		},
+		{
+			"cell": [
+				2,
+				3
+			],
+			"type": "potion_cabinet"
+		},
+		{
+			"cell": [
+				5,
+				3
+			],
+			"type": "potion_cabinet"
+		},
+		{
+			"cell": [
+				2,
+				4
+			],
+			"type": "potion_cabinet"
+		},
+		{
+			"cell": [
+				5,
+				4
+			],
+			"type": "potion_cabinet"
+		},
+		{
+			"cell": [
+				54,
+				4
+			],
+			"type": "potion_cabinet"
+		},
+		{
+			"cell": [
+				2,
+				5
+			],
+			"type": "potion_cabinet"
+		},
+		{
+			"cell": [
+				5,
+				5
+			],
+			"type": "potion_cabinet"
+		},
+		{
+			"cell": [
+				38,
+				5
+			],
+			"type": "potion_cabinet"
+		},
+		{
+			"cell": [
+				40,
+				5
+			],
+			"type": "strong_guard"
+		},
+		{
+			"cell": [
+				60,
+				5
+			],
+			"type": "water_elemental"
+		},
+		{
+			"cell": [
+				16,
+				6
+			],
+			"type": "water_elemental"
+		},
+		{
+			"cell": [
+				21,
+				7
+			],
+			"type": "water_elemental"
+		},
+		{
+			"cell": [
+				27,
+				7
+			],
+			"type": "strong_guard"
+		},
+		{
+			"cell": [
+				31,
+				7
+			],
+			"type": "potion_cabinet"
+		},
+		{
+			"cell": [
+				33,
+				7
+			],
+			"type": "strong_guard"
+		},
+		{
+			"cell": [
+				39,
+				7
+			],
+			"type": "violet_mushroom"
+		},
+		{
+			"cell": [
+				42,
+				7
+			],
+			"type": "strong_guard"
+		},
+		{
+			"cell": [
+				57,
+				7
+			],
+			"type": "skeletal_horse"
+		},
+		{
+			"cell": [
+				23,
+				9
+			],
+			"type": "water_elemental"
+		},
+		{
+			"cell": [
+				37,
+				9
+			],
+			"type": "strong_guard"
+		},
+		{
+			"cell": [
+				12,
+				11
+			],
+			"type": "potion_cabinet"
+		},
+		{
+			"cell": [
+				14,
+				11
+			],
+			"type": "weak_club"
+		},
+		{
+			"cell": [
+				29,
+				11
+			],
+			"type": "medium_swordsman"
+		},
+		{
+			"cell": [
+				10,
+				12
+			],
+			"type": "brown_mushroom"
+		},
+		{
+			"cell": [
+				19,
+				12
+			],
+			"type": "medium_swordsman"
+		},
+		{
+			"cell": [
+				33,
+				12
+			],
+			"type": "medium_swordsman"
+		},
+		{
+			"cell": [
+				60,
+				12
+			],
+			"type": "potion_cabinet"
+		},
+		{
+			"cell": [
+				27,
+				13
+			],
+			"type": "thorn_bush"
+		},
+		{
+			"cell": [
+				25,
+				14
+			],
+			"type": "medium_swordsman"
+		},
+		{
+			"cell": [
+				29,
+				14
+			],
+			"type": "medium_swordsman"
+		},
+		{
+			"cell": [
+				3,
+				16
+			],
+			"type": "empty_cabinet"
+		},
+		{
+			"cell": [
+				4,
+				16
+			],
+			"type": "potion_cabinet"
+		},
+		{
+			"cell": [
+				5,
+				16
+			],
+			"type": "empty_cabinet"
+		},
+		{
+			"cell": [
+				6,
+				16
+			],
+			"type": "potion_cabinet"
+		},
+		{
+			"cell": [
+				10,
+				16
+			],
+			"type": "weak_club"
+		},
+		{
+			"cell": [
+				23,
+				16
+			],
+			"type": "weak_club"
+		},
+		{
+			"cell": [
+				31,
+				16
+			],
+			"type": "medium_swordsman"
+		},
+		{
+			"cell": [
+				38,
+				16
+			],
+			"type": "medium_swordsman"
+		},
+		{
+			"cell": [
+				40,
+				17
+			],
+			"type": "potion_cabinet"
+		},
+		{
+			"cell": [
+				42,
+				17
+			],
+			"type": "strong_guard"
+		},
+		{
+			"cell": [
+				27,
+				18
+			],
+			"type": "medium_swordsman"
+		},
+		{
+			"cell": [
+				44,
+				18
+			],
+			"type": "strong_guard"
+		},
+		{
+			"cell": [
+				15,
+				19
+			],
+			"type": "water_elemental"
+		},
+		{
+			"cell": [
+				20,
+				19
+			],
+			"type": "water_elemental"
+		},
+		{
+			"cell": [
+				21,
+				19
+			],
+			"type": "water_elemental"
+		},
+		{
+			"cell": [
+				22,
+				19
+			],
+			"type": "water_elemental"
+		},
+		{
+			"cell": [
+				43,
+				19
+			],
+			"type": "water_elemental"
+		},
+		{
+			"cell": [
+				4,
+				20
+			],
+			"type": "magic_key"
+		},
+		{
+			"cell": [
+				9,
+				20
+			],
+			"type": "weak_club"
+		},
+		{
+			"cell": [
+				12,
+				20
+			],
+			"type": "water_elemental"
+		},
+		{
+			"cell": [
+				20,
+				20
+			],
+			"type": "water_elemental"
+		},
+		{
+			"cell": [
+				21,
+				20
+			],
+			"type": "water_elemental"
+		},
+		{
+			"cell": [
+				22,
+				20
+			],
+			"type": "water_elemental"
+		},
+		{
+			"cell": [
+				38,
+				20
+			],
+			"type": "medium_swordsman"
+		},
+		{
+			"cell": [
+				20,
+				21
+			],
+			"type": "water_elemental"
+		},
+		{
+			"cell": [
+				21,
+				21
+			],
+			"type": "water_elemental"
+		},
+		{
+			"cell": [
+				22,
+				21
+			],
+			"type": "water_elemental"
+		},
+		{
+			"cell": [
+				26,
+				21
+			],
+			"type": "medium_swordsman"
+		},
+		{
+			"cell": [
+				41,
+				21
+			],
+			"type": "strong_guard"
+		},
+		{
+			"cell": [
+				16,
+				22
+			],
+			"type": "water_elemental"
+		},
+		{
+			"cell": [
+				20,
+				22
+			],
+			"type": "water_elemental"
+		},
+		{
+			"cell": [
+				21,
+				22
+			],
+			"type": "water_elemental"
+		},
+		{
+			"cell": [
+				22,
+				22
+			],
+			"type": "water_elemental"
+		},
+		{
+			"cell": [
+				44,
+				22
+			],
+			"type": "water_elemental"
+		},
+		{
+			"cell": [
+				-3,
+				23
+			],
+			"type": "water_elemental"
+		},
+		{
+			"cell": [
+				39,
+				23
+			],
+			"type": "medium_swordsman"
+		},
+		{
+			"cell": [
+				42,
+				23
+			],
+			"type": "red_mushroom"
+		},
+		{
+			"cell": [
+				50,
+				23
+			],
+			"type": "water_elemental"
+		},
+		{
+			"cell": [
+				-4,
+				24
+			],
+			"type": "water_elemental"
+		},
+		{
+			"cell": [
+				27,
+				24
+			],
+			"type": "medium_swordsman"
+		},
+		{
+			"cell": [
+				-3,
+				25
+			],
+			"type": "water_elemental"
+		},
+		{
+			"cell": [
+				18,
+				25
+			],
+			"type": "potion_cabinet"
+		},
+		{
+			"cell": [
+				25,
+				25
+			],
+			"type": "potion_cabinet"
+		},
+		{
+			"cell": [
+				28,
+				25
+			],
+			"type": "weak_club"
+		},
+		{
+			"cell": [
+				46,
+				25
+			],
+			"type": "water_elemental"
+		},
+		{
+			"cell": [
+				49,
+				25
+			],
+			"type": "water_elemental"
+		},
+		{
+			"cell": [
+				4,
+				26
+			],
+			"type": "potion_cabinet"
+		},
+		{
+			"cell": [
+				16,
+				26
+			],
+			"type": "weak_club"
+		},
+		{
+			"cell": [
+				20,
+				26
+			],
+			"type": "weak_club"
+		},
+		{
+			"cell": [
+				38,
+				26
+			],
+			"type": "weak_club"
+		},
+		{
+			"cell": [
+				2,
+				28
+			],
+			"type": "red_mushroom"
+		},
+		{
+			"cell": [
+				30,
+				29
+			],
+			"type": "weak_club"
+		},
+		{
+			"cell": [
+				36,
+				29
+			],
+			"type": "potion_cabinet"
+		},
+		{
+			"cell": [
+				39,
+				29
+			],
+			"type": "weak_club"
+		},
+		{
+			"cell": [
+				50,
+				29
+			],
+			"type": "water_elemental"
+		},
+		{
+			"cell": [
+				7,
+				30
+			],
+			"type": "potion_cabinet"
+		},
+		{
+			"cell": [
+				17,
+				30
+			],
+			"type": "weak_club"
+		},
+		{
+			"cell": [
+				24,
+				30
+			],
+			"type": "weak_club"
+		},
+		{
+			"cell": [
+				34,
+				30
+			],
+			"type": "weak_club"
+		},
+		{
+			"cell": [
+				43,
+				30
+			],
+			"type": "water_elemental"
+		},
+		{
+			"cell": [
+				45,
+				30
+			],
+			"type": "water_elemental"
+		},
+		{
+			"cell": [
+				47,
+				30
+			],
+			"type": "water_elemental"
+		},
+		{
+			"cell": [
+				-1,
+				31
+			],
+			"type": "weak_club"
+		},
+		{
+			"cell": [
+				1,
+				31
+			],
+			"type": "potion_cabinet"
+		},
+		{
+			"cell": [
+				28,
+				31
+			],
+			"type": "weak_club"
+		},
+		{
+			"cell": [
+				48,
+				31
+			],
+			"type": "water_elemental"
+		},
+		{
+			"cell": [
+				3,
+				32
+			],
+			"type": "sword"
+		},
+		{
+			"cell": [
+				20,
+				32
+			],
+			"type": "weak_club"
+		},
+		{
+			"cell": [
+				-9,
+				33
+			],
+			"type": "brown_mushroom"
+		},
+		{
+			"cell": [
+				-6,
+				33
+			],
+			"type": "red_mushroom"
+		},
+		{
+			"cell": [
+				-9,
+				34
+			],
+			"type": "brown_mushroom"
+		},
+		{
+			"cell": [
+				-6,
+				34
+			],
+			"type": "red_mushroom"
+		},
+		{
+			"cell": [
+				-5,
+				34
+			],
+			"type": "violet_mushroom"
+		},
+		{
+			"cell": [
+				-2,
+				34
+			],
+			"type": "brown_mushroom"
+		},
+		{
+			"cell": [
+				-9,
+				35
+			],
+			"type": "brown_mushroom"
+		},
+		{
+			"cell": [
+				-9,
+				36
+			],
+			"type": "brown_mushroom"
+		},
+		{
+			"cell": [
+				-2,
+				36
+			],
+			"type": "brown_mushroom"
+		},
+		{
+			"cell": [
+				-9,
+				37
+			],
+			"type": "brown_mushroom"
+		},
+		{
+			"cell": [
+				-5,
+				37
+			],
+			"type": "brown_mushroom"
+		},
+		{
+			"cell": [
+				-9,
+				38
+			],
+			"type": "brown_mushroom"
+		}
+	],
+	"version": 1
+}

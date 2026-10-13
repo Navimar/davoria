@@ -1,0 +1,9 @@
+{
+  "method": "threshold_generated_alpha_before_pixelization",
+  "threshold": 128,
+  "preserve_rgb": true,
+  "canvas": [
+    1254,
+    1254
+  ]
+}

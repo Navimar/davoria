@@ -1,0 +1,24 @@
+Use case: stylized-concept. Asset type: goblin character sprite sheet for a 64-pixel tile roguelike.
+Image 1 is the STYLE AND SPECIES REFERENCE: the game's existing red-orange stocky hobgoblin captain. Preserve its recognizable species, squat sturdy proportions, pointed ears, broad expressive goblin face, simple naive DOS fantasy look, bright readable palette and roughly one-native-pixel outline density. It is a reference, not a character to paste sixteen times.
+Generate ONE coherent square 4 by 4 sprite atlas containing EXACTLY 16 complete different goblins, one per equal cell. Arrange increasing apparent combat power left to right and then top to bottom. Each sprite is intended for a native 64 by 64 tile. The full sheet represents about 256 logical pixels across before enlargement; use a fine consistent small-pixel grid matching the reference, not large coarse 2x2 or 3x3 pseudo-pixels. Staircase edges, coherent pixel clusters, a thin dark purple-charcoal outline, simple two- or three-tone materials, no painterly gradients, no high-resolution micro-detail. Every goblin is shown full body in three-quarter top-down view facing RIGHT, feet aligned similarly, complete weapons and shield contained within the cell. Compact weapons, no disproportionately long spears or blades. All have comparable body scale; power is conveyed by equipment and bearing, not by enlarging stronger goblins.
+The first six are visibly WEAK: basic leather or cloth, little armour, simple weapons.
+The next five are MEDIUM: bronze or iron helmets, reinforced armour, competent weapons.
+The last five are STRONG: sturdy plated armour, imposing compact weapons, confident battle stance.
+Exact row-major order:
+1. weak club goblin: rusty olive-green skin, ragged brown leather, simple wooden club.
+2. weak dagger goblin: light yellow-green skin, worn ochre tunic, short dagger.
+3. weak hatchet goblin: sandy yellow-green skin, plain leather vest, small crude hatchet.
+4. weak spear goblin: pale olive skin, simple tunic, compact rough spear.
+5. weak sword goblin: orange-red skin, leather gear, chipped short sword.
+6. weak shield goblin: terracotta-red skin, small wooden round shield and knife.
+7. medium mace goblin: yellow-olive skin, bronze cap helmet, reinforced brown armour, compact mace.
+8. medium spearman goblin: moss-green skin, iron helmet, light chain vest, compact spear.
+9. medium swordsman goblin: red-orange skin and bronze helmet resembling the reference captain, short sword and reinforced armour.
+10. medium axeman goblin: jade-green skin, bronze helmet, hand axe and small bronze shield.
+11. medium duelist goblin: warm brick-red skin, chain vest, two compact curved blades.
+12. strong guard goblin: crimson skin, sturdy iron helmet and plate armour, rectangular iron shield and sword.
+13. strong battleaxe goblin: deep green skin, heavy fitted armour, a compact two-handed battleaxe.
+14. strong halberd goblin: burnt red skin, plated iron armour, a stout compact halberd held within the tile.
+15. strong champion goblin: dark olive skin, heavy bronze-trimmed armour, broad short blade and heavy shield.
+16. strongest warlord goblin: vivid red skin, imposing black iron armour with restrained gold trim, heavier compact axe, intimidating stance.
+Background: genuinely transparent alpha. Generous empty gutters separating all complete silhouettes in the high-resolution source. Exactly sixteen goblins. No text, labels, numbers, tier captions, drawn grid, borders, framing, ground plane, cast shadows, contact shadows, magical glow, scenery or watermark. Skin tones and weapon silhouettes must be visibly different while maintaining one consistent species and style.

@@ -1,0 +1,47 @@
+{
+  "source": "/Users/igor/Godot/davoria/assets/generation/furniture_sheet_64_2026-10-12/inputs/12_open_chest.png",
+  "source_sha256": "b1d950d97f558502bed581c09467b576c6d717f328a1aa1c8d9d93831b8c68f0",
+  "order": [
+    "split_highres",
+    "chroma_key",
+    "crop_alpha_bbox",
+    "fit_highres",
+    "pixelize"
+  ],
+  "padding": 0,
+  "target_size": [
+    64,
+    64
+  ],
+  "visible_size": [
+    54,
+    54
+  ],
+  "baseline": 64,
+  "sprites": [
+    {
+      "name": "12_open_chest",
+      "source_box": [
+        0,
+        0,
+        236,
+        241
+      ],
+      "source_bbox": [
+        0,
+        0,
+        236,
+        241
+      ],
+      "cropped_size": [
+        236,
+        241
+      ],
+      "fitted_body_size": [
+        423,
+        432
+      ],
+      "scale": 1.7925311203319503
+    }
+  ]
+}

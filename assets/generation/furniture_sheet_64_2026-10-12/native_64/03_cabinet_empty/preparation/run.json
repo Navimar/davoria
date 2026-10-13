@@ -1,0 +1,47 @@
+{
+  "source": "/Users/igor/Godot/davoria/assets/generation/furniture_sheet_64_2026-10-12/inputs/03_cabinet_empty.png",
+  "source_sha256": "e38a35ea0c8879c0ba1b40b395c9fbb1db210a92e82c4ed61c294927fc898ffe",
+  "order": [
+    "split_highres",
+    "chroma_key",
+    "crop_alpha_bbox",
+    "fit_highres",
+    "pixelize"
+  ],
+  "padding": 0,
+  "target_size": [
+    64,
+    64
+  ],
+  "visible_size": [
+    52,
+    64
+  ],
+  "baseline": 64,
+  "sprites": [
+    {
+      "name": "03_cabinet_empty",
+      "source_box": [
+        0,
+        0,
+        234,
+        289
+      ],
+      "source_bbox": [
+        0,
+        0,
+        234,
+        289
+      ],
+      "cropped_size": [
+        234,
+        289
+      ],
+      "fitted_body_size": [
+        415,
+        512
+      ],
+      "scale": 1.7716262975778547
+    }
+  ]
+}

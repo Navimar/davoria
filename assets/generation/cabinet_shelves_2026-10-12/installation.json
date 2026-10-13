@@ -1,0 +1,59 @@
+{
+  "method": "code-native Sprite2D background layers over the unchanged full cabinet; no separate empty body",
+  "body": "assets/props/furniture/series_01/02_cabinet_jars.png",
+  "source_sha256": {
+    "assets/props/furniture/series_01/02_cabinet_jars.png": "f9705fe1eba7a002ca6a7e8bf0f4b17bc57c117f84784f235a53e8151c1461f8"
+  },
+  "canvas": [
+    64,
+    64
+  ],
+  "capacity": 3,
+  "representation": "one occupied shelf symbolically represents one potion; original multi-bottle groups are retained",
+  "fill_order": "bottom up; loot clears the top occupied shelf as a whole",
+  "empty_shelf_areas": [
+    [
+      17,
+      12,
+      30,
+      11
+    ],
+    [
+      17,
+      29,
+      30,
+      11
+    ],
+    [
+      17,
+      45,
+      30,
+      11
+    ]
+  ],
+  "background_pixel_in_full_cabinet": [
+    28,
+    14
+  ],
+  "background_color_rgba": [
+    34,
+    28,
+    26,
+    255
+  ],
+  "body_replaced_at_zero": false,
+  "empty_editor_icon": "native composite of the same full cabinet and all three background layers",
+  "retired_game_asset": "assets/props/furniture/series_01/03_cabinet_empty.png",
+  "scale": 1,
+  "filter": "nearest",
+  "post_pixelization_resize": false,
+  "preview": "preview_0_1_2_3.png",
+  "preview_method": "mechanical composite from actual scene sprite textures and positions; nearest 4x for inspection",
+  "checks": [
+    "check_cabinet_shelves",
+    "check_healing_potions",
+    "check_editor_save",
+    "check_visibility_flags"
+  ],
+  "visual_check": "0/1/2/3 occupied shelves inspected; identical cabinet body and original filled groups"
+}

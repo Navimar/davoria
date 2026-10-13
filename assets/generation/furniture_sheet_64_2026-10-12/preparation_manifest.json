@@ -1,0 +1,509 @@
+{
+  "generation_mode": "built-in imagegen",
+  "prompt": "generation_prompt.txt",
+  "source": "source.png",
+  "source_size": [
+    1254,
+    1254
+  ],
+  "source_hard_alpha_sha256": "8a967068be60fc28dab983f327bc3df4e5221b336df70b3d100d60b1d5988a7a",
+  "alpha_threshold": 128,
+  "rgb_preserved": true,
+  "canvas": [
+    64,
+    64
+  ],
+  "baseline": 64,
+  "palette": "aap64",
+  "outline": "242234",
+  "order": [
+    "split_connected_highres_silhouettes",
+    "crop_alpha_bbox",
+    "fit_each_highres_to_its_visible_size",
+    "pixelize_64",
+    "map_AAP64",
+    "inner_outline",
+    "align_baseline64"
+  ],
+  "sprites": [
+    {
+      "name": "01_bookcase_books",
+      "source_box": [
+        43,
+        41,
+        269,
+        332
+      ],
+      "source_size": [
+        226,
+        291
+      ],
+      "visible_size": [
+        52,
+        64
+      ],
+      "recipe": "recipes/01_bookcase_books.json",
+      "processing": "native_64/01_bookcase_books",
+      "final": "final/01_bookcase_books.png",
+      "bbox": [
+        7,
+        0,
+        57,
+        64
+      ],
+      "qa": "native_64/01_bookcase_books/processed/qa.json"
+    },
+    {
+      "name": "02_cabinet_jars",
+      "source_box": [
+        354,
+        41,
+        582,
+        331
+      ],
+      "source_size": [
+        228,
+        290
+      ],
+      "visible_size": [
+        52,
+        64
+      ],
+      "recipe": "recipes/02_cabinet_jars.json",
+      "processing": "native_64/02_cabinet_jars",
+      "final": "final/02_cabinet_jars.png",
+      "bbox": [
+        6,
+        0,
+        58,
+        64
+      ],
+      "qa": "native_64/02_cabinet_jars/processed/qa.json"
+    },
+    {
+      "name": "03_cabinet_empty",
+      "source_box": [
+        661,
+        41,
+        895,
+        330
+      ],
+      "source_size": [
+        234,
+        289
+      ],
+      "visible_size": [
+        52,
+        64
+      ],
+      "recipe": "recipes/03_cabinet_empty.json",
+      "processing": "native_64/03_cabinet_empty",
+      "final": "final/03_cabinet_empty.png",
+      "bbox": [
+        6,
+        0,
+        58,
+        64
+      ],
+      "qa": "native_64/03_cabinet_empty/processed/qa.json"
+    },
+    {
+      "name": "04_closed_wardrobe",
+      "source_box": [
+        976,
+        40,
+        1209,
+        332
+      ],
+      "source_size": [
+        233,
+        292
+      ],
+      "visible_size": [
+        52,
+        64
+      ],
+      "recipe": "recipes/04_closed_wardrobe.json",
+      "processing": "native_64/04_closed_wardrobe",
+      "final": "final/04_closed_wardrobe.png",
+      "bbox": [
+        6,
+        0,
+        58,
+        64
+      ],
+      "qa": "native_64/04_closed_wardrobe/processed/qa.json"
+    },
+    {
+      "name": "05_workbench",
+      "source_box": [
+        32,
+        427,
+        302,
+        596
+      ],
+      "source_size": [
+        270,
+        169
+      ],
+      "visible_size": [
+        60,
+        42
+      ],
+      "recipe": "recipes/05_workbench.json",
+      "processing": "native_64/05_workbench",
+      "final": "final/05_workbench.png",
+      "bbox": [
+        2,
+        26,
+        62,
+        64
+      ],
+      "qa": "native_64/05_workbench/processed/qa.json"
+    },
+    {
+      "name": "06_writing_desk",
+      "source_box": [
+        343,
+        411,
+        608,
+        596
+      ],
+      "source_size": [
+        265,
+        185
+      ],
+      "visible_size": [
+        60,
+        44
+      ],
+      "recipe": "recipes/06_writing_desk.json",
+      "processing": "native_64/06_writing_desk",
+      "final": "final/06_writing_desk.png",
+      "bbox": [
+        2,
+        22,
+        62,
+        64
+      ],
+      "qa": "native_64/06_writing_desk/processed/qa.json"
+    },
+    {
+      "name": "07_alchemy_table",
+      "source_box": [
+        648,
+        386,
+        916,
+        595
+      ],
+      "source_size": [
+        268,
+        209
+      ],
+      "visible_size": [
+        60,
+        48
+      ],
+      "recipe": "recipes/07_alchemy_table.json",
+      "processing": "native_64/07_alchemy_table",
+      "final": "final/07_alchemy_table.png",
+      "bbox": [
+        2,
+        17,
+        62,
+        64
+      ],
+      "qa": "native_64/07_alchemy_table/processed/qa.json"
+    },
+    {
+      "name": "08_dining_table",
+      "source_box": [
+        950,
+        426,
+        1226,
+        594
+      ],
+      "source_size": [
+        276,
+        168
+      ],
+      "visible_size": [
+        60,
+        42
+      ],
+      "recipe": "recipes/08_dining_table.json",
+      "processing": "native_64/08_dining_table",
+      "final": "final/08_dining_table.png",
+      "bbox": [
+        2,
+        27,
+        62,
+        64
+      ],
+      "qa": "native_64/08_dining_table/processed/qa.json"
+    },
+    {
+      "name": "09_wooden_chair",
+      "source_box": [
+        62,
+        647,
+        217,
+        887
+      ],
+      "source_size": [
+        155,
+        240
+      ],
+      "visible_size": [
+        38,
+        54
+      ],
+      "recipe": "recipes/09_wooden_chair.json",
+      "processing": "native_64/09_wooden_chair",
+      "final": "final/09_wooden_chair.png",
+      "bbox": [
+        14,
+        10,
+        50,
+        64
+      ],
+      "qa": "native_64/09_wooden_chair/processed/qa.json"
+    },
+    {
+      "name": "10_wooden_stool",
+      "source_box": [
+        394,
+        736,
+        541,
+        877
+      ],
+      "source_size": [
+        147,
+        141
+      ],
+      "visible_size": [
+        32,
+        32
+      ],
+      "recipe": "recipes/10_wooden_stool.json",
+      "processing": "native_64/10_wooden_stool",
+      "final": "final/10_wooden_stool.png",
+      "bbox": [
+        16,
+        33,
+        48,
+        64
+      ],
+      "qa": "native_64/10_wooden_stool/processed/qa.json"
+    },
+    {
+      "name": "11_closed_chest",
+      "source_box": [
+        657,
+        704,
+        901,
+        884
+      ],
+      "source_size": [
+        244,
+        180
+      ],
+      "visible_size": [
+        54,
+        42
+      ],
+      "recipe": "recipes/11_closed_chest.json",
+      "processing": "native_64/11_closed_chest",
+      "final": "final/11_closed_chest.png",
+      "bbox": [
+        5,
+        24,
+        59,
+        64
+      ],
+      "qa": "native_64/11_closed_chest/processed/qa.json"
+    },
+    {
+      "name": "12_open_chest",
+      "source_box": [
+        978,
+        648,
+        1214,
+        889
+      ],
+      "source_size": [
+        236,
+        241
+      ],
+      "visible_size": [
+        54,
+        54
+      ],
+      "recipe": "recipes/12_open_chest.json",
+      "processing": "native_64/12_open_chest",
+      "final": "final/12_open_chest.png",
+      "bbox": [
+        5,
+        10,
+        59,
+        64
+      ],
+      "qa": "native_64/12_open_chest/processed/qa.json"
+    },
+    {
+      "name": "13_barrel",
+      "source_box": [
+        61,
+        969,
+        236,
+        1194
+      ],
+      "source_size": [
+        175,
+        225
+      ],
+      "visible_size": [
+        40,
+        50
+      ],
+      "recipe": "recipes/13_barrel.json",
+      "processing": "native_64/13_barrel",
+      "final": "final/13_barrel.png",
+      "bbox": [
+        12,
+        14,
+        52,
+        64
+      ],
+      "qa": "native_64/13_barrel/processed/qa.json"
+    },
+    {
+      "name": "14_stacked_crates",
+      "source_box": [
+        322,
+        973,
+        582,
+        1186
+      ],
+      "source_size": [
+        260,
+        213
+      ],
+      "visible_size": [
+        56,
+        48
+      ],
+      "recipe": "recipes/14_stacked_crates.json",
+      "processing": "native_64/14_stacked_crates",
+      "final": "final/14_stacked_crates.png",
+      "bbox": [
+        4,
+        18,
+        60,
+        64
+      ],
+      "qa": "native_64/14_stacked_crates/processed/qa.json"
+    },
+    {
+      "name": "15_wooden_bed",
+      "source_box": [
+        627,
+        973,
+        951,
+        1198
+      ],
+      "source_size": [
+        324,
+        225
+      ],
+      "visible_size": [
+        64,
+        50
+      ],
+      "recipe": "recipes/15_wooden_bed.json",
+      "processing": "native_64/15_wooden_bed",
+      "final": "final/15_wooden_bed.png",
+      "bbox": [
+        0,
+        19,
+        64,
+        64
+      ],
+      "qa": "native_64/15_wooden_bed/processed/qa.json"
+    },
+    {
+      "name": "16_stone_pedestal",
+      "source_box": [
+        995,
+        976,
+        1203,
+        1183
+      ],
+      "source_size": [
+        208,
+        207
+      ],
+      "visible_size": [
+        48,
+        48
+      ],
+      "recipe": "recipes/16_stone_pedestal.json",
+      "processing": "native_64/16_stone_pedestal",
+      "final": "final/16_stone_pedestal.png",
+      "bbox": [
+        8,
+        16,
+        56,
+        64
+      ],
+      "qa": "native_64/16_stone_pedestal/processed/qa.json"
+    }
+  ],
+  "final_directory": "final",
+  "reserve_directory": "assets/props/furniture/series_01",
+  "qa": "qa.json",
+  "qa_ok": true,
+  "preview": "preview_4x.png",
+  "runtime_integration": true,
+  "post_pixelization_resize": false,
+  "native_scale": 1.0,
+  "environment_postprocessing": "none; canonical AAP64 furniture, ready for later scene placement",
+  "visual_check": "passed: all sixteen props reviewed after pixelization; three cabinet states are complete; chairs, stools and chests retain smaller silhouettes",
+  "active_sprites": [
+    "02_cabinet_jars.png",
+    "03_cabinet_empty.png"
+  ],
+  "placement": "objects.json beside chunks; starter_level.gd default positions before first object Save",
+  "interaction": "one random bottle per adjacent action; empty cabinet breaks in one attack; full inventory is a no-op; restart rolls contents; Save stores only cabinet type/cell",
+  "runtime_visual_check": "passed in Godot: magic, boosted strength, potion icon and automatic object palette",
+  "runtime_checks": {
+    "potions": "passed, including held looting",
+    "starter_level": "passed, all previously reachable terrain remains accessible",
+    "editor_save": "passed, excludes cabinet contents",
+    "grid": "passed",
+    "combat": "passed",
+    "chunk_streaming": "passed",
+    "crystals": "passed"
+  },
+  "game_previews": [
+    "cabinet_game_start.png",
+    "cabinet_full_game.png",
+    "cabinet_empty_game.png",
+    "cabinet_boss_room_game.png",
+    "magic_start_game.png",
+    "magic_boost_game.png",
+    "object_editor_game.png"
+  ],
+  "potion_count_per_cabinet": [
+    1,
+    3
+  ],
+  "potion_types": [
+    "health_potion",
+    "strength_potion"
+  ],
+  "default_cabinet_count": 10,
+  "cabinet_shelf_visuals": "original full cabinet body in all states; original multi-bottle groups represent one potion per occupied shelf; empty interior overlays use the full cabinet background; no body replacement at zero",
+  "cabinet_shelf_integration": "assets/generation/cabinet_shelves_2026-10-12/installation.json",
+  "retired_game_asset": "assets/props/furniture/series_01/03_cabinet_empty.png"
+}

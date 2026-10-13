@@ -1,0 +1,476 @@
+{
+  "status": "complete",
+  "recipe": {
+    "version": 1,
+    "kind": "sheet",
+    "source": "sheet.png",
+    "source_sha256": "971291af8fc22717a9160277a9030b033ddfbae75895dd06b7a78984d799c819",
+    "layout": {
+      "row_boundaries": [
+        0,
+        512,
+        1024,
+        1536,
+        2048
+      ],
+      "column_boundaries": [
+        [
+          0,
+          512,
+          1024,
+          1536,
+          2048
+        ],
+        [
+          0,
+          512,
+          1024,
+          1536,
+          2048
+        ],
+        [
+          0,
+          512,
+          1024,
+          1536,
+          2048
+        ],
+        [
+          0,
+          512,
+          1024,
+          1536,
+          2048
+        ]
+      ]
+    },
+    "chroma": null,
+    "reconstruction": {
+      "grid": [
+        64,
+        64
+      ],
+      "inset": 0.0,
+      "alpha_coverage": 0.0
+    },
+    "palette": "aap64",
+    "outline": {
+      "color": "242234",
+      "neighbors": 8
+    },
+    "preview_columns": 4,
+    "sprites": [
+      {
+        "name": "01_iron_dagger"
+      },
+      {
+        "name": "02_iron_short_sword"
+      },
+      {
+        "name": "03_iron_arming_sword"
+      },
+      {
+        "name": "04_broad_sword"
+      },
+      {
+        "name": "05_curved_sabre"
+      },
+      {
+        "name": "06_bronze_sword"
+      },
+      {
+        "name": "07_steel_long_sword"
+      },
+      {
+        "name": "08_dark_greatsword"
+      },
+      {
+        "name": "09_hand_axe"
+      },
+      {
+        "name": "10_battle_axe"
+      },
+      {
+        "name": "11_flanged_mace"
+      },
+      {
+        "name": "12_war_hammer"
+      },
+      {
+        "name": "13_spear"
+      },
+      {
+        "name": "14_halberd"
+      },
+      {
+        "name": "15_wooden_club"
+      },
+      {
+        "name": "16_wizard_staff"
+      }
+    ],
+    "canvas": {
+      "size": [
+        64,
+        64
+      ],
+      "baseline": 54
+    },
+    "visible_size": [
+      44,
+      44
+    ],
+    "fit_canvas_candidates": false
+  },
+  "source": "/Users/igor/Godot/davoria/assets/generation/weapon_sheet_64_2026-10-12/items_native/preparation/sheet.png",
+  "source_sha256": "971291af8fc22717a9160277a9030b033ddfbae75895dd06b7a78984d799c819",
+  "runtime": {
+    "python": "3.14.4",
+    "pillow": "12.2.0"
+  },
+  "layout": {
+    "row_boundaries": [
+      0,
+      512,
+      1024,
+      1536,
+      2048
+    ],
+    "column_boundaries": [
+      [
+        0,
+        512,
+        1024,
+        1536,
+        2048
+      ],
+      [
+        0,
+        512,
+        1024,
+        1536,
+        2048
+      ],
+      [
+        0,
+        512,
+        1024,
+        1536,
+        2048
+      ],
+      [
+        0,
+        512,
+        1024,
+        1536,
+        2048
+      ]
+    ]
+  },
+  "sprites": [
+    {
+      "name": "01_iron_dagger",
+      "source_box": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "02_iron_short_sword",
+      "source_box": [
+        512,
+        0,
+        1024,
+        512
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "03_iron_arming_sword",
+      "source_box": [
+        1024,
+        0,
+        1536,
+        512
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "04_broad_sword",
+      "source_box": [
+        1536,
+        0,
+        2048,
+        512
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "05_curved_sabre",
+      "source_box": [
+        0,
+        512,
+        512,
+        1024
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "06_bronze_sword",
+      "source_box": [
+        512,
+        512,
+        1024,
+        1024
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "07_steel_long_sword",
+      "source_box": [
+        1024,
+        512,
+        1536,
+        1024
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "08_dark_greatsword",
+      "source_box": [
+        1536,
+        512,
+        2048,
+        1024
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "09_hand_axe",
+      "source_box": [
+        0,
+        1024,
+        512,
+        1536
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "10_battle_axe",
+      "source_box": [
+        512,
+        1024,
+        1024,
+        1536
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "11_flanged_mace",
+      "source_box": [
+        1024,
+        1024,
+        1536,
+        1536
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "12_war_hammer",
+      "source_box": [
+        1536,
+        1024,
+        2048,
+        1536
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "13_spear",
+      "source_box": [
+        0,
+        1536,
+        512,
+        2048
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "14_halberd",
+      "source_box": [
+        512,
+        1536,
+        1024,
+        2048
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "15_wooden_club",
+      "source_box": [
+        1024,
+        1536,
+        1536,
+        2048
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "16_wizard_staff",
+      "source_box": [
+        1536,
+        1536,
+        2048,
+        2048
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "source": "/Users/igor/Godot/davoria/assets/generation/furniture_sheet_64_2026-10-12/inputs/04_closed_wardrobe.png",
+  "source_sha256": "c894bfda731ce802940e028ad1d5b57383a62658f44a5d13df1384480d67ae7d",
+  "order": [
+    "split_highres",
+    "chroma_key",
+    "crop_alpha_bbox",
+    "fit_highres",
+    "pixelize"
+  ],
+  "padding": 0,
+  "target_size": [
+    64,
+    64
+  ],
+  "visible_size": [
+    52,
+    64
+  ],
+  "baseline": 64,
+  "sprites": [
+    {
+      "name": "04_closed_wardrobe",
+      "source_box": [
+        0,
+        0,
+        233,
+        292
+      ],
+      "source_bbox": [
+        0,
+        0,
+        233,
+        292
+      ],
+      "cropped_size": [
+        233,
+        292
+      ],
+      "fitted_body_size": [
+        409,
+        512
+      ],
+      "scale": 1.7534246575342465
+    }
+  ]
+}

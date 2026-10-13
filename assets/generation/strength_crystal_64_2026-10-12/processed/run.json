@@ -1,0 +1,58 @@
+{
+  "status": "failed",
+  "recipe": {
+    "version": 1,
+    "kind": "single",
+    "source": "source.png",
+    "source_sha256": "f77fa670bb67e86cb090f04dcb2480dcfbe78149d280c96451048c860bf351d3",
+    "chroma": null,
+    "reconstruction": {
+      "grid": [
+        64,
+        64
+      ],
+      "inset": 0.0,
+      "alpha_coverage": 0.5
+    },
+    "palette": "aap64",
+    "outline": {
+      "color": "242234",
+      "neighbors": 8
+    },
+    "preview_columns": 1,
+    "sprites": [
+      {
+        "name": "strength_crystal"
+      }
+    ]
+  },
+  "source": "/Users/igor/Godot/davoria/assets/generation/strength_crystal_64_2026-10-12/source.png",
+  "source_sha256": "f77fa670bb67e86cb090f04dcb2480dcfbe78149d280c96451048c860bf351d3",
+  "runtime": {
+    "python": "3.14.4",
+    "pillow": "12.2.0"
+  },
+  "layout": null,
+  "sprites": [
+    {
+      "name": "strength_crystal",
+      "source_box": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.5
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    }
+  ],
+  "error": "QA failed; inspect /Users/igor/Godot/davoria/assets/generation/strength_crystal_64_2026-10-12/processed/qa.json"
+}
