@@ -72,6 +72,44 @@ func _run() -> void:
 
 
 static func read_chunk(chunk_coord: Vector2i, path_template: String, size: Vector2i) -> Dictionary:
+	var data := _read_raw_chunk(chunk_coord, path_template, size)
+	if not data.error.is_empty():
+		return data
+	# Legacy # fills the whole rock mass. Retain masonry only in the one-cell
+	# shell beside rooms/corridors, and render the remaining mass as earth.
+	# Read an authored halo, never live gameplay state or partially loaded nodes.
+	var neighbors: Dictionary = {Vector2i.ZERO: data.cells}
+	var earth := PackedByteArray()
+	earth.resize(size.x * size.y)
+	for y in range(size.y):
+		for x in range(size.x):
+			if data.cells[y * size.x + x] != 1:
+				continue
+			var masonry := false
+			for dy in range(-1, 2):
+				for dx in range(-1, 2):
+					var nx := x + dx
+					var ny := y + dy
+					var delta := Vector2i(-1 if nx < 0 else (1 if nx >= size.x else 0), -1 if ny < 0 else (1 if ny >= size.y else 0))
+					if not neighbors.has(delta):
+						var neighbor := _read_raw_chunk(chunk_coord + delta, path_template, size)
+						if neighbor.error.is_empty():
+							neighbors[delta] = neighbor.cells
+						else:
+							var solid := PackedByteArray()
+							solid.resize(size.x * size.y)
+							solid.fill(1)
+							neighbors[delta] = solid
+					var terrain: int = neighbors[delta][posmod(ny, size.y) * size.x + posmod(nx, size.x)]
+					if terrain in [0, 2, 3]:
+						masonry = true
+			if not masonry:
+				earth[y * size.x + x] = 1
+	data.earth = earth
+	return data
+
+
+static func _read_raw_chunk(chunk_coord: Vector2i, path_template: String, size: Vector2i) -> Dictionary:
 	var cells := PackedByteArray()
 	cells.resize(size.x * size.y)
 	cells.fill(1) # Missing chunks are solid walls, as in the map editor.
@@ -94,5 +132,8 @@ static func read_chunk(chunk_coord: Vector2i, path_template: String, size: Vecto
 				35: cells[y * size.x + x] = 1 # Wall: #
 				126: cells[y * size.x + x] = 2 # Water: ~
 				68: cells[y * size.x + x] = 3 # Door: D
+				37: cells[y * size.x + x] = 4 # Solid earth: %
+				58: cells[y * size.x + x] = 5 # Earthen passage: :
+				66: cells[y * size.x + x] = 6 # Indestructible bedrock: B
 				_: cells[y * size.x + x] = 0 # Floor
 	return {"cells": cells, "error": ""}

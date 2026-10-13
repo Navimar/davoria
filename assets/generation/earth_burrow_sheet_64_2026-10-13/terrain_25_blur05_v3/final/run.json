@@ -1,0 +1,170 @@
+{
+  "standard": {
+    "version": 1,
+    "palette": "aap64",
+    "size": [
+      64,
+      64
+    ],
+    "rgb_gain": 0.75,
+    "blur_radius_px": 0.5
+  },
+  "source": "/Users/igor/Godot/davoria/assets/generation/earth_burrow_sheet_64_2026-10-13/processed_v3/final",
+  "output": "/Users/igor/Godot/davoria/assets/generation/earth_burrow_sheet_64_2026-10-13/terrain_25_blur05_v3/final",
+  "order": [
+    "pixelize",
+    "aap64",
+    "darken_rgb",
+    "gaussian_blur_rgb"
+  ],
+  "rounding": "nearest_ties_even",
+  "palette_remap_after_darkening": false,
+  "geometry_changed": false,
+  "alpha_changed": false,
+  "tiles": [
+    {
+      "name": "01_floor_packed.png",
+      "size": [
+        64,
+        64
+      ],
+      "source_sha256": "1e5bf87d6f0fddd415bb85a4c35cacdc76709f169eac1bf3c6ce86ec0bb3bb35",
+      "output_sha256": "ed0281a239d461ab602449647b8bcb703c2ea3e02929f60e76863dcc16f0f881"
+    },
+    {
+      "name": "02_floor_worn.png",
+      "size": [
+        64,
+        64
+      ],
+      "source_sha256": "820d86ea1653aaa1db1c7fee71cf3bce3618e3b591e59af044c38519afc3e354",
+      "output_sha256": "26fcc5f493318c5e5772bb0abeb8aa61648e27ae3bc630a337ca0d358a374436"
+    },
+    {
+      "name": "03_floor_pebbles.png",
+      "size": [
+        64,
+        64
+      ],
+      "source_sha256": "39fdd8935db5526a323bde1414eb9b9dc6e2e8ce19eba7de6fea48415aea6442",
+      "output_sha256": "a38daf6a9549a1a13188dc589dc0f6c68279655909eb4c7f87672b5114cd6e75"
+    },
+    {
+      "name": "04_floor_cracked.png",
+      "size": [
+        64,
+        64
+      ],
+      "source_sha256": "c49610725f64d9cc335be00753231384a1e40bd207e9df60994149a8369e74c9",
+      "output_sha256": "0d433cd930b35be77d6f7f8409592f6e4417c37cd497fb3b0ad1c6ccd5d5b234"
+    },
+    {
+      "name": "05_floor_damp.png",
+      "size": [
+        64,
+        64
+      ],
+      "source_sha256": "619fae143c943f487f9dedc08d15de7e94ddd994fc618febd011e8fbb6b58a0e",
+      "output_sha256": "3f227bf895a7a88d76c4ce620b1c66e43dd229fcd816d94a69228be484a9828b"
+    },
+    {
+      "name": "06_floor_clay.png",
+      "size": [
+        64,
+        64
+      ],
+      "source_sha256": "590c2cbf4ae5752263a6ebfe545c3ae184d8e640b4a75b5206fa7a020419ccf2",
+      "output_sha256": "440b613dfc9006d21901c86187cd4abde726d94d8e617aac624cfd594a1ab971"
+    },
+    {
+      "name": "07_floor_roots.png",
+      "size": [
+        64,
+        64
+      ],
+      "source_sha256": "589f75696f72ace1ea65d6320cb435ac0796e89a0dcb2e3a59e1a229e2d9297c",
+      "output_sha256": "3249eeb7f8a60e96ff2bb56599acc3de6b188a4f0e6cbe455da47bd8a01e9712"
+    },
+    {
+      "name": "08_floor_grit.png",
+      "size": [
+        64,
+        64
+      ],
+      "source_sha256": "b0ac5238464274d2df3158c219a9c1d449f6285b130bacd9c5a833cae04981ee",
+      "output_sha256": "af975bb535f7f213a54f183bc098776bd674bf5828b71b6eaa0863c8fd1fa8b5"
+    },
+    {
+      "name": "09_wall_loam.png",
+      "size": [
+        64,
+        64
+      ],
+      "source_sha256": "b6d3a2e871340ab8ec9e8dc9105598f384d7015c4ad3ad8543c6a7d8855a9b0e",
+      "output_sha256": "dd62078bec5960fe0e4cd0ef2888ecc9a943fc4fb31de92c05e6cb66e065ba63"
+    },
+    {
+      "name": "10_wall_fissure.png",
+      "size": [
+        64,
+        64
+      ],
+      "source_sha256": "fac223a0e13e1ec2963e71e8367d0366d4fe09cf5e670f067e8f5880e1bc667f",
+      "output_sha256": "acebd8787d6c006913fe2753ac18459b9af31316e969b8e53e0620828fb51bf7"
+    },
+    {
+      "name": "11_wall_root_fork.png",
+      "size": [
+        64,
+        64
+      ],
+      "source_sha256": "5a9532709e0beaa02515f0f013e4f91e6623137661f87b92c6165991f24cb259",
+      "output_sha256": "93e13d252ec9b1ac62c907f76fa3e2d2a721356be9c80f26e615de3bf7e56136"
+    },
+    {
+      "name": "12_wall_pebbles.png",
+      "size": [
+        64,
+        64
+      ],
+      "source_sha256": "8450f534f4455ccc803487e584fb1a4fff82b0e60165f4893bd2103b48b0ea9a",
+      "output_sha256": "5ec463cb8945c7013dcbaeb4c155b4743a81c6a5e2be0ab9285c01a5b7571a7f"
+    },
+    {
+      "name": "13_wall_clay_layers.png",
+      "size": [
+        64,
+        64
+      ],
+      "source_sha256": "687030bc57a351ae664ee996c6589296d9bbe98b7ce14ce09aef6ec274c4e77d",
+      "output_sha256": "51275911df29cbe6fc9471cf0638412f61a5a79f85af7021808c7675b719377b"
+    },
+    {
+      "name": "14_wall_damp.png",
+      "size": [
+        64,
+        64
+      ],
+      "source_sha256": "fc8671fdec51d482e5fab6fd45fcaa45bbec8c1d7f4584c8e6b1bac116e776d1",
+      "output_sha256": "c03ac1eea60f49687428bece6cc703433922c4ca93dab7719992508f6c50d6a9"
+    },
+    {
+      "name": "15_wall_crumbled.png",
+      "size": [
+        64,
+        64
+      ],
+      "source_sha256": "dbcb051b6c793c8e0cb2bebf6ec62c9dddaa3eda59afb6f203cc1fb35df31ded",
+      "output_sha256": "a608befab002e710b6f4dd4a426a9ba331bc4ada06c229ea1cdeac3e6af406fb"
+    },
+    {
+      "name": "16_wall_roots.png",
+      "size": [
+        64,
+        64
+      ],
+      "source_sha256": "5f5e1bb0e20839596f7eb1350c0176174767d6399f21d930e94ae9ba496661ba",
+      "output_sha256": "972f12778b953876be9942234e2ebb18d3a9b2ab1ad69679c1534baec4c83ff6"
+    }
+  ]
+}

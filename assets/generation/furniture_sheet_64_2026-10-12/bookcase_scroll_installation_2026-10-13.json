@@ -1,0 +1,85 @@
+{
+  "asset": "assets/props/furniture/series_01/01_bookcase_books.png",
+  "asset_sha256": "1af1d7b041d121ae77550a5ea7e95217c9777f562b6700db8de628d2f0470e4b",
+  "loot_group": "scrolls",
+  "count_range": [
+    1,
+    3
+  ],
+  "weight": 1,
+  "shelf_areas": [
+    [
+      14,
+      10,
+      32,
+      14
+    ],
+    [
+      14,
+      26,
+      32,
+      14
+    ],
+    [
+      14,
+      42,
+      32,
+      15
+    ]
+  ],
+  "shelf_background": [
+    22,
+    10
+  ],
+  "migration": [
+    {
+      "from": {
+        "cell": [
+          27,
+          12
+        ],
+        "type": "push_scroll"
+      },
+      "to": {
+        "cell": [
+          26,
+          12
+        ],
+        "type": "bookcase"
+      }
+    },
+    {
+      "from": {
+        "cell": [
+          22,
+          28
+        ],
+        "type": "push_scroll"
+      },
+      "to": {
+        "cell": [
+          21,
+          28
+        ],
+        "type": "bookcase"
+      }
+    },
+    {
+      "from": {
+        "cell": [
+          9,
+          29
+        ],
+        "type": "push_scroll"
+      },
+      "to": {
+        "cell": [
+          9,
+          29
+        ],
+        "type": "bookcase"
+      }
+    }
+  ],
+  "other_records_preserved": true
+}

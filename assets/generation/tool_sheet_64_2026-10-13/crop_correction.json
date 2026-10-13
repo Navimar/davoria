@@ -1,0 +1,29 @@
+{
+  "active_outputs": [
+    "items_native_v2",
+    "furniture_native_v2"
+  ],
+  "reason": "Automatic sheet detection used row boundary 838 and clipped bomb bottoms into cabinet crops; explicit boundary 867 lies in the actual transparent gutter.",
+  "source_bands": [
+    [
+      31,
+      276
+    ],
+    [
+      339,
+      587
+    ],
+    [
+      634,
+      862
+    ],
+    [
+      873,
+      1209
+    ]
+  ],
+  "discarded_outputs": [
+    "items_native",
+    "furniture_native"
+  ]
+}

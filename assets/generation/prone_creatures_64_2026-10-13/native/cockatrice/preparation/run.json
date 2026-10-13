@@ -1,0 +1,47 @@
+{
+  "source": "/Users/igor/Documents/Codex/2026-10-13/new-chat/outputs/davoria_prone_creatures/raw/cockatrice_prone_hard_alpha.png",
+  "source_sha256": "64a3283a072dad6770506d329f3a1439bcec3e08c6823b631a909e1ccb48efb8",
+  "order": [
+    "split_highres",
+    "chroma_key",
+    "crop_alpha_bbox",
+    "fit_highres",
+    "pixelize"
+  ],
+  "padding": 0,
+  "target_size": [
+    64,
+    64
+  ],
+  "visible_size": [
+    64,
+    64
+  ],
+  "baseline": 64,
+  "sprites": [
+    {
+      "name": "cockatrice_prone",
+      "source_box": [
+        0,
+        0,
+        1774,
+        887
+      ],
+      "source_bbox": [
+        84,
+        230,
+        1693,
+        756
+      ],
+      "cropped_size": [
+        1609,
+        526
+      ],
+      "fitted_body_size": [
+        512,
+        167
+      ],
+      "scale": 0.31821006836544435
+    }
+  ]
+}

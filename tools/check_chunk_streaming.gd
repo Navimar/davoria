@@ -50,6 +50,9 @@ func _check_background_data() -> void:
 					"#": expected = DEMO.TileType.WALL
 					"~": expected = DEMO.TileType.WATER
 					"D": expected = DEMO.TileType.DOOR
+					"%": expected = DEMO.TileType.EARTH
+					":": expected = DEMO.TileType.EARTH_FLOOR
+					"B": expected = DEMO.TileType.BEDROCK
 				_check(cells[y * DEMO.CHUNK_SIZE.x + x] == expected, "Worker preserves the saved cell type")
 			y += 1
 		_check(y == DEMO.CHUNK_SIZE.y and cells.size() == DEMO.CHUNK_SIZE.x * DEMO.CHUNK_SIZE.y, "Worker returns one complete chunk")
@@ -77,7 +80,7 @@ func _check_scene_streaming() -> void:
 	var before := sprites.size()
 	scene.call("_load_chunk", new_chunk)
 	_check(sprites.size() == before and fog.size() == before, "Loading collision data never builds 4096 offscreen tiles")
-	_check(scene.call("_terrain_type", Vector2i(64, 30)) == DEMO.TileType.WALL, "An absent chunk stays solid rather than becoming walkable while loading")
+	_check(scene.call("_terrain_type", Vector2i(64, 30)) == DEMO.TileType.EARTH and not scene.call("_is_walkable", Vector2i(64, 30)), "An absent chunk stays solid rather than becoming walkable while loading")
 	for x in range(60, 68):
 		scene.call("_set_terrain_cell", Vector2i(x, 30), DEMO.TileType.FLOOR)
 	scene.call("_set_terrain_cell", Vector2i(63, 31), DEMO.TileType.FLOOR)

@@ -17,7 +17,7 @@ func _run() -> void:
 	var reserved := Image.load_from_file(ProjectSettings.globalize_path("res://assets/items/potions/series_01/13_amber_round.png"))
 	_check(image.get_data() == reserved.get_data(), "Speed potion reuses the prepared amber bottle without resizing")
 	var pool := CATALOG.potion_pool()
-	_check(pool.size() == 7 and pool.count("health_potion") == 3 and pool.count("strength_potion") == 2 and pool.count("water_breathing_potion") == 1 and pool.count("speed_potion") == 1, "Generator weights are 3/2/1/1")
+	_check(pool.size() == 8 and pool.count("health_potion") == 3 and pool.count("strength_potion") == 2 and pool.count("water_breathing_potion") == 1 and pool.count("speed_potion") == 1 and pool.count("petrification_protection_potion") == 1, "Generator weights are 3/2/1/1/1")
 	var folder := "/private/tmp/davoria_speed_%d_%d" % [OS.get_process_id(), Time.get_ticks_usec()]
 	DirAccess.make_dir_recursive_absolute(folder)
 	var template := folder.path_join("chunk_%d_%d.txt")

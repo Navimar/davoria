@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "kind": "sheet",
+  "source": "../raw/weak_club_prone_hard_alpha.png",
+  "layout": {
+    "rows": 1,
+    "columns": 1,
+    "row_boundaries": [
+      0,
+      1254
+    ],
+    "column_boundaries": [
+      [
+        0,
+        1254
+      ]
+    ]
+  },
+  "chroma": null,
+  "fit_visible_before_pixelization": true,
+  "reconstruction": {
+    "grid": [
+      64,
+      64
+    ],
+    "inset": 0.0,
+    "alpha_coverage": 0.0
+  },
+  "palette": "aap64",
+  "outline": {
+    "color": "242234",
+    "neighbors": 8
+  },
+  "canvas": {
+    "size": [
+      64,
+      64
+    ],
+    "baseline": 64
+  },
+  "preview_columns": 1,
+  "sprites": [
+    {
+      "name": "weak_club_prone",
+      "flip_horizontal": false
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "standard": {
+    "version": 1,
+    "palette": "aap64",
+    "size": [
+      64,
+      64
+    ],
+    "rgb_gain": 0.75,
+    "blur_radius_px": 0.5
+  },
+  "source": "/Users/igor/Godot/davoria/assets/generation/bedrock_sheet_64_2026-10-13/processed_aap64/final",
+  "output": "/Users/igor/Godot/davoria/assets/generation/bedrock_sheet_64_2026-10-13/terrain_25_blur05",
+  "order": [
+    "pixelize",
+    "aap64",
+    "darken_rgb",
+    "gaussian_blur_rgb"
+  ],
+  "rounding": "nearest_ties_even",
+  "palette_remap_after_darkening": false,
+  "geometry_changed": false,
+  "alpha_changed": false,
+  "tiles": [
+    {
+      "name": "bedrock_01.png",
+      "size": [
+        64,
+        64
+      ],
+      "source_sha256": "88293cbf70f7d7c55804d91681839644375dbe0595ed013c1927d5e3ccd8a93f",
+      "output_sha256": "77c5882bd77c5aa30c424061447bb320817078504a93c60a9738785fe613bde0"
+    },
+    {
+      "name": "bedrock_02.png",
+      "size": [
+        64,
+        64
+      ],
+      "source_sha256": "24254852d819444469634f00b746b4dff4e46a2bf1dc6350d7ce3b0109e67f24",
+      "output_sha256": "7bc5c5d55f51b7808c018c0ef18d9bd9301fc6626cdfaae9b4f46732bf1790dc"
+    },
+    {
+      "name": "bedrock_03.png",
+      "size": [
+        64,
+        64
+      ],
+      "source_sha256": "157da6bb77e8963f4da31b6b255d746ae609861b295d275e71b36cd6f7452787",
+      "output_sha256": "c5e33654e0c2894ac3927c1f26b30cbdeb18619a8e4b70daa4e17c122d494a3a"
+    },
+    {
+      "name": "bedrock_04.png",
+      "size": [
+        64,
+        64
+      ],
+      "source_sha256": "9dcc044eacf9de5205412e29e041e6a617022619ca8878105ffe8971efcc7ba1",
+      "output_sha256": "0029b8abe62e8771a8d7c56aca3693e222fbfa112c8fef71e16178e4285d96a0"
+    }
+  ]
+}

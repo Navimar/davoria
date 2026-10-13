@@ -1,0 +1,118 @@
+{
+  "version": 1,
+  "kind": "sheet",
+  "source": "sheet.png",
+  "source_sha256": "308d42d1c696bc7859444e5250af1b0967f9fc55a55a83346c37d9705d2ef478",
+  "layout": {
+    "row_boundaries": [
+      0,
+      512,
+      1024,
+      1536,
+      2048
+    ],
+    "column_boundaries": [
+      [
+        0,
+        512,
+        1024,
+        1536,
+        2048
+      ],
+      [
+        0,
+        512,
+        1024,
+        1536,
+        2048
+      ],
+      [
+        0,
+        512,
+        1024,
+        1536,
+        2048
+      ],
+      [
+        0,
+        512,
+        1024,
+        1536,
+        2048
+      ]
+    ]
+  },
+  "chroma": null,
+  "reconstruction": {
+    "grid": [
+      64,
+      64
+    ],
+    "inset": 0.0,
+    "alpha_coverage": 0.0
+  },
+  "palette": "aap64",
+  "outline": {
+    "color": "242234",
+    "neighbors": 8
+  },
+  "preview_columns": 4,
+  "sprites": [
+    {
+      "name": "grave_01"
+    },
+    {
+      "name": "grave_02"
+    },
+    {
+      "name": "grave_03"
+    },
+    {
+      "name": "grave_04"
+    },
+    {
+      "name": "grave_05"
+    },
+    {
+      "name": "grave_06"
+    },
+    {
+      "name": "grave_07"
+    },
+    {
+      "name": "grave_08"
+    },
+    {
+      "name": "grave_09"
+    },
+    {
+      "name": "grave_10"
+    },
+    {
+      "name": "grave_11"
+    },
+    {
+      "name": "grave_12"
+    },
+    {
+      "name": "grave_13"
+    },
+    {
+      "name": "grave_14"
+    },
+    {
+      "name": "grave_15"
+    },
+    {
+      "name": "grave_16"
+    }
+  ],
+  "canvas": {
+    "size": [
+      64,
+      64
+    ],
+    "baseline": 64
+  },
+  "fit_canvas_candidates": false
+}

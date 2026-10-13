@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "kind": "sheet",
+  "source": "source_hard_alpha.png",
+  "source_sha256": "d9a917bfcbe848e34ec5a3a25428520fb48257c4e2ddbbade923528e4f1fe5d7",
+  "layout": {
+    "rows": 4,
+    "columns": 4,
+    "split_silhouettes": true
+  },
+  "chroma": null,
+  "reconstruction": {
+    "grid": [
+      64,
+      64
+    ],
+    "inset": 0.0,
+    "alpha_coverage": 0.0
+  },
+  "palette": "aap64",
+  "outline": {
+    "color": "242234",
+    "neighbors": 8
+  },
+  "preview_columns": 4,
+  "sprites": [
+    {
+      "name": "push_scroll_01"
+    },
+    {
+      "name": "push_scroll_02"
+    },
+    {
+      "name": "push_scroll_03"
+    },
+    {
+      "name": "push_scroll_04"
+    },
+    {
+      "name": "push_scroll_05"
+    },
+    {
+      "name": "push_scroll_06"
+    },
+    {
+      "name": "push_scroll_07"
+    },
+    {
+      "name": "push_scroll_08"
+    },
+    {
+      "name": "push_scroll_09"
+    },
+    {
+      "name": "push_scroll_10"
+    },
+    {
+      "name": "push_scroll_11"
+    },
+    {
+      "name": "push_scroll_12"
+    },
+    {
+      "name": "push_scroll_13"
+    },
+    {
+      "name": "push_scroll_14"
+    },
+    {
+      "name": "push_scroll_15"
+    },
+    {
+      "name": "push_scroll_16"
+    }
+  ],
+  "fit_visible_before_pixelization": true,
+  "canvas": {
+    "size": [
+      64,
+      64
+    ],
+    "baseline": 52
+  },
+  "visible_size": [
+    38,
+    38
+  ]
+}

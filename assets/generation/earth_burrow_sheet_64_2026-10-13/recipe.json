@@ -1,0 +1,114 @@
+{
+  "version": 1,
+  "kind": "sheet",
+  "source": "source.png",
+  "source_sha256": "ef073d0f97632535f4f156bd46435646d5e6a7449c68403ece39a966645847d7",
+  "layout": {
+    "row_boundaries": [
+      0,
+      314,
+      628,
+      941,
+      1254
+    ],
+    "column_boundaries": [
+      [
+        0,
+        314,
+        628,
+        941,
+        1254
+      ],
+      [
+        0,
+        314,
+        628,
+        941,
+        1254
+      ],
+      [
+        0,
+        314,
+        628,
+        941,
+        1254
+      ],
+      [
+        0,
+        314,
+        628,
+        941,
+        1254
+      ]
+    ]
+  },
+  "chroma": null,
+  "reconstruction": {
+    "grid": [
+      64,
+      64
+    ],
+    "inset": 0,
+    "alpha_coverage": 0
+  },
+  "palette": "aap64",
+  "outline": null,
+  "canvas": {
+    "size": [
+      64,
+      64
+    ],
+    "baseline": 64
+  },
+  "preview_columns": 4,
+  "sprites": [
+    {
+      "name": "01_floor_packed"
+    },
+    {
+      "name": "02_floor_worn"
+    },
+    {
+      "name": "03_floor_pebbles"
+    },
+    {
+      "name": "04_floor_cracked"
+    },
+    {
+      "name": "05_floor_damp"
+    },
+    {
+      "name": "06_floor_clay"
+    },
+    {
+      "name": "07_floor_roots"
+    },
+    {
+      "name": "08_floor_grit"
+    },
+    {
+      "name": "09_wall_loam"
+    },
+    {
+      "name": "10_wall_fissure"
+    },
+    {
+      "name": "11_wall_root_fork"
+    },
+    {
+      "name": "12_wall_pebbles"
+    },
+    {
+      "name": "13_wall_clay_layers"
+    },
+    {
+      "name": "14_wall_damp"
+    },
+    {
+      "name": "15_wall_crumbled"
+    },
+    {
+      "name": "16_wall_roots"
+    }
+  ]
+}

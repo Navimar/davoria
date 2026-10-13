@@ -1,0 +1,26 @@
+{
+  "mode": "builtin_image_gen",
+  "variant": "assets/props/memorials/series_01/grave_06.png",
+  "runtime": "assets/props/memorials/hero_grave.png",
+  "sha256": "2e7538902722f7c6510b289403def4513699f9ad24c6e41c0b044272aaa88110",
+  "visible_bounds": [
+    0,
+    2,
+    64,
+    64
+  ],
+  "recipe": "recipe.json",
+  "rules": {
+    "canvas": [
+      64,
+      64
+    ],
+    "baseline": 64,
+    "palette": "aap64",
+    "outline": "242234",
+    "alpha_threshold_before_pixelization": 128,
+    "fit_before_pixelization": true,
+    "runtime_scale": 1.0
+  },
+  "reason": "Rounded stone slab with a clearly carved skull; compact coherent silhouette without tiny lettering."
+}

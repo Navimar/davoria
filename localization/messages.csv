@@ -1,0 +1,142 @@
+keys,ru
+OBJECT_NAME_FLOOR,Пол
+OBJECT_NAME_WALL,Стена
+OBJECT_NAME_WATER,Вода
+OBJECT_NAME_DOOR,Дверь
+OBJECT_NAME_EARTH,Земля
+OBJECT_NAME_EARTH_FLOOR,Земляной пол
+OBJECT_NAME_BEDROCK,Неразрушимый камень
+OBJECT_NAME_HERO_START,Старт героя
+OBJECT_NAME_WATER_ELEMENTAL,Водный элементаль
+OBJECT_NAME_COCKATRICE,Кокатрис
+ENCOUNTER_COCKATRICE,"К музею города Астар ведёт целая аллея статуй тех, кому хватило глупости пропустить удар кокатриса. Их наивные лица навсегда запечатлены в камне.
+
+Будьте предельно осторожны."
+OBJECT_NAME_SKELETAL_HORSE,Босс: скелет-лошадь
+OBJECT_NAME_SWORD,Меч
+OBJECT_NAME_BROKEN_BOTTLE,Розочка
+OBJECT_NAME_COCKATRICE_CORPSE,Труп кокатриса
+ITEM_DESCRIPTION_COCKATRICE_CORPSE,Труп кокатриса сохраняет свойства окаменения. Лучше не трогать.
+OBJECT_NAME_GHOST_RING,Кольцо призрака
+ITEM_DESCRIPTION_GHOST_RING,Переключает телесную и призрачную форму. В призрачной форме можно проходить сквозь стены.
+OBJECT_NAME_MAGIC_KEY,Волшебный ключ
+ITEM_DESCRIPTION_MAGIC_KEY,Отпирает одну закрытую дверь. Исчезает после использования.
+CONFIRMATION_MAGIC_KEY,"Потратить волшебный ключ,
+чтобы отпереть дверь?"
+OBJECT_NAME_PICKAXE,Кирка
+ITEM_DESCRIPTION_PICKAXE,"Одноразовая. Разрушает соседнюю стену, землю или каменную статую. Двери и неразрушимый камень ей не поддаются."
+OBJECT_NAME_BOMB,Бомба
+ITEM_DESCRIPTION_BOMB,"Остаётся под ногами и взрывается через {bomb_fuse} хода мира. Поражает квадрат 3×3: наносит {bomb_damage} урона собственной силе существ и героя, разрушает стены, двери и мебель. Неразрушимый камень выдерживает взрыв. В воде бомба гаснет."
+OBJECT_NAME_PUSH_SCROLL,Свиток толчка
+ITEM_DESCRIPTION_PUSH_SCROLL,"Отбрасывает существ, мебель, предметы и бомбы с соседней клетки до {push_distance} клеток, до первого препятствия. Существо падает и тратит следующий собственный ход на подъём. Свиток исчезает после применения."
+OBJECT_NAME_STRENGTH_CRYSTAL,Кристалл силы
+OBJECT_NAME_HEALTH_POTION,Зелье лечения
+ITEM_DESCRIPTION_HEALTH_POTION,"Восстанавливает до {healing_amount} собственной силы (2 × Магия), не превышая максимум."
+OBJECT_NAME_STRENGTH_POTION,Зелье силы
+ITEM_DESCRIPTION_STRENGTH_POTION,Удваивает собственную боевую силу на {magic} ходов мира. Повторное применение обновляет срок.
+OBJECT_NAME_WATER_BREATHING_POTION,Зелье водного дыхания
+ITEM_DESCRIPTION_WATER_BREATHING_POTION,Сохраняет дыхание и защищает от утопления на {long_duration} ходов мира (3 × Магия).
+OBJECT_NAME_SPEED_POTION,Зелье скорости
+ITEM_DESCRIPTION_SPEED_POTION,Даёт 2 действия на ход мира на {magic} ходов. Повторное применение обновляет срок.
+OBJECT_NAME_PETRIFICATION_PROTECTION_POTION,Зелье защиты от окаменения
+ITEM_DESCRIPTION_PETRIFICATION_PROTECTION_POTION,Защищает от окаменения на {long_duration} ходов мира (3 × Магия).
+OBJECT_NAME_POTION_CABINET,Шкаф зелий
+OBJECT_NAME_BOOKCASE,Книжный стеллаж
+OBJECT_NAME_TOOL_CABINET,Шкаф инструментов
+OBJECT_NAME_EMPTY_CABINET,Пустой шкаф
+OBJECT_NAME_HERO_GRAVE,Могила героя
+OBJECT_NAME_HERO_STATUE,Статуя героя
+OBJECT_NAME_ENEMY_STATUE,Статуя существа
+OBJECT_NAME_GOLD_SMALL,Маленькая кучка золота
+OBJECT_NAME_GOLD_MEDIUM,Средняя кучка золота
+OBJECT_NAME_GOLD_LARGE,Большая кучка золота
+OBJECT_NAME_WEAK_CLUB,Гоблин с дубинкой
+OBJECT_NAME_MEDIUM_SWORDSMAN,Гоблин-мечник
+OBJECT_NAME_STRONG_GUARD,Тяжёлый гоблин-страж
+OBJECT_NAME_BROWN_MUSHROOM,Боровик (5–30)
+OBJECT_NAME_RED_MUSHROOM,Красный гриб (31–65)
+OBJECT_NAME_VIOLET_MUSHROOM,Фиолетовый гриб (66–99)
+OBJECT_NAME_THORN_BUSH,Колючий куст
+HERO_NAME_MAGE_ROGUE,Маг-разбойник
+HERO_NAME_KNIGHT,Рыцарь
+HERO_NAME_RANGER,Следопыт
+HERO_NAME_BARBARIAN,Варвар
+HERO_NAME_FIRE_MAGE,Маг огня
+HERO_NAME_FROST_MAGE,Маг льда
+HERO_NAME_PALADIN,Паладин
+HERO_NAME_DWARF_WARRIOR,Воин-гном
+HERO_NAME_ELF_HUNTRESS,Эльфийка
+HERO_NAME_DUELIST,Дуэлянт
+HERO_NAME_DRUID,Друид
+HERO_NAME_ROGUE,Разбойница
+HERO_NAME_CLERIC,Жрец
+HERO_NAME_MONK,Монах
+HERO_NAME_ALCHEMIST,Алхимик
+HERO_NAME_HALFLING,Полурослик
+ITEM_DANGEROUS,Опасный предмет.
+EDITOR_SELECTED,Выбрано: {object}
+EDITOR_ERASE_OBJECT,Убрать объект
+EDITOR_ERASING,Удаление
+DEATH_PETRIFICATION_TITLE,Окаменение
+DEATH_PETRIFICATION_TEXT,"Вы стали каменной статуей.
+
+Подземелье получает +1 к уровню культуры."
+UI_NEW_RUN,Новый забег · Space
+POPUP_STRENGTH_GAIN,+%d сила
+POPUP_EXHAUSTED,"Вы обессилены.
+Нельзя атаковать."
+STAT_BREATH,Дыхание: %d
+STAT_WATER_BREATHING,Водное дыхание: %d ход.
+STAT_PETRIFIED,Камень
+STAT_STRENGTH,Сила: %d/%d
+STAT_MAGIC,Магия: %d
+STAT_MONEY,Деньги: %d
+STAT_PETRIFICATION_PROTECTION,Защита от окаменения: %d ход.
+STAT_STRENGTH_BOOST,Усиление силы: %d ход.
+STAT_SPEED,Скорость: %d ход.
+UI_WEAPON,Оружие
+UI_WEAPON_CONTROLS,"Оружие: перетащите сюда
+ЛКМ по оружию — снять
+ПКМ — выбросить"
+UI_INVENTORY,Инвентарь
+UI_INVENTORY_CONTROLS,ЛКМ — применить · ПКМ — выбросить
+UI_FLOOR,На полу · под ногами
+UI_FLOOR_CONTROLS,ЛКМ — подобрать за действие
+UI_FLOOR_EMPTY,Ничего
+STAT_BREATH_DESCRIPTION,Запас дыхания в воде. После исчерпания каждый ход в воде отнимает 1 собственной силы.
+STAT_STRENGTH_DESCRIPTION,Своя сила / максимум + постоянный бонус оружия
+STAT_MAGIC_DESCRIPTION,Лечение: 2 × Магия. Сила и скорость: Магия ходов мира. Применение зелья или свитка даёт +1 магию.
+ITEM_WEAPON_BONUS,Экипированное оружие добавляет %d силы.
+ITEM_STRENGTH_GAIN,Увеличивает текущую и максимальную силу на %d.
+ITEM_MONEY_RANGE,Содержит %d–%d монет. Не занимает место в инвентаре.
+ITEM_MAGIC_GAIN,Применение даёт +1 магию.
+ITEM_POTION_WEAPON,При использовании как оружия превращается в розочку (+%d силы).
+UI_WEAPON_EMPTY,Слот оружия
+POPUP_MAGIC_GAIN,+1 магия
+TARGET_PICKAXE,Кирка
+TARGET_PUSH,Толчок
+TARGET_PICKAXE_BLOCKED,Кирка не действует на эту клетку
+TARGET_PUSH_BLOCKED,Толчок невозможен
+EDITOR_ERASE,Убрать
+EDITOR_ERASE_DESCRIPTION,Удалить объект; пол остаётся
+EDITOR_NEED_WATER,Нужна свободная клетка воды
+EDITOR_NEED_FLOOR,Нужна свободная клетка пола
+EDITOR_CHANGED,Изменено: %s %s
+EDITOR_SAVED,Сохранено: %d/%d чанков; объекты %s
+EDITOR_ERROR,ошибка
+EDITOR_OK,OK
+EDITOR_SAVE,Save
+EDITOR_NO_CHANGES,No editor changes to save
+EDITOR_GHOST_MODE,Ghost mode: %s
+EDITOR_GHOST_ON,On
+EDITOR_GHOST_OFF,Off
+EDITOR_COORDS,Hero: %s  Chunk: %s  %s
+UI_HERO_PICKER,Герой [H]
+UI_HERO_PICKER_TITLE,Выберите героя
+UI_CLOSE,Закрыть
+UI_NOTICE_CONFIRM,Понятно · Space
+UI_YES,Да
+UI_NO,Нет
+UI_CONFIRM_CONTROLS,WASD — выбор   ·   Space — подтвердить
+UI_TARGET_BLOCKED_CONTROLS,{reason} · WASD — другая цель · Esc — отмена
+UI_TARGET_CONTROLS,{action} · WASD — направление · Space — применить · Esc — отмена

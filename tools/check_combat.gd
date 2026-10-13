@@ -316,6 +316,9 @@ func _check_game() -> void:
 	goblin.strength = 100
 	scene.set("_hero_strength", 10)
 	_check(scene.call("_add_inventory_item", load(DEMO.SWORD_PATH), DEMO.ITEM_ID_SWORD), "Sword is added through the live inventory")
+	scene.set("_equipped_weapon_id", DEMO.ITEM_ID_SWORD)
+	scene.set("_equipped_weapon_texture", load(DEMO.SWORD_PATH))
+	scene.call("_refresh_inventory_panel")
 	_check(scene.call("_weapon_strength_bonus") == 5 and scene.get("_hero_strength") == 10 and scene.get("_hero_max_strength") == 10, "Sword keeps its strength bonus separate from own and maximum strength")
 	_check(scene.get("_stats_strength_label").text == "Сила: 10/10+5" and scene.get("_hero_strength_label").text == "15", "Left panel separates weapon strength while overhead shows the total current strength")
 	before = queue.current_turn
@@ -405,7 +408,13 @@ func _check_game() -> void:
 	goblin.strength = 2
 	scene.set("_hero_strength", 10)
 	scene.call("_add_inventory_item", load(DEMO.SWORD_PATH), DEMO.ITEM_ID_SWORD)
+	scene.set("_equipped_weapon_id", DEMO.ITEM_ID_SWORD)
+	scene.set("_equipped_weapon_texture", load(DEMO.SWORD_PATH))
+	scene.call("_refresh_inventory_panel")
 	scene.call("_add_inventory_item", load(DEMO.SWORD_PATH), DEMO.ITEM_ID_SWORD)
+	scene.set("_equipped_weapon_id", DEMO.ITEM_ID_SWORD)
+	scene.set("_equipped_weapon_texture", load(DEMO.SWORD_PATH))
+	scene.call("_refresh_inventory_panel")
 	_check(scene.call("_weapon_strength_bonus") == 5, "Duplicate swords do not stack strength bonuses")
 	# Roll fourteen wins only when the live random range includes weapon strength.
 	var rng: RandomNumberGenerator = scene.get("_rng")

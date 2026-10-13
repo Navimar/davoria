@@ -1,0 +1,407 @@
+{
+  "source": "/Users/igor/Godot/davoria/assets/generation/loot_weapons_64_2026-10-13/source_hard_alpha.png",
+  "source_sha256": "9780d193876a03dbe8fd1106e71eaf1f6daa6d482902a58dc00a249f54744170",
+  "order": [
+    "split_highres",
+    "chroma_key",
+    "crop_alpha_bbox",
+    "fit_highres",
+    "pixelize"
+  ],
+  "padding": 0,
+  "target_size": [
+    64,
+    64
+  ],
+  "visible_size": [
+    38,
+    38
+  ],
+  "baseline": 52,
+  "sprites": [
+    {
+      "name": "01_gold_small_1",
+      "source_box": [
+        81,
+        123,
+        262,
+        247
+      ],
+      "source_bbox": [
+        0,
+        0,
+        181,
+        124
+      ],
+      "cropped_size": [
+        181,
+        124
+      ],
+      "fitted_body_size": [
+        304,
+        208
+      ],
+      "scale": 1.6795580110497237
+    },
+    {
+      "name": "02_gold_small_2",
+      "source_box": [
+        375,
+        112,
+        565,
+        249
+      ],
+      "source_bbox": [
+        0,
+        0,
+        190,
+        137
+      ],
+      "cropped_size": [
+        190,
+        137
+      ],
+      "fitted_body_size": [
+        304,
+        219
+      ],
+      "scale": 1.6
+    },
+    {
+      "name": "03_gold_small_3",
+      "source_box": [
+        681,
+        122,
+        857,
+        258
+      ],
+      "source_bbox": [
+        0,
+        0,
+        176,
+        136
+      ],
+      "cropped_size": [
+        176,
+        136
+      ],
+      "fitted_body_size": [
+        304,
+        235
+      ],
+      "scale": 1.7272727272727273
+    },
+    {
+      "name": "04_gold_small_4",
+      "source_box": [
+        966,
+        120,
+        1169,
+        265
+      ],
+      "source_bbox": [
+        0,
+        0,
+        203,
+        145
+      ],
+      "cropped_size": [
+        203,
+        145
+      ],
+      "fitted_body_size": [
+        304,
+        217
+      ],
+      "scale": 1.4975369458128078
+    },
+    {
+      "name": "05_gold_medium_1",
+      "source_box": [
+        42,
+        384,
+        268,
+        559
+      ],
+      "source_bbox": [
+        0,
+        0,
+        226,
+        175
+      ],
+      "cropped_size": [
+        226,
+        175
+      ],
+      "fitted_body_size": [
+        304,
+        235
+      ],
+      "scale": 1.345132743362832
+    },
+    {
+      "name": "06_gold_medium_2",
+      "source_box": [
+        341,
+        375,
+        582,
+        561
+      ],
+      "source_bbox": [
+        0,
+        0,
+        241,
+        186
+      ],
+      "cropped_size": [
+        241,
+        186
+      ],
+      "fitted_body_size": [
+        304,
+        235
+      ],
+      "scale": 1.2614107883817427
+    },
+    {
+      "name": "07_gold_medium_3",
+      "source_box": [
+        642,
+        400,
+        890,
+        563
+      ],
+      "source_bbox": [
+        0,
+        0,
+        248,
+        163
+      ],
+      "cropped_size": [
+        248,
+        163
+      ],
+      "fitted_body_size": [
+        304,
+        200
+      ],
+      "scale": 1.2258064516129032
+    },
+    {
+      "name": "08_gold_medium_4",
+      "source_box": [
+        954,
+        384,
+        1199,
+        560
+      ],
+      "source_bbox": [
+        0,
+        0,
+        245,
+        176
+      ],
+      "cropped_size": [
+        245,
+        176
+      ],
+      "fitted_body_size": [
+        304,
+        218
+      ],
+      "scale": 1.2408163265306122
+    },
+    {
+      "name": "09_gold_large_1",
+      "source_box": [
+        21,
+        675,
+        293,
+        886
+      ],
+      "source_bbox": [
+        0,
+        0,
+        272,
+        211
+      ],
+      "cropped_size": [
+        272,
+        211
+      ],
+      "fitted_body_size": [
+        304,
+        236
+      ],
+      "scale": 1.1176470588235294
+    },
+    {
+      "name": "10_gold_large_2",
+      "source_box": [
+        328,
+        660,
+        603,
+        887
+      ],
+      "source_bbox": [
+        0,
+        0,
+        275,
+        227
+      ],
+      "cropped_size": [
+        275,
+        227
+      ],
+      "fitted_body_size": [
+        304,
+        251
+      ],
+      "scale": 1.1054545454545455
+    },
+    {
+      "name": "11_gold_large_3",
+      "source_box": [
+        632,
+        691,
+        908,
+        888
+      ],
+      "source_bbox": [
+        0,
+        0,
+        276,
+        197
+      ],
+      "cropped_size": [
+        276,
+        197
+      ],
+      "fitted_body_size": [
+        304,
+        217
+      ],
+      "scale": 1.1014492753623188
+    },
+    {
+      "name": "12_gold_large_4",
+      "source_box": [
+        939,
+        682,
+        1208,
+        890
+      ],
+      "source_bbox": [
+        0,
+        0,
+        269,
+        208
+      ],
+      "cropped_size": [
+        269,
+        208
+      ],
+      "fitted_body_size": [
+        304,
+        235
+      ],
+      "scale": 1.1301115241635689
+    },
+    {
+      "name": "13_broken_bottle_1",
+      "source_box": [
+        94,
+        951,
+        261,
+        1197
+      ],
+      "source_bbox": [
+        0,
+        0,
+        167,
+        246
+      ],
+      "cropped_size": [
+        167,
+        246
+      ],
+      "fitted_body_size": [
+        206,
+        304
+      ],
+      "scale": 1.2357723577235773
+    },
+    {
+      "name": "14_broken_bottle_2",
+      "source_box": [
+        401,
+        963,
+        548,
+        1197
+      ],
+      "source_bbox": [
+        0,
+        0,
+        147,
+        234
+      ],
+      "cropped_size": [
+        147,
+        234
+      ],
+      "fitted_body_size": [
+        191,
+        304
+      ],
+      "scale": 1.2991452991452992
+    },
+    {
+      "name": "15_broken_bottle_3",
+      "source_box": [
+        689,
+        960,
+        844,
+        1197
+      ],
+      "source_bbox": [
+        0,
+        0,
+        155,
+        237
+      ],
+      "cropped_size": [
+        155,
+        237
+      ],
+      "fitted_body_size": [
+        199,
+        304
+      ],
+      "scale": 1.2827004219409284
+    },
+    {
+      "name": "16_broken_bottle_4",
+      "source_box": [
+        995,
+        963,
+        1160,
+        1202
+      ],
+      "source_bbox": [
+        0,
+        0,
+        165,
+        239
+      ],
+      "cropped_size": [
+        165,
+        239
+      ],
+      "fitted_body_size": [
+        210,
+        304
+      ],
+      "scale": 1.2719665271966527
+    }
+  ]
+}

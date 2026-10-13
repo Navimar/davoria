@@ -1,0 +1,35 @@
+{
+  "pickaxe": {
+    "variant": "pickaxe_03.png",
+    "runtime": "assets/items/pickaxe.png",
+    "sha256": "e55897d64d67c89ab00cd0f42fe3ba058804887c117be93704db6a91461eb418",
+    "visible_bounds": [
+      14,
+      14,
+      50,
+      52
+    ]
+  },
+  "bomb": {
+    "variant": "bomb_04.png",
+    "runtime": "assets/items/bomb.png",
+    "sha256": "51df3098183c13ac2eb26fb9b631ad0ff92ac4e06835b37aeb3c4637eb94d6e2",
+    "visible_bounds": [
+      16,
+      14,
+      48,
+      52
+    ]
+  },
+  "tool_cabinet": {
+    "variant": "tool_cabinet_02.png",
+    "runtime": "assets/props/furniture/series_01/tool_cabinet.png",
+    "sha256": "ce48103be2f9f570b7607aba7dccaf4c8a934088ef2dd99520e66bb8ef72e363",
+    "visible_bounds": [
+      8,
+      0,
+      56,
+      64
+    ]
+  }
+}

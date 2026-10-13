@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "kind": "sheet",
+  "source": "source_hard_alpha.png",
+  "source_sha256": "9780d193876a03dbe8fd1106e71eaf1f6daa6d482902a58dc00a249f54744170",
+  "layout": {
+    "rows": 4,
+    "columns": 4,
+    "split_silhouettes": true
+  },
+  "chroma": null,
+  "reconstruction": {
+    "grid": [
+      64,
+      64
+    ],
+    "inset": 0.0,
+    "alpha_coverage": 0.0
+  },
+  "palette": "aap64",
+  "outline": {
+    "color": "242234",
+    "neighbors": 8
+  },
+  "preview_columns": 4,
+  "sprites": [
+    {
+      "name": "01_gold_small_1"
+    },
+    {
+      "name": "02_gold_small_2"
+    },
+    {
+      "name": "03_gold_small_3"
+    },
+    {
+      "name": "04_gold_small_4"
+    },
+    {
+      "name": "05_gold_medium_1"
+    },
+    {
+      "name": "06_gold_medium_2"
+    },
+    {
+      "name": "07_gold_medium_3"
+    },
+    {
+      "name": "08_gold_medium_4"
+    },
+    {
+      "name": "09_gold_large_1"
+    },
+    {
+      "name": "10_gold_large_2"
+    },
+    {
+      "name": "11_gold_large_3"
+    },
+    {
+      "name": "12_gold_large_4"
+    },
+    {
+      "name": "13_broken_bottle_1"
+    },
+    {
+      "name": "14_broken_bottle_2"
+    },
+    {
+      "name": "15_broken_bottle_3"
+    },
+    {
+      "name": "16_broken_bottle_4"
+    }
+  ],
+  "fit_visible_before_pixelization": true,
+  "canvas": {
+    "size": [
+      64,
+      64
+    ],
+    "baseline": 52
+  },
+  "visible_size": [
+    38,
+    38
+  ]
+}

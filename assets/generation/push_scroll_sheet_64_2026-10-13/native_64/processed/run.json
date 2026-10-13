@@ -1,0 +1,476 @@
+{
+  "status": "complete",
+  "recipe": {
+    "version": 1,
+    "kind": "sheet",
+    "source": "sheet.png",
+    "source_sha256": "5f96ed968af81eacc7ba3351b6549e6091a14d03af944733e89c4532378dc821",
+    "layout": {
+      "row_boundaries": [
+        0,
+        512,
+        1024,
+        1536,
+        2048
+      ],
+      "column_boundaries": [
+        [
+          0,
+          512,
+          1024,
+          1536,
+          2048
+        ],
+        [
+          0,
+          512,
+          1024,
+          1536,
+          2048
+        ],
+        [
+          0,
+          512,
+          1024,
+          1536,
+          2048
+        ],
+        [
+          0,
+          512,
+          1024,
+          1536,
+          2048
+        ]
+      ]
+    },
+    "chroma": null,
+    "reconstruction": {
+      "grid": [
+        64,
+        64
+      ],
+      "inset": 0.0,
+      "alpha_coverage": 0.0
+    },
+    "palette": "aap64",
+    "outline": {
+      "color": "242234",
+      "neighbors": 8
+    },
+    "preview_columns": 4,
+    "sprites": [
+      {
+        "name": "push_scroll_01"
+      },
+      {
+        "name": "push_scroll_02"
+      },
+      {
+        "name": "push_scroll_03"
+      },
+      {
+        "name": "push_scroll_04"
+      },
+      {
+        "name": "push_scroll_05"
+      },
+      {
+        "name": "push_scroll_06"
+      },
+      {
+        "name": "push_scroll_07"
+      },
+      {
+        "name": "push_scroll_08"
+      },
+      {
+        "name": "push_scroll_09"
+      },
+      {
+        "name": "push_scroll_10"
+      },
+      {
+        "name": "push_scroll_11"
+      },
+      {
+        "name": "push_scroll_12"
+      },
+      {
+        "name": "push_scroll_13"
+      },
+      {
+        "name": "push_scroll_14"
+      },
+      {
+        "name": "push_scroll_15"
+      },
+      {
+        "name": "push_scroll_16"
+      }
+    ],
+    "canvas": {
+      "size": [
+        64,
+        64
+      ],
+      "baseline": 52
+    },
+    "visible_size": [
+      38,
+      38
+    ],
+    "fit_canvas_candidates": false
+  },
+  "source": "/Users/igor/Godot/davoria/assets/generation/push_scroll_sheet_64_2026-10-13/native_64/preparation/sheet.png",
+  "source_sha256": "5f96ed968af81eacc7ba3351b6549e6091a14d03af944733e89c4532378dc821",
+  "runtime": {
+    "python": "3.14.4",
+    "pillow": "12.2.0"
+  },
+  "layout": {
+    "row_boundaries": [
+      0,
+      512,
+      1024,
+      1536,
+      2048
+    ],
+    "column_boundaries": [
+      [
+        0,
+        512,
+        1024,
+        1536,
+        2048
+      ],
+      [
+        0,
+        512,
+        1024,
+        1536,
+        2048
+      ],
+      [
+        0,
+        512,
+        1024,
+        1536,
+        2048
+      ],
+      [
+        0,
+        512,
+        1024,
+        1536,
+        2048
+      ]
+    ]
+  },
+  "sprites": [
+    {
+      "name": "push_scroll_01",
+      "source_box": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "push_scroll_02",
+      "source_box": [
+        512,
+        0,
+        1024,
+        512
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "push_scroll_03",
+      "source_box": [
+        1024,
+        0,
+        1536,
+        512
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "push_scroll_04",
+      "source_box": [
+        1536,
+        0,
+        2048,
+        512
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "push_scroll_05",
+      "source_box": [
+        0,
+        512,
+        512,
+        1024
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "push_scroll_06",
+      "source_box": [
+        512,
+        512,
+        1024,
+        1024
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "push_scroll_07",
+      "source_box": [
+        1024,
+        512,
+        1536,
+        1024
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "push_scroll_08",
+      "source_box": [
+        1536,
+        512,
+        2048,
+        1024
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "push_scroll_09",
+      "source_box": [
+        0,
+        1024,
+        512,
+        1536
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "push_scroll_10",
+      "source_box": [
+        512,
+        1024,
+        1024,
+        1536
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "push_scroll_11",
+      "source_box": [
+        1024,
+        1024,
+        1536,
+        1536
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "push_scroll_12",
+      "source_box": [
+        1536,
+        1024,
+        2048,
+        1536
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "push_scroll_13",
+      "source_box": [
+        0,
+        1536,
+        512,
+        2048
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "push_scroll_14",
+      "source_box": [
+        512,
+        1536,
+        1024,
+        2048
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "push_scroll_15",
+      "source_box": [
+        1024,
+        1536,
+        1536,
+        2048
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    },
+    {
+      "name": "push_scroll_16",
+      "source_box": [
+        1536,
+        1536,
+        2048,
+        2048
+      ],
+      "chroma": null,
+      "grid": {
+        "mode": "edge_aligned",
+        "width": 64,
+        "height": 64,
+        "inset": 0.0,
+        "alpha_coverage": 0.0
+      },
+      "flip_horizontal": false,
+      "crop_box": null
+    }
+  ]
+}

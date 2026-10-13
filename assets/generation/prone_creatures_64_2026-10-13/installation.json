@@ -1,0 +1,52 @@
+{
+  "project": "/Users/igor/Godot/davoria",
+  "actor_directory": "res://assets/actors/prone/",
+  "generation_directory": "res://assets/generation/prone_creatures_64_2026-10-13/",
+  "files": [
+    {
+      "id": "weak_club",
+      "path": "res://assets/actors/prone/weak_club_prone.png",
+      "sha256": "26b0fa1abac5edb3123177517ca98d90edd406ffd68f217fe7a47b8317b9fe82",
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "id": "medium_swordsman",
+      "path": "res://assets/actors/prone/medium_swordsman_prone.png",
+      "sha256": "8742a5403b1b597aae4fb73c5e29c3a0b9b77467a471a03635f3910657efa597",
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "id": "strong_guard",
+      "path": "res://assets/actors/prone/strong_guard_prone.png",
+      "sha256": "b82deb4b113bfb9571db6f8cc6c776ffe7665a89f1b969f6c286f2ddf82fbe34",
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "id": "cockatrice",
+      "path": "res://assets/actors/prone/cockatrice_prone.png",
+      "sha256": "c1abc28da2ef0cda980be52ae7def83745293b88d728b971f8357a54efb2e2a1",
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "id": "skeletal_horse",
+      "path": "res://assets/actors/prone/skeletal_horse_prone.png",
+      "sha256": "2ed69a63c5d41c74ab8d1554cdde142909a3de0898f490b85edfd944ca3b5f95",
+      "size": [
+        64,
+        64
+      ]
+    }
+  ]
+}

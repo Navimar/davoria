@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "stage": "after AAP64, before terrain grading",
+  "reason": "Remove rust-red palette matches from soil; preserve original AAP64 neutral earth swatches and geometry.",
+  "palette": "AAP64",
+  "mapping": {
+    "#5b3138": "#423934",
+    "#71413b": "#5a4e44",
+    "#8e5252": "#796755",
+    "#bb7547": "#a08662",
+    "#dba463": "#c7b08b"
+  }
+}

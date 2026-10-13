@@ -1,0 +1,33 @@
+{
+  "generation_mode": "builtin_image_gen",
+  "prompt": "generation_prompt.txt",
+  "recipe": "recipe.json",
+  "runtime_asset": "assets/props/memorials/hero_grave.png",
+  "runtime_sha256": "2e7538902722f7c6510b289403def4513699f9ad24c6e41c0b044272aaa88110",
+  "native_qa": {
+    "ok": true,
+    "count": 16
+  },
+  "statue": "Actual deceased hero texture and facing, native 1:1, same stone shader as petrification; no separate generated statue",
+  "mechanics": {
+    "max_memorials_from_previous_runs": 1,
+    "loot": "one occupied inventory slot selected at death",
+    "loot_reroll": false,
+    "loot_collection": "on entering cell, ahead of ground items; full inventory preserves loot",
+    "loot_persistence": "atomic empty item_id after pickup",
+    "movement_blocked": false,
+    "sight_blocked": false,
+    "map_save_includes_remains": false,
+    "bomb_destroys_remains_and_loot": true
+  },
+  "storage": "user://previous_run.json; custom map fixtures store one file beside chunks",
+  "death_text": "Вы стали каменной статуей.\n\nПодземелье получает +1 к уровню культуры.",
+  "headless_checks_passed": [
+    "check_previous_run.gd",
+    "check_cockatrice_push.gd",
+    "check_combat.gd",
+    "check_water.gd",
+    "check_tools_bombs.gd",
+    "check_editor_save.gd"
+  ]
+}

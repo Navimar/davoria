@@ -1,0 +1,47 @@
+{
+  "source": "/Users/igor/Documents/Codex/2026-10-13/new-chat/outputs/davoria_prone_creatures/raw/skeletal_horse_prone_hard_alpha.png",
+  "source_sha256": "f310dc0a58f0fde2d67c4727508dc784ab3c469d9fd46339756a91d09c4d6e5d",
+  "order": [
+    "split_highres",
+    "chroma_key",
+    "crop_alpha_bbox",
+    "fit_highres",
+    "pixelize"
+  ],
+  "padding": 0,
+  "target_size": [
+    64,
+    64
+  ],
+  "visible_size": [
+    64,
+    64
+  ],
+  "baseline": 64,
+  "sprites": [
+    {
+      "name": "skeletal_horse_prone",
+      "source_box": [
+        0,
+        0,
+        1536,
+        1024
+      ],
+      "source_bbox": [
+        96,
+        294,
+        1465,
+        812
+      ],
+      "cropped_size": [
+        1369,
+        518
+      ],
+      "fitted_body_size": [
+        512,
+        194
+      ],
+      "scale": 0.3739956172388605
+    }
+  ]
+}

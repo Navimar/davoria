@@ -1,0 +1,6 @@
+{
+  "threshold_before_pixelization": 128,
+  "rgb_unchanged": true,
+  "input": "source.png",
+  "output": "source_hard_alpha.png"
+}

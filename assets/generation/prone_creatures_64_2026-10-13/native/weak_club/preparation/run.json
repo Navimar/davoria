@@ -1,0 +1,47 @@
+{
+  "source": "/Users/igor/Documents/Codex/2026-10-13/new-chat/outputs/davoria_prone_creatures/raw/weak_club_prone_hard_alpha.png",
+  "source_sha256": "af9be0b84f6a56a05b21db3d1d8aeae8a2fa530035ac770f1738bb9fdf5b7b37",
+  "order": [
+    "split_highres",
+    "chroma_key",
+    "crop_alpha_bbox",
+    "fit_highres",
+    "pixelize"
+  ],
+  "padding": 0,
+  "target_size": [
+    64,
+    64
+  ],
+  "visible_size": [
+    64,
+    64
+  ],
+  "baseline": 64,
+  "sprites": [
+    {
+      "name": "weak_club_prone",
+      "source_box": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "source_bbox": [
+        48,
+        404,
+        1206,
+        884
+      ],
+      "cropped_size": [
+        1158,
+        480
+      ],
+      "fitted_body_size": [
+        512,
+        212
+      ],
+      "scale": 0.4421416234887737
+    }
+  ]
+}

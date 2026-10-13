@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "kind": "sheet",
+  "source": "sheet.png",
+  "layout": {
+    "row_boundaries": [
+      0,
+      512
+    ],
+    "column_boundaries": [
+      [
+        0,
+        512
+      ]
+    ]
+  },
+  "chroma": null,
+  "reconstruction": {
+    "grid": [
+      64,
+      64
+    ],
+    "inset": 0.0,
+    "alpha_coverage": 0.0
+  },
+  "palette": "aap64",
+  "outline": {
+    "color": "242234",
+    "neighbors": 8
+  },
+  "canvas": {
+    "size": [
+      64,
+      64
+    ],
+    "baseline": 64
+  },
+  "preview_columns": 1,
+  "sprites": [
+    {
+      "name": "strong_guard_prone",
+      "flip_horizontal": false
+    }
+  ],
+  "source_sha256": "c2f8dec4084a938265dbdbdf2ddcc757320fb357c671bc3ddf6fb1d2f13b9bf0",
+  "fit_canvas_candidates": false
+}

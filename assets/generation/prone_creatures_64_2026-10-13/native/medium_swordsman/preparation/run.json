@@ -1,0 +1,47 @@
+{
+  "source": "/Users/igor/Documents/Codex/2026-10-13/new-chat/outputs/davoria_prone_creatures/raw/medium_swordsman_prone_hard_alpha.png",
+  "source_sha256": "c78d82f0684da321fc01db2cc0b4e700ee8b4dd394ede507384c32d6d28a5f8b",
+  "order": [
+    "split_highres",
+    "chroma_key",
+    "crop_alpha_bbox",
+    "fit_highres",
+    "pixelize"
+  ],
+  "padding": 0,
+  "target_size": [
+    64,
+    64
+  ],
+  "visible_size": [
+    64,
+    64
+  ],
+  "baseline": 64,
+  "sprites": [
+    {
+      "name": "medium_swordsman_prone",
+      "source_box": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "source_bbox": [
+        57,
+        391,
+        1199,
+        871
+      ],
+      "cropped_size": [
+        1142,
+        480
+      ],
+      "fitted_body_size": [
+        512,
+        215
+      ],
+      "scale": 0.44833625218914186
+    }
+  ]
+}

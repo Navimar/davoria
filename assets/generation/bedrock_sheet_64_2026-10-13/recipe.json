@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "kind": "sheet",
+  "source": "source.png",
+  "source_sha256": "6989804c4e875f2f79386a301e3b25c508d0308b68fcb22f41962a732e94c8a8",
+  "layout": {
+    "row_boundaries": [
+      0,
+      627,
+      1254
+    ],
+    "column_boundaries": [
+      [
+        0,
+        627,
+        1254
+      ],
+      [
+        0,
+        627,
+        1254
+      ]
+    ]
+  },
+  "chroma": null,
+  "reconstruction": {
+    "grid": [
+      64,
+      64
+    ],
+    "inset": 0.0,
+    "alpha_coverage": 0.0
+  },
+  "palette": "aap64",
+  "outline": null,
+  "canvas": {
+    "size": [
+      64,
+      64
+    ],
+    "baseline": 64
+  },
+  "preview_columns": 2,
+  "sprites": [
+    {
+      "name": "bedrock_01"
+    },
+    {
+      "name": "bedrock_02"
+    },
+    {
+      "name": "bedrock_03"
+    },
+    {
+      "name": "bedrock_04"
+    }
+  ]
+}

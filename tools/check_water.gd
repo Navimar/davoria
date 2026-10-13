@@ -29,6 +29,8 @@ func _run() -> void:
 	root.add_child(scene)
 	await process_frame
 	for cell: Vector2i in scene.get("_items_by_cell").keys():
+		# Random crystal pickups would change the fixed strength used below.
+		scene.call("_remove_procedural_item", cell)
 		scene.call("_erase_live_map_object", cell)
 	scene.call("_set_terrain_cell", Vector2i(6, 30), DEMO.TileType.WATER)
 	scene.call("_set_terrain_cell", Vector2i(7, 30), DEMO.TileType.WATER)
@@ -61,6 +63,9 @@ func _run() -> void:
 	_check(hero.offset == GRID.ACTOR_DRAW_OFFSET + Vector2(0, 48) and hero.material.get_shader_parameter("submerged_pixels") == 48.0, "Submerging stops at exactly three quarters of the native 64px sprite")
 	_check(strength_label.position == label_position and breath_label.visible, "Submerging never moves or clips world labels")
 	scene.call("_add_inventory_item", load(DEMO.SWORD_PATH), DEMO.ITEM_ID_SWORD)
+	scene.set("_equipped_weapon_id", DEMO.ITEM_ID_SWORD)
+	scene.set("_equipped_weapon_texture", load(DEMO.SWORD_PATH))
+	scene.call("_refresh_inventory_panel")
 	scene.set("_strength_boost_turns", 3)
 	_wait(scene)
 	_check(scene.get("_hero_strength") == 9 and scene.get("_hero_max_strength") == 10 and scene.call("_weapon_strength_bonus") == 5 and strength_label.text == "23", "Drowning takes one own strength, preserving maximum, weapon bonus and boost rules")

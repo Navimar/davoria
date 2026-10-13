@@ -1,0 +1,120 @@
+{
+  "project": "/Users/igor/Godot/davoria",
+  "scope": "Four active enemy types plus the explicitly requested unused cockatrice. Excludes flora, hero choices, and water elemental (it dissolves and needs no prone sprite).",
+  "size": [
+    64,
+    64
+  ],
+  "palette": "AAP64",
+  "generation_mode": "built-in image_gen",
+  "specs": [
+    {
+      "id": "weak_club",
+      "name": "Гоблин с дубинкой",
+      "map_count": 16,
+      "standing": "/Users/igor/Godot/davoria/assets/actors/goblins/series_01/01_weak_club.png",
+      "original_relative": "assets/actors/goblins/series_01/01_weak_club.png",
+      "highres_reference": "/Users/igor/Godot/davoria/assets/generation/goblin_sheet_64_2026-10-12/native_64/preparation/cropped/01_weak_club.png",
+      "prompt": "Use case: precise-object-edit. Asset type: one prone/defeated creature sprite for a classic tile-based fantasy roguelike, later processed locally to a native 64x64 AAP64 sprite.\nInput images: Image 1 is the existing 64x64 gameplay sprite and is the identity and palette reference. Image 2 is the same creature's higher resolution source and is the equipment and anatomy reference.\nPrimary request: redraw this exact creature in a genuinely LYING DOWN / RECUMBENT pose. This must be a new anatomically natural pose, with a horizontal low silhouette and limbs resting on an implied floor; do not merely rotate, lean or stretch the upright sprite.\nStyle: match the existing old-school fantasy sprite design, chunky clean pixel-like shapes, dark purple/near-black outlines, simple coherent shading and limited color regions. Keep it readable when processed to 64x64. Avoid painterly texture, micro detail or realistic material rendering. Same three-quarter top-down camera as the existing roguelike sprite, now looking down onto the creature lying on its side.\nComposition: EXACTLY ONE complete creature centered on a square transparent canvas, head to the LEFT and body to the RIGHT. The body lies flat, not sitting, crouching, kneeling, floating upright, or in an action pose. Full silhouette and all equipment fit well inside the canvas with modest transparent padding, no cropped parts.\nConstraints: Preserve this exact creature's species, skin/bone/water color families, characteristic ears/head, armor/clothing, and equipment. Exactly the original number of limbs. Genuine transparent background. No floor, cast shadow, checkerboard drawn into the image, extra creature, text, numbers, labels, borders, watermark, blood, wounds or gore. No perspective scene or background.\nSubject: The identical small olive-green goblin with long pointed ears, visible little fangs, brown sleeveless leather tunic, belt, brown boots, and ONE wooden club. It lies flat on its side with its head at the LEFT, body and legs extending to the RIGHT. Both arms rest down naturally, the wooden club rests beside and touches its hand, both legs are relaxed and lightly bent. Closed eyes and a neutral slack face.",
+      "output_filename": "weak_club_prone.png",
+      "final_sha256": "26b0fa1abac5edb3123177517ca98d90edd406ffd68f217fe7a47b8317b9fe82",
+      "raw_sha256": "8eaafa524994c3d1f8e6abd5b2de1f00557d212d4a7ca34491752ba70cdab206",
+      "raw_size": [
+        1254,
+        1254
+      ],
+      "status": "complete",
+      "source_status": "active"
+    },
+    {
+      "id": "medium_swordsman",
+      "name": "Гоблин-мечник",
+      "map_count": 12,
+      "standing": "/Users/igor/Godot/davoria/assets/actors/goblins/series_01/09_medium_swordsman.png",
+      "original_relative": "assets/actors/goblins/series_01/09_medium_swordsman.png",
+      "highres_reference": "/Users/igor/Godot/davoria/assets/generation/goblin_sheet_64_2026-10-12/native_64/preparation/cropped/09_medium_swordsman.png",
+      "prompt": "Use case: precise-object-edit. Asset type: one prone/defeated creature sprite for a classic tile-based fantasy roguelike, later processed locally to a native 64x64 AAP64 sprite.\nInput images: Image 1 is the existing 64x64 gameplay sprite and is the identity and palette reference. Image 2 is the same creature's higher resolution source and is the equipment and anatomy reference.\nPrimary request: redraw this exact creature in a genuinely LYING DOWN / RECUMBENT pose. This must be a new anatomically natural pose, with a horizontal low silhouette and limbs resting on an implied floor; do not merely rotate, lean or stretch the upright sprite.\nStyle: match the existing old-school fantasy sprite design, chunky clean pixel-like shapes, dark purple/near-black outlines, simple coherent shading and limited color regions. Keep it readable when processed to 64x64. Avoid painterly texture, micro detail or realistic material rendering. Same three-quarter top-down camera as the existing roguelike sprite, now looking down onto the creature lying on its side.\nComposition: EXACTLY ONE complete creature centered on a square transparent canvas, head to the LEFT and body to the RIGHT. The body lies flat, not sitting, crouching, kneeling, floating upright, or in an action pose. Full silhouette and all equipment fit well inside the canvas with modest transparent padding, no cropped parts.\nConstraints: Preserve this exact creature's species, skin/bone/water color families, characteristic ears/head, armor/clothing, and equipment. Exactly the original number of limbs. Genuine transparent background. No floor, cast shadow, checkerboard drawn into the image, extra creature, text, numbers, labels, borders, watermark, blood, wounds or gore. No perspective scene or background.\nSubject: The identical red-orange goblin swordsman, pointed ears, bronze pointed helmet, bronze shoulder armor, brown leather tunic, belt, brown boots, and ONE short silver sword with yellow hilt. It lies flat on its side with its helmeted head at the LEFT, torso and legs extending to the RIGHT. Both arms are relaxed, its short sword rests horizontally beside its hand and touches the body silhouette. Both legs are slightly bent, closed eyes, retain the helmet and all clothing.",
+      "output_filename": "medium_swordsman_prone.png",
+      "final_sha256": "8742a5403b1b597aae4fb73c5e29c3a0b9b77467a471a03635f3910657efa597",
+      "raw_sha256": "8a246e9132175745cad2edc68cde5bcbc5e8963bc0741e8af3ff17cef1026d31",
+      "raw_size": [
+        1254,
+        1254
+      ],
+      "status": "complete",
+      "source_status": "active"
+    },
+    {
+      "id": "strong_guard",
+      "name": "Тяжёлый гоблин-страж",
+      "map_count": 8,
+      "standing": "/Users/igor/Godot/davoria/assets/actors/goblins/series_01/12_strong_guard.png",
+      "original_relative": "assets/actors/goblins/series_01/12_strong_guard.png",
+      "highres_reference": "/Users/igor/Godot/davoria/assets/generation/goblin_sheet_64_2026-10-12/native_64/preparation/cropped/12_strong_guard.png",
+      "prompt": "Use case: precise-object-edit. Asset type: one prone/defeated creature sprite for a classic tile-based fantasy roguelike, later processed locally to a native 64x64 AAP64 sprite.\nInput images: Image 1 is the existing 64x64 gameplay sprite and is the identity and palette reference. Image 2 is the same creature's higher resolution source and is the equipment and anatomy reference.\nPrimary request: redraw this exact creature in a genuinely LYING DOWN / RECUMBENT pose. This must be a new anatomically natural pose, with a horizontal low silhouette and limbs resting on an implied floor; do not merely rotate, lean or stretch the upright sprite.\nStyle: match the existing old-school fantasy sprite design, chunky clean pixel-like shapes, dark purple/near-black outlines, simple coherent shading and limited color regions. Keep it readable when processed to 64x64. Avoid painterly texture, micro detail or realistic material rendering. Same three-quarter top-down camera as the existing roguelike sprite, now looking down onto the creature lying on its side.\nComposition: EXACTLY ONE complete creature centered on a square transparent canvas, head to the LEFT and body to the RIGHT. The body lies flat, not sitting, crouching, kneeling, floating upright, or in an action pose. Full silhouette and all equipment fit well inside the canvas with modest transparent padding, no cropped parts.\nConstraints: Preserve this exact creature's species, skin/bone/water color families, characteristic ears/head, armor/clothing, and equipment. Exactly the original number of limbs. Genuine transparent background. No floor, cast shadow, checkerboard drawn into the image, extra creature, text, numbers, labels, borders, watermark, blood, wounds or gore. No perspective scene or background.\nSubject: The identical crimson-red goblin guard, steel pointed helmet and heavy steel armor, dark rectangular steel-edged shield with a small silver central boss, and ONE short silver sword with yellow hilt. It lies flat on its side with the helmeted head at the LEFT, torso and legs extending to the RIGHT. Both arms and legs relax naturally. The shield lies down partly in front of its torso, the short sword rests low beside its hand. Retain exactly the original armor and equipment design and colors, closed eyes.",
+      "output_filename": "strong_guard_prone.png",
+      "final_sha256": "b82deb4b113bfb9571db6f8cc6c776ffe7665a89f1b969f6c286f2ddf82fbe34",
+      "raw_sha256": "029729e67f1e34fe13cfd4def70fd4b8defb1659a155f26644b3f9ab2a18a5ca",
+      "raw_size": [
+        1254,
+        1254
+      ],
+      "status": "complete",
+      "source_status": "active"
+    },
+    {
+      "id": "cockatrice",
+      "name": "Кокатрис",
+      "map_count": 0,
+      "source_status": "unused_requested",
+      "standing": "/Users/igor/Godot/davoria/assets/actors/pixel_monsters/series_05/11_cockatrice.png",
+      "original_relative": "assets/actors/pixel_monsters/series_05/11_cockatrice.png",
+      "highres_reference": "/Users/igor/Godot/davoria/assets/generation/creatures_sheet_64_2026-10-12/full_cell_64/preparation/cropped/11_cockatrice.png",
+      "prompt": "Use case: precise-object-edit.\nAsset type: one prone/defeated cockatrice sprite for a classic tile-based fantasy roguelike, later normalized locally into a native 64x64 AAP64 sprite.\nInput images: Image 1 is the existing 64x64 game cockatrice sprite, the exact identity and palette reference. Image 2 is the same cockatrice's higher resolution source, the anatomy reference.\nPrimary request: redraw this EXACT cockatrice in a genuinely lying-down pose, resting fully on its side. It is the yellow rooster-like fantasy creature with a LONG yellow-green reptilian tail, a red rooster comb, red wattles, red wings, yellow beak, and two clawed bird feet from the references. Its head and beak are at the LEFT; body and long reptilian tail extend toward the RIGHT. The tail must be intact and clearly visible, gently curled at the far right. Its head rests low against the implied ground with its eye closed, red crest and wattle retained. Both legs relax beside its body with readable claws. Its red wings are folded down naturally against its body, no raised wings. Compact low horizontal silhouette.\nStyle: match the reference's existing old-school fantasy sprite design exactly, large clean pixel-like shapes, dark purple/near-black outline, simple coherent shading, yellow and golden plumage, red-orange comb/wattle/wings, and the original yellow-green tail color. Limited readable color regions, no painterly texture, no realistic feathers, no excessive tiny detail. Same three-quarter top-down roguelike camera as the reference, now looking down on the creature lying on its side.\nComposition: EXACTLY ONE complete creature centered with modest transparent padding; full beak, both feet, crest, wings and the COMPLETE long curved tail inside the image. This is a new natural recumbent pose, not a rotated upright sprite. Genuinely transparent background, no floor, no shadow, no glow, no background color, no drawn checkerboard.\nConstraints: Preserve this creature's species and existing design; it remains a ROOSTER WITH A LONG LIZARD TAIL. Exactly one head, one tail, two wings and two legs. No extra creature, equipment, egg, snake head at the end of the tail, added horns, text, numbers, labels, border or watermark. No blood, wound or gore. Not sitting, crouching, flying, standing, floating or in an action pose.",
+      "output_filename": "cockatrice_prone.png",
+      "status": "complete",
+      "final_sha256": "c1abc28da2ef0cda980be52ae7def83745293b88d728b971f8357a54efb2e2a1",
+      "raw_sha256": "5840d69cc4c82425c149b74b89015b992412ac3d574c1be27f5b6e1114dae836",
+      "raw_size": [
+        1774,
+        887
+      ]
+    },
+    {
+      "id": "skeletal_horse",
+      "name": "Скелет-лошадь",
+      "map_count": 1,
+      "standing": "/Users/igor/Godot/davoria/assets/actors/pixel_monsters/series_05/14_skeletal_horse.png",
+      "original_relative": "assets/actors/pixel_monsters/series_05/14_skeletal_horse.png",
+      "highres_reference": "/Users/igor/Godot/davoria/assets/generation/creatures_sheet_64_2026-10-12/full_cell_64/preparation/cropped/14_skeletal_horse.png",
+      "prompt": "Use case: precise-object-edit. Asset type: one prone/defeated creature sprite for a classic tile-based fantasy roguelike, later processed locally to a native 64x64 AAP64 sprite.\nInput images: Image 1 is the existing 64x64 gameplay sprite and is the identity and palette reference. Image 2 is the same creature's higher resolution source and is the equipment and anatomy reference.\nPrimary request: redraw this exact creature in a genuinely LYING DOWN / RECUMBENT pose. This must be a new anatomically natural pose, with a horizontal low silhouette and limbs resting on an implied floor; do not merely rotate, lean or stretch the upright sprite.\nStyle: match the existing old-school fantasy sprite design, chunky clean pixel-like shapes, dark purple/near-black outlines, simple coherent shading and limited color regions. Keep it readable when processed to 64x64. Avoid painterly texture, micro detail or realistic material rendering. Same three-quarter top-down camera as the existing roguelike sprite, now looking down onto the creature lying on its side.\nComposition: EXACTLY ONE complete creature centered on a square transparent canvas, head to the LEFT and body to the RIGHT. The body lies flat, not sitting, crouching, kneeling, floating upright, or in an action pose. Full silhouette and all equipment fit well inside the canvas with modest transparent padding, no cropped parts.\nConstraints: Preserve this exact creature's species, skin/bone/water color families, characteristic ears/head, armor/clothing, and equipment. Exactly the original number of limbs. Genuine transparent background. No floor, cast shadow, checkerboard drawn into the image, extra creature, text, numbers, labels, borders, watermark, blood, wounds or gore. No perspective scene or background.\nSubject: The identical ivory-bone skeletal horse with dark purple outline, cyan glow in the eye socket, visible skull, rib cage, bony spine, bone tail and dark gray hooves. It lies fully on its side: the skull at the LEFT, the long spine and rib cage extending to the RIGHT, the neck resting low, all FOUR legs folded or relaxed beside the torso. The skull rests at the same low height as the body. It is an intact complete equine skeleton in a natural recumbent pose. Preserve exactly the original bone color, anatomy, dark hooves, and cyan eye socket. No flesh, saddle, harness, extra skeletons or extra limbs.",
+      "output_filename": "skeletal_horse_prone.png",
+      "final_sha256": "2ed69a63c5d41c74ab8d1554cdde142909a3de0898f490b85edfd944ca3b5f95",
+      "raw_sha256": "9df2ee3691ad322e8fc10547feedc3637f2fe6cab4c41a41563d9dca46f24383",
+      "raw_size": [
+        1536,
+        1024
+      ],
+      "status": "complete",
+      "source_status": "active"
+    }
+  ],
+  "excluded_flora": [
+    "brown_mushroom",
+    "red_mushroom",
+    "violet_mushroom",
+    "thorn_bush"
+  ],
+  "created_local_date": "2026-10-13",
+  "created_timezone": "Asia/Tbilisi",
+  "pipeline": "/Users/igor/Godot/davoria/tools/process_creature_sheet.py",
+  "alpha_threshold": 128,
+  "excluded_creatures": [
+    {
+      "id": "water_elemental",
+      "reason": "Dissolves; no prone sprite needed, per user correction."
+    }
+  ],
+  "revision": 2,
+  "revision_note": "Removed prone water elemental because it dissolves; added cockatrice from the existing unused assets by user request."
+}

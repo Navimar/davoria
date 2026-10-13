@@ -1,0 +1,68 @@
+{
+  "generation_mode": "built_in_imagegen",
+  "prompt": "generation_prompt.txt",
+  "recipe": "recipe.json",
+  "standard": "tools/pixel_recipes/terrain_style.json",
+  "order": [
+    "reconstruct_64",
+    "aap64",
+    "rgb_x0.75",
+    "blur_0.5px"
+  ],
+  "base": "bedrock_01.png",
+  "distribution": {
+    "base": 0.8,
+    "alternatives_total": 0.2
+  },
+  "runtime_dir": "assets/tiles/bedrock/series_01",
+  "tiles": [
+    {
+      "file": "bedrock_01.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha": [
+        255,
+        255
+      ],
+      "sha256": "77c5882bd77c5aa30c424061447bb320817078504a93c60a9738785fe613bde0"
+    },
+    {
+      "file": "bedrock_02.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha": [
+        255,
+        255
+      ],
+      "sha256": "7bc5c5d55f51b7808c018c0ef18d9bd9301fc6626cdfaae9b4f46732bf1790dc"
+    },
+    {
+      "file": "bedrock_03.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha": [
+        255,
+        255
+      ],
+      "sha256": "c5e33654e0c2894ac3927c1f26b30cbdeb18619a8e4b70daa4e17c122d494a3a"
+    },
+    {
+      "file": "bedrock_04.png",
+      "size": [
+        64,
+        64
+      ],
+      "alpha": [
+        255,
+        255
+      ],
+      "sha256": "0029b8abe62e8771a8d7c56aca3693e222fbfa112c8fef71e16178e4285d96a0"
+    }
+  ]
+}

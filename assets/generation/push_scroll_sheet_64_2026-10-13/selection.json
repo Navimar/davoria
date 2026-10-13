@@ -1,0 +1,30 @@
+{
+  "mode": "builtin_image_gen",
+  "variant": "assets/items/scrolls/series_01/push_scroll_03.png",
+  "runtime": "assets/items/push_scroll.png",
+  "sha256": "af0d6054565c4ff88e382d83b9f731728d935ae3535731cd60f2fd9d109dc762",
+  "visible_bounds": [
+    13,
+    21,
+    51,
+    52
+  ],
+  "recipe": "recipe.json",
+  "rules": {
+    "canvas": [
+      64,
+      64
+    ],
+    "visible_size": [
+      38,
+      38
+    ],
+    "baseline": 52,
+    "palette": "aap64",
+    "outline": "242234",
+    "fit_before_pixelization": true,
+    "runtime_scale": 1.0,
+    "alpha_threshold_before_pixelization": 128
+  },
+  "reason": "The open parchment has a large clear cyan pushing arrow and reads at native item scale."
+}

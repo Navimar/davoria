@@ -12,11 +12,11 @@ const STRENGTH_RANGES := {
 }
 # Visually selected sprites, ordered from weak to strong.
 const TYPES := [
-	{"id": "weak_club", "name": "Гоблин с дубинкой", "tier": WEAK,
+	{"id": "weak_club", "name_key": "OBJECT_NAME_WEAK_CLUB", "tier": WEAK,
 		"path": PATH_PREFIX + "01_weak_club.png"},
-	{"id": "medium_swordsman", "name": "Гоблин-мечник", "tier": MEDIUM,
+	{"id": "medium_swordsman", "name_key": "OBJECT_NAME_MEDIUM_SWORDSMAN", "tier": MEDIUM,
 		"path": PATH_PREFIX + "09_medium_swordsman.png"},
-	{"id": "strong_guard", "name": "Тяжёлый гоблин-страж", "tier": STRONG,
+	{"id": "strong_guard", "name_key": "OBJECT_NAME_STRONG_GUARD", "tier": STRONG,
 		"path": PATH_PREFIX + "12_strong_guard.png"},
 ]
 

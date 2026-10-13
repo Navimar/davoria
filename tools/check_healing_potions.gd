@@ -22,6 +22,8 @@ func _run() -> void:
 					var alpha := image.get_pixel(x, y).a
 					_check(is_zero_approx(alpha) or is_equal_approx(alpha, 1.0), "Potion alpha is binary")
 	var scene: Node2D = SCENE.instantiate()
+	# Use the real authored map without reading or consuming the user's grave loot.
+	scene.set("_remains_save_path", "/private/tmp/davoria_healing_remains_%d.json" % OS.get_process_id())
 	root.add_child(scene)
 	await process_frame
 	scene.get("_rng").seed = 8329
@@ -32,6 +34,10 @@ func _run() -> void:
 	var seen: Dictionary = {}
 	for cabinet_cell: Vector2i in cabinets:
 		var cabinet: Dictionary = cabinets[cabinet_cell]
+		starting_contents[cabinet_cell] = cabinet.contents.duplicate()
+		var definition := CATALOG.definition(cabinet.sprite.get_meta("object_type", ""))
+		if definition.get("loot_group", "potions") != "potions":
+			continue
 		if cabinet.sprite.get_meta("object_type", "") == "empty_cabinet":
 			_check(cabinet.contents.is_empty(), "An authored empty cabinet starts with no potions")
 		else:
@@ -39,7 +45,6 @@ func _run() -> void:
 		for item_id: String in cabinet.contents:
 			_check(CATALOG.potion_ids().has(item_id), "Cabinet contents use registered potion types")
 			seen[item_id] = true
-		starting_contents[cabinet_cell] = cabinet.contents.duplicate()
 		_check(cabinet.sprite.texture.resource_path == DEMO.CABINET_FULL_PATH and cabinet.sprite.scale == Vector2.ONE and cabinet.sprite.offset == Vector2.ZERO, "Furniture always retains the original full cabinet body, native pixels and position")
 		var shelf_count := 0
 		for patch: Sprite2D in cabinet.empty_shelves:
@@ -101,24 +106,27 @@ func _run() -> void:
 	scene.set("_hero_max_strength", 100)
 	before = queue.current_turn
 	_click_slot(scene, 1)
-	_check(scene.get("_hero_strength") == 33 and scene.get("_hero_max_strength") == 100 and scene.get("_hero_magic") == 11, "Healing uses three times pre-use magic and then grants one magic")
+	_check(scene.get("_hero_strength") == 23 and scene.get("_hero_max_strength") == 100 and scene.get("_hero_magic") == 11, "Healing uses twice the pre-use magic and then grants one magic")
 	_check(ids == [DEMO.ITEM_ID_GHOST_RING, DEMO.ITEM_ID_STRENGTH_POTION] and queue.current_turn == before + 1, "Healing consumes one bottle and one action")
 	scene.call("_finish_hero_move", false)
 	scene.call("_add_inventory_item", load(DEMO.SWORD_PATH), DEMO.ITEM_ID_SWORD)
+	scene.set("_equipped_weapon_id", DEMO.ITEM_ID_SWORD)
+	scene.set("_equipped_weapon_texture", load(DEMO.SWORD_PATH))
+	scene.call("_refresh_inventory_panel")
 	before = queue.current_turn
 	_click_slot(scene, 1)
-	_check(scene.get("_strength_boost_turns") == 11 and scene.get("_hero_magic") == 12 and scene.get("_hero_strength") == 33, "Strength potion preserves own reserves, grants twelve magic and lasts eleven subsequent turns")
-	_check(scene.get("_hero_strength_label").text == "71" and scene.get("_stats_strength_label").text == "Сила: 33/100×2+5", "Strength displays double own strength and preserve the permanent weapon bonus")
+	_check(scene.get("_strength_boost_turns") == 11 and scene.get("_hero_magic") == 12 and scene.get("_hero_strength") == 23, "Strength potion preserves own reserves, grants twelve magic and lasts eleven subsequent turns")
+	_check(scene.get("_hero_strength_label").text == "51" and scene.get("_stats_strength_label").text == "Сила: 23/100×2+5", "Strength displays double own strength and preserve the permanent weapon bonus")
 	_check(queue.current_turn == before + 1 and ids == [DEMO.ITEM_ID_GHOST_RING, DEMO.ITEM_ID_SWORD], "Boost drinking consumes one paced world action")
 	scene.call("_finish_hero_move", false)
 	_check(scene.get("_strength_boost_turns") == 11, "Finishing the drink animation does not shorten the boost")
 	for index in range(10):
 		scene.call("_wait_hero_turn")
 		scene.call("_finish_hero_move", false)
-	_check(scene.get("_strength_boost_turns") == 1 and scene.get("_hero_strength_label").text == "71", "Boost stays active through the first ten subsequent turns")
+	_check(scene.get("_strength_boost_turns") == 1 and scene.get("_hero_strength_label").text == "51", "Boost stays active through the first ten subsequent turns")
 	scene.call("_wait_hero_turn")
 	scene.call("_finish_hero_move", false)
-	_check(scene.get("_strength_boost_turns") == 0 and scene.get("_hero_strength_label").text == "38" and scene.get("_hero_strength") == 33, "Boost expires after exactly eleven turns without reducing reserves")
+	_check(scene.get("_strength_boost_turns") == 0 and scene.get("_hero_strength_label").text == "28" and scene.get("_hero_strength") == 23, "Boost expires after exactly eleven turns without reducing reserves")
 	_add_potion(scene, DEMO.ITEM_ID_STRENGTH_POTION)
 	_click_slot(scene, 2)
 	scene.call("_finish_hero_move", false)
@@ -142,7 +150,7 @@ func _run() -> void:
 	picker.call("toggle")
 	_click_slot(scene, 2)
 	scene.call("_finish_hero_move", false)
-	_check(scene.get("_hero_strength") == 42 and scene.get("_hero_magic") == 15 and scene.get("_strength_boost_turns") == 12, "Healing recovers an exhausted hero and consumes one existing boost turn")
+	_check(scene.get("_hero_strength") == 28 and scene.get("_hero_magic") == 15 and scene.get("_strength_boost_turns") == 12, "Healing recovers an exhausted hero and consumes one existing boost turn")
 	_add_potion(scene, DEMO.ITEM_ID_HEALTH_POTION)
 	scene.set("_hero_strength", 100)
 	before = queue.current_turn
@@ -201,7 +209,7 @@ func _add_potion(scene: Node2D, item_id: String) -> void:
 func _click_slot(scene: Node2D, index: int) -> void:
 	var click := InputEventMouseButton.new()
 	click.button_index = MOUSE_BUTTON_LEFT
-	click.pressed = true
+	click.pressed = false
 	scene.call("_on_inventory_slot_gui_input", click, index)
 
 

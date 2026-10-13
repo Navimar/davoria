@@ -198,13 +198,6 @@
 		},
 		{
 			"cell": [
-				37,
-				9
-			],
-			"type": "strong_guard"
-		},
-		{
-			"cell": [
 				12,
 				11
 			],
@@ -240,6 +233,13 @@
 		},
 		{
 			"cell": [
+				26,
+				12
+			],
+			"type": "bookcase"
+		},
+		{
+			"cell": [
 				33,
 				12
 			],
@@ -272,6 +272,20 @@
 				14
 			],
 			"type": "medium_swordsman"
+		},
+		{
+			"cell": [
+				-3,
+				15
+			],
+			"type": "tool_cabinet"
+		},
+		{
+			"cell": [
+				0,
+				15
+			],
+			"type": "tool_cabinet"
 		},
 		{
 			"cell": [
@@ -331,17 +345,17 @@
 		},
 		{
 			"cell": [
+				-2,
+				17
+			],
+			"type": "cockatrice"
+		},
+		{
+			"cell": [
 				40,
 				17
 			],
 			"type": "potion_cabinet"
-		},
-		{
-			"cell": [
-				42,
-				17
-			],
-			"type": "strong_guard"
 		},
 		{
 			"cell": [
@@ -387,6 +401,13 @@
 		},
 		{
 			"cell": [
+				24,
+				19
+			],
+			"type": "tool_cabinet"
+		},
+		{
+			"cell": [
 				43,
 				19
 			],
@@ -394,10 +415,24 @@
 		},
 		{
 			"cell": [
+				-3,
+				20
+			],
+			"type": "tool_cabinet"
+		},
+		{
+			"cell": [
+				0,
+				20
+			],
+			"type": "tool_cabinet"
+		},
+		{
+			"cell": [
 				4,
 				20
 			],
-			"type": "magic_key"
+			"type": "tool_cabinet"
 		},
 		{
 			"cell": [
@@ -436,6 +471,13 @@
 		},
 		{
 			"cell": [
+				24,
+				20
+			],
+			"type": "tool_cabinet"
+		},
+		{
+			"cell": [
 				38,
 				20
 			],
@@ -461,6 +503,13 @@
 				21
 			],
 			"type": "water_elemental"
+		},
+		{
+			"cell": [
+				24,
+				21
+			],
+			"type": "tool_cabinet"
 		},
 		{
 			"cell": [
@@ -503,6 +552,13 @@
 				22
 			],
 			"type": "water_elemental"
+		},
+		{
+			"cell": [
+				24,
+				22
+			],
+			"type": "tool_cabinet"
 		},
 		{
 			"cell": [
@@ -629,6 +685,20 @@
 				28
 			],
 			"type": "red_mushroom"
+		},
+		{
+			"cell": [
+				21,
+				28
+			],
+			"type": "bookcase"
+		},
+		{
+			"cell": [
+				9,
+				29
+			],
+			"type": "bookcase"
 		},
 		{
 			"cell": [
@@ -793,10 +863,52 @@
 		},
 		{
 			"cell": [
+				10,
+				34
+			],
+			"type": "tool_cabinet"
+		},
+		{
+			"cell": [
 				-9,
 				35
 			],
 			"type": "brown_mushroom"
+		},
+		{
+			"cell": [
+				-4,
+				35
+			],
+			"type": "tool_cabinet"
+		},
+		{
+			"cell": [
+				16,
+				35
+			],
+			"type": "brown_mushroom"
+		},
+		{
+			"cell": [
+				17,
+				35
+			],
+			"type": "brown_mushroom"
+		},
+		{
+			"cell": [
+				20,
+				35
+			],
+			"type": "red_mushroom"
+		},
+		{
+			"cell": [
+				21,
+				35
+			],
+			"type": "red_mushroom"
 		},
 		{
 			"cell": [
@@ -811,6 +923,27 @@
 				36
 			],
 			"type": "brown_mushroom"
+		},
+		{
+			"cell": [
+				17,
+				36
+			],
+			"type": "tool_cabinet"
+		},
+		{
+			"cell": [
+				20,
+				36
+			],
+			"type": "red_mushroom"
+		},
+		{
+			"cell": [
+				21,
+				36
+			],
+			"type": "tool_cabinet"
 		},
 		{
 			"cell": [
@@ -832,6 +965,69 @@
 				38
 			],
 			"type": "brown_mushroom"
+		},
+		{
+			"cell": [
+				2,
+				38
+			],
+			"type": "brown_mushroom"
+		},
+		{
+			"cell": [
+				4,
+				38
+			],
+			"type": "brown_mushroom"
+		},
+		{
+			"cell": [
+				6,
+				38
+			],
+			"type": "brown_mushroom"
+		},
+		{
+			"cell": [
+				12,
+				38
+			],
+			"type": "brown_mushroom"
+		},
+		{
+			"cell": [
+				14,
+				38
+			],
+			"type": "brown_mushroom"
+		},
+		{
+			"cell": [
+				13,
+				39
+			],
+			"type": "brown_mushroom"
+		},
+		{
+			"cell": [
+				-6,
+				40
+			],
+			"type": "violet_mushroom"
+		},
+		{
+			"cell": [
+				0,
+				42
+			],
+			"type": "violet_mushroom"
+		},
+		{
+			"cell": [
+				8,
+				42
+			],
+			"type": "violet_mushroom"
 		}
 	],
 	"version": 1

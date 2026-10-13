@@ -1,0 +1,47 @@
+{
+  "source": "/Users/igor/Documents/Codex/2026-10-13/new-chat/outputs/davoria_prone_creatures/raw/strong_guard_prone_hard_alpha.png",
+  "source_sha256": "f568485c8f1f2ff49018235890585ec85eeb1cc014fb8f4d8dba0d1f569afdd3",
+  "order": [
+    "split_highres",
+    "chroma_key",
+    "crop_alpha_bbox",
+    "fit_highres",
+    "pixelize"
+  ],
+  "padding": 0,
+  "target_size": [
+    64,
+    64
+  ],
+  "visible_size": [
+    64,
+    64
+  ],
+  "baseline": 64,
+  "sprites": [
+    {
+      "name": "strong_guard_prone",
+      "source_box": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "source_bbox": [
+        87,
+        461,
+        1193,
+        893
+      ],
+      "cropped_size": [
+        1106,
+        432
+      ],
+      "fitted_body_size": [
+        512,
+        200
+      ],
+      "scale": 0.4629294755877034
+    }
+  ]
+}

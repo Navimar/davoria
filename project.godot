@@ -26,6 +26,11 @@ window/size/viewport_height=1080
 window/size/mode=3
 window/stretch/mode="canvas_items"
 
+[internationalization]
+
+locale/fallback="ru"
+locale/translations=PackedStringArray("res://localization/messages.ru.translation")
+
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0

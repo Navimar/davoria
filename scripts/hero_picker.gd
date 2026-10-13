@@ -25,7 +25,7 @@ func _ready() -> void:
 
 	var toggle_button := Button.new()
 	toggle_button.name = "ChooseHeroButton"
-	toggle_button.text = "Герой [H]"
+	toggle_button.text = tr("UI_HERO_PICKER")
 	toggle_button.pressed.connect(toggle)
 	root.add_child(toggle_button)
 	toggle_button.set_anchors_and_offsets_preset(Control.PRESET_BOTTOM_RIGHT)
@@ -53,12 +53,12 @@ func _ready() -> void:
 	var heading := HBoxContainer.new()
 	column.add_child(heading)
 	var title := Label.new()
-	title.text = "Выберите героя"
+	title.text = tr("UI_HERO_PICKER_TITLE")
 	title.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	title.add_theme_font_size_override("font_size", 24)
 	heading.add_child(title)
 	var close_button := Button.new()
-	close_button.text = "Закрыть"
+	close_button.text = tr("UI_CLOSE")
 	close_button.pressed.connect(hide_picker)
 	heading.add_child(close_button)
 
@@ -82,12 +82,12 @@ func _ready() -> void:
 		button.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
 		button.toggle_mode = true
 		button.button_group = group
-		button.tooltip_text = str(_variants[index]["name"])
+		button.tooltip_text = tr(_variants[index]["name_key"])
 		button.pressed.connect(_on_selected.bind(index))
 		cell.add_child(button)
 		_buttons.append(button)
 		var label := Label.new()
-		label.text = str(_variants[index]["name"])
+		label.text = tr(_variants[index]["name_key"])
 		label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 		label.add_theme_font_size_override("font_size", 14)
 		cell.add_child(label)

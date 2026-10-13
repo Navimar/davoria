@@ -1,0 +1,49 @@
+{
+  "additions": [
+    {
+      "type": "cockatrice",
+      "cell": [
+        28,
+        14
+      ]
+    },
+    {
+      "type": "cockatrice",
+      "cell": [
+        28,
+        27
+      ]
+    },
+    {
+      "type": "cockatrice",
+      "cell": [
+        -3,
+        34
+      ]
+    },
+    {
+      "type": "push_scroll",
+      "cell": [
+        9,
+        29
+      ]
+    },
+    {
+      "type": "push_scroll",
+      "cell": [
+        22,
+        28
+      ]
+    },
+    {
+      "type": "push_scroll",
+      "cell": [
+        27,
+        12
+      ]
+    }
+  ],
+  "existing_records_preserved": true,
+  "original_sha256": "493e259f388802f14e3c98c490af4e5025db337813997c6705d840f4f55a18fa",
+  "result_sha256": "f2555d75d632fdcd224963b436bd7b25d1b076a3548be988be8a205727f72ba4"
+}

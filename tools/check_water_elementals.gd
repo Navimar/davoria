@@ -112,7 +112,7 @@ func _check_behavior_and_editor() -> void:
 	_check(not scene.get("_goblins").has(actor_id) and scene.get("_hero_strength") == 1001 and scene.get("_hero_max_strength") == 1001 and scene.call("_is_walkable", Vector2i(6, 30)), "Normal combat removes an elemental and grants the existing one-strength kill reward")
 	# Block sight across the narrow water entrance to exercise actual wandering.
 	var entries := CATALOG.definitions()
-	entries.append({"id": "fixture_water_cloud", "name": "Облако", "category": "prop", "path": DEMO.CABINET_FULL_PATH, "habitat": "water", "blocks_movement": false, "blocks_sight": true})
+	entries.append({"id": "fixture_water_cloud", "name_key": "FIXTURE_WATER_CLOUD", "category": "prop", "path": DEMO.CABINET_FULL_PATH, "habitat": "water", "blocks_movement": false, "blocks_sight": true})
 	scene.call("_spawn_map_object", Vector2i(6, 30), "fixture_water_cloud")
 	actor_id = scene.call("_spawn_enemy", Vector2i(9, 32), "water_elemental")
 	enemy = scene.get("_goblins")[actor_id]

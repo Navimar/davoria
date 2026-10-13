@@ -5,6 +5,7 @@ signal decided(confirmed: bool)
 var _overlay: ColorRect
 var _buttons: Array[Button] = []
 var _selected_index := 1
+var _question: Label
 
 
 func _ready() -> void:
@@ -27,12 +28,11 @@ func _ready() -> void:
 	var column := VBoxContainer.new()
 	column.add_theme_constant_override("separation", 18)
 	panel.add_child(column)
-	var question := Label.new()
-	question.name = "DoorUnlockQuestion"
-	question.text = "Потратить волшебный ключ,\nчтобы отпереть дверь?"
-	question.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	question.add_theme_font_size_override("font_size", 22)
-	column.add_child(question)
+	_question = Label.new()
+	_question.name = "DoorUnlockQuestion"
+	_question.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	_question.add_theme_font_size_override("font_size", 22)
+	column.add_child(_question)
 	var row := HBoxContainer.new()
 	row.alignment = BoxContainer.ALIGNMENT_CENTER
 	row.add_theme_constant_override("separation", 18)
@@ -40,7 +40,7 @@ func _ready() -> void:
 	for index in range(2):
 		var button := Button.new()
 		button.name = "UnlockYes" if index == 0 else "UnlockNo"
-		button.text = "Да" if index == 0 else "Нет"
+		button.text = tr("UI_YES") if index == 0 else tr("UI_NO")
 		button.custom_minimum_size = Vector2(160, 48)
 		button.add_theme_font_size_override("font_size", 22)
 		button.add_theme_stylebox_override("normal", _style(Color(0.17, 0.18, 0.22), Color(0.35, 0.36, 0.42), 8))
@@ -49,7 +49,7 @@ func _ready() -> void:
 		row.add_child(button)
 		_buttons.append(button)
 	var help := Label.new()
-	help.text = "WASD — выбор   ·   Space — подтвердить"
+	help.text = tr("UI_CONFIRM_CONTROLS")
 	help.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	help.add_theme_font_size_override("font_size", 14)
 	help.modulate = Color(0.75, 0.76, 0.81)
@@ -61,7 +61,8 @@ func is_open() -> bool:
 	return _overlay != null and _overlay.visible
 
 
-func show_prompt() -> void:
+func show_prompt(question := "") -> void:
+	_question.text = tr("CONFIRMATION_MAGIC_KEY") if question.is_empty() else question
 	_overlay.show()
 	_select(1)
 

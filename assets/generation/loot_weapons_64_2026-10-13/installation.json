@@ -1,0 +1,32 @@
+{
+  "mode": "builtin image_gen",
+  "recipe": "recipe.json",
+  "pixel_pipeline": "tools/process_creature_sheet.py",
+  "selection": {
+    "gold_small": "01_gold_small_1",
+    "gold_medium": "07_gold_medium_3",
+    "gold_large": "09_gold_large_1",
+    "broken_bottle": "13_broken_bottle_1"
+  },
+  "canvas": [
+    64,
+    64
+  ],
+  "visible_size": [
+    38,
+    38
+  ],
+  "baseline": 52,
+  "palette": "AAP64",
+  "outline": "#242234, 1 native pixel",
+  "qa": "Inspected reconstructed sheet: 3 distinct pile sizes/counts, readable jagged green bottle; all native 64 RGBA. No post-pixelization rescale.",
+  "potion": "Reserved original sheet 14_violet_pear",
+  "corpse": "Existing assets/actors/prone/cockatrice_prone.png",
+  "installed_sha256": {
+    "gold_small.png": "657c321041b1f6b74bfa2c7d8e6ff95950d7a09d77505e0b2446f19085f6b277",
+    "gold_medium.png": "a84828b859a6051df0c4354ff69498d31e8f605365c59d2683f9119088de2de3",
+    "gold_large.png": "ff3609048f1908862a2cb0ef964606d047ce6731216c8b42b0b6b1f56bfb3470",
+    "broken_bottle.png": "0a8d73639e0d2e6afc401267cb2b418c3f46a33b2c9e9688004e5af91d05e8e6",
+    "petrification_protection_potion.png": "3fee10bac7d21cdc06e693d1491e9a3111211c45fc1bc776e1ad957ef8b3f014"
+  }
+}

@@ -1,0 +1,370 @@
+{
+  "ok": true,
+  "errors": [],
+  "count": 16,
+  "images": [
+    {
+      "size": [
+        64,
+        64
+      ],
+      "bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "alpha": [
+        255
+      ],
+      "colors": 5,
+      "errors": []
+    },
+    {
+      "size": [
+        64,
+        64
+      ],
+      "bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "alpha": [
+        255
+      ],
+      "colors": 6,
+      "errors": []
+    },
+    {
+      "size": [
+        64,
+        64
+      ],
+      "bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "alpha": [
+        255
+      ],
+      "colors": 8,
+      "errors": []
+    },
+    {
+      "size": [
+        64,
+        64
+      ],
+      "bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "alpha": [
+        255
+      ],
+      "colors": 9,
+      "errors": []
+    },
+    {
+      "size": [
+        64,
+        64
+      ],
+      "bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "alpha": [
+        255
+      ],
+      "colors": 7,
+      "errors": []
+    },
+    {
+      "size": [
+        64,
+        64
+      ],
+      "bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "alpha": [
+        255
+      ],
+      "colors": 7,
+      "errors": []
+    },
+    {
+      "size": [
+        64,
+        64
+      ],
+      "bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "alpha": [
+        255
+      ],
+      "colors": 8,
+      "errors": []
+    },
+    {
+      "size": [
+        64,
+        64
+      ],
+      "bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "alpha": [
+        255
+      ],
+      "colors": 9,
+      "errors": []
+    },
+    {
+      "size": [
+        64,
+        64
+      ],
+      "bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "alpha": [
+        255
+      ],
+      "colors": 7,
+      "errors": []
+    },
+    {
+      "size": [
+        64,
+        64
+      ],
+      "bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "alpha": [
+        255
+      ],
+      "colors": 9,
+      "errors": []
+    },
+    {
+      "size": [
+        64,
+        64
+      ],
+      "bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "alpha": [
+        255
+      ],
+      "colors": 8,
+      "errors": []
+    },
+    {
+      "size": [
+        64,
+        64
+      ],
+      "bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "alpha": [
+        255
+      ],
+      "colors": 7,
+      "errors": []
+    },
+    {
+      "size": [
+        64,
+        64
+      ],
+      "bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "alpha": [
+        255
+      ],
+      "colors": 7,
+      "errors": []
+    },
+    {
+      "size": [
+        64,
+        64
+      ],
+      "bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "alpha": [
+        255
+      ],
+      "colors": 7,
+      "errors": []
+    },
+    {
+      "size": [
+        64,
+        64
+      ],
+      "bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "alpha": [
+        255
+      ],
+      "colors": 8,
+      "errors": []
+    },
+    {
+      "size": [
+        64,
+        64
+      ],
+      "bbox": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "alpha": [
+        255
+      ],
+      "colors": 9,
+      "errors": []
+    }
+  ],
+  "palette_used": [
+    [
+      34,
+      28,
+      26
+    ],
+    [
+      50,
+      43,
+      40
+    ],
+    [
+      66,
+      57,
+      52
+    ],
+    [
+      90,
+      78,
+      68
+    ],
+    [
+      91,
+      49,
+      56
+    ],
+    [
+      113,
+      65,
+      59
+    ],
+    [
+      121,
+      103,
+      85
+    ],
+    [
+      142,
+      82,
+      82
+    ],
+    [
+      160,
+      134,
+      98
+    ],
+    [
+      187,
+      117,
+      71
+    ],
+    [
+      199,
+      176,
+      139
+    ]
+  ],
+  "metrics": {
+    "bbox_width": {
+      "mean": 64,
+      "sd": 0.0
+    },
+    "bbox_height": {
+      "mean": 64,
+      "sd": 0.0
+    },
+    "opaque_pixels": {
+      "mean": 4096,
+      "sd": 0.0
+    },
+    "luma_mean": 0.3202656972608379,
+    "dark_fraction": 0.358245849609375
+  },
+  "names": [
+    "01_floor_packed",
+    "02_floor_worn",
+    "03_floor_pebbles",
+    "04_floor_cracked",
+    "05_floor_damp",
+    "06_floor_clay",
+    "07_floor_roots",
+    "08_floor_grit",
+    "09_wall_loam",
+    "10_wall_fissure",
+    "11_wall_root_fork",
+    "12_wall_pebbles",
+    "13_wall_clay_layers",
+    "14_wall_damp",
+    "15_wall_crumbled",
+    "16_wall_roots"
+  ]
+}

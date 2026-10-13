@@ -47,7 +47,7 @@ func _run() -> void:
 	scene.call("_erase_live_map_object", OBSTACLE)
 	var entries := CATALOG.definitions()
 	# A future prop registers once in the catalog, with no special collision/FOV/editor code.
-	var prop := {"id": "fixture_visibility_prop", "name": "Проверка свойств", "category": "prop", "path": DEMO.CABINET_FULL_PATH, "blocks_movement": false, "blocks_sight": false}
+	var prop := {"id": "fixture_visibility_prop", "name_key": "FIXTURE_VISIBILITY_PROP", "category": "prop", "path": DEMO.CABINET_FULL_PATH, "blocks_movement": false, "blocks_sight": false}
 	entries.append(prop)
 	for movement in [false, true]:
 		for sight in [false, true]:

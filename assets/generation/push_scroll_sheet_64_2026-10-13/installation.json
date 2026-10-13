@@ -1,0 +1,61 @@
+{
+  "generation_mode": "builtin_image_gen",
+  "prompt": "generation_prompt.txt",
+  "recipe": "recipe.json",
+  "runtime_asset": "assets/items/push_scroll.png",
+  "runtime_sha256": "af0d6054565c4ff88e382d83b9f731728d935ae3535731cd60f2fd9d109dc762",
+  "native_qa": {
+    "ok": true,
+    "count": 16
+  },
+  "mechanics": {
+    "target": "adjacent_cell_only",
+    "max_push_distance": 5,
+    "direction_input": "WASD selects field target; Space casts; Escape cancels",
+    "consumable": true,
+    "bomb_fuse_preserved": true,
+    "magic_gain": 1,
+    "failed_push_consumes": false,
+    "loot_group": "scrolls",
+    "scroll_loot_weight": 1,
+    "container": "bookcase",
+    "targeting": "on_field_four_adjacent_cells",
+    "direction_modal": false,
+    "cabinet_push": true,
+    "cabinet_contents_preserved": true,
+    "forced_terrain_crossing": true,
+    "lethal_immersion": "first unsafe cell; cannot-swim creatures drown in water; requires-water creatures dissolve on dry land",
+    "immersion_death_immediate": true,
+    "immersion_visual_duration_seconds": 0.45,
+    "immersion_kill_strength_gain": 1,
+    "knockdown": true,
+    "stand_up_cost_enemy_turns": 1,
+    "prone_retaliation": false,
+    "repeat_knockdown": "refreshes_without_stacking",
+    "prone_assets": "assets/actors/prone/installation.json"
+  },
+  "headless_checks_passed": [
+    "check_cockatrice_push.gd",
+    "check_combat.gd",
+    "check_tools_bombs.gd",
+    "check_healing_potions.gd",
+    "check_speed_potion.gd",
+    "check_water.gd",
+    "check_magic_key.gd",
+    "check_enemy_fog.gd",
+    "check_editor_save.gd",
+    "live_map_smoke",
+    "check_forced_immersion.gd",
+    "check_knockdown.gd"
+  ],
+  "map_placements": "map_additions.json",
+  "cockatrice": {
+    "runtime_asset": "assets/actors/pixel_monsters/series_05/11_cockatrice.png",
+    "strength_range": [
+      5,
+      15
+    ],
+    "successful_hit": "permanent petrification ends run",
+    "first_encounter_modal": true
+  }
+}

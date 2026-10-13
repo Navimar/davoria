@@ -1,0 +1,122 @@
+{
+  "version": 1,
+  "kind": "sheet",
+  "source": "source_hard_alpha.png",
+  "source_sha256": "d50bd801d26ade15f51bd77e45f78f60dcdd7bb908b55f4670ae3519b2b895eb",
+  "layout": {
+    "row_boundaries": [
+      0,
+      307,
+      609,
+      867,
+      1240
+    ],
+    "column_boundaries": [
+      [
+        0,
+        317,
+        635,
+        952,
+        1269
+      ],
+      [
+        0,
+        317,
+        635,
+        952,
+        1269
+      ],
+      [
+        0,
+        317,
+        635,
+        952,
+        1269
+      ],
+      [
+        0,
+        317,
+        635,
+        952,
+        1269
+      ]
+    ]
+  },
+  "chroma": null,
+  "reconstruction": {
+    "grid": [
+      64,
+      64
+    ],
+    "inset": 0.0,
+    "alpha_coverage": 0.0
+  },
+  "palette": "aap64",
+  "outline": {
+    "color": "242234",
+    "neighbors": 8
+  },
+  "preview_columns": 4,
+  "sprites": [
+    {
+      "name": "pickaxe_01"
+    },
+    {
+      "name": "pickaxe_02"
+    },
+    {
+      "name": "pickaxe_03"
+    },
+    {
+      "name": "pickaxe_04"
+    },
+    {
+      "name": "pickaxe_05"
+    },
+    {
+      "name": "pickaxe_06"
+    },
+    {
+      "name": "bomb_01"
+    },
+    {
+      "name": "bomb_02"
+    },
+    {
+      "name": "bomb_03"
+    },
+    {
+      "name": "bomb_04"
+    },
+    {
+      "name": "bomb_05"
+    },
+    {
+      "name": "bomb_06"
+    },
+    {
+      "name": "tool_cabinet_01"
+    },
+    {
+      "name": "tool_cabinet_02"
+    },
+    {
+      "name": "tool_cabinet_03"
+    },
+    {
+      "name": "tool_cabinet_04"
+    }
+  ],
+  "fit_visible_before_pixelization": true,
+  "canvas": {
+    "size": [
+      64,
+      64
+    ],
+    "baseline": 64
+  },
+  "visible_size": [
+    64,
+    64
+  ]
+}

@@ -1,0 +1,6 @@
+﻿id,name,source_status,map_count,standing_source,prone_file
+weak_club,Гоблин с дубинкой,active,16,assets/actors/goblins/series_01/01_weak_club.png,final/weak_club_prone.png
+medium_swordsman,Гоблин-мечник,active,12,assets/actors/goblins/series_01/09_medium_swordsman.png,final/medium_swordsman_prone.png
+strong_guard,Тяжёлый гоблин-страж,active,8,assets/actors/goblins/series_01/12_strong_guard.png,final/strong_guard_prone.png
+cockatrice,Кокатрис,unused_requested,0,assets/actors/pixel_monsters/series_05/11_cockatrice.png,final/cockatrice_prone.png
+skeletal_horse,Скелет-лошадь,active,1,assets/actors/pixel_monsters/series_05/14_skeletal_horse.png,final/skeletal_horse_prone.png

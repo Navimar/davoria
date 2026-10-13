@@ -79,6 +79,9 @@ func _run() -> void:
 	for actor_id: int in scene.get("_goblins").keys():
 		scene.call("_remove_goblin", actor_id)
 	scene.call("_add_inventory_item", load(DEMO.SWORD_PATH), DEMO.ITEM_ID_SWORD)
+	scene.set("_equipped_weapon_id", DEMO.ITEM_ID_SWORD)
+	scene.set("_equipped_weapon_texture", load(DEMO.SWORD_PATH))
+	scene.call("_refresh_inventory_panel")
 	for index in range(scene.get("_inventory").size(), DEMO.INVENTORY_SIZE):
 		scene.call("_add_inventory_item", load(DEMO.GHOST_RING_PATH), DEMO.ITEM_ID_GHOST_RING)
 	var crystal_cell := _stand_beside_crystal(scene)

@@ -1,0 +1,165 @@
+{
+  "generation_mode": "built-in imagegen",
+  "generation_prompt": "generation_prompt.txt",
+  "source": "source.png",
+  "source_sha256": "c469fdd58cc2c10c9cab79eef0f114352d15e84fbb5cefb766dfd608596314ee",
+  "alpha_threshold_before_pixelization": 128,
+  "items_recipe": "items_recipe.json",
+  "furniture_recipe": "furniture_recipe.json",
+  "active_outputs": [
+    "items_native_v2/processed",
+    "furniture_native_v2/processed"
+  ],
+  "selection": {
+    "pickaxe": {
+      "variant": "pickaxe_03.png",
+      "runtime": "assets/items/pickaxe.png",
+      "sha256": "e55897d64d67c89ab00cd0f42fe3ba058804887c117be93704db6a91461eb418",
+      "visible_bounds": [
+        14,
+        14,
+        50,
+        52
+      ]
+    },
+    "bomb": {
+      "variant": "bomb_04.png",
+      "runtime": "assets/items/bomb.png",
+      "sha256": "51df3098183c13ac2eb26fb9b631ad0ff92ac4e06835b37aeb3c4637eb94d6e2",
+      "visible_bounds": [
+        16,
+        14,
+        48,
+        52
+      ]
+    },
+    "tool_cabinet": {
+      "variant": "tool_cabinet_02.png",
+      "runtime": "assets/props/furniture/series_01/tool_cabinet.png",
+      "sha256": "ce48103be2f9f570b7607aba7dccaf4c8a934088ef2dd99520e66bb8ef72e363",
+      "visible_bounds": [
+        8,
+        0,
+        56,
+        64
+      ]
+    }
+  },
+  "runtime_canvas": [
+    64,
+    64
+  ],
+  "palette": "aap64",
+  "binary_alpha": true,
+  "post_pixelization_resize": false,
+  "tile_darkening_or_blur": false,
+  "reserve_items": "assets/items/tools/series_01",
+  "reserve_furniture": "assets/props/furniture/tools_series_01",
+  "tool_weights": {
+    "pickaxe": 3,
+    "magic_key": 2,
+    "bomb": 1
+  },
+  "cabinet_capacity": [
+    1,
+    3
+  ],
+  "tool_cabinet_shelf_areas": [
+    [
+      13,
+      6,
+      38,
+      15
+    ],
+    [
+      13,
+      23,
+      38,
+      16
+    ],
+    [
+      13,
+      41,
+      38,
+      16
+    ]
+  ],
+  "tool_cabinet_shelf_background": [
+    14,
+    7
+  ],
+  "bomb": {
+    "fuse_world_turns_after_placement": 3,
+    "radius_chebyshev": 1,
+    "strength_damage": 100,
+    "damage_own_strength": true,
+    "chain_reaction": true,
+    "preserves_floor_and_water": true,
+    "saved_armed_state": false
+  },
+  "map_key_replacements": [
+    [
+      -3,
+      15
+    ],
+    [
+      0,
+      15
+    ],
+    [
+      24,
+      19
+    ],
+    [
+      -3,
+      20
+    ],
+    [
+      0,
+      20
+    ],
+    [
+      4,
+      20
+    ],
+    [
+      24,
+      20
+    ],
+    [
+      24,
+      21
+    ],
+    [
+      24,
+      22
+    ],
+    [
+      10,
+      34
+    ],
+    [
+      -4,
+      35
+    ],
+    [
+      17,
+      36
+    ],
+    [
+      21,
+      36
+    ]
+  ],
+  "qa_ok": true,
+  "logic_checks": [
+    "tools/check_tools_bombs.gd passed",
+    "tools/check_magic_key.gd passed",
+    "tools/check_healing_potions.gd passed",
+    "tools/check_speed_potion.gd passed",
+    "tools/check_editor_save.gd passed",
+    "tools/check_enemy_fog.gd passed",
+    "tools/check_combat.gd passed",
+    "real map smoke check: 13 tool cabinets spawned with valid contents; no standalone keys remain"
+  ]
+}

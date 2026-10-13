@@ -1,0 +1,407 @@
+{
+  "source": "/Users/igor/Godot/davoria/assets/generation/push_scroll_sheet_64_2026-10-13/source_hard_alpha.png",
+  "source_sha256": "d9a917bfcbe848e34ec5a3a25428520fb48257c4e2ddbbade923528e4f1fe5d7",
+  "order": [
+    "split_highres",
+    "chroma_key",
+    "crop_alpha_bbox",
+    "fit_highres",
+    "pixelize"
+  ],
+  "padding": 0,
+  "target_size": [
+    64,
+    64
+  ],
+  "visible_size": [
+    38,
+    38
+  ],
+  "baseline": 52,
+  "sprites": [
+    {
+      "name": "push_scroll_01",
+      "source_box": [
+        33,
+        62,
+        303,
+        267
+      ],
+      "source_bbox": [
+        0,
+        0,
+        270,
+        205
+      ],
+      "cropped_size": [
+        270,
+        205
+      ],
+      "fitted_body_size": [
+        304,
+        231
+      ],
+      "scale": 1.125925925925926
+    },
+    {
+      "name": "push_scroll_02",
+      "source_box": [
+        419,
+        29,
+        522,
+        302
+      ],
+      "source_bbox": [
+        0,
+        0,
+        103,
+        273
+      ],
+      "cropped_size": [
+        103,
+        273
+      ],
+      "fitted_body_size": [
+        115,
+        304
+      ],
+      "scale": 1.1135531135531136
+    },
+    {
+      "name": "push_scroll_03",
+      "source_box": [
+        643,
+        68,
+        918,
+        287
+      ],
+      "source_bbox": [
+        0,
+        0,
+        275,
+        219
+      ],
+      "cropped_size": [
+        275,
+        219
+      ],
+      "fitted_body_size": [
+        304,
+        242
+      ],
+      "scale": 1.1054545454545455
+    },
+    {
+      "name": "push_scroll_04",
+      "source_box": [
+        966,
+        62,
+        1215,
+        290
+      ],
+      "source_bbox": [
+        0,
+        0,
+        249,
+        228
+      ],
+      "cropped_size": [
+        249,
+        228
+      ],
+      "fitted_body_size": [
+        304,
+        278
+      ],
+      "scale": 1.2208835341365463
+    },
+    {
+      "name": "push_scroll_05",
+      "source_box": [
+        24,
+        380,
+        303,
+        568
+      ],
+      "source_bbox": [
+        0,
+        0,
+        279,
+        188
+      ],
+      "cropped_size": [
+        279,
+        188
+      ],
+      "fitted_body_size": [
+        304,
+        205
+      ],
+      "scale": 1.0896057347670252
+    },
+    {
+      "name": "push_scroll_06",
+      "source_box": [
+        349,
+        358,
+        603,
+        605
+      ],
+      "source_bbox": [
+        0,
+        0,
+        254,
+        247
+      ],
+      "cropped_size": [
+        254,
+        247
+      ],
+      "fitted_body_size": [
+        304,
+        296
+      ],
+      "scale": 1.1968503937007875
+    },
+    {
+      "name": "push_scroll_07",
+      "source_box": [
+        656,
+        371,
+        914,
+        584
+      ],
+      "source_bbox": [
+        0,
+        0,
+        258,
+        213
+      ],
+      "cropped_size": [
+        258,
+        213
+      ],
+      "fitted_body_size": [
+        304,
+        251
+      ],
+      "scale": 1.178294573643411
+    },
+    {
+      "name": "push_scroll_08",
+      "source_box": [
+        965,
+        412,
+        1230,
+        542
+      ],
+      "source_bbox": [
+        0,
+        0,
+        265,
+        130
+      ],
+      "cropped_size": [
+        265,
+        130
+      ],
+      "fitted_body_size": [
+        304,
+        149
+      ],
+      "scale": 1.1471698113207547
+    },
+    {
+      "name": "push_scroll_09",
+      "source_box": [
+        86,
+        627,
+        228,
+        932
+      ],
+      "source_bbox": [
+        0,
+        0,
+        142,
+        305
+      ],
+      "cropped_size": [
+        142,
+        305
+      ],
+      "fitted_body_size": [
+        142,
+        304
+      ],
+      "scale": 0.9967213114754099
+    },
+    {
+      "name": "push_scroll_10",
+      "source_box": [
+        338,
+        669,
+        603,
+        887
+      ],
+      "source_bbox": [
+        0,
+        0,
+        265,
+        218
+      ],
+      "cropped_size": [
+        265,
+        218
+      ],
+      "fitted_body_size": [
+        304,
+        250
+      ],
+      "scale": 1.1471698113207547
+    },
+    {
+      "name": "push_scroll_11",
+      "source_box": [
+        658,
+        675,
+        903,
+        915
+      ],
+      "source_bbox": [
+        0,
+        0,
+        245,
+        240
+      ],
+      "cropped_size": [
+        245,
+        240
+      ],
+      "fitted_body_size": [
+        304,
+        298
+      ],
+      "scale": 1.2408163265306122
+    },
+    {
+      "name": "push_scroll_12",
+      "source_box": [
+        960,
+        671,
+        1216,
+        893
+      ],
+      "source_bbox": [
+        0,
+        0,
+        256,
+        222
+      ],
+      "cropped_size": [
+        256,
+        222
+      ],
+      "fitted_body_size": [
+        304,
+        264
+      ],
+      "scale": 1.1875
+    },
+    {
+      "name": "push_scroll_13",
+      "source_box": [
+        33,
+        985,
+        303,
+        1186
+      ],
+      "source_bbox": [
+        0,
+        0,
+        270,
+        201
+      ],
+      "cropped_size": [
+        270,
+        201
+      ],
+      "fitted_body_size": [
+        304,
+        226
+      ],
+      "scale": 1.125925925925926
+    },
+    {
+      "name": "push_scroll_14",
+      "source_box": [
+        417,
+        933,
+        524,
+        1215
+      ],
+      "source_bbox": [
+        0,
+        0,
+        107,
+        282
+      ],
+      "cropped_size": [
+        107,
+        282
+      ],
+      "fitted_body_size": [
+        115,
+        304
+      ],
+      "scale": 1.0780141843971631
+    },
+    {
+      "name": "push_scroll_15",
+      "source_box": [
+        649,
+        976,
+        921,
+        1191
+      ],
+      "source_bbox": [
+        0,
+        0,
+        272,
+        215
+      ],
+      "cropped_size": [
+        272,
+        215
+      ],
+      "fitted_body_size": [
+        304,
+        240
+      ],
+      "scale": 1.1176470588235294
+    },
+    {
+      "name": "push_scroll_16",
+      "source_box": [
+        972,
+        958,
+        1209,
+        1213
+      ],
+      "source_bbox": [
+        0,
+        0,
+        237,
+        255
+      ],
+      "cropped_size": [
+        237,
+        255
+      ],
+      "fitted_body_size": [
+        283,
+        304
+      ],
+      "scale": 1.192156862745098
+    }
+  ]
+}

@@ -1,0 +1,277 @@
+{
+  "ok": true,
+  "count": 16,
+  "dimensions": [
+    64,
+    64
+  ],
+  "all_opaque": true,
+  "installed_hashes_match_graded_sources": true,
+  "pre_grade_AAP64_qa": true,
+  "atlas_size": [
+    256,
+    256
+  ],
+  "generation_recipe": "recipe_v3.json",
+  "palette_recolor": "earth_recolor.json",
+  "grade_report": "terrain_neutral_25_blur05/final/run.json",
+  "game_code_changed": false,
+  "assets": [
+    {
+      "id": "01_floor_packed",
+      "file": "01_floor_packed.png",
+      "type": "floor",
+      "blocks_movement": false,
+      "atlas_cell": [
+        0,
+        0
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "opaque": true,
+      "sha256": "1c5864a565b35d04959f117fa1f829be1a80c786062f45376b0ebecfd8798356"
+    },
+    {
+      "id": "02_floor_worn",
+      "file": "02_floor_worn.png",
+      "type": "floor",
+      "blocks_movement": false,
+      "atlas_cell": [
+        1,
+        0
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "opaque": true,
+      "sha256": "63c80d8f865923666243a75e47f429477918d860c9e592f41134564c27317b94"
+    },
+    {
+      "id": "03_floor_pebbles",
+      "file": "03_floor_pebbles.png",
+      "type": "floor",
+      "blocks_movement": false,
+      "atlas_cell": [
+        2,
+        0
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "opaque": true,
+      "sha256": "bd9b5e866193842d788337b5fa326fbb538488683f957fc43c8edc035d3e2e2f"
+    },
+    {
+      "id": "04_floor_cracked",
+      "file": "04_floor_cracked.png",
+      "type": "floor",
+      "blocks_movement": false,
+      "atlas_cell": [
+        3,
+        0
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "opaque": true,
+      "sha256": "04edb80d8ef892133c771246f85757cd95d0a94a15922477f578d6a4dbef1122"
+    },
+    {
+      "id": "05_floor_damp",
+      "file": "05_floor_damp.png",
+      "type": "floor",
+      "blocks_movement": false,
+      "atlas_cell": [
+        0,
+        1
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "opaque": true,
+      "sha256": "900622c2b2c5060130ae5ea6a4bd039269b054d5a1c2318008cdfa87f7d82965"
+    },
+    {
+      "id": "06_floor_clay",
+      "file": "06_floor_clay.png",
+      "type": "floor",
+      "blocks_movement": false,
+      "atlas_cell": [
+        1,
+        1
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "opaque": true,
+      "sha256": "120889ed1bcf13991b35e51dcba4c15715c41b97250564de84e8dca9030739db"
+    },
+    {
+      "id": "07_floor_roots",
+      "file": "07_floor_roots.png",
+      "type": "floor",
+      "blocks_movement": false,
+      "atlas_cell": [
+        2,
+        1
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "opaque": true,
+      "sha256": "25aef484643a42cc2ef7c07d8a1f221715cf429ff7f5d326bb5867324a474f0d"
+    },
+    {
+      "id": "08_floor_grit",
+      "file": "08_floor_grit.png",
+      "type": "floor",
+      "blocks_movement": false,
+      "atlas_cell": [
+        3,
+        1
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "opaque": true,
+      "sha256": "f6cd3bb43e40eb560debc31b439aa8af3256e5f5b2d3149586f0a8d54878d937"
+    },
+    {
+      "id": "09_wall_loam",
+      "file": "09_wall_loam.png",
+      "type": "wall",
+      "blocks_movement": true,
+      "atlas_cell": [
+        0,
+        2
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "opaque": true,
+      "sha256": "f4e4be218aa54b43a74e5707e03109f2d77406b9702ee54fbf4c01b8a3ef900f"
+    },
+    {
+      "id": "10_wall_fissure",
+      "file": "10_wall_fissure.png",
+      "type": "wall",
+      "blocks_movement": true,
+      "atlas_cell": [
+        1,
+        2
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "opaque": true,
+      "sha256": "e0a0be9331383e406f828a389dfb6f319e58131db699656644e05ec38877fbe9"
+    },
+    {
+      "id": "11_wall_root_fork",
+      "file": "11_wall_root_fork.png",
+      "type": "wall",
+      "blocks_movement": true,
+      "atlas_cell": [
+        2,
+        2
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "opaque": true,
+      "sha256": "b5cc0ec3e2edf73ce417f015bad41111b76bc82a516a26b89a8849f9ed17fd37"
+    },
+    {
+      "id": "12_wall_pebbles",
+      "file": "12_wall_pebbles.png",
+      "type": "wall",
+      "blocks_movement": true,
+      "atlas_cell": [
+        3,
+        2
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "opaque": true,
+      "sha256": "c298e0ee71f122a71406aab0bb5e2f01344d157e1f71b75724e2c7fdca192884"
+    },
+    {
+      "id": "13_wall_clay_layers",
+      "file": "13_wall_clay_layers.png",
+      "type": "wall",
+      "blocks_movement": true,
+      "atlas_cell": [
+        0,
+        3
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "opaque": true,
+      "sha256": "a27b4196a77627e5ec68e4313e7788d7f88b55df859e756c23bdd51f8f8b38cf"
+    },
+    {
+      "id": "14_wall_damp",
+      "file": "14_wall_damp.png",
+      "type": "wall",
+      "blocks_movement": true,
+      "atlas_cell": [
+        1,
+        3
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "opaque": true,
+      "sha256": "cf66a50929fcf545cf77eaf6512b3e36200b04a53061e17e79ed37534933cdec"
+    },
+    {
+      "id": "15_wall_crumbled",
+      "file": "15_wall_crumbled.png",
+      "type": "wall",
+      "blocks_movement": true,
+      "atlas_cell": [
+        2,
+        3
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "opaque": true,
+      "sha256": "0fb07beb07fa9ef599f83c85d21219b09e5c80d2e9e6355cb23ffc7d868c108f"
+    },
+    {
+      "id": "16_wall_roots",
+      "file": "16_wall_roots.png",
+      "type": "wall",
+      "blocks_movement": true,
+      "atlas_cell": [
+        3,
+        3
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "opaque": true,
+      "sha256": "ca4faebb5db50f3a1ac55e785d0716b3c8e2ec7cddd272960eabd39775da5a6e"
+    }
+  ]
+}

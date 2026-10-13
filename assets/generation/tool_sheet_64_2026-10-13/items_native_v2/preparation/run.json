@@ -1,0 +1,407 @@
+{
+  "source": "/Users/igor/Godot/davoria/assets/generation/tool_sheet_64_2026-10-13/source_hard_alpha.png",
+  "source_sha256": "d50bd801d26ade15f51bd77e45f78f60dcdd7bb908b55f4670ae3519b2b895eb",
+  "order": [
+    "split_highres",
+    "chroma_key",
+    "crop_alpha_bbox",
+    "fit_highres",
+    "pixelize"
+  ],
+  "padding": 0,
+  "target_size": [
+    64,
+    64
+  ],
+  "visible_size": [
+    38,
+    38
+  ],
+  "baseline": 52,
+  "sprites": [
+    {
+      "name": "pickaxe_01",
+      "source_box": [
+        0,
+        0,
+        317,
+        307
+      ],
+      "source_bbox": [
+        37,
+        44,
+        254,
+        273
+      ],
+      "cropped_size": [
+        217,
+        229
+      ],
+      "fitted_body_size": [
+        288,
+        304
+      ],
+      "scale": 1.3275109170305677
+    },
+    {
+      "name": "pickaxe_02",
+      "source_box": [
+        317,
+        0,
+        635,
+        307
+      ],
+      "source_bbox": [
+        44,
+        31,
+        271,
+        276
+      ],
+      "cropped_size": [
+        227,
+        245
+      ],
+      "fitted_body_size": [
+        282,
+        304
+      ],
+      "scale": 1.2408163265306122
+    },
+    {
+      "name": "pickaxe_03",
+      "source_box": [
+        635,
+        0,
+        952,
+        307
+      ],
+      "source_bbox": [
+        54,
+        49,
+        264,
+        276
+      ],
+      "cropped_size": [
+        210,
+        227
+      ],
+      "fitted_body_size": [
+        281,
+        304
+      ],
+      "scale": 1.3392070484581498
+    },
+    {
+      "name": "pickaxe_04",
+      "source_box": [
+        952,
+        0,
+        1269,
+        307
+      ],
+      "source_bbox": [
+        59,
+        44,
+        268,
+        276
+      ],
+      "cropped_size": [
+        209,
+        232
+      ],
+      "fitted_body_size": [
+        274,
+        304
+      ],
+      "scale": 1.3103448275862069
+    },
+    {
+      "name": "pickaxe_05",
+      "source_box": [
+        0,
+        307,
+        317,
+        609
+      ],
+      "source_bbox": [
+        49,
+        41,
+        262,
+        280
+      ],
+      "cropped_size": [
+        213,
+        239
+      ],
+      "fitted_body_size": [
+        271,
+        304
+      ],
+      "scale": 1.2719665271966527
+    },
+    {
+      "name": "pickaxe_06",
+      "source_box": [
+        317,
+        307,
+        635,
+        609
+      ],
+      "source_bbox": [
+        47,
+        32,
+        264,
+        273
+      ],
+      "cropped_size": [
+        217,
+        241
+      ],
+      "fitted_body_size": [
+        274,
+        304
+      ],
+      "scale": 1.2614107883817427
+    },
+    {
+      "name": "bomb_01",
+      "source_box": [
+        635,
+        307,
+        952,
+        609
+      ],
+      "source_bbox": [
+        80,
+        48,
+        272,
+        267
+      ],
+      "cropped_size": [
+        192,
+        219
+      ],
+      "fitted_body_size": [
+        267,
+        304
+      ],
+      "scale": 1.3881278538812785
+    },
+    {
+      "name": "bomb_02",
+      "source_box": [
+        952,
+        307,
+        1269,
+        609
+      ],
+      "source_bbox": [
+        73,
+        40,
+        266,
+        263
+      ],
+      "cropped_size": [
+        193,
+        223
+      ],
+      "fitted_body_size": [
+        263,
+        304
+      ],
+      "scale": 1.3632286995515694
+    },
+    {
+      "name": "bomb_03",
+      "source_box": [
+        0,
+        609,
+        317,
+        867
+      ],
+      "source_bbox": [
+        64,
+        25,
+        240,
+        249
+      ],
+      "cropped_size": [
+        176,
+        224
+      ],
+      "fitted_body_size": [
+        239,
+        304
+      ],
+      "scale": 1.3571428571428572
+    },
+    {
+      "name": "bomb_04",
+      "source_box": [
+        317,
+        609,
+        635,
+        867
+      ],
+      "source_bbox": [
+        65,
+        25,
+        247,
+        249
+      ],
+      "cropped_size": [
+        182,
+        224
+      ],
+      "fitted_body_size": [
+        247,
+        304
+      ],
+      "scale": 1.3571428571428572
+    },
+    {
+      "name": "bomb_05",
+      "source_box": [
+        635,
+        609,
+        952,
+        867
+      ],
+      "source_bbox": [
+        72,
+        31,
+        265,
+        253
+      ],
+      "cropped_size": [
+        193,
+        222
+      ],
+      "fitted_body_size": [
+        264,
+        304
+      ],
+      "scale": 1.3693693693693694
+    },
+    {
+      "name": "bomb_06",
+      "source_box": [
+        952,
+        609,
+        1269,
+        867
+      ],
+      "source_bbox": [
+        76,
+        31,
+        257,
+        246
+      ],
+      "cropped_size": [
+        181,
+        215
+      ],
+      "fitted_body_size": [
+        256,
+        304
+      ],
+      "scale": 1.413953488372093
+    },
+    {
+      "name": "tool_cabinet_01",
+      "source_box": [
+        0,
+        867,
+        317,
+        1240
+      ],
+      "source_bbox": [
+        34,
+        6,
+        282,
+        342
+      ],
+      "cropped_size": [
+        248,
+        336
+      ],
+      "fitted_body_size": [
+        224,
+        304
+      ],
+      "scale": 0.9047619047619048
+    },
+    {
+      "name": "tool_cabinet_02",
+      "source_box": [
+        317,
+        867,
+        635,
+        1240
+      ],
+      "source_bbox": [
+        35,
+        6,
+        283,
+        342
+      ],
+      "cropped_size": [
+        248,
+        336
+      ],
+      "fitted_body_size": [
+        224,
+        304
+      ],
+      "scale": 0.9047619047619048
+    },
+    {
+      "name": "tool_cabinet_03",
+      "source_box": [
+        635,
+        867,
+        952,
+        1240
+      ],
+      "source_bbox": [
+        35,
+        6,
+        283,
+        342
+      ],
+      "cropped_size": [
+        248,
+        336
+      ],
+      "fitted_body_size": [
+        224,
+        304
+      ],
+      "scale": 0.9047619047619048
+    },
+    {
+      "name": "tool_cabinet_04",
+      "source_box": [
+        952,
+        867,
+        1269,
+        1240
+      ],
+      "source_bbox": [
+        36,
+        6,
+        284,
+        342
+      ],
+      "cropped_size": [
+        248,
+        336
+      ],
+      "fitted_body_size": [
+        224,
+        304
+      ],
+      "scale": 0.9047619047619048
+    }
+  ]
+}

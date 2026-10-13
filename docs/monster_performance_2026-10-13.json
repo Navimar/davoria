@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-13",
+  "mode": "headless CPU, same host, 40 logical world turns, fixed RNG seed 1729; GPU/FPS not measured",
+  "samples": [
+    {
+      "population": 101,
+      "before": {
+        "turn_median_usec": 13233,
+        "turn_max_usec": 29196,
+        "enemy_turn_calls": 1950,
+        "full_sight_calls": 1950,
+        "encounter_usec_total": 523520,
+        "fade_global_visibility_calls": 172,
+        "fade_global_visibility_usec": 8975
+      },
+      "after": {
+        "turn_median_usec": 576,
+        "turn_max_usec": 801,
+        "enemy_turn_calls": 1950,
+        "full_sight_calls": 0,
+        "encounter_usec_total": 705,
+        "fade_global_visibility_calls": 6,
+        "fade_global_visibility_usec": 521
+      }
+    },
+    {
+      "population": 400,
+      "before": {
+        "turn_median_usec": 79331,
+        "turn_max_usec": 114463,
+        "enemy_turn_calls": 10568,
+        "full_sight_calls": 10568,
+        "encounter_usec_total": 3049066,
+        "fade_global_visibility_calls": 209,
+        "fade_global_visibility_usec": 46957
+      },
+      "after": {
+        "turn_median_usec": 3513,
+        "turn_max_usec": 4628,
+        "enemy_turn_calls": 10568,
+        "full_sight_calls": 0,
+        "encounter_usec_total": 3962,
+        "fade_global_visibility_calls": 10,
+        "fade_global_visibility_usec": 3056
+      }
+    }
+  ],
+  "timing_notes": "Instrumented methods use inclusive timings; do not sum nested method totals. Fade global-call counts include regular process frames. Timings are machine/workload dependent."
+}
